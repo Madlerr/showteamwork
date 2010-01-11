@@ -1,0 +1,192 @@
+
+17.06.2008 Hi anonymous!
+17.06.2008 anonymous: Initial directory structure.. 
+19.06.2008 Hi michael.ogawa!
+19.06.2008 michael.ogawa: moved prototype to trunk. . . 
+19.06.2008 michael.ogawa: added how-to-run README to prototype dir. . 
+20.06.2008 michael.ogawa: added stuff about missing data files. . 
+20.06.2008 Hi cgalvan@mail.utexas.edu!
+20.06.2008 cgalvan@mail.utexas.edu: Initial commit of SVN repository log input parsing.  Modified lo
+21.06.2008 cgalvan@mail.utexas.edu: Adding an error check for logs with not 'paths' node to the SVN 
+21.06.2008 cgalvan@mail.utexas.edu: Initial check-in of directory structure of log conversion tool..
+21.06.2008 cgalvan@mail.utexas.edu: Setting svn:eol-style native propset.. 
+21.06.2008 cgalvan@mail.utexas.edu: Setup option parsing handling for log conversion script.. 
+21.06.2008 michael.ogawa: A sample repevents file. . 
+22.06.2008 michael.ogawa: made the sample a bit more interesting. . 
+22.06.2008 cgalvan@mail.utexas.edu: Updating SVN log conversion option on log conversion tool.  The 
+22.06.2008 cgalvan@mail.utexas.edu: Integrate command-line option for specifying the output log file
+22.06.2008 cgalvan@mail.utexas.edu: Make sure the SVN log dates are stored in the xml output as inte
+22.06.2008 michael.ogawa: Changed default input file to data/sample-repevents.xml. . 
+22.06.2008 michael.ogawa: Renamed dir prototype to code_swarm. Will make testing easier.. 
+22.06.2008 michael.ogawa: Address Mac PriorityQueue problem.. README updated to reflect ne
+22.06.2008 michael.ogawa: GPL'd code. . 
+22.06.2008 michael.ogawa: Added caveat to README. . 
+22.06.2008 michael.ogawa: Added P's Java translation of code_swarm. Needs lots of cleanup.
+23.06.2008 cgalvan@mail.utexas.edu: Adding an additional error check to the parsing of the revision 
+24.06.2008 cgalvan@mail.utexas.edu: Correcting the sample SVN log and code_swarm xml log.. 
+24.06.2008 cgalvan@mail.utexas.edu: Adding some more detail to the conversion log usage README.. 
+24.06.2008 michael.ogawa: Java-ized src + ant build file. . 
+24.06.2008 cgalvan@mail.utexas.edu: Correcting typo in log conversion script README.. 
+24.06.2008 cgalvan@mail.utexas.edu: Removing CR+LF line endings in svn log test file.. 
+24.06.2008 cgalvan@mail.utexas.edu: Setting eol-style to native on log conversion script directory..
+24.06.2008 cgalvan@mail.utexas.edu: Fixing issue where paths in the SVN logs were being clipped whil
+25.06.2008 cgalvan@mail.utexas.edu: Improving the way the log conversion tool checks for the end of 
+25.06.2008 michael.ogawa: Configuration class and sample config file. . 
+26.06.2008 michael.ogawa: Minor code cleanup. . 
+26.06.2008 cgalvan@mail.utexas.edu: Initial cvs log support for the conversion tool submitted by som
+27.06.2008 Hi arjenw!
+27.06.2008 arjenw: Changed the config to just read a properties file, instead of do
+27.06.2008 arjenw: Now using the config file, so please pass it along when running 
+28.06.2008 arjenw: Added getStringProperty and getBooleanProperty to the config cla
+28.06.2008 arjenw: Added the RunSlowly property (default true) to toggle the entire
+28.06.2008 arjenw: Cleaned up the for loops and the use of non-generic collections,
+28.06.2008 arjenw: Added the ability to remove 'old' files, ie, files that have a l
+28.06.2008 arjenw: Initial import of JOGL based code, just the main package name an
+28.06.2008 arjenw: Adding trimmed down config class, will enhance later. 
+28.06.2008 arjenw: Setup a basic AWT panel + JOGL panel, adding a windowClosing han
+28.06.2008 arjenw: Adding JOGL and GlueGen-rt jars in order to build the app, they 
+28.06.2008 arjenw: Adding jogl.jar to the classpath in the ant build script. 
+28.06.2008 cgalvan@mail.utexas.edu: Correcting error in cvs log parsing where the conversion would q
+28.06.2008 cgalvan@mail.utexas.edu: Updating log conversion tool so that the CVS logs will be sorted
+28.06.2008 arjenw: Aparently processing already had OpenGL support, found that out 
+28.06.2008 arjenw: Revert to using sample file instead of my own local file :). Als
+28.06.2008 arjenw: removing unneeded dirs, since processing can do its own opengl. 
+28.06.2008 arjenw: Updating to latest jogl (1.1.2) else mac os x intel fails. 
+28.06.2008 arjenw: Putting the loading of the rep events into a seperate thread, sh
+29.06.2008 cgalvan@mail.utexas.edu: Refactoring log conversion tool so that generating the output ev
+29.06.2008 michael.ogawa: Separate ColorAssigner and ColorTest from the main class. . 
+29.06.2008 michael.ogawa: Separate ColorBins. . 
+29.06.2008 michael.ogawa: Config background color. . . 
+30.06.2008 michael.ogawa: Simple script to run code_swarm with arguments.. . 
+30.06.2008 michael.ogawa: Better default handling. . 
+30.06.2008 michael.ogawa: More heap space. . 
+01.07.2008 michael.ogawa: Getting ready to add configurable file colors.. . 
+03.07.2008 Hi acgourley!
+03.07.2008 acgourley: Modified velocity cap to work in absolute terms. Lowered person 
+05.07.2008 michael.ogawa: User-specified color assignment in config file. . 
+05.07.2008 Hi sebastien.rombauts!
+05.07.2008 sebastien.rombauts: correct clean command to delete the dist directory. 
+05.07.2008 sebastien.rombauts: slightly improved run.sh command to ask user for config file, pl
+05.07.2008 sebastien.rombauts: moving call to ant build after the test for help request. 
+05.07.2008 sebastien.rombauts: First batch file for Windows, after the Linux one, asking the us
+05.07.2008 sebastien.rombauts: Commiting the code_swarm binaries (ie the jar) for user who expe
+05.07.2008 michael.ogawa: Intentions were good, but we are not ready for end-user release 
+06.07.2008 sebastien.rombauts: moved help from bottom to inside the code, to remove a 'exit' ca
+06.07.2008 sebastien.rombauts: Lots of Comments adding & Cosmetics job, plus @todo for jobs yet
+06.07.2008 sebastien.rombauts: Correction for issue 22: 'Javadoc not generated'. - add basic Ja
+06.07.2008 sebastien.rombauts: much 'realistic' sample file, for testing purpose... and more fu
+06.07.2008 sebastien.rombauts: Quit key ('q') and printing licensing term at startup time (as r
+07.07.2008 sebastien.rombauts: Add documentation for 'private' access members. 
+07.07.2008 michael.ogawa: User-specified location of saved screenshots. . 
+07.07.2008 michael.ogawa: User-specified EdgeLength. . 
+07.07.2008 michael.ogawa: User-specified particle sprite file. . 
+07.07.2008 cgalvan@mail.utexas.edu: Applying patch from klapshin to support backward compatibility f
+07.07.2008 cgalvan@mail.utexas.edu: Applying patch from Robert Zeh to add log conversion support for
+07.07.2008 cgalvan@mail.utexas.edu: Applying patch from shadone to provide support for git logs.  Al
+08.07.2008 sebastien.rombauts: Formated version of the 'HowtoBuild' Wiki Guide. . @todo : updat
+09.07.2008 Hi nawglan!
+09.07.2008 nawglan: No limit to color assignments.  Also added optional first field 
+09.07.2008 nawglan: Compiles clean for me using sunjava6. 
+10.07.2008 nawglan: Added accessors for x, y, dx, and dy.  Added a todo.. 
+11.07.2008 michael.ogawa: Based on a patch by Garrett Wollman.. Compile regexes in ColorTe
+11.07.2008 sebastien.rombauts: Java 'OutOfMemory' Error with 'ant run' - need to specify bigger
+11.07.2008 cgalvan@mail.utexas.edu: Committing patch from flier.lu to add support for Starteam to th
+11.07.2008 cgalvan@mail.utexas.edu: Updating log conversion README with Starteam log dump command.. 
+13.07.2008 michael.ogawa: Mercurial logs converter courtesy of Stefan Scherfke.. 'python h
+13.07.2008 acgourley: added a couple minor comments to clarify physics calculation. 
+13.07.2008 nawglan: Added edges between owners of files.  This helps keep the people
+13.07.2008 nawglan: Oops forgot to remove the reset of x,y on freshen of People.  No
+13.07.2008 nawglan: Fixed path to the particle.png file.. 
+13.07.2008 michael.ogawa: Moved trunk/code_swarm to tags/prototype/code_swarm.. Now we can
+14.07.2008 nawglan: Added eclipse classpath and project files.. 
+14.07.2008 nawglan: added file life, edge life, person life, and toggle of history, 
+15.07.2008 nawglan: Added defaults for xxxxLife to the constructor.  Also, changed t
+15.07.2008 nawglan: Simplified the config code.  Added a optional property FramesPer
+15.07.2008 nawglan: Added sanity checks to the height and width read from config fil
+15.07.2008 cgalvan@mail.utexas.edu: Applying patch from masklinn to escape paths in the XML log outp
+15.07.2008 nawglan: Bolding of a file / name is now a percentage of the life assigne
+15.07.2008 nawglan: moved calls to cfg.getXXXX to setup / init routines only (moved 
+15.07.2008 nawglan: added ability to toggle the debug data via the 'b' key.  Debug d
+15.07.2008 sebastien.rombauts: - showHelp() and exclusive management with showLegend() and show
+15.07.2008 sebastien.rombauts: - new 'ShowEdges'. - some more code cleaning,. - more @todo. . .
+16.07.2008 sebastien.rombauts: - new Class 'ForceVector' to manipulate forces in physical algor
+16.07.2008 sebastien.rombauts: - renaming to 'ForceCalcLegacyNodes'. - using for Files as for P
+16.07.2008 sebastien.rombauts: Using the same pattern as Force Calculation for Force Applicatio
+16.07.2008 nawglan: Removed the edges from person to person.  Wasn't working right a
+17.07.2008 sebastien.rombauts: - restored the legacy physical behavior that I broke yesterday (
+17.07.2008 sebastien.rombauts: and use the DRAW_NAME_HALOW config define !. 
+17.07.2008 sebastien.rombauts: - Configuration for physical engine. - Some more small code clea
+17.07.2008 sebastien.rombauts: - Config option for how to draw names and files,. - Some more TO
+17.07.2008 sebastien.rombauts: Renaming ForceVector to 'Vector'. . TODO: next step is 'SpeedToP
+18.07.2008 sebastien.rombauts: - Physic classes renaming,. - add the last step of engine : Forc
+18.07.2008 nawglan: Added popularity listing for files.  press 'p'.  Probably a bett
+19.07.2008 sebastien.rombauts: Complete refactoring of PhysicalEngine : merge all my last night
+19.07.2008 sebastien.rombauts: New calculateForceAlongAnEdge() physical engine method. 
+19.07.2008 sebastien.rombauts: Some more try to get the 'perfect' PhysicalEngine working. . The
+19.07.2008 nawglan: Couple of touchups to code_swarm.java.  Fixed a flaw with Vector
+19.07.2008 nawglan: Update to use javax.vecmath.Vector2f.. 
+19.07.2008 nawglan: Added more keyboard options.  Can toggle pretty much everything 
+19.07.2008 nawglan: changed option from t to S for showing files Sharp.. 
+19.07.2008 nawglan: javadoc madness.. 
+20.07.2008 nawglan: Edges use forces now.. 
+20.07.2008 nawglan: Removed deprecated code, refer to prototype.  Use of Vectors thr
+20.07.2008 nawglan: Forgot to remove some test code.. 
+21.07.2008 nawglan: Tweak to the legacy engine.  files once again drift away as thei
+21.07.2008 nawglan: Added directory to place Physics Engine config files.  Will modi
+22.07.2008 nawglan: Adding hooks for the Physics Engine during the relax and update 
+22.07.2008 nawglan: Added mercurial support to convert_logs.py.  . 
+23.07.2008 nawglan: Physics Engine is now loaded via a config file.. 
+23.07.2008 nawglan: Finished fleshing out the Legacy Engine.  Still needs to be twea
+23.07.2008 Hi nadir.seen.fire!
+23.07.2008 nadir.seen.fire: Wikiswarm support for code_swarm.. A few notes:. * The 'wikimedi
+23.07.2008 nawglan: added vecmath to build.xml and run.sh. 
+23.07.2008 sebastien.rombauts: Issue 33 correction. 
+23.07.2008 sebastien.rombauts: vecmath.jar also added for run.bat launcher !. 
+23.07.2008 sebastien.rombauts: Starting a new PhysicalEngine, with the aim of ultimate simplici
+24.07.2008 nawglan: Removed Legacy specific functions from the interface class.  Onl
+24.07.2008 nawglan: minor tweak taken from the prototype.. 
+24.07.2008 nawglan: Fixed switching between physics engines with the plus and minus 
+25.07.2008 nawglan: Rename to PhysicsEngine.. 
+25.07.2008 nawglan: Removed old java files.. 
+28.07.2008 nawglan: Finally, yes really, fixed the switching between physics engines
+28.07.2008 nawglan: Small tweak to chaotic engine.. 
+29.07.2008 nawglan: Fonts are now a part of the config.. 
+29.07.2008 nawglan: edge, file, person decrementers are now in the config.  minor ja
+29.07.2008 nawglan: File, Person and generic Node speeds are in the config now.. 
+29.07.2008 nawglan: Mass is a part of the config now.. 
+29.07.2008 nawglan: Highlight percentage is now in the config.  allowed values 0 thr
+29.07.2008 nawglan: reenabled MSEC_PER_FRAME_KEY.. 
+30.07.2008 nawglan: pushed the starting position and velocity of FIles and Persons t
+30.07.2008 nawglan: Passing mass to the Velocity physics engine functions. 
+31.07.2008 nawglan: Fixed an oops.. 
+02.08.2008 acgourley: Merged in P4 support from Ivan Nevostruev. . 
+02.08.2008 nawglan: Added a couple of functions for physics engine use.  one to do s
+02.08.2008 nawglan: tweak to maxwells demon physics engine.  hopefully shouldn't get
+02.08.2008 cgalvan@mail.utexas.edu: Modifying Event class definition in log conversion tool for pyth
+04.08.2008 nawglan: Updated rebounding from walls in both Chaotic and Maxwell's Demo
+07.08.2008 Hi kraeusen!
+07.08.2008 kraeusen: Added the ability to fetch repository-logs at runtime.. Using ru
+09.08.2008 kraeusen: added linux support for automated svn-repository fetching and co
+10.08.2008 nawglan: Fixed to work.. 
+10.08.2008 nawglan: Patch from rangerrick.  Also opened up EDGE_LEN and cfg to be vi
+10.08.2008 nawglan: javadoc update. 
+26.08.2008 nawglan: Trying out different collision detection routines . 
+26.08.2008 nawglan: folded in some changes from the git repo maintained by rictic.. 
+26.08.2008 nawglan: folded in some more changes from the git repo maintained by rict
+26.08.2008 nawglan: put the date first.  Aids in sorting / merging multiple xml file
+06.11.2008 michael.ogawa: Patch from ice.biker applied to SVNHistory.java. Fixes URL lengt
+17.11.2008 michael.ogawa: Patched to allow separate bold fonts by felipe.contreras.. 
+17.11.2008 michael.ogawa: Added optional 'weight' attribute to data files. If no weight is
+17.11.2008 nawglan: speed up loading, per provided patch. (Thanks Peter Burns). 
+17.11.2008 nawglan: refactored, (thanks again Peter). 
+18.11.2008 nawglan: readded weighted event support.. 
+18.11.2008 michael.ogawa: The program exits after the last event AND no more FileNodes are
+19.11.2008 michael.ogawa: Clock shows 'End of history: ' + date during simulation cool dow
+20.02.2009 michael.ogawa: Patch to parse darcs logs from Michael Klier.. 
+20.02.2009 michael.ogawa: Patch to fix CVS date parsing from code.ninja.. 
+17.03.2009 michael.ogawa: Fixed bug: Histogram would not display when showEdges=true.. 
+02.05.2009 Hi dudley.fox!
+02.05.2009 dudley.fox: Changed the way ColorBins.java and drawHistory(). work, so that 
+02.05.2009 michael.ogawa: Minor performance tweaks to histogram drawing. . ShowHistory=tru
+05.05.2009 dudley.fox: 1. Rolled in rictic's changes to look up the nodes in a. hashmap
+26.09.2009 michael.ogawa: Less confusion. 
