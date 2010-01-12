@@ -7,13 +7,10 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1=""".*" 121,129,24, 121,129,24
-ColorAssign2="/branches""/branches.*" 228,241,160, 228,241,160
-ColorAssign3="/trunk""/trunk.*" 163,79,55, 163,79,55
+ColorAssign1="/branches", "/branches.*", 243,98,19, 243,98,19
+ColorAssign2="/trunk", "/trunk.*", 25,105,32, 25,105,32
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -42,6 +39,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     
