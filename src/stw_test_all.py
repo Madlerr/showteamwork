@@ -17,7 +17,7 @@ def runme():
     os.chdir(samplesdir)
     for sdir in os.listdir(samplesdir):
         if os.path.isdir(sdir):
-            callstr = os.path.join(exedir,"showteamwork") + " 1>%s.log 2>&1" % sdir
+            callstr = os.path.join(exedir,"showteamwork") + " 1> stw-%s.log 2>&1" % sdir
             print "!!!!!!!!", sdir, ">>>>>>>"
             os.chdir(samplesdir)
             os.chdir(sdir)
