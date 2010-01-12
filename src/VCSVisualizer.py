@@ -67,6 +67,9 @@ Please, provide audio track for your clip.
         self.workdir = os.path.join(self.tempdir, s)
         createdir(self.workdir)
         
+        self.need_gource = 1
+        self.need_codeswarm = 1
+        
         
     def get_movie_length(self, filepath):
         """
@@ -116,7 +119,7 @@ Please, provide audio track for your clip.
             path = reducedpath.split("/")
             code1 = "/".join(path[:1])
             code2 = "/".join(path[:2])
-            if code1 != reducedpath:    
+            if code1 != reducedpath and code1 != "":    
                 if code1 not in rating:
                     rating[code1] = 0
                 rating[code1] += 1
@@ -141,7 +144,7 @@ Please, provide audio track for your clip.
             if len(event.comment)>0:
                 commentline = event.author + ": " + event.comment[:64]             
                 if commentline != prevcommentline:    
-                    template += "".join(["\n", dates, ' ', commentline])
+                    template += "".join(["\n#", dates, ' ', commentline])
                 
         self.historylength = time.mktime(self.enddate) - time.mktime(self.startdate)
         self.template = template
@@ -176,13 +179,13 @@ Please, provide audio track for your clip.
                                 )
         
         ls = ""
-        commonprefix = self.commonprefix
         for i, c in enumerate(rcp.colors):
             ix = i + 1
             path = self.toppaths[i]
+#            if path != "":
             ls += "".join([
-                    '\nColorAssign', str(ix), '="', path, '"',
-                    '"', commonprefix, path, '.*" ', str(c), ', ', str(c) ])
+                    '\nColorAssign', str(ix), '="', path, '", ',
+                    '"', self.commonprefix, path, '.*", ', str(c), ', ', str(c) ])
 
         lf = open(self.configpath, "w")
         lf.write(
@@ -195,8 +198,6 @@ Please, provide audio track for your clip.
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 %s
 """
@@ -227,6 +228,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     
@@ -323,10 +327,16 @@ UseOpenGL=false
                 if usrcfg.lower().find("\n%s=" % option.lower()) < 0:
                     usrcfg += "\n\n%s=%s\n" % (option, value)
 
-        self.need_gource = getintparam(usrcfg, "GOURCE", 1)
-        self.need_codeswarm = getintparam(usrcfg, "CODESWARM", 1)
+
+        if "GOURCE" in localvars:
+            self.need_gource = localvars["GOURCE"]    
+        if "CODESWARM" in localvars:
+            self.need_codeswarm = localvars["CODESWARM"]    
+
         usrcfg = re.sub(r"(?sm)\s+\n", "\n", usrcfg)
         usrcfg = re.sub(r"(?sm)(CODESWARM|GOURCE)=([\d]+)\s*\n", "", usrcfg)
+
+
 
         lf = open(self.configobjpath, "w")
         lf.write(usrcfg.encode("utf-8"))
