@@ -1,0 +1,2205 @@
+﻿
+03.12.1999 Welcome gstein!
+03.12.1999 Welcome somebody!
+#03.12.1999 somebody: New repository initialized by cvs2svn.. 
+#03.12.1999 gstein: add a description about what ViewCVS can do(!). . 
+#04.01.2000 gstein: it is possible that rev1 and rev2 might not get set. ensure they
+#05.01.2000 gstein: remove use of globals which were left in as hacks from the Perl 
+#11.01.2000 gstein: 1) rename request.script_where to request.url and use it where p
+#11.01.2000 gstein: watch out for locked files. they alter the 'revision' line.. . 
+#11.01.2000 gstein: various updates, tweaks.. . 
+#12.01.2000 gstein: revise query string handling: be explicit about when a question 
+#12.01.2000 gstein: add access via ViewCVS. add 0.2 info.. . 
+#08.02.2000 gstein: update header and footer text. make the script more robust again
+#08.02.2000 gstein: fix the closing <table> tag in the header.. . 
+#08.02.2000 gstein: oops. more missing tags.. . 
+#11.02.2000 gstein: Christophe Pelte suggested that we colorize/fontify Python progr
+#11.02.2000 gstein: From Tim Cera: provide a mechanism to force line breaks at N cha
+#11.02.2000 gstein: update some internal configuration comments. . 
+#11.02.2000 gstein: small tweak to the list of variables that need to change.. . 
+#11.02.2000 somebody: This commit was manufactured by cvs2svn to create tag 'V0_3'.. 
+#17.03.2000 gstein: forgot to commit these changes. add more docco about ViewCVS.. .
+#17.03.2000 gstein: the forbidden_modules stuff wasn't working quite right. the Requ
+#17.03.2000 gstein: support pre-1.5.2 versions of Python..   patch concept from Tamm
+#17.03.2000 gstein: remove the 'dirtable' config option. adds a lot of complexity to
+#17.03.2000 gstein: initial pass at log header and entry abstractions; this helps to
+#17.03.2000 gstein: start propagating the new LogEntry objects around.. . 
+#21.03.2000 gstein: teeny optimization while I was looking at this code.. . 
+#23.03.2000 gstein: first pass at a new configuration mechanism. this shifts all con
+#23.03.2000 gstein: oops. last minute change broke the thing.. . 
+#23.03.2000 gstein: read the config data from the viewcvs.conf file now. note that t
+#24.03.2000 gstein: CVS root selection. Based on patch from Carter.D.Alvord@usa.alca
+#24.03.2000 gstein: add a FAQ. pointer from Carter.D.Alvord@usa.alcatel.com.. . 
+#24.03.2000 gstein: add a missing <br> tag into the doc list.. . 
+#24.03.2000 gstein: switch over to cfg.* variables rather than the mess o' globals. 
+#24.03.2000 gstein: patch from Ulrik Dickow <ukd@kampsax.dk> to deal with revisions 
+#24.03.2000 gstein: process files, in a directory view, 100 at a time.. tweak to all
+#24.03.2000 gstein: tweak the config doc.. change the default mime types file.. . 
+#24.03.2000 gstein: add some docco to the file.. . 
+#24.03.2000 gstein: store this sucker into the CVS repository so others can see it..
+#24.03.2000 gstein: updated installation instructions. . 
+#24.03.2000 somebody: This commit was manufactured by cvs2svn to create tag 'V0_4'.. 
+#24.03.2000 gstein: updates for the 0.4 release. . 
+#25.03.2000 gstein: Zachary Bean <xach@mint.net> reported this.. . 
+#19.04.2000 gstein: small patch to fix the popup windows. . 
+21.04.2000 Welcome jpaint!
+#21.04.2000 jpaint: added loginfo handler for CVSdb updates. . 
+#21.04.2000 jpaint: administration program for CVSdb. . 
+#21.04.2000 jpaint: cgi/granny.cgi: CVS annotate a file, and color code it to show h
+#21.04.2000 jpaint: moved the RLogData->CommitList converter to cvsdbapi. . 
+#21.04.2000 jpaint: bug fixes to make logentries for removed files work. . 
+#21.04.2000 jpaint: really, really lame queryform.cgi script just to make things wor
+#21.04.2000 jpaint: don't have RLogData remove the ',v' from the end of the file, in
+#21.04.2000 jpaint: test for the ',v' before stripping until I get the rlog. logic f
+#22.04.2000 jpaint: okay, I've fixed the file/attic/',v' problem; now RLogData's fil
+#22.04.2000 gstein: add these modules -- we probably want to redistribute them.. . 
+#22.04.2000 gstein: initial checkin. yanked out of viewcvs.cgi.. moved defaults into
+#22.04.2000 gstein: shift the config code to ../lib/config.py. shift the 1.5.x compa
+#22.04.2000 gstein: add CVSdb config entries (these went into config.py, too). updat
+#22.04.2000 jpaint: speed improvments to rlog.py by using match.groups() instead of 
+#22.04.2000 jpaint: shaved off another 0.5 second on my test RCS file, which has 480
+#23.04.2000 jpaint: *doh* let's not send my passwords out as the default; added the.
+#23.04.2000 gstein: initial checkin. yanked from viewcvs.cgi. . 
+#23.04.2000 jpaint: finally fixed up my time handling; now all classes store time in
+#24.04.2000 jpaint: okay, now time handling is REALLY fixed!. . 
+#24.04.2000 jpaint: okay, all the MySQLdb dataobject tick-based time handling method
+#24.04.2000 jpaint: oh, please let me get this one right. . 
+#24.04.2000 jpaint: work around more time bugs in MySQLdb. . 
+#24.04.2000 jpaint: okay, found the date problem: glibc2.0.7's mktime has problems, 
+#25.04.2000 somebody: This commit was manufactured by cvs2svn to create tag. 'CVSDB_PR
+#25.04.2000 jpaint: fix bug in rlog parser when it unexpectedly comes to the end of 
+#25.04.2000 jpaint: working on quick-n-dirty installer in Python which will allow us
+#26.04.2000 jpaint: fixed bug where we called the old exit function and it's no long
+#26.04.2000 jpaint: just a little bit more work. . 
+#27.04.2000 jpaint: * CVSdb now uses viewcvs.conf. * added licence text for lib/comp
+#27.04.2000 jpaint: import string -- fix bug. . 
+#28.04.2000 gstein: initial checkin from Curt.. this currently operates as a CGI, bu
+#07.05.2000 gstein: from Tanaka Akira <akr@m17n.org>: add elisp colorization via the
+#07.05.2000 gstein: deal with a diff that reports no change. . 
+#08.05.2000 gstein: expand the use of enscript. provide for disabling specific langu
+#09.05.2000 gstein: add more complex 'forbidden' patterns (requested by Jon Stevens 
+#09.05.2000 gstein: add virtual host capability: each set of vhosts can override the
+#09.05.2000 gstein: first draft of the license and the 'who' pages.. . 
+#09.05.2000 gstein: update the copyright and license information.. . 
+#09.05.2000 gstein: add os.makedirs() compatibility. . 
+#09.05.2000 gstein: various simplification of the code. use re.sub() rather than lin
+#09.05.2000 gstein: quicky script to build releases. . 
+#09.05.2000 gstein: untabify. indent changed, too.. despite the size of this diff, t
+#09.05.2000 gstein: small tweak to get this working right. 'token' had an empty stri
+#10.05.2000 gstein: better version of popen(), which allows us to not worry about qu
+#10.05.2000 gstein: allow errors to be captured or tossed.. fix small bug with mode=
+#10.05.2000 gstein: use new popen.popen() for more security and to deal with filenam
+#11.05.2000 gstein: remove unused code.. slight change to use math.log10(). fix prob
+#11.05.2000 gstein: initial testing/support for annotation using Curt's new module. 
+#11.05.2000 gstein: revise some of the MIME type handling.. improve the header/foote
+#11.05.2000 gstein: fix some previous-revision handling (generally failed on files w
+#12.05.2000 jpaint: script to create the MySQL database for the CVSdb part of ViewCV
+#12.05.2000 gstein: use dict.get() to simplify/speed some code.. . 
+#12.05.2000 gstein: be more specific about what kind of markers we look for in a log
+#12.05.2000 jpaint: Fixed up viewcvs-install script.  It includes a few. files, excl
+#12.05.2000 jpaint: let's not broadcast my passwords to the world.... . 
+#12.05.2000 jpaint: added popen.py to the installer. . 
+#12.05.2000 gstein: don't create a cgi/ directory.. update the shell-bang line at th
+#12.05.2000 jpaint: first draft of updated INSTALL instructions -- comments/spelling
+#12.05.2000 jpaint: have rlog.py use the rcs path set in the config file. . 
+#12.05.2000 jpaint: Updated the docs for the modified installation paths (ie, cgi/ d
+#12.05.2000 gstein: fix the links that are generated. the 'primordial' revision no l
+#12.05.2000 gstein: add 'use_enscript' option. change the default allow_annotate to 
+#12.05.2000 gstein: minor tweaks. additional info/notes/etc. . 
+#12.05.2000 gstein: add compilation of lib/ files (running as the web server probabl
+#12.05.2000 gstein: bunch of stuff about 0.5. additional updates, discussion, etc. .
+#17.05.2000 gstein: some fixes for Python 1.5(.1) compatibility. problems found by t
+#17.05.2000 gstein: fix bug found by Nick.T.Reinking@supervalu.com. . 
+#17.05.2000 gstein: The daylight flag should be zero since these values are in UTC. 
+#22.05.2000 gstein: add pipe_cmds() to set up a sequence of processes/pipes. . 
+#22.05.2000 gstein: two changes:.   1) try to fix a problem on FreeBSD where it seem
+#22.05.2000 gstein: oops. parts[0] doesn't always exist.. . 
+#25.05.2000 gstein: execvp() can raise an exception, which means we never get to the
+#02.06.2000 jpaint: let people know Python 1.5.2 is a requirement for the SQL databa
+#11.06.2000 jpaint: moved query object from lib/database.py to lib/query.py; expande
+#12.06.2000 jpaint: modifications to accept the comma/command-seperated multiple que
+#26.06.2000 gstein: some stuff that had accumulated. . 
+#26.06.2000 gstein: some minor tweaks from a while back. . 
+#27.06.2000 jpaint: move the dbi abstraction to dbi.py; I'll deal with various error
+#01.07.2000 jpaint: fix error -- use lowercase 'dbi'. . 
+#01.07.2000 jpaint: check MySQLdb for Timestamp() and friends; exit with a informiti
+#01.07.2000 jpaint: write error message to stderr instead of printing it so it will 
+#02.07.2000 somebody: This commit was manufactured by cvs2svn to create tag 'V0_5'.. 
+#02.07.2000 gstein: add trailing CR to the error message. use hasattr() rather than 
+#25.07.2000 gstein: not sure that I like the clickable_path parameters, but this is 
+#25.07.2000 somebody: This commit was manufactured by cvs2svn to create tag 'V0_6'.. 
+#25.07.2000 gstein: add the 0.6 references. add (missing) refs to who.html and licen
+#10.04.2001 gstein: *) ignore a warning from rlog. *) fix the 'hide_cvsroot' option 
+#10.04.2001 gstein: Revamp the 'co' output processing to give clearer errors. Be war
+27.04.2001 Welcome akr!
+#27.04.2001 akr: branch selection fix.  branchpoint entry may precede revisions o
+#27.04.2001 akr: ignore CVS directory in the repository which is used for fileatt
+#27.04.2001 akr: add sticky info to blame link to fix problem with non-default re
+#27.04.2001 akr: couldn't scan RCS-encoded string ends with @.. . 
+#27.04.2001 akr: couldn't handle multiple RCS-encoded string in single line.. . 
+#27.04.2001 akr: fix blame for empty deltatext especially 1.1 to 1.1.1.1.. . 
+#27.04.2001 akr: use state instead of Attic/ to determine file existence if a tag
+#27.04.2001 akr: tarball generation implemented.. . 
+#27.04.2001 akr: separate branch and non-branch tags in tag menu.. . 
+#28.04.2001 akr: make tarball generation configurable.. . 
+#28.04.2001 akr: change option name for tarball generation from `tarball' to `all
+#01.05.2001 akr: fixed at viewcvs.cgi:1.57.. . 
+#02.05.2001 gstein: fix viewcvs-browsing link on the page. . 
+#02.05.2001 gstein: This background will be needed when the website moves to SF.. . 
+#05.05.2001 akr: (urlencode): Don't add redundant '?'.. http://sourceforge.net/tr
+#05.05.2001 akr: (html_time): Since very old timestamp (82 years, 6 months in thi
+#06.05.2001 akr: (get_file_data): ignore files which causes failures on stat(2) s
+#06.05.2001 akr: (_re_rewrite_url): recognize fragment identifier.. . http://sour
+#08.05.2001 gstein: Extract the RCS parsing code into a separate module. It now uses
+#09.05.2001 gstein: commit a checkpoint, with some tools, before doing some heavy li
+#09.05.2001 gstein: switch to a TokenStream plus the parser. provides for better iso
+#09.05.2001 gstein: switch from a line-oriented processing to buffer-oriented. provi
+#09.05.2001 gstein: way different nowadays, so make the header reflect current reali
+#10.05.2001 akr: (link_includes): use sticky parameters for a link.. . 
+#11.05.2001 akr: handle FreeBSD's rlog output which has extra '------------------
+#12.05.2001 gstein: *) some updates for the move to SourceForge.. *) add information
+#12.05.2001 gstein: The (colored) links need to specify the diff_format=h option. Al
+#12.05.2001 gstein: In directory views (and tarballs), don't include files or dirs t
+#12.05.2001 gstein: Record that we couldn't stat the file, or that it is unreadable.
+#12.05.2001 gstein: Older versions of Python do not like lists passed to mktime(). E
+#12.05.2001 gstein: Slice a big chunk out of viewcvs.cgi and move it to viewcvs.py..
+#12.05.2001 gstein: Now, make the appropriate changes to get the split CGI script/li
+#12.05.2001 gstein: Apply a patch from apache.org: watch out (and recover) for files
+#12.05.2001 gstein: removed unneeded #! marker. . 
+#13.05.2001 gstein: Update copyright years to include 2001.. . 
+#13.05.2001 gstein: minor nit: fetch_log's last return value is a list, not a dict..
+#13.05.2001 gstein: save a little test program for comparing rcsparse vs rlog output
+#13.05.2001 gstein: Speed up the log extraction by avoiding regular expressions (the
+#13.05.2001 gstein: Speed up the get() method by being smarter about regular express
+#14.05.2001 gstein: More performance tweaks.. . 
+#14.05.2001 gstein: More speedups.. . * avoid lstrip() -- it can take a while on lar
+#14.05.2001 gstein: The single/double find stuff was stupid. single would always be 
+#30.05.2001 gstein: add an item for the next release. . 
+#30.05.2001 gstein: add the two new lib/ modules.. . 
+#30.05.2001 gstein: add a persistent URL format for reaching the HEAD revision. . 
+#30.05.2001 gstein: change web site references from www.lyra.org/viewcvs/ to the new
+#30.05.2001 gstein: add a reference to Karl's book. delete a broken link.. . 
+#30.05.2001 somebody: This commit was manufactured by cvs2svn to create tag 'V0_7'.. 
+#30.05.2001 gstein: *) updated for new CVS site. *) use cvs export and require a tag
+#30.05.2001 gstein: reflect release of 0.7. . 
+#30.05.2001 gstein: developing 0.8 now.... . 
+#31.05.2001 akr: Don't check Attic which is not exist in tarball generation.. . R
+#31.05.2001 akr: Read whole data from `co' to avoid SIGPIPE even if it is not use
+#02.06.2001 gstein: Get dbi.py to work with the latest MySQLdb and mxDateTime.. . Su
+#03.06.2001 gstein: this actually takes two arguments. . 
+#04.06.2001 akr: Don't put a title in menu for branch tags if there is no branch.
+#18.06.2001 akr: Fix get_logs to return two dictionaries even when there are only
+#18.06.2001 akr: Fix typo.  (overwright -> overwrite). . 
+#21.08.2001 jpaint: big update of commit database; new CGI, better database cache; n
+22.09.2001 Welcome timcera!
+#22.09.2001 timcera: Minor format change.  The '<p>' was ineffective at this point be
+#22.09.2001 timcera: Added CvsGraph support including documentation and installation.
+#22.09.2001 timcera: Added <tt> </tt> to the side-by-side diffs.  The <tt></tt> tags 
+#22.09.2001 timcera: Added CvsGraph support including documentation and installation.
+#23.09.2001 gstein: yet another idea. . (these should migrate to the SF trackers...)
+#23.09.2001 gstein: Begin introduction of templates. For now, just the top portion o
+#24.09.2001 gstein: remove some unused code (we know it wasn't called cuz 'cvsrep' w
+#24.09.2001 gstein: Fix the comment parsing: allow more than simply alphanums in the
+#24.09.2001 gstein: add a new directive: [is ref ref] or [is ref 'value']. like an '
+#24.09.2001 gstein: begin a document with information about upgrading.. . 
+#24.09.2001 gstein: Shift more output generation from the code (viewcvs.py) into the
+#25.09.2001 timcera: Added use_cvsgraph to default configuration.  Set to '0'.. . 
+#25.09.2001 gstein: Add double-quote to the regex to allow (quoted) constants in the
+#25.09.2001 gstein: Convert the rest of view_directory() over to use the directory.e
+#25.09.2001 gstein: Remove some obsolete options. Point users at their new location.
+#06.10.2001 gstein: Don't try to process virtual hosts if the section is not present
+#12.10.2001 timcera: Added installation of the ezt.py library, directory.ezt, and cvs
+#12.10.2001 timcera: Added imagemap feature to CvsGraph.  Now can click on the image 
+16.10.2001 Welcome pefu!
+#16.10.2001 pefu: If the viewcvs.conf file contains in invalid setting of 'default
+#16.10.2001 timcera: This is the 'fix' for the problem that occurs when you have both
+#16.10.2001 timcera: Shouldn't hard code path to cgi-bin.. . 
+#16.10.2001 timcera: Patch from Matthieu Bouthors, '[ #463588 ] (Download) / (View) C
+#16.10.2001 timcera: Needed to figure out the cgi-bin path in case it was in an unusu
+#16.10.2001 timcera: Removed the ',v' from the title and alt name.. . 
+#16.10.2001 pefu: Added a new subsection about upgrading. . 
+#16.10.2001 pefu: Improved error diagnostics.  Allow empty module. . 
+#17.10.2001 pefu: Now people upgrading their viewcvs will be warned about the. nec
+#18.10.2001 pefu: Placeholder until someon comes up with a real neat logo. . 
+#18.10.2001 pefu: * Added a simple navigation aid between the pages.  Missing an. 
+#19.10.2001 gstein: A minor cleanup of some interim code that was present (the array
+#19.10.2001 gstein: toss some obsolete options. . 
+#19.10.2001 gstein: in a dev environment, we need a valid CONF_PATHNAME so that we c
+#19.10.2001 gstein: fix bug #472585: bad revision links in the directory view.. . Th
+#19.10.2001 pefu: Fix viewcvs-Bugs-472766. Sorry.  I forgot to copy the file back 
+#20.10.2001 pefu: Added a reference to the project member page on SourceForge.. . 
+#20.10.2001 pefu: A quick and little bit ugly, but working fix for SF Bug #473129.
+#20.10.2001 gstein: Reversing an incorrect fix. The user is supposed to change the .
+#20.10.2001 gstein: Remove obsolete comments. Noted by Peter Funk.. . 
+#21.10.2001 gstein: *) download_url() now adds request.amp_query to all URLs since a
+#21.10.2001 gstein: Add colspan attributes so the main body of the page will extend 
+#21.10.2001 gstein: *) Remove the logo from the config file (and config.py).. . *) U
+#21.10.2001 pefu: With Greg's permission changed the EMail addresses, so that they
+#21.10.2001 gstein: Specify the template to use in the .conf file. This allows vhost
+#21.10.2001 gstein: Create rev2tag and branch_points as lists rather than a string. 
+#21.10.2001 gstein: Fix nested lists, do some small optimizations in _get_value(), a
+#21.10.2001 gstein: Shift the log entry generation to the log.ezt template.. . This 
+#21.10.2001 gstein: Clean out some obsolete code, now that we're using a template.. 
+#21.10.2001 gstein: Complete the rest of the log template.. . CHANGE: the 'Long colo
+#21.10.2001 gstein: Remove two options which have become obsolete: input_text_size a
+#22.10.2001 pefu: Improved error handling.. . 
+#22.10.2001 pefu: * Fixed comment. * Synchronize two options with viewcvs.conf.dis
+#23.10.2001 pefu: Greg pointed out to me:. '''The point is that we don't want some
+#23.10.2001 pefu: * Added a README file.  Currently this simply refers the reader 
+#23.10.2001 pefu: Moved cvsgraph interface into viewcvs.. This solved the apache S
+#23.10.2001 pefu: * Replaced the os.system() calls inherited from cvsgraphwrapper.
+#24.10.2001 pefu: * ATTENTION: I changed the meaning of the cvsgraph_path config o
+#24.10.2001 pefu: sorted enscript suffices alphabetically and added Modula-2.. . 
+#24.10.2001 pefu: * To be more consistent, I replaced all occurences of <install-r
+#25.10.2001 pefu: * Removed the Graph column from directory display and changed th
+#25.10.2001 pefu: logo should look like a blimb and not like a bomb. :-(. . 
+#25.10.2001 pefu: Two icons (16x16 and 32x32 pixels), which may be used in directo
+#25.10.2001 pefu: A note about security. . 
+#25.10.2001 pefu: Message from Hendrik Ruijter Oct 23, 2001 02:16:47 pm +0200:. . 
+#25.10.2001 gstein: Add the developers who have made significant contributions to Vi
+#25.10.2001 gstein: Make sure that the graph_href value is always defined. Otherwise
+#25.10.2001 gstein: First pass at converting the database query stuff over to use te
+#25.10.2001 pefu: Do not chop the documentation from the upcoming release 0.8. . 
+#25.10.2001 pefu: Some new files were missing in the installer. . 
+#25.10.2001 pefu: Started testing, minor bugfix. . 
+#25.10.2001 pefu: New function to serve help pages from the ViewCVS install direct
+#26.10.2001 pefu: Updated according to my experiences to get the commit database u
+#26.10.2001 pefu: Allow testing help buttons from working copy. . 
+#26.10.2001 pefu: Added a warning about cvsgraph. . 
+#26.10.2001 timcera: Patch addresses 2 problems that occurred with certain combinatio
+#27.10.2001 pefu: Started to document this module.  Docstring contains a runnable.
+#28.10.2001 pefu: removed some obviously resolved items and added a preface indica
+#28.10.2001 pefu: Improved error handling: if enscript stops due to wrong argument
+#29.10.2001 gstein: The missing column is not dependent upon the show_subdir_lastmod
+#29.10.2001 gstein: [ this was missed from a previous commit; checking it in... ]. .
+#29.10.2001 pefu: swapped colors to increase contrast between first line of table 
+#31.10.2001 pefu: Improve setup debugging based on an idea of Tim Cera.. . 
+#03.11.2001 timcera: * Added log_table.ezt as a draft table format for the log page. 
+#05.11.2001 pefu: Fix non-matching table row tags in view diff.. The second of the
+#08.11.2001 pefu: Informational stuff separated out into two help pages.. Might be
+#08.11.2001 pefu: Change the default colors used for displaying colored diffs:. Th
+#08.11.2001 pefu: Two minor changes in one commit:.  1. make 'request' accessable 
+#08.11.2001 pefu: Started to 'rape' one of Greg's latest pets: 'lib/ezt.py' ;-). *
+#09.11.2001 pefu: A quick'n'dirty fix for the DST time problem pointed out by. Jon
+#09.11.2001 pefu: Ouppss: swapped the logic in my last commit.  Fix that.. . 
+#09.11.2001 timcera: * As near as I could determine, the rev2tag.has_key(branch_point
+#09.11.2001 timcera: * Added &nbsp; to the 'Branch' and 'Tag' columns in order to hav
+#09.11.2001 timcera: * Developed a solution for the hanging 'Diff' issue.  Rather sim
+#09.11.2001 timcera: Added log_table.ezt to the installation.. . 
+#10.11.2001 pefu: make request object visible to the directory.ezt template. . 
+#10.11.2001 pefu: make contributing.html also available locally. . 
+#10.11.2001 pefu: Added comment advertising Tim Ceras alternative log_table.ezt te
+#13.11.2001 pefu: Bugfix.  Hendrik Ruijter wrote:. > When a repository root other 
+#13.11.2001 pefu: Hendrik Ruijter wrote:. > Note quite there yet.. >. > map_rev_hr
+#13.11.2001 pefu: Greg voted against providing local copies of the ViewCVS docs in
+#13.11.2001 pefu: A tiny standalone Webserver.  Not yet completed but works someho
+#13.11.2001 pefu: * Fixed the links on the help pages to point to the viewcvs webs
+#13.11.2001 timcera: * Moved log to seperate line.. * Changed link text.. * Added 'Di
+#14.11.2001 pefu: * Changed path used to serve help pages to take CWD='lib' into a
+#14.11.2001 pefu: Open a new browser window to display help pages.. . 
+#14.11.2001 pefu: lib/viewcvs.py:.  1. Fix the group membership and ViewCVS believ
+#14.11.2001 timcera: * Ran through a spell checker and corrected mistakes.. * Rearran
+#15.11.2001 timcera: * Combined the 'Branches' and 'Tags' columns.. * Probably fixed 
+#15.11.2001 pefu: Close SF patch #481914:. . The included patch enables the Delphi
+#15.11.2001 pefu: Fixed packing alignment of check buttons.. . And: Now it is easy
+#15.11.2001 pefu: * Took out mentioning ViewCVS 0.5 (that was long ago).. * Added 
+#15.11.2001 pefu: Added the utc date (I missed that). . 
+#15.11.2001 pefu: direasy.ezt is a simple variation based on directory.ezt.. Recen
+#15.11.2001 timcera: * Added direasy.ezt to install.. . 
+#15.11.2001 timcera: * Corrected the colspan option for the 'Log' row.. . 
+#16.11.2001 pefu: Improve error handling.  Thanks to Tim Cera.. . 
+#17.11.2001 gstein: * use 1% for the width to keep the column as skinny as possible.
+#17.11.2001 gstein: incorporate the graph icon from direasy (add size params). keep 
+#17.11.2001 gstein: Use a more sophisticated pipe so that we can get the output of t
+#17.11.2001 pefu: Add comment about policy to keep external links in italic. . 
+#17.11.2001 pefu: This hopefully corrects a mistake I made.  The alternative would
+#18.11.2001 pefu: I've rewritten the handling of icons in 'standalone.py':  Curren
+#18.11.2001 pefu: Bugfix: stdout redirection problem, which occured with enscript.
+#18.11.2001 gstein: Enable [if-index REF first]. . 
+#18.11.2001 gstein: Fix up how the cvsdb handles loading the configuration.. . * cvs
+#18.11.2001 gstein: Complete the conversion of the cvsdb query facility over to temp
+#18.11.2001 gstein: Two nits: add some closing quotes to fix Emacs' font-lock; shift
+#18.11.2001 gstein: Shift some presentation code out of query.py; do the work in the
+#18.11.2001 gstein: Fix up the diff links:. . * put them back on a single line. . * 
+#18.11.2001 gstein: Minor tweaks:. . - 'view annotated' rather than 'view annotation
+#18.11.2001 gstein: Remove the <tt> tags. They actually didn't force fixed-width whe
+#18.11.2001 gstein: Add a new debug module for developers to do timing/profiling and
+#18.11.2001 pefu: Remove a superflous line of code and change the redirect respons
+#18.11.2001 pefu: Fix unit test to take the new white space compression into. acco
+#18.11.2001 pefu: Advertise standalone.py ;-).  And some cosmetic fixes. . 
+#19.11.2001 gstein: Various tweaks:. . * remove standalone comment from README; stan
+#19.11.2001 gstein: Updates to the help stuff. . * rename ~helppage~ magic path to ~
+#19.11.2001 gstein: Remove direasy.ezt.. . directory.ezt incorporated its cvsgraph i
+#19.11.2001 gstein: Just store the icons as binary strings rather than worrying abou
+#19.11.2001 gstein: Various changes:. . * security: remove use of SimpleHTTPServer a
+#19.11.2001 gstein: Revamp bin2inline to create lines that are less than 80 characte
+#19.11.2001 pefu: Add the new debug module to the installer. installed viewcvs die
+#19.11.2001 pefu: After cvs updating I got. Python Exception Occurred ... template
+#19.11.2001 pefu: Even on the 1600x1200 pixel display of my new DELL Inspiron the 
+#19.11.2001 timcera: * Added apache_icons.py so that standalone.py works.. . 
+#19.11.2001 pefu: Log messages should look like they were. formatted in the first 
+#20.11.2001 pefu: all externals links in italic.. Added more subsections.  Especia
+#20.11.2001 pefu: synchronize lib/config.py with viewcvs.conf.dist.. . 
+#20.11.2001 pefu: Add entry field for query.ezt. . 
+#28.11.2001 pefu: * cutting a release should become even easier: Added tarball and
+#28.11.2001 pefu: A lot of small changes in one commit:. . lib/viewcvs.py, templat
+#28.11.2001 pefu: Table header should look left aligned and green similar. to the 
+#05.12.2001 pefu: Fix title string in cvsgraph output: path was missing. module is
+#05.12.2001 pefu: note modified to take new templates into acount. . 
+#05.12.2001 pefu: Fix SF Bug [#489470] loginfo-handler broken due to rlog interfac
+#07.12.2001 gstein: Simplify generation of header using simple interpolation, rather
+#07.12.2001 timcera: * Removed requirement for trailing blanks on paths in viewcvs.co
+#09.12.2001 pefu: New wording that should work for either setting of flip_links_in
+#09.12.2001 pefu: Added a help page for the query database screen.. Added navigati
+#10.12.2001 gstein: Remove the even_odd option; it is no longer used.. . 
+#10.12.2001 gstein: Describe the changes (at a higher level than a ChangeLog) that h
+#10.12.2001 gstein: Prep for the 0.8 release: shift around the feature listing, adju
+#10.12.2001 gstein: * <a> cannot span <h2>, so move the anchors inside the <h2> tags
+#10.12.2001 somebody: This commit was manufactured by cvs2svn to create tag 'V0_8'.. 
+#10.12.2001 gstein: ViewCVS 0.8 is out, so toss the warning.. . All the options were
+#10.12.2001 gstein: grr... prevent double compression of the tarball. . 
+10.12.2001 Version 0.8 
+#11.12.2001 timcera: * Added regular expression search of all files in a directory.. 
+#11.12.2001 pefu: ViewCVS 0.8 is out and development for 0.9 started. . 
+#12.12.2001 gstein: add use_re_search default. . 
+#12.12.2001 gstein: Minor tweaks on the way to i18n.. . * _prepare_ref() and _get_va
+#12.12.2001 gstein: Fixes for the regex searching.. . * get_file_tests(): revert a p
+#12.12.2001 gstein: Add warnings about the regex-based searching option.. . 
+#12.12.2001 pefu: Added a new toggle to the Tkinter GUI allowing to play around wi
+#12.12.2001 pefu: More help pages and improved navigation between help pages.. hel
+#12.12.2001 pefu: Install new help pages also. . 
+#13.12.2001 gstein: Enhance the directive parsing to allow anything between double q
+#15.12.2001 gstein: minor change to reduce a bit of code: use copy_stream() where po
+#15.12.2001 gstein: Changes to directive argument parsing.. . 1) don't include the s
+#16.12.2001 timcera: Allow the installer to view differences between old and new conf
+#18.12.2001 gstein: Some more refinements:. . * [include] now uses the current templ
+#18.12.2001 gstein: Minor fix to the diff-selection popup. It tested for 'c' when it
+#18.12.2001 gstein: Move the footer to its own template, and include it from the oth
+#18.12.2001 gstein: Big update! Convert the rest of the pages to use templates.. . *
+#18.12.2001 timcera: Added new template files.. . 
+#18.12.2001 timcera: An [end] directive was missing, ViewCVS was throwing the new unc
+#19.12.2001 gstein: Add some code to parse and process the Accept-Language header. W
+#20.12.2001 gstein: Add capability for a couple forms of internationalization.. . * 
+#20.12.2001 gstein: add a little commented-out print statement for debugging. . 
+#20.12.2001 pefu: Bugfix: Exception handling: html_footer(None) passes a None-requ
+#21.12.2001 gstein: Clean up the mess in directory.ezt. . * rather than using [heade
+#21.12.2001 gstein: Move the set of the name to *after* we strip the Attic/ from it.
+#21.12.2001 gstein: Oops. main_title is still used by the templates. We could probab
+#21.12.2001 gstein: Remove the flip_links toggle and add a radio button for dir_alte
+#21.12.2001 gstein: add dir_alternate.ezt. . 
+#21.12.2001 gstein: Implement the alternate view: revnum in front, linking to log pa
+#22.12.2001 gstein: If more than one argument is given to the implied PRINT, then tr
+#22.12.2001 gstein: Whoops! Get the right template for the 'markup' page.. . 
+#22.12.2001 gstein: add a new utility function for creating a 'boolean' value. . 
+#22.12.2001 gstein: Various UI fixes and tweaks. . * viewcvs.py:.   - make 'search' 
+#22.12.2001 gstein: Misc updates:. . * adjust the timers to take a tag on the start;
+#23.12.2001 gstein: Revise some of the attic handling to clarify what is happening, 
+#23.12.2001 gstein: remove the 'diff_name' variable; it is unused and we don't want.
+#23.12.2001 gstein: Fix a bug where accidentally overwrote [nav_path] with the file.
+#23.12.2001 gstein: Provide for a way to internationalize the 'ago' times in the pag
+#23.12.2001 gstein: Add arguments to [include] directives. This allows the caller to
+#23.12.2001 gstein: Stop defining page titles in the code, and do it in the template
+#23.12.2001 gstein: Add a missing UTC onto the revision's date.. . 
+#23.12.2001 gstein: fix the test for selecting the 'Side by Side' popup. . 
+#23.12.2001 somebody: This commit was manufactured by cvs2svn to create tag 'V0_9'.. 
+#23.12.2001 gstein: we're developing 0.10 now.... . 
+#23.12.2001 pefu: Using 0.10 as a version number AFTER 0.9 is a really bad idea an
+23.12.2001  Version 0.9
+#24.12.2001 pefu: quick backport to Python 1.5.2. . 
+26.12.2001  Version 0.9.1
+#27.12.2001 gstein: bleck... a debug statement was left in the code. all those peopl
+#27.12.2001 somebody: This commit was manufactured by cvs2svn to create tag 'V0_9_1'..
+#27.12.2001 gstein: More info on making a release.. . 
+#27.12.2001 gstein: I disagree that 0.10 is confusing, but I guess we *do* have to c
+#31.12.2001 timcera: Added paging capability..   * Added use_pagesize to viewcvs.conf
+#02.01.2002 pefu: Richard Offer posted Patch [ #498165 ] listen on non loopback in
+#05.01.2002 akr: redirect to Attic for diffs didn't work.. . 
+#10.01.2002 gstein: Fix a problem with diffs between revisions that have no changes.
+#15.01.2002 gstein: describe the changes in 0.9.2. . 
+#15.01.2002 gstein: Roll the version to 0.9.2.. . Also, integrate the changes of rev
+#15.01.2002 somebody: This commit was manufactured by cvs2svn to create branch 'V0_9_x
+#15.01.2002 somebody: This commit was manufactured by cvs2svn to create tag 'V0_9_2'..
+15.01.2002  Version 0.9.2
+#17.01.2002 timcera: * Fixed bug in search_files where every file was identified as '
+#17.01.2002 timcera: * Used pychecker to identify unused variables.. . 
+#22.01.2002 pefu: Added a paragraph clarifying howto upgrade to the latest version
+#22.01.2002 pefu: Added a comment pointing out, that the -C option of enscript doe
+#22.01.2002 pefu: Don't complain about the release files kept in. /home/groups/v/v
+#23.01.2002 timcera: Created template components and put in templates/include directo
+#23.01.2002 timcera: Added complete processing of rcsdiff header.. . * Binary files a
+#23.01.2002 timcera: * Added template components to templates/include.. * Added descr
+#24.01.2002 timcera: This corrects some problems with rcsdiff header processing.. . *
+25.01.2002 Welcome lbruand!
+#25.01.2002 lbruand: Initial revision of the C++ RCS parser.. VS: -------------------
+#27.01.2002 lbruand: added INSTALL file and various small modif.. . 
+#29.01.2002 gstein: Check in the mxTextTools-based parser that I implemented back in
+#29.01.2002 gstein: Fix construction of state token: it was always appending a space
+#30.01.2002 lbruand: Few modification and debugging.... . 
+#30.01.2002 lbruand: return wrong value in tparse.cpp. . 
+#01.02.2002 timcera: This changes the behavoir of the View and Download links on log 
+#01.02.2002 timcera: Made common elements of the log templates into include files.  M
+#01.02.2002 timcera: Corrected small errors noticed by pychecker..   * Multiple impor
+#01.02.2002 timcera: Added a page number to the page pick list.. . 
+#01.02.2002 timcera:   * Fixed bug where a directory of only directories still had th
+#01.02.2002 pefu: Trying to keep this in sync with directory.ezt. :-(. . 
+#05.02.2002 pefu: Added the recently added 'use_pagesize' option to the GUI. . 
+#05.02.2002 pefu: see http://mailman.lyra.org/pipermail/viewcvs-dev/2002-February/
+#06.02.2002 timcera: Hopefully adapts to enscript version 1.6.3 and later.. . Shifted
+#07.02.2002 pefu: Inspired by Tim Ceras EMail this morning.   ( http://mailman.lyr
+#07.02.2002 pefu: Correct hasty checkin (URL path to icons went wrong). . 
+#07.02.2002 timcera: Added down.png and up.png for sorting on dir pages.. . 
+#08.02.2002 pefu: Added a new section about Apache configuration. . 
+#08.02.2002 pefu: Fixed sequence in content listing.  Added a note about. standalo
+#08.02.2002 pefu: Improved diagnostics, if modules are not availabe on a certain P
+#08.02.2002 lbruand: Daniel Berlin's patch. . 
+#11.02.2002 lbruand: Support for parser exceptions RCS*. . 
+#13.02.2002 gstein: These files somehow got ^M characters into them, but were not be
+#13.02.2002 gstein: Renamed these two files for clarity. No changes (those will come
+#13.02.2002 gstein: Shift around some more code. Remove duplicate Parser classes.. .
+#13.02.2002 gstein: Some whitspace, spelling, and minor formatting tweaks. No functo
+#13.02.2002 lbruand:   * Removed debugging statments from the (C++) Sink class..   * 
+#13.02.2002 lbruand: remove tparse/sink.py & testtp.py, now redundant. . 
+#19.02.2002 timcera: I think this fixes the cvsroot= not being propogated correctly i
+#19.02.2002 pefu: Modified the '-r' option to aid testing of ViewCVS with more tha
+#19.02.2002 pefu: Sync with Tims changes to directory.ezt. . 
+#19.02.2002 pefu: During testing with standalone.py I got a lot of. annoying 301 r
+#19.02.2002 pefu: I've tried to optimize Tims new prepare_hidden_values() function
+#19.02.2002 lbruand: Memory leaks bugfix, by D. Berlin. . 
+#20.02.2002 pefu: Improve misleading docstring (Thanks to Lucas Bruand for pointin
+#20.02.2002 pefu: Esben Haabendal Soerensen suggested on viewcvs-dev:. > Ville Sky
+#22.02.2002 akr: Don't contain a forbidden module in a tarball.. . 
+#23.02.2002 gstein: Minor tweaks to get this stuff working.. . * ccvs/__init__.py: t
+#28.02.2002 pefu: apply a slightly modified version of Lucas Brand patch #522034. 
+#28.02.2002 pefu: Started spring cleanup... ;-) A lot more is missing here.. . 
+#01.03.2002 pefu: As pointed out on the mailing list, the TCPServer class from the
+#06.03.2002 pefu: Russell Yanofsky (rey4@sourceforge.net) obviuosly spend a lot of
+#15.03.2002 gstein: I've been screwing around for *days* trying to tweak this darned
+#01.04.2002 timcera: A very low tech approach at validating URL input.  Greg wants. r
+#13.04.2002 lbruand: A working version of vclib.ccvs. Need a lot of debugging. Writin
+#15.04.2002 lbruand: debugged a checkout bug when a revision had a two-digit last num
+#15.04.2002 timcera: Sorting in the directory view under some situations would fail..
+#18.04.2002 timcera: Sorting not working right, but for different reasons.. * Did som
+#26.04.2002 gstein: Big changes to the basic elem extraction tools.. . * elx-common.
+#26.04.2002 gstein: switch to a single, top-level makefile. . 
+#26.04.2002 gstein: Fix the style in these two files. Lots of white space was needed
+#28.04.2002 timcera: Changes to the onClick handlers.  Patch from Ville Skytt? (scop)
+#30.04.2002 timcera: For some reason, Python 1.5.2 would not accept a compiled patter
+#05.05.2002 timcera: * Added 'GNUmakefile' to enscript_filename so that enscript will
+#06.05.2002 timcera: Added UTC/localtime feature based on patch supplied by Guy Davis
+#06.05.2002 pefu: Added a new toggle to the Tkinter GUI to be able to test the. th
+#06.05.2002 pefu: Tim Cera wrote:. >   Added UTC/localtime feature based on patch 
+#17.05.2002 timcera: Added redirection for bare script name that is missing the trail
+#22.05.2002 gstein: Various fixes to realign the functions from viewcvs back to thei
+#22.05.2002 gstein: Enable installation of entire trees so that we don't have to nam
+#22.05.2002 gstein: Remove items that have been shifted over to vclib.bincvs. . 
+#22.05.2002 gstein: Only attempt to set paths in the Python source code. We don't wa
+#23.05.2002 gstein: Problem found by Daniel Rall <dlr@collab.net>:.     Netscape 4.x
+#24.05.2002 gstein: Upgrade our parameter checking (to resolve CSS attacks) to a muc
+#31.05.2002 gstein: Update the API a bit.. . * remove .getfile(), .getfiles(), .gets
+#03.06.2002 gstein: This commit contains three changes, which I couldn't split back 
+#06.06.2002 pefu: More detailed instructions how to implement access restrictions 
+#06.06.2002 pefu: Improved error reporting for a certain case of a malformed viewc
+#06.06.2002 pefu: People hacking on templates have difficulties to track down erro
+#07.06.2002 pefu: Apply SF patch #565579 by Bill Newcomb (nuke999):. Correct handl
+#10.06.2002 lbruand: Modified ccvs so that it conforms to the new API by Greg.. Modif
+#11.06.2002 pefu: This might be a clueless fix for the problem outlined in.  http:
+#11.06.2002 gstein: Implement some fixes for recent changes.. . * viewcvs.py (Reques
+#12.06.2002 lbruand:  Small coding style fixes. . 
+#12.06.2002 pefu: Fix Python 1.5.2 compatibility problem pointed out in.  http://m
+#12.06.2002 pefu: Document current policy for the use of CVS $-keyword macros with
+#13.06.2002 pefu: Added a link to the EMail explaining the disadvantages of CVS ke
+#15.06.2002 pefu: Bugfix: Apply SF patch #569246: standalone+enscript = zombies. H
+#15.06.2002 pefu: Inspired by Lucas Bruand email describing the CVSGrab project I.
+#18.07.2002 gstein: Rename to 'path_parts' to clarify that we're referring to a list
+#01.09.2002 pefu: Bugfix: wrong exception in except clause.  Thanks to C. Michael 
+#05.09.2002 gstein: Switch to the vclib.ccvs version of rcsparse. Some other assorte
+#05.09.2002 gstein: Another module that I used for testing a conversion of rlog.py. 
+#05.09.2002 gstein: Fix up the time processing, based on time processing fixes from.
+#05.09.2002 gstein: Switch over to the vclib.ccvs.rcsparse package.. . 
+#05.09.2002 gstein: This module is no longer needed. Use the vclib.ccvs.rcsparse mod
+#05.09.2002 gstein: Rip out the rlog parser that was in this file. Leverage the pars
+#05.09.2002 gstein: Update copyright years.. . 
+05.09.2002 Welcome cmpilato!
+#05.09.2002 cmpilato: Initial implementation of Subversion vclib module.. . 
+#06.09.2002 cmpilato: Itty-bitty docstring fixes.. . * viewcvs/lib/vclib/__init__.py. 
+#07.09.2002 cmpilato: Begin adding Subversion config and query support.  First step wa
+#10.09.2002 cmpilato: Continue Subversion integration.  Can now view trees (at any rev
+#10.09.2002 cmpilato: Fix datestamps and sorting for Subversion items.. . * viewcvs/li
+#19.09.2002 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (_datestr_to_date, _fs_re
+#21.09.2002 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (LogReceiver.receiver): A
+#23.09.2002 cmpilato: * lib/viewcvs.py.   (view_log_svn): New hacked-up half-hearted a
+#27.09.2002 cmpilato: * viewcvs/lib/viewcvs.py.   (handle_config): Use '' instead of N
+#27.09.2002 cmpilato: Address Issue #584803.. . * viewcvs/lib/viewcvs.py.   (search_fi
+#01.10.2002 cmpilato: Get some basic diff functionality working for Subversion.. . * v
+#02.10.2002 cmpilato: * viewcvs/lib/viewcvs.py.   (view_log_svn): Get 'select for diff
+#02.10.2002 cmpilato: * viewcvs/lib/viewcvs.py.   (markup_stream): Only do log-reading
+#03.10.2002 cmpilato: Finish getting that enscript stuff working for Subversion, and. 
+#03.10.2002 cmpilato: Hehheh...do some cleaning up, properly shutting down the reposit
+#05.10.2002 cmpilato: Implement a new svn_parent_path configuration variable.. . * vie
+#05.10.2002 cmpilato: * viewcvs/lib/viewcvs.py.   (handle_config): Oops.  Little fix f
+#09.10.2002 gstein: Fix up some of the imports. Some were not needed. Also avoided t
+#09.10.2002 gstein: A new utility module to compute sets of changed files inside a l
+#09.10.2002 gstein: Various changes:. - remove diff_font_face/size options and move 
+#10.10.2002 gstein: Recognize cvsweb's custom MIME type. This allows people to upgra
+#10.10.2002 gstein: * lib/viewcvs.py (prepare_hidden_values): tweak the <input> tag 
+#10.10.2002 gstein: Minor cleanups.. - remove the revision_symbolic_name since it wa
+#11.10.2002 gstein: Fixes bug #536141 and #536144, submitted by Franz H?pfinger.. . 
+#11.10.2002 gstein: Fix the URL construction to use entities for the ampersands.. . 
+#11.10.2002 gstein: entity-escape some ampersand that go into the URLs on the page. 
+#15.10.2002 cmpilato: * lib/vclib/bincvs/__init__.py.   Make BinCVSRepository a subcla
+#22.10.2002 timcera: Code block removed that was supposed to handle some redirection 
+#15.11.2002 cmpilato: * viewcvs/templates/directory.ezt. * viewcvs/templates/dir_alter
+#12.12.2002 cmpilato: Implement alternative URL scheme, and make Subversion a little m
+#13.12.2002 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (date_from_rev): New.. . 
+#28.12.2002 pefu: Clarified usage text and removed one trailing blank. . 
+#22.01.2003 cmpilato: Track changes in the Subversion bindings; use top-level svn modu
+#27.01.2003 cmpilato: (view_directory_svn): allow empty log messages. . 
+#27.01.2003 cmpilato: (view_directory_svn): pass diffoptions as a list instead of a st
+#31.01.2003 timcera: Added some filetypes to enscript's colorization list.  Filetypes
+#01.02.2003 timcera: Bolding revision number.  See patch. http://sourceforge.net/trac
+#01.02.2003 timcera: Need to set CVSROOT in order for spawned RCS utilities to correc
+08.02.2003 Welcome rey4!
+#09.02.2003 rey4: updated installer for windows compatibility. . - escaped backsla
+#09.02.2003 rey4: updated to cope with colons and backslashes in windows paths. . 
+#09.02.2003 rey4: worked around lack of working popen2.Popen3 class on windows. . 
+#09.02.2003 rey4: - got rid of mxDateTime dependency. - made database store times 
+#09.02.2003 rey4: added new sapi module which abstracts away differences between t
+#09.02.2003 rey4: - updated to use new sapi module. - now can display local times 
+#09.02.2003 rey4: - updated to use new sapi module. - added support for php colori
+#09.02.2003 rey4: - modified popen module to work on windows. - added debugging mo
+#09.02.2003 rey4: removed this unused copy of popen.py (more recent version is lib
+#09.02.2003 rey4: now replaces forward slashes in windows paths with backslashes b
+#09.02.2003 rey4: - explicitly set text and binary modes on calls to popen. - repl
+#11.02.2003 rey4: - added sapi.server.pageGlobals dictionary to hold values and ob
+#11.02.2003 rey4: - removed hardcoded links in query page. . 
+#11.02.2003 rey4: - removed hardcoded links in query page. - replaced cvsroot_name
+#11.02.2003 rey4: - removed unneccesary cvsroot path manipulation. . 
+#11.02.2003 rey4: - now converts path names to a canonical format with the os.path
+#11.02.2003 rey4: - fixed debug.PrintStackTrace() function. - updated child proces
+#11.02.2003 rey4: - added C++ formatting for .hpp extension. - changed some popen 
+#11.02.2003 rey4: - changed some popen calls to discard warnings from RCS utilitie
+#11.02.2003 rey4: There are a few significant changes to the loginfo handler scrip
+#18.02.2003 rey4: readme from second release. . 
+#18.02.2003 rey4: readme from third release. . 
+#18.02.2003 rey4: removed bit about mxDateTime. . 
+#18.02.2003 rey4: added a new 0.9 section with blurb about UTC times in database. 
+#18.02.2003 rey4: removed bit about mxDateTime and updated information about login
+#18.02.2003 rey4: added the new mod_python files. . 
+#18.02.2003 rey4: minor changes to sapi interface for mod_python support. . 
+#18.02.2003 rey4: commited Ivo Roessling's bugfix. http://mailman.lyra.org/piperma
+#18.02.2003 rey4: added environment variable dump. . 
+#18.02.2003 rey4: important bugfix for loginfo handler, didn't handle multidigit v
+#19.02.2003 rey4: moved ASP and mod_python folders out of 'cgi' directory. and int
+#19.02.2003 rey4: replaced prints with writes. . 
+#19.02.2003 rey4: got rid of unneccessary imports. . 
+#19.02.2003 rey4: - moved global g_name_printed variable into server.pageGlobals. 
+#19.02.2003 rey4: Now adds '_page' suffix to module_name once instead of twice. . 
+#19.02.2003 rey4: simplified apache handler using execfile(). . 
+#20.02.2003 rey4: Updated with new locations of asp and mod_python files. . 
+#20.02.2003 rey4: changed installer to not install windows-only files on unix!. . 
+#20.02.2003 rey4: bugfix: enabled display of pipe_cmds error streams in debug mode
+#20.02.2003 rey4: fix enscript documentation. . 
+#20.02.2003 rey4: replaced += operation with call to list extend method for pre-2.
+#22.02.2003 timcera: Changed the length of dir and file VARCHAR fields from 128 to 25
+#26.02.2003 rey4: fixed interpretation of win32file.ReadFile() return value. . 
+#26.02.2003 gstein: Ensure that we open ,v files in binary mode.. . 
+#28.02.2003 cmpilato: Just some 80-column formatting changes.. . 
+#28.02.2003 gstein: Various small changes:. - fix syntax to be Python 1.5.2 compatib
+#28.02.2003 cmpilato: Fix a little CVS/Subversion discrepency (and in the process, fix
+#28.02.2003 cmpilato: Expose the filename to the log templates.. . 
+#28.02.2003 rey4: Restored the line that deletes the return of exc_info() in Print
+#03.03.2003 rey4: installation now prompts to delete .py or .pyc files that don't 
+#11.03.2003 gstein: handy script for tracing ViewCVS's syscalls. . 
+#11.03.2003 gstein: Various fixes and improvements.. . * lib/config.py:.   (_parse_r
+#12.03.2003 gstein: Restore the ability for errors to generate non-200 responses. Th
+#12.03.2003 cmpilato: Protect against silly user-entered data in the diff forms.. . 
+#12.03.2003 cmpilato: * lib/vclib/svn/__init__.py.   (itemtype): Make this more effici
+#13.03.2003 rey4: * lib/sapi.py.     - Filled in ModPythonServer and AspServer hea
+#20.03.2003 cmpilato: Let the Subversion integration breathe the fresh air.. . 
+#20.03.2003 cmpilato: Add myself and Russell to the Who list (with gstein's blessing).
+#16.04.2003 cmpilato: * lib/vclib/__init__.py.   (InvalidRevision): New exception.. . 
+#30.04.2003 cmpilato: No longer display 'Changes since' for non-CVS repositories. . 
+#30.04.2003 cmpilato: (view_log_svn): Protect against NULL log messages in Subversion.
+#22.05.2003 cmpilato: Track rename of Subversion binding module util->core.. . 
+#25.05.2003 cmpilato: Add tarball support for Subversion repositories.  Patch by Ben C
+#27.05.2003 rey4: cvs ci standalone.py lib/sapi.py. * lib/sapi.py standalone.py.  
+#27.05.2003 rey4: Updated instructions for new versions of enscript and rcs tools.
+#02.06.2003 rey4: fixed pipe_cmds() to work with mod_python on unix. . 
+#02.06.2003 rey4: * lib/win32popen.py:.   - removed nonblocking implementation of 
+#02.06.2003 rey4: explicitly set mod_python's default content-type to text/html to
+#02.06.2003 rey4: - fixed incorrect path in ASP installation instructions. - updat
+#02.06.2003 rey4: bugfix in PrintException(). . 
+#03.06.2003 rey4: * www/cgi/viewcvs.cgi, www/cgi/query.cgi, www/viewcvs-strace.sh,
+#08.06.2003 rey4: - changed recommended python distribution and rcs binaries. - go
+#10.06.2003 rey4: Changed windows implementation of popen() to call CreateProcess 
+#16.06.2003 cmpilato: Fix the example used to demonstrate working Subversion bindings.
+#26.06.2003 cmpilato: * viewcvs-install.   Fix the final instructions to point to the 
+#26.06.2003 cmpilato: Fix a template bug reported by Branden Robinson <branden@deadbea
+#26.06.2003 rey4: bugfix in PrintException. code was checking to see the exception
+#26.06.2003 cmpilato: Implement templatized error messages.  Thanks to Russell Yanofsk
+#26.06.2003 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (get_logs, fetch_log): Ad
+#28.06.2003 rey4: just changed tabs to spaces.. . 
+#01.07.2003 rey4: Changes intended to simplify handling URLs in ViewCVS. Nearly al
+#02.07.2003 rey4: some minor fixes. . * lib/viewcvs.py (_URL_SAFE_CHARS, Request.g
+#02.07.2003 rey4: changes to allow viewcvs to use CVSNT instead of the RCS utiliti
+#02.07.2003 rey4: fixed some variable misspellings. . * lib/viewcvs.py (Request.ru
+#02.07.2003 rey4: standalone server had been setting the SCRIPT_NAME in a nonstand
+#02.07.2003 rey4: removed some lines of code that don't do anything.... . * standa
+#02.07.2003 rey4: updated documentation to say that CVSNT can be used instead of R
+#02.07.2003 rey4: removed some false advertising. . * viewcvs.conf.dist: removed c
+#03.07.2003 rey4: Added some new fields to the Subversion log view and fixed the. 
+#05.07.2003 rey4: made standalone server work with cvsnt and rcs when it is run on
+#05.07.2003 rey4: removed empty column from directory information table and added 
+#05.07.2003 rey4: updated alternate template files. . * dir_alternate.ezt: updated
+#07.07.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (markup_stream): Get log message and
+#09.07.2003 rey4: Documented template changes. Should be complete, but needs to be
+#12.07.2003 rey4: Fixed log retrieving code to work correctly when get_changed_pat
+#22.07.2003 cmpilato: * viewcvs/lib/config.py. * viewcvs/viewcvs.conf.dist.   Make the
+#24.07.2003 rey4: fixed bug #460835, 'Too many connections in cvsdbadmin update'. 
+#24.07.2003 rey4: fixed bug #488302, missing tag information. . * lib/viewcvs.py (
+#24.07.2003 rey4: changed to exit silently on 'cvs import' instead of crashing. . 
+#24.07.2003 rey4: enscript 'couldn't open input filter' issue happens on windows x
+#25.07.2003 rey4: added 'icons' and 'docroot' options to control the locations of.
+#25.07.2003 rey4: fix for bug #509705, Directory view of branch skips files. . bas
+#25.07.2003 rey4: * lib/viewcvs.py (common_template_data): new function to set a f
+#29.07.2003 rey4: put cvs_roots and svn_roots on a single line as requested by. Bo
+#29.07.2003 rey4: changed 'Running Windows' logo to ViewCVS blimp as suggested by.
+#29.07.2003 rey4: prevent exception when use_localtime is set and rcsdiff produces
+#04.08.2003 rey4: fixes for python 1.5 compatibility. . * lib/popen.py.     use st
+#05.08.2003 rey4: fixed template variable bug #781130 on query page. reported by M
+#10.08.2003 rey4: Fixed bug in html form that was reported by John Hall. <john-new
+#18.08.2003 rey4: fixed mod_python bug reported by David Oxley. <David.Oxley@workp
+#21.08.2003 rey4: fix exception when svn root not found. . * lib/viewcvs.py: fix m
+#22.08.2003 rey4: fix ValueError exception on diff page. . * lib/compat.py (cvs_st
+#23.08.2003 rey4: Fixed bug introduced in rcsdiff_date_reformat by previous commit
+#24.08.2003 cmpilato: Fix directory templates to properly handle missing graph_href's 
+#24.08.2003 cmpilato: * templates/dir_alternate.ezt. * templates/directory.ezt. * temp
+#19.09.2003 gstein: Restore ViewCVS' ability to work straight from the development t
+#19.09.2003 gstein: remove these CGI scripts temporarily. . 
+#19.09.2003 gstein: re-add CGI scripts with exec permission. . 
+#26.09.2003 cmpilato: Teach ViewCVS how to follow copy history in Subversion repositor
+#26.09.2003 cmpilato: Make 'diff to previous' for across Subversion copies work.. . * 
+#26.09.2003 cmpilato: Mm... Steinian code review is good for the soul.  And the projec
+#26.09.2003 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (log_helper): Populate th
+#30.09.2003 cmpilato: Some fix-em-ups to the new history-using ViewCVS code.  Thanks t
+#04.10.2003 rey4: * templates/log_table.ezt: sync up with log.ezt 1.26. . 
+#05.10.2003 cmpilato: * lib/vclib/svn/__init__.py.   (NodeHistory): New collector clas
+#13.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (_validate_param): Return '400 Bad R
+#13.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (get_file_data_svn): Use request.ful
+#14.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (read_log): Word-capitalize the 'Tag
+#14.10.2003 cmpilato: Purge semi-colons from the ends of statements (in one case, movi
+#15.10.2003 cmpilato: Whip 'select for diffs', 'diff to previous', and 'diff to select
+#15.10.2003 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (log_helper): Stop skippi
+#15.10.2003 rey4: * lib/viewcvs.py.   (handle_config):.     when viewcvs is run wi
+#15.10.2003 rey4: get standalone server to work from development tree. . * standal
+#15.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (view_markup): Ensure that the 'prev
+#16.10.2003 rey4: fix some links on log pages. . * lib/vclib/svn/__init__.py.   (_
+#16.10.2003 rey4: Removed show_changed_paths option. It was originally added as a 
+#16.10.2003 cmpilato: Some pool usage fixes suggested by Greg Stein.. . * viewcvs/lib/
+#16.10.2003 cmpilato: Expose the actions for 'other changed paths'.. . * viewcvs/lib/v
+#17.10.2003 rey4: Stop looking up 'action' values for subversion log entries. C. M
+#20.10.2003 rey4: Move the process_checkout function into vclib.. . * lib/viewcvs.
+#21.10.2003 rey4: Store directory listing entries in objects instead of tuples. . 
+#21.10.2003 rey4: Move get_file_data and get_file_data_svn functions into vclib.. 
+#21.10.2003 rey4: * lib/viewcvs.py.   (generate_tarball_svn):.     use repos.listd
+#21.10.2003 rey4: * lib/vclib/svn/__init__.py.   (SubversionRepository.listdir).  
+#21.10.2003 cmpilato: * viewcvs/lib/vclib/bincvs/__init__.py.   (get_logs): Copy the i
+#21.10.2003 rey4: Remove dead code from vclib.. . * lib/vclib/__init__.py.   (Repo
+#22.10.2003 cmpilato: Begin implementing the new 'revision' view.. . * viewcvs/lib/vie
+#22.10.2003 rey4: * lib/viewcvs.py.   (view_directory, view_directory_cvs, view_di
+#22.10.2003 rey4: combine get_logs() and process_rlog_output() functions, also tri
+#22.10.2003 cmpilato: More work on the cool new revision view.. . * viewcvs/lib/vclib/
+#22.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (view_revision_svn): Oops.  Fix the 
+#22.10.2003 cmpilato: * lib/vclib/svn/__init__.py.   (get_revision_info): Update call 
+23.10.2003 Welcome uid99421!
+#23.10.2003 uid99421: Moved all string processing of CVS revision numbers into a new c
+#23.10.2003 uid99421: * templates/revision.ezt:.     add the standard page header to t
+#24.10.2003 rey4: move get_last_modified() into vclib as BinCVSRepository._newest_
+#24.10.2003 rey4: Factor permissions-checking code out of BinCVSRepository.listdir
+#24.10.2003 rey4: Change get_logs functions to add their information directly to. 
+#24.10.2003 rey4: Add optional 'list_attic' argument to the bincvs listdir functio
+#24.10.2003 cmpilato: Rename some not-meant-for-public-consumption functions.. . * vie
+#24.10.2003 cmpilato: Committing some highly experimental code for allowing ViewCVS on
+#24.10.2003 rey4: * lib/vclib/bincvs/__init__.py.   (BinCVSRepository.openfile):. 
+#24.10.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (view_revision_svn): Calculate links
+#25.10.2003 rey4: Simplify some logic in view_directory_cvs. Except for the num_fi
+#25.10.2003 rey4: Move cvs tag sorting code out of view_directory_cvs and into vcl
+#25.10.2003 rey4: Restore 'this entry is unreadable' error messages that got mista
+#25.10.2003 rey4: * website/upgrading.html.     update for new template changes. .
+#26.10.2003 rey4: Merge view_directory_cvs and view_directory_svn functions. Had t
+#26.10.2003 rey4: add forward.gif and back.gif to apache_icons.py. these icons are
+#26.10.2003 rey4: * lib/viewcvs.py.   (Request.get_link):.     remove trailing sla
+#26.10.2003 rey4: Rearrange view_directory function, moving logic to the top and t
+#27.10.2003 rey4: * lib/viewcvs.py.   (sort_file_data):.     fix sorting by name f
+#27.10.2003 gstein: Simplify some boolean ezt data values.. . * lib/viewcvs.py:.   (
+#27.10.2003 rey4: make query page work straight from the source directory without.
+#27.10.2003 rey4: another change to make query page work from source directory. wi
+#27.10.2003 rey4: fix improperly escaped urls on query page, bug #529888 reported.
+#27.10.2003 rey4: Fix bug #817757, 'unaccessible directories displayed' submitted 
+#27.10.2003 rey4: Check for execute permission on directories in _check_path. This
+#28.10.2003 rey4: Update php colorizing code.. . * viewcvs.conf.dist.   (use_php, 
+#28.10.2003 rey4: * viewcvs.conf.dist.   (php_exe_path):.     add another example 
+#29.10.2003 cmpilato: * viewcvs/lib/ezt.py.   Remove HTML-speak throughout.  This modu
+#04.11.2003 rey4: Improve rlog error handling. . * lib/vclib/bincvs/__init__.py:. 
+#04.11.2003 rey4: update windows readme. . * windows/README:.     add some subvers
+#02.12.2003 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (LogEntry.__init__, get_l
+#10.12.2003 rey4: Fix DST issue, bug #800741. Thanks to James Conley for the bug r
+#10.12.2003 rey4: Ahhh, the joys of using an interpreted language.... . * lib/vcli
+#10.12.2003 rey4: Remove workaround for Mod_Python bug fixed in new version 3.0.4.
+#10.12.2003 rey4: Fixed bug #844810 reported by Jordan Russell. It was caused by m
+#10.12.2003 rey4: Fix bug #845957 'exception when viewing a revision without log'.
+#10.12.2003 rey4: Fix bug #849834 'Download tarball doesn't respect tag selected'.
+#11.12.2003 rey4: Temporary workaround for another CVSNT bug. The problem was repo
+#11.12.2003 rey4: Minor fix in link constructing function. Doesn't have any effect
+#12.12.2003 rey4: Fix bug #858414 'ValueError: unconverted data remains: 'UTC'' re
+#12.12.2003 cmpilato: * viewcvs/lib/viewcvs.py.   (view_diff): Catch Subversion FS_NOT
+#20.01.2004 cmpilato: * lib/vclib/svn/__init__.py.   (created_rev): New.. . * lib/view
+#20.01.2004 cmpilato: * lib/viewcvs.py.   (view_directory): Check 'file.log is not Non
+#21.01.2004 rey4: Move all the code that manipulates CVS revision numbers out of v
+#21.01.2004 rey4: Remove duplicate code from CVS and Subversion implementations of
+#22.01.2004 rey4: Make view/download links on log and markup pages simpler and mor
+#22.01.2004 rey4: fix broken link on subversion log page. . * lib/viewcvs.py.   (v
+#22.01.2004 rey4: Move bulk of read_log function out of viewcvs.py and into the bi
+#22.01.2004 rey4: Simplify CVSNT workaround in BinCVSRepository.openfile using new
+#22.01.2004 rey4: Some refactoring in BinCVS module.. . * lib/vclib/bincvs/__init_
+#22.01.2004 rey4: Refactoring and rearranging in the bincvs module.. . * lib/vclib
+#22.01.2004 rey4: Merge generate_tarball_cvs and generate_tarball_svn functions.. 
+#25.01.2004 rey4: Add new repository methods to vclib.. . * lib/vclib/__init__.py.
+#25.01.2004 rey4: Tweak vclib DirEntry and Revision objects.. . - Revision class i
+#25.01.2004 rey4: Put underscores in names of internal bincvs functions. . * lib/v
+#25.01.2004 rey4: Get ccvs module in working state, and add 'use_rcsparse' option 
+#25.01.2004 rey4: Get svn_ra module working again. . * lib\vclib\svn_ra\__init__.p
+#26.01.2004 rey4: Fix another bug in CVSNT workaround. . * lib/vclib/bincvs/__init
+#26.01.2004 rey4: Fix bug in svn_ra module. . * lib/vclib/svn_ra/__init__.py.   (f
+#26.01.2004 rey4: Fix problem with cvsdb and bincvs.fetch_log. . * lib/vclib/bincv
+#29.01.2004 cmpilato: * viewcvs/lib/vclib/bincvs/__init__.py.   (_parse_co_header): St
+#06.02.2004 cmpilato: * lib/viewcvs.py.   (_re_validate_number): Add '~' as an accepta
+#17.02.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_log): Populate the 'copy_rev' 
+#20.02.2004 cmpilato: * viewcvs/lib/ezt.py.   Import LongType from types, too..   (_ge
+#08.03.2004 cmpilato: Fix copyfrom links in the Subversion log view.. Patch mostly by 
+#08.03.2004 cmpilato: Fix markup-view <img> source URLs to contain the revision of the
+#09.03.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_log): Initialize the entry.bra
+#09.03.2004 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (SubversionRepository.__i
+#10.03.2004 cmpilato: Subversion revisions might not have dates attached to them, and.
+#15.03.2004 cmpilato: * viewcvs/lib/vclib/ccvs/rcsparse/common.py.   (_Parser.parse_rc
+#18.03.2004 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (_unparse_action): Remove
+#18.03.2004 cmpilato: * lib/vclib/ccvs/rcsparse/common.py.   (_Parser.parse_rcs_tree):
+#26.03.2004 cmpilato: Get 'forbidden' module support mostly working for Subversion.. .
+#27.03.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_revision_svn): Fix a missing a
+#29.03.2004 cmpilato: Fix some memory leaks in the TParse code.  Patch by Erik Huelsma
+#30.03.2004 cmpilato: Patch by Max Bowsher <maxb@ukf.net> and Erik Huelsmann <e.huelsm
+#01.04.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (Request.run_viewcvs): Look in the A
+#06.04.2004 cmpilato: * viewcvs/tparse/tparse.cpp. * viewcvs/tparse/tparse.h. * viewcv
+#14.04.2004 cmpilato: Fix some line-length > 80 columnsness.. . 
+#14.04.2004 cmpilato: Some tarball-generation fixes.  Thanks to Ulrich Goertz <debian@
+#15.04.2004 cmpilato: Do some work to expose Subversion directory commit info (logs,. 
+#15.04.2004 cmpilato: Re-arrange the templates directory a bit.. . * viewcvs/templates
+#16.04.2004 cmpilato: Oops!  Missed an update of a relocated template.. . 
+#16.04.2004 cmpilato: * viewcvs/viewcvs.conf.dist.   (footer): Update the default loca
+#20.04.2004 cmpilato: Stop potential memory leak by DECREF-ing the return value from. 
+#20.04.2004 cmpilato: Extend Sink and parsers to pass more of rcs admin data.  Patch b
+#20.04.2004 cmpilato: * viewcvs/viewcvs.conf.dist.   (options.cross_copies): Make this
+#20.04.2004 cmpilato: Templatize the markup view.. . * viewcvs/lib/viewcvs.py.   (html
+#21.04.2004 cmpilato: Fix the default value for the footer template location.  Patch b
+#21.04.2004 cmpilato: Implement an assignment mechanism in EZT, a new [define variable
+#21.04.2004 cmpilato: Templatize the annotate view!. . * viewcvs/lib/viewcvs.py.   (vi
+#21.04.2004 cmpilato: * viewcvs/tparse/tparsemodule.cpp.   Fix all instances of 'if(!r
+#22.04.2004 cmpilato: Some bug fixes as suggested (in great detail, just short of a pa
+#24.04.2004 cmpilato: Some more ViewCVS fixes and tweaks.. . * viewcvs/templates/diff.
+#28.04.2004 cmpilato: * viewcvs/templates/revision.ezt.   Re-add the 'previous' and 'n
+#28.04.2004 cmpilato: Try to get the query.cgi script working again.  Unfortunately, I
+#28.04.2004 cmpilato: Add basic support for Subversion directory log viewing in ViewCV
+#06.05.2004 cmpilato: Get support for the 'show_all_dir_logs' option (specifically, th
+#07.05.2004 cmpilato: Close Bug #847437.. . * viewcvs/website/index.html.   Say that w
+#07.05.2004 cmpilato: Fix Bug #949445 (premature <pre> tags in large files). . * viewc
+#07.05.2004 cmpilato: Fix the root-change mechanism I broke recently.. . * viewcvs/lib
+#10.05.2004 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (NodeHistory.add_history)
+#10.05.2004 cmpilato: More directory log view fixes.. . * viewcvs/lib/vclib/svn/__init
+#10.05.2004 cmpilato: Fix a brain-O.  'filter_path' is the *opposite* of 'show_all_log
+#10.05.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (common_template_data): Expose reque
+#11.05.2004 cmpilato: * viewcvs/templates/include/dir_footer.ezt.   Use <optgroup> tag
+#12.05.2004 cmpilato: Oops.  Forgot to actually add the stylesheet.. . 
+#13.05.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_directory): Expose file sizes 
+#14.05.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_directory): Do mime_type detec
+#14.05.2004 cmpilato: Update the upgrade docs.. . 
+#19.05.2004 cmpilato: Fix a typ-o in yon copyright block.. . 
+#25.05.2004 cmpilato: Sending caching headers back to the browser for static content t
+#01.06.2004 cmpilato: Fix a bunch of pool usage problems with ViewCVS/Subversion.. . *
+#03.06.2004 cmpilato: Make ViewCVS more cache-friendly.  Patch by James Henstridge. <j
+#06.06.2004 rey4: Fix bugs #911437 and #922679 caused by newer versions of cvsnt u
+#06.06.2004 rey4: Remove workaround for CVSNT , which was fixed in version 2.0.12.
+#14.06.2004 cmpilato: Add cache expiry support to ViewCVS.  Patch by James Henstridge.
+#14.06.2004 cmpilato: Bang out a 'revision' view for the svn_ra module.  Soooo incompl
+#21.06.2004 cmpilato: Fix the description of http_expiration_time.. . 
+#22.06.2004 cmpilato: Add a debug setting which promises to restore my sanity in the f
+#22.06.2004 cmpilato: Instead of sending colored diffs to the diff.ezt template, and r
+#24.06.2004 cmpilato: Make Etag support optional (in a first-class fashion).. . * view
+#02.07.2004 cmpilato: Makin' things purtier.  Patch by James Henstridge <james@jamesh.
+#02.07.2004 rey4: Update windows README file. . * windows/README.     add link for
+16.07.2004 Welcome jhenstridge!
+#16.07.2004 jhenstridge: - Add svndbadmin script, which can be used to add Subversion rev
+#16.07.2004 jhenstridge: s/query_dict/request.query_dict/ in view_directory() to fix trac
+#16.07.2004 jhenstridge: Fix the same issue in view_log().  Was mentioned in the same bug
+#16.07.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (list_roots): Make the roots hash va
+#16.07.2004 jhenstridge: Remove the svn_parent_path config value, and replace it with a r
+#16.07.2004 cmpilato: New patch for integration with Subversion's mailer.py script.. .
+#16.07.2004 cmpilato: Add copyright info to SVN mailer patch.. . 
+#16.07.2004 jhenstridge: 1) add a bit of documentation on using svndbadmin to load revisi
+#17.07.2004 jhenstridge: Fix file descriptor leak in standalone.py. Reported as http://so
+#17.07.2004 jhenstridge: Add simple querying support directly to the viewcvs script.  Thi
+#17.07.2004 jhenstridge: Port the 'diff link' support over to the query.cgi script.. . 
+#18.07.2004 jhenstridge: Add two new match types: notregex and glob.  The 'glob' match ty
+#18.07.2004 jhenstridge: Expose glob matching and notregex matching in query_form.ezt.. L
+#18.07.2004 jhenstridge: use CSS classes for the different columns in annotate mode.  In 
+#19.07.2004 jhenstridge: render all revision log messages as <pre class='vc_log'>...</pre
+#20.07.2004 jhenstridge: Remove the italics from the log message CSS rules, since regular
+#20.07.2004 jhenstridge: Convert double dashes in comment to single dashes, since the dou
+#21.07.2004 jhenstridge: Fix up dir_alternate.ezt template to fix bug #995121 (switch the
+#21.07.2004 jhenstridge: Simplify column sort code, so that clicking the sort column head
+#21.07.2004 jhenstridge: Since you don't need to click on the sort arrow to change sort d
+#21.07.2004 jhenstridge: Update get_link() to add a rev parameter for diff links on subve
+#21.07.2004 jhenstridge: Use a different parameter name for the query sort key so that it
+#22.07.2004 jhenstridge: Add support for generating backout scripts from query results li
+#22.07.2004 jhenstridge: Sort the tags attached to a revision in the log view.  Fix came 
+#22.07.2004 jhenstridge: fix up typo in comment.. . 
+#22.07.2004 jhenstridge: Add vc_log CSS class to log message on revision.ezt template.  F
+#23.07.2004 jhenstridge: set size of sort arrow images, so that they don't cause reflows 
+#23.07.2004 jhenstridge: Add thead/tbody tags to log_table.ezt, query.ezt and revision.ez
+#23.07.2004 jhenstridge: * viewcvs.py: add code to calculate various diff URLs used in th
+#23.07.2004 jhenstridge: Fix up the diff links when diff_format is set to a non-default v
+#24.07.2004 rey4: Normalize user-specified paths in cvs_roots, svn_roots, and root
+#24.07.2004 jhenstridge: * lib/viewcvs.py, templates/log.ezt, templates/log_table.ezt: re
+#26.07.2004 jhenstridge: * viewcvs-install (install_tree): don't install files ending in 
+#26.07.2004 jhenstridge: * diff_form.ezt: wrap the text associated with the 'makepatch' c
+#26.07.2004 jhenstridge: * lib/viewcvs.py (view_directory): If it is a subversion reposit
+#28.07.2004 jhenstridge: * templates/include/header.ezt: remove stray </h1> tag.. . 
+#29.07.2004 jhenstridge: * lib/viewcvs.py (htmlify): when htmlifying email addresses, enc
+#29.07.2004 jhenstridge: * lib/viewcvs.py (view_log): when constructing the view and down
+#29.07.2004 jhenstridge: * lib/viewcvs.py (view_diff): also use entry.filename as the loc
+#31.07.2004 rey4: Improve error handling in directory view.. . * lib/vclib/bincvs/
+#01.08.2004 rey4: Handle CVS Attic paths transparently in the bincvs module. inste
+#01.08.2004 rey4: Get the query view working on windows. The backslashes in reposi
+#01.08.2004 rey4: Update alternate template.. . * templates/dir_alternate.ezt.    
+#11.08.2004 cmpilato: Cleanup the new dead file handling code to be more template-frie
+#14.08.2004 cmpilato: * website/styles.css.   Make the annotate data 'smaller', and in
+#17.08.2004 cmpilato: * lib/viewcvs.py.   (_re_validate_number): Allow brackets in tag
+#18.08.2004 cmpilato: Learn these here RCS parsers about the fact that that 'branch' k
+#03.09.2004 jhenstridge: * templates/directory.ezt, dir_alternate.ezt: make the sort orde
+#03.09.2004 jhenstridge: * templates/include/dir_footer.ezt: get rid of validity error du
+#10.09.2004 cmpilato: Normalize configured paths at a different time so that we don't.
+#14.09.2004 jhenstridge: Fix up validity errors due to non-escaped ampersands in URLs.. .
+#14.09.2004 jhenstridge: Fix some validity errors on the query_form.ezt template.. . 
+#14.09.2004 cmpilato: Some error-related cleanups.. . * viewcvs/lib/viewcvs.py.   Upda
+#22.09.2004 jhenstridge: Copy online documentation, stylesheet and required images to. te
+#22.09.2004 jhenstridge: Remove the moved files to finish off the reorganisation.. . 
+#25.09.2004 rey4: Now that we're using our own icons instead of the icons provided
+#25.09.2004 rey4: Bugfix in query page, stop using old 'icons' config variable. . 
+#25.09.2004 rey4: Use new-style viewcvs links in CvsGraph images. . * cvsgraph.con
+#25.09.2004 rey4: Tweaks to code that generates links in ViewCVS pages. The only. 
+#25.09.2004 rey4: Fix bug in clickable_path (from lib/viewcvs.py 1.167) that makes
+#25.09.2004 rey4: Get rid of unused 'viewable' and 'is_text' template variables on
+#25.09.2004 rey4: Simplify handling of roots in root_as_url mode.. . * lib/viewcvs
+#28.09.2004 rey4: Make the navigation bar easier to read. . * templates/docroot/st
+#28.09.2004 rey4: Don't copy website on install. . * viewcvs-install.   (TREE_LIST
+#28.09.2004 rey4: Edit a comment in viewcvs.conf.dist. . * viewcvs.conf.dist.   (d
+#08.10.2004 rey4: Update the CHANGES file. . * CHANGES.   (Version 1.0):.     add 
+#08.10.2004 rey4: Update the list of developers. . * website/who.html.     add Jam
+#08.10.2004 rey4: Update the documentation so it's no longer an impediment to a 1.
+#09.10.2004 rey4: Fix time conversion bug that prevented queries from working on. 
+#09.10.2004 rey4: Fix some silliness in link generating code. . * lib/viewcvs.py. 
+#09.10.2004 rey4: Tweak handling of MIME types in ViewCVS pages. . - Don't pass 't
+#09.10.2004 rey4: Remove unused loginfo module. . * lib/vclib/ccvs/loginfo.py.    
+#09.10.2004 rey4: Update windows README. . * windows/README.     update CVSNT url.
+#09.10.2004 rey4: Combine 'Dead Files' and 'Files Shown' counts in directory listi
+#09.10.2004 rey4: Update upgrading.html with information about some recently chang
+#09.10.2004 rey4: Remove unused and undocumented 'filename' template variable from
+#09.10.2004 rey4: Fix escaping of directory paths in query pages so searching with
+#09.10.2004 rey4: Swap sorting arrows in directory view following a discussion on 
+#13.10.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_log): Dictate the 'where' and 
+#13.10.2004 cmpilato: Don't include the branch and view_tag templates for non-CVS log 
+#14.10.2004 rey4: Remove workaround for really old CVSNT bug in loginfo-handler. .
+#14.10.2004 rey4: Update windows README. . * windows/README.   - add troubleshooti
+#14.10.2004 rey4: Fix case-sensitive path comparison in bincvs that causes problem
+#14.10.2004 rey4: Remove site-specific kludge from cvsdb (originally added by Jay 
+#16.10.2004 rey4: Fix file path issues in CVSdb on windows. Summary of changes:. .
+#16.10.2004 rey4: Get rid of rlog module, make CVSdb use bincvs instead.. . * lib/
+#16.10.2004 rey4: Minor cleanup in bincvs module. . * lib/vclib/bincvs/__init__.py
+#16.10.2004 rey4: Minor cleanup in cvsdb module. . * lib/cvsdb.py.   (Commit.SetBr
+#16.10.2004 rey4: Minor cleanup in viewcvs module. . * lib/viewcvs.py.   (view_que
+#16.10.2004 rey4: Minor cleanups in loginfo script. . * tools/loginfo-handler.   (
+#16.10.2004 rey4: Minor fix in svndbadmin. . * tools/svndbadmin.   (usage):.     f
+#18.10.2004 cmpilato: Address issue #1049046.. . * lib/viewcvs.py.   (_re_rewrite_emai
+#18.10.2004 cmpilato: Fix issue #1035766.. . * lib/viewcvs.py.   (_re_rewrite_url): Lo
+#19.10.2004 cmpilato: * lib/viewcvs.py.   (view_log): Always expose the view_href and 
+#20.10.2004 cmpilato: * viewcvs/lib/viewcvs.py.   (view_log): Only show download hrefs
+#25.10.2004 cmpilato: Update mailing list information.. . 
+#26.10.2004 cmpilato: Minor docco fix.  Patch by Juanma Barranquero <lektu@mi.madritel
+#26.10.2004 cmpilato: Hope I'm not stepping on any toes here, but I couldn't bear the 
+#26.10.2004 cmpilato: Add the PhotoShop file I used to create the title image.  Note t
+#26.10.2004 cmpilato: * tools/make-release.   Fix the CVS root used, and remove the we
+#28.10.2004 cmpilato: Website content edits.. . 
+#28.10.2004 cmpilato: Space text chunks a little more naturally.. . 
+#30.10.2004 cmpilato: (_get_logs): Fix a bug in determining imperfect-but-wanted entri
+#30.10.2004 cmpilato: Fix Bug #983511 by normalizing the SCRIPT_NAME.. . * lib/viewcvs
+#31.10.2004 rey4: Tone down normalization of the script name. We just need to trim
+#31.10.2004 rey4: Update enscript link. . * website/index.html.     link to enscri
+#19.11.2004 cmpilato: Drop a TODO for later processing.. . 
+#19.11.2004 cmpilato: Error template fixes.. . 
+#03.12.2004 rey4: Merge in changes from cvsgraph.conf in CvsGraph 1.5.1. . * cvsgr
+#03.12.2004 rey4: Improve error messages in directory view for inaccessible CVS fi
+#04.12.2004 rey4: Minor cleanups.. . * lib/vclib/bincvs/__init__.py.   (_log_path)
+#06.12.2004 rey4: Remove apache logo from default templates. . * templates/include
+#10.12.2004 rey4: Generate CvsGraph image map links with get_url function just lik
+#10.12.2004 rey4: Fix loginfo crashes on 'cvs import' and 'cvs add <directory>'. T
+#06.01.2005 cmpilato: * viewcvs-install.   Add support for DESTDIR installs, and suppo
+#06.01.2005 cmpilato: Fix Bugs item #1090934, reported by ahndee.. . * lib/viewcvs.py.
+#06.01.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (view_doc): Refer to 'static files' 
+#06.01.2005 cmpilato: * viewcvs/lib/debug.py.   (PrintException): Escape the error mes
+#13.01.2005 rey4: Fix cvs log view. . * lib/viewcvs.py.   (view_log):.     set def
+#13.01.2005 rey4: Redirect on irregular URLs so it is easier to limit viewing part
+#13.01.2005 rey4: Fix UnmatchedEndError in dir_alternate template.. . * templates/
+#13.01.2005 rey4: Add 'Parent Directory' link in directory listings. . * templates
+#13.01.2005 rey4: Fix a bug in redirection logic. . * lib/viewcvs.py.   (Request.r
+#13.01.2005 rey4: Add a promiment link to the log page on the markup page. ViewCVS
+#13.01.2005 rey4: Fix bug that prevented magic checkout URLs from working.. . * li
+#13.01.2005 rey4: Remove extra clickable paths from directory and markup pages.. .
+#13.01.2005 rey4: Templatize the clickable path in header.ezt.. . * lib/viewcvs.py
+#13.01.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (Request.run_viewcvs): If there is n
+#13.01.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (nav_path): Escape the root name.. .
+#13.01.2005 rey4: Fix infinite redirect problem for revision URLs.. . C. Michael P
+#13.01.2005 rey4: Fix infinite redirect problem for tarball download links, and re
+#14.01.2005 rey4: Simplify page titles. Someone was getting a little - too crazy -
+#14.01.2005 rey4: Add viewcvs logo to the page across from the title.. . * templat
+#14.01.2005 cmpilato: Answer a FAQ about Subversion bindings.. . 
+#14.01.2005 rey4: Add a bunch of links between different views. Some of these link
+#14.01.2005 rey4: Remove 'auto' view replacing auto links with direct checkout or.
+#14.01.2005 rey4: Fix subversion markup view. . * lib/viewcvs.py.   (view_markup):
+#14.01.2005 rey4: Fix handling of 'tarball' parameter (for backwards compatibility
+#29.01.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (_sticky_vars): Remove 'dir_pagestar
+#01.02.2005 cmpilato: * viewcvs/lib/debug.py.   (PrintStackTrace): Remove unused funct
+#01.02.2005 cmpilato: * viewcvs/lib/popen.py.   (popen): Removed commented-out code.. 
+#01.02.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (file_sort_cmp): Only treat director
+#01.02.2005 cmpilato: Ensure that Subversion repositories get a clean disconnect when.
+#02.02.2005 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (_sigterm_handler): Make 
+#02.02.2005 cmpilato: Fix tarball generation bug noticed by Nicolas Benoit <nbenoit@tu
+#03.02.2005 rey4: Clean up path handling in viewcvs views, eliminate unused templa
+#03.02.2005 rey4: Add revision links to annotate view. . * lib/viewcvs.py.   (view
+#03.02.2005 rey4: Make the blame module use get_url links. . * lib/viewcvs.py.   (
+#03.02.2005 rey4: Fix bug in copy_stream which broke docroot requests with the sta
+#03.02.2005 rey4: Make redirects work better with the standalone server. . * lib/s
+#03.02.2005 rey4: Replace dodgy os.dup calls with calls to os.dup2. . * standalone
+#04.02.2005 rey4: Document removed template variables. . * website/upgrading.html.
+#04.02.2005 rey4: Get revision numbers to display on annotate pages when viewing H
+#04.02.2005 rey4: Remove duplicate code. . * lib/viewcvs.py.   (nav_header_data):.
+#04.02.2005 rey4: Add repository listing view. This change doesn't any links to th
+#04.02.2005 rey4: Add unobtrusive link to repository listing view on the common pa
+#05.02.2005 cmpilato: Move the magical 'Repository Listing' option to the top of the o
+#06.02.2005 rey4: Fix page title for repository listing page. . * templates/includ
+#06.02.2005 rey4: Minor updates to documentation.. . * INSTALL.     update cvsgrap
+#06.02.2005 rey4: Reorganize URL handling functions for clarity and to make it. ea
+#08.02.2005 cmpilato: In short, facilitate the creation, testing, installation, and sh
+#08.02.2005 cmpilato: Move the [options] section up to just below the [general] stuffs
+#08.02.2005 cmpilato: Add notation about the new 'template_dir' directive.. . 
+#11.02.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (enscript_extensions): Add '.f90' as
+12.02.2005 Welcome maxb!
+#12.02.2005 maxb: tparse: Enable compilation on gcc 3.x, sacrificing compatibility
+#12.02.2005 maxb: tparse: A few cleanups. Some whitespace adjustments extracted fr
+#12.02.2005 maxb: tparse: A few of the smaller changes from Erik's patch, slightly
+#13.02.2005 rey4: Add title attributes to directory links. . * lib/viewcvs.py.   (
+#13.02.2005 rey4: Support relative images and links in checked out HTML pages when
+#17.02.2005 cmpilato: Now that Subversion's RA layer has a pleasant API (instead of a 
+20.02.2005 Welcome dionisos!
+#20.02.2005 dionisos: Add .cvsignore file to ignore 'build/' output directory.. . 
+#20.02.2005 dionisos: Stop passing ownership of parameters into the sink.. . * tparse/
+#20.02.2005 dionisos: * tparse/tparse.cpp (parse_rcs_tree): Don't special case non-spe
+#22.02.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (enscript_extensions): Add '.cs', '.
+#25.02.2005 cmpilato: * viewcvs/templates/markup.ezt.   This template was on crack.  T
+#28.02.2005 cmpilato: Provide the Subversion youngest revision, and a link to it, to t
+#28.02.2005 cmpilato: Jordan Russell <jr-list-2005@quo.to> was kind enough to rework s
+#01.03.2005 cmpilato: * templates/docroot/images/broken.png. * templates/docroot/image
+#07.03.2005 cmpilato: Sorta kinda revert my changes from Feb. 1 2005, wherein I stoppe
+#04.04.2005 cmpilato: * lib/viewcvs.py.   (view_log): Fix a bug where use of the diff 
+#09.04.2005 cmpilato: Fix an annotate bug reported by Amy Langenhorst <Amy.Langenhorst
+#09.04.2005 cmpilato: Rename Repository.filelog() to Repository.itemlog() (Subversion.
+#11.04.2005 cmpilato: Fix a bug which caused context and unidiff output to not be prop
+#12.04.2005 cmpilato: Some fixes to the 'diff' view.. . While this would appear to fix
+#12.04.2005 cmpilato: Lose some duplicated code.. . * lib/vclib/svn_ra/__init__.py.   
+#12.04.2005 cmpilato: Minor code cleanups.. . * lib/viewcvs.py.   (view_diff): Little 
+#15.04.2005 cmpilato: Remove this patch.  mailer.py (in Subversion /trunk) can now do 
+#19.04.2005 cmpilato: Fix Bug #1181208.. . * lib/viewcvs.py.   (raw_diff): Rootpath on
+#30.04.2005 dionisos: Eliminate compile warning.. . 
+#30.04.2005 dionisos: Use 'const char *' type for exception arguments.. . 
+#30.04.2005 dionisos: Fix problems parsing files with 0 (nul) characters in them (typi
+#01.05.2005 dionisos: Exception usage cleanup. Use exceptions to terminate the parser 
+#01.05.2005 dionisos: * tparse/tparse.h: Fix 2 warnings revealed by gcc -Wall.. . 
+#01.05.2005 dionisos: * tparse/tparse.cpp (parse_rcs_admin): Allow 'symbol<space>:<spa
+#01.05.2005 dionisos: Stricter input checking: throw an exception when not expecting E
+#08.05.2005 cmpilato: * lib/vclib/svn/__init__.py.   (SubversionRepository.__init__): 
+#17.05.2005 cmpilato: * lib/viewcvs.py.   (download_tarball): Throw a 403 Forbidden ar
+#17.05.2005 cmpilato: Fixes for all outstanding CVE advisories for ViewCVS 0.9.2.. . B
+#17.05.2005 somebody: This commit was manufactured by cvs2svn to create tag 'V0_9_3'..
+#17.05.2005 cmpilato: Update CHANGES file and website, and bump the version number.. .
+#17.05.2005 cmpilato: Tweak website to point to new 0.9.3 release.. . 
+#17.05.2005 cmpilato: Merge in CHANGES from 0.9.3 release.. . 
+#17.05.2005 cmpilato: Fix copy-n-pasto in CHANGES file.. . 
+#17.05.2005 cmpilato: Fix copy-n-pasto in CHANGES file.  0.9.3 release tarball is goof
+#17.05.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (generate_tarball, Request.run_viewc
+17.05.2005 Version 0.9.3
+#09.08.2005 cmpilato: Make svndbadmin run to completion on the Subversion source code.
+17.08.2005 Version 0.9.4
+#18.08.2005 somebody: This commit was manufactured by cvs2svn to create tag 'V0_9_4'..
+#18.08.2005 cmpilato: Fix a security issue where forbidden/hidden modules were exposed
+#18.08.2005 cmpilato: * lib/viewcvs.py.   (__version__): Tweak the version string to p
+#18.08.2005 cmpilato: * viewcvs/website/download.html.   Update links to downloadable 
+#18.08.2005 cmpilato: * viewcvs/CHANGES.   Forward port entries from the 0.9.x branch.
+#18.08.2005 cmpilato: Miscellaneous fixes around the forbiddenness support, mostly bug
+#22.08.2005 rey4: Restore viewcvs's ability to run under python 1.5. . * lib/vclib
+#22.08.2005 rey4: Tighten up some logic in cvs revision number functions. I think 
+#22.08.2005 rey4: Fix exception when cvsdbadmin is passed only one argument. . * t
+#22.08.2005 cmpilato: Sooth pain felt by Daniel Berlin <dberlin@dberlin.org>, who comp
+#22.08.2005 rey4: Fix check for forbidden paths on tarball download and simplify. 
+#23.08.2005 rey4: Move some diff functionality into vclib. . * lib/vclib/__init__.
+#24.08.2005 rey4: Simplify diff code somewhat. . * lib/viewcvs.py.   (diff_parse_h
+#24.08.2005 rey4: Various improvements to EZT. .   - make substitution pattern imp
+#24.08.2005 rey4: Pass strings and callbacks to EZT instead of so many pseudo file
+#14.09.2005 pefu: Fixed SF-Bug # 1192503: Updated broken link to competing project
+#20.09.2005 cmpilato: Consistify the output of the vclib diff engines, sticking with G
+#21.09.2005 cmpilato: * viewcvs/lib/vclib/svn_ra/__init__.py.   (LogCollector.add_log)
+#23.09.2005 cmpilato: * viewcvs/lib/compat.py.   (compare_versions): New.  (To be used
+#23.09.2005 cmpilato: * viewcvs/lib/vclib/__init__.py.   (InvalidRevision.__init__): M
+#23.09.2005 cmpilato: * viewcvs/lib/compat.py.   Revert revision 1.18.  The Way of Rus
+#23.09.2005 cmpilato: Teach ViewCVS to obey the Subversion location tracing algorithm,
+#23.09.2005 cmpilato: * viewcvs/INSTALL.   Rework the list the required software-n-stu
+#23.09.2005 cmpilato: Abstract the annotate interface by moving core functionality dow
+#23.09.2005 cmpilato: * viewcvs/lib/blame.   (link_includes): Use the more generic ite
+#24.09.2005 cmpilato: Expose annotation support for local Subversion repositories.  Pa
+#24.09.2005 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (SubversionRepository.ann
+#25.09.2005 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (BlameSource.__getitem__)
+#26.09.2005 cmpilato: Add Subversion blame support to the 'svn_ra' module, and re-enab
+#26.09.2005 cmpilato: * viewcvs/lib/vclib/__init__.py (Repository.rawdiff),. * viewcvs
+#26.09.2005 cmpilato: Fix : Query results wrong for directories with similar. names. .
+#26.09.2005 cmpilato: Fix Bug #1177407: CVS tags with a slash cause an exception. . * 
+#26.09.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (common_template_data): Show a non-e
+#27.09.2005 cmpilato: Lose 'row.href' and 'row.rev_href' for the more meaningful. 'row
+#28.09.2005 cmpilato: This patch (mostly by Marten Thavenius) upgrades ViewCVS to XHTM
+#28.09.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (nav_header_data, view_log): Expose 
+#29.09.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (view_query): Query on subdirectorie
+#29.09.2005 cmpilato: * viewcvs/templates/directory.ezt.   Lose the alt-text on the ro
+#30.09.2005 cmpilato: Finish Bug #1097695 - Exception on CVS revisions with 2-digit ye
+#03.10.2005 cmpilato: * templates/directory.ezt,. * templates/dir_alternate.ezt.   Los
+#04.10.2005 cmpilato: Finish Bug #1309545 ('tip of the branch' URLs don't work with 'b
+#04.10.2005 cmpilato: Expose 'tip o' the branch' links from the log view.. . * viewcvs
+#04.10.2005 cmpilato: Sticky variables are cool and all (despite being less elegant th
+#04.10.2005 cmpilato: Expose regular-expression-based search to Subversion repositorie
+#05.10.2005 cmpilato: * viewcvs/lib/vclib/bincvs/__init__.py.   (BinCVSRepository.rawd
+#10.10.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (view_revision_svn): Remove..   (vie
+#10.10.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (DiffSource._get_row): Rename 'line1
+#11.10.2005 cmpilato: Make some tweaks to the 'revision' view to differentiate between
+#11.10.2005 cmpilato: Fix some bugs introduced yesterday that show up when using the. 
+#11.10.2005 cmpilato: * viewcvs/templates/revision.ezt.   Add a trailing slash to dire
+#11.10.2005 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (get_revision_info): Wrap
+#12.10.2005 cmpilato: * website/template-authoring-guide.html.   Begin work on a templ
+#14.10.2005 cmpilato: * website/template-authoring-guide.html.   Populate the COMMON s
+#14.10.2005 cmpilato: Lose the unnecessary 'jump_rev' data dictionary item.  It was us
+#14.10.2005 cmpilato: * website/template-authoring-guide.html.   Add some left/right p
+#15.10.2005 cmpilato: Tweak the diff view data dictionary for consistency.. . * viewcv
+#15.10.2005 cmpilato: * viewcvs/templates/templates/docroot/images/broken.png,. * view
+#15.10.2005 cmpilato: Lose the poorly thunk 'makepatch' checkbox on the diff form.  Th
+#15.10.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (view_patch): Fix a little logic bug
+#17.10.2005 cmpilato: More template authoring guide; more dictionary tweaks as this ex
+#18.10.2005 cmpilato: Move some logic that really UI-ish from the core code into the. 
+#20.10.2005 cmpilato: Miscellaneous tweaks.. . * viewcvs/lib/viewcvs.py.   (copy_strea
+#20.10.2005 cmpilato: Fix Bug #1332969 - small fix of markup warning on Repository Lis
+#21.10.2005 cmpilato: * website/download.html.   Add link to nightly snapshots.. . 
+#26.10.2005 cmpilato: Consistify the datestamp variables to just 'date' (the timestamp
+#27.10.2005 cmpilato: More data dictionary consistency tweaks.. . * viewcvs/lib/viewcv
+#28.10.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (view_directory): Oops!  Use make_ti
+#02.11.2005 cmpilato: Some revision view cleanups.. . * viewcvs/lib/viewcvs.py.   (vie
+#02.11.2005 cmpilato: * viewcvs/lib/viewcvs.py.   (Request.get_link): Just some whites
+#03.11.2005 rey4: Change vclib interface to accept 'rev' parameters wherever it ac
+#03.11.2005 rey4: New URL scheme for Subversion. The problem with the old scheme i
+#03.11.2005 rey4: Take some rough edges off the new sticky revision interface. Ins
+#03.11.2005 rey4: Reorganize and update template information in upgrade guide.. . 
+#04.11.2005 rey4: Fix error in CVS log view when file has default branch set.. . *
+#04.11.2005 cmpilato: Restore performance by removing extremely expensive Subversion h
+04.11.2005 Welcome httpd!
+#04.11.2005 cmpilato: Make the various file-related views available from the directory
+#07.11.2005 rey4: Restore the sometimes checkout, sometimes markup behavior for. f
+#08.11.2005 rey4: Documentation updates.. . * CHANGES.     add changes since last 
+#08.11.2005 cmpilato: Built-in help touch-ups.. . * viewcvs/templates/docroot/help.css
+#09.11.2005 rey4: Get diffs to work in the ccvs module (used when use_rcsparse is 
+#09.11.2005 rey4: More documentation updates. . * templates/docroot/help_rootview.
+#09.11.2005 rey4: * templates/docroot/help_rootview.html:.     fix HTML error caug
+#10.11.2005 cmpilato: * viewcvs/templates/revision.ezt.   Move the log message into th
+#10.11.2005 cmpilato: * viewcvs/lib/vclib/svn/__init__.py.   (get_revision_info): Pull
+#11.11.2005 cmpilato: Re-add Russ Yanofsky's 'last_rev' support, fine-tuned for perfor
+#11.11.2005 cmpilato: Purge existing repository data in preparation of the cvs2svn dat
+#12.11.2005 cmpilato: Website tweaks to track project rename and relocation.. . * view
+#12.11.2005 cmpilato: Tigris.org likes to use '/trunk/www' for the project htdocs stuf
+#12.11.2005 cmpilato: * tools/make-release.   Update the release tool to work with the
+#15.11.2005 cmpilato: Copy the old SourceForge site so it can be cleaned up. for use a
+#15.11.2005 cmpilato: * viewvc.org/contact.html. * viewvc.org/contributing.html. * vie
+#15.11.2005 cmpilato: I like the Perl dig, but let's be kind enough to use it as a rem
+#15.11.2005 cmpilato: * viewcvs.sourceforge.net/contact.html. * viewcvs.sourceforge.ne
+#15.11.2005 cmpilato: * viewcvs-install.   Fix some code width and formatting issues t
+#15.11.2005 cmpilato: * templates/markup.ezt.   Revert a change made in r1150, in whic
+#17.11.2005 cmpilato: * viewvc.org/index.html .   Oops.  Missed a ViewCVS -> ViewVC in
+#22.11.2005 cmpilato: Some diff-related fixes.. . * lib/vclib/bincvs/__init__.py.   (B
+#02.12.2005 cmpilato: * viewvc/lib/viewcvs.py.   (view_directory, redirect_pathrev, vi
+#05.12.2005 cmpilato: * lib/viewcvs.py.   (_get_diff_paths_parts): Was _get_location. 
+#06.12.2005 rey4: Tweak logic used to find installed paths ('lib' directory, confi
+#06.12.2005 rey4: Check in another directory listing template following discussion
+#07.12.2005 cmpilato: * templates/include/diff_form.ezt.   Restore the diff_select FOR
+#08.12.2005 rey4: Update template authoring guide and make template cleanups.. . *
+#09.12.2005 rey4: Revert portion of r1176 that stopped exposing the 'prefer_markup
+#10.12.2005 rey4: Fix bincvs co bug.. . * lib/vclib/bincvs/__init__.py:.   (_re_co
+#10.12.2005 rey4: Prevent exception when jumping to a pathrev earlier than the rev
+#10.12.2005 rey4: Fix HEAD links on log page broken in r1150. . * lib/viewcvs.py. 
+#10.12.2005 rey4: Simplify pathrev/lastrev code, removing cruft left over from. pr
+#11.12.2005 rey4: Fix invalid variable reference in log_table template reported by
+#11.12.2005 rey4: Don't forget to install mod_python handler. Fixes issue 163 repo
+#12.12.2005 rey4: Fix MySQL 4.1 incompatibility in make-database script. Patch pro
+#13.12.2005 rey4: Fix exception caused by r1173 when kv files are used. This is is
+#13.12.2005 cmpilato: Fix issue #176 - Subversion annotate doesn't honor rev number.. 
+#13.12.2005 cmpilato: Finish issue #165 - Can't get valid log display for directories 
+#14.12.2005 cmpilato: Add *.pyc to the ignores list for the lib directory and its subd
+#15.12.2005 cmpilato: Goofing off a little bit in the www/ area, preparing for some re
+#15.12.2005 cmpilato: * www/index.html.   Move some stuff from the project attributes 
+#15.12.2005 cmpilato: Fix email addresses on the website.  Noticed by Richard Calmbach
+#16.12.2005 cmpilato: Begin sorta kinda figuring out how to distribute data on the new
+#16.12.2005 cmpilato: * www/index.html.   Use CSS for preformatted text instead of <pr
+#16.12.2005 cmpilato: * www/index.html.   Minor tweaks to preformatted section.. . * w
+#16.12.2005 cmpilato: * www/index.html.   Ah, forget the custom style stuff right now.
+#16.12.2005 cmpilato: Finish Issue #5.. . * lib/viewcvs.py.   (parse_date): Use time.a
+#17.12.2005 rey4: Fix issue 166 'empty diff generates an exception' reported by. Y
+#17.12.2005 rey4: Fix issue 173, cvsdb references MySqlDb connection escape() meth
+#17.12.2005 rey4: Fix issue 172, typo in query results table header reported by. P
+#17.12.2005 rey4: Work on issue 168, s/ViewCVS/ViewVC. This patch changes referenc
+#19.12.2005 cmpilato: Revert the changes made in r1196.  They were wrong.  Actually, c
+#19.12.2005 cmpilato: * templates/docroot/images/logo.png.   Tweak the logo to reflect
+#19.12.2005 cmpilato: * lib/viewcvs.py.   (parse_date): Use compat.timegm() instead of
+#19.12.2005 cmpilato: * templates/docroot/images/logo.png.   Grumble.  Fix the backgro
+#19.12.2005 cmpilato: * templates/include/header.ezt.   Make the ViewVC logo a link to
+#20.12.2005 rey4: Change required CvsGraph version from 1.4 to 1.5 to close out. i
+#20.12.2005 rey4: Simplify enscript and php colorizing using EZT callbacks. . * li
+#20.12.2005 rey4: Add support for colorizing using highlight. This is a stripped d
+#21.12.2005 rey4: Fix issue 181, query results groups subversion commits from diff
+#21.12.2005 rey4: Make 'Revision Log' links on markup, annotate and diff pages. ju
+#22.12.2005 rey4: Add 'port' option to connect to specified mysql port.. Patch wri
+#22.12.2005 rey4: Add RSS capability to ViewVC using patch from Paul Koning (pkoni
+#22.12.2005 rey4: Update URL to the highlight program. Inadvertently gave a URL to
+#22.12.2005 rey4: Documentation updates & template cleanups for recent changes.. .
+#22.12.2005 rey4: Fix issue 104 'ViewCVS Broken on WinNT' with patch provided by. 
+#22.12.2005 rey4: Add precompiled aspfool.dll. It's needed to run ViewCVS under. A
+#23.12.2005 rey4: Line wrap windows README file. I had been using a little python 
+#23.12.2005 rey4: Add limit_changes configuration option to limit the number of ch
+#23.12.2005 rey4: Attempt to make directory log page a little less confusing.. . *
+#29.12.2005 rey4: Make popen.pipe_cmds() accept an 'out' argument that controls wh
+#29.12.2005 rey4: Fix exception in tarball view for CVS repositories when. use_rcs
+#29.12.2005 rey4: Fix issue 187, 'viewcvs.conf.dist contains outdated references.'
+#29.12.2005 rey4: * windows/README.     minor updates. . 
+#30.12.2005 rey4: Use built in enscript file detection. This is an updated impleme
+#30.12.2005 rey4: Resolve issue 147 'patch for aix co.' Patch by sourceforge user.
+#04.01.2006 cmpilato: Finish issue #189 -- stale URLs for enscript in INSTALL file and
+#05.01.2006 cmpilato: Add a new --script-alias option to standalone.py, to allow folks
+#17.01.2006 cmpilato: * viewvc/viewcvs.conf.dist (enscript_path),. * viewvc/lib/config
+#18.01.2006 rey4: Fix mod_python issue, #188 reported by Andreas Amann (aamann).. 
+#19.01.2006 cmpilato: Try a different hack (the same one I used on subversion.tigris.o
+#19.01.2006 cmpilato: * www/index.html.   Override a few more styles to hide the 'Desc
+#21.01.2006 cmpilato: Finish issue #177.. . Fix a bug with Subversion annotate views w
+#21.01.2006 cmpilato: Really finish issue #177.  Fix a little bug with the bugfix done
+#21.01.2006 cmpilato: Implement support for line numbers in the diff view.. . * viewvc
+#21.01.2006 cmpilato: Finish issue #34 by making annotation lines bookmarkable, and li
+#22.01.2006 rey4: Improve error reporting when svn blame fails. Also fix some bugs
+#27.01.2006 cmpilato: * viewvc.org/download.html,. * viewvc.org/contributing.html.   U
+#31.01.2006 rey4: Fix mismatch between config.py and config file. . * lib/config.p
+#01.02.2006 rey4: Allow CVS roots to be specified as root_parent directories, that
+#01.02.2006 rey4: Rename the 'Project Root' drop down box to 'Repository' in the. 
+#03.02.2006 rey4: Rename ndiff.py and difflib.py modules, which are only provided 
+#04.02.2006 rey4: Fix issue 204, 'Invalid 'Repository Listing' location' reported 
+#05.02.2006 rey4: Make EZT library support python iterators so you can pass in thi
+#05.02.2006 rey4: Add rudimentary support for intraline diffs. Implementation is p
+#05.02.2006 rey4: Check in some files that were supposed to be included in r1244. 
+#05.02.2006 rey4: Implement trac-style unified diffs (with line numbers along the 
+#05.02.2006 rey4: Fix HTML escaping in new unified diff view. . * lib/idiff.py (_d
+#05.02.2006 rey4: Fix issue #205 'Illegal id tags in tempates' reported by. Andrea
+#06.02.2006 cmpilato: * viewvc/lib/idiff.py.   (_item.__init__): Call update() with th
+#06.02.2006 cmpilato: * viewvc/templates/diff.ezt.   Avoid creating references to unde
+#09.02.2006 cmpilato: * viewvc/lib/vclib/svn/__init__.py.   (BlameSourceKludge): Remov
+#10.02.2006 rey4: Fix EZT callback implementation so along with being able to writ
+#14.02.2006 cmpilato: Require Subversion 1.2.0 or better for the 'svn' module.. 
+#14.02.2006 cmpilato: Fixup <br> tags (to <br />).. 
+#14.02.2006 cmpilato: Finish issue #212 -- XHTMLify the highlight integration.. . * li
+#14.02.2006 cmpilato: Finish issue #210.  Patch by Gerard Gerritsen <sigcafe@tigris.or
+#15.02.2006 cmpilato: Finish issue #174 -- markup view of HEAD shows HEAD metadata, bu
+#15.02.2006 cmpilato: Re-order COMMITTERS based on first commit of each username.. 
+#15.02.2006 cmpilato: Finish issue #178 -- remove references to symbolic revisions in.
+#15.02.2006 cmpilato: Use <em> instead of <i>, <strong> instead of <b>.. 
+#15.02.2006 cmpilato: * viewcvs-install.   (InstallFile): Whitespace tweak..   (instal
+#15.02.2006 cmpilato: Fix a bug which caused 404's for revision views of the default. 
+#16.02.2006 rey4: Restore highlight 'line-number-start' option. Quoth Andreas Aman
+#18.02.2006 rey4: Fix crippling bug in query.cgi reported by John L. Villalovos. <
+#22.02.2006 rey4: Make the integrated query page work when the repository director
+#25.02.2006 rey4: Fix bug from r1266 in integrated query view reported by. Larry S
+#25.02.2006 rey4: Fix windows install issues #213 and #214.. Yahor Sinkevich (_tom
+#27.02.2006 rey4: Revert unintended change from r1267. Garrett Rooney. <rooneg@ele
+#27.02.2006 cmpilato: Finish issue #215.. . * lib/viewcvs.py.   (view_markup): Ensure 
+#28.02.2006 cmpilato: * templates/markup.ezt.   Check for existence of date, ago, and 
+#01.03.2006 rey4: Make vhost configuration work under mod_python. Patch by. Robert
+#06.03.2006 cmpilato: Add viewvc.org to the left-nav bar.. 
+#06.03.2006 cmpilato: Consistify capitalization.. 
+#06.03.2006 cmpilato: Remove SourceForge migration checklist, and lose implementation 
+#06.03.2006 cmpilato: With Greg Stein's blessing, drop his name from the template comm
+#06.03.2006 cmpilato: Um.  Character entities in comments are somewhat pointless.  Rep
+#07.03.2006 cmpilato: Make some fixes to the pipe handling code to avoid zombie proces
+#10.03.2006 cmpilato: * bin/svndbadmin.   (handle_revision):  Add 'verbose' parameter,
+#13.03.2006 cmpilato: Make py2html.py executable (it has a shell script mode).. 
+#13.03.2006 cmpilato: * TODO. * bin/cvsdbadmin.   Minor spelling and whitespace fixes.
+#13.03.2006 cmpilato: Some improvements to the py2html integration.  Thanks (I think..
+#16.03.2006 cmpilato: * lib/viewcvs.py.   (MarkupEnscript.__init__): Revert a change m
+#17.03.2006 rey4: Fix error messages when a path string is passed to vclib.ItemNot
+#17.03.2006 rey4: Make cvsdbadmin script work correctly when it is used to update.
+#17.03.2006 rey4: Avoid potential problem with pipe_cmds. . * lib/popen.py.   (_pi
+#18.03.2006 rey4: Finish issue 168, the project rename. Change is mostly based on 
+#18.03.2006 rey4: Clean for file headers and copyright notices for issue 167. . * 
+#18.03.2006 rey4: * viewcvs-install. * viewvc-install.     rename one more file. .
+#20.03.2006 rey4: Restore copyright statements for Curt Hagenlocher accidentally. 
+#20.03.2006 rey4: Get rid of the 'derived from cvsweb' notice at the top of viewvc
+#22.03.2006 rey4: Get rid of Highlight line number workaround. Highlight 2.4.5 cam
+#27.03.2006 maxb: Improve viewvc-install's response to invalid arguments.. . * vie
+#27.03.2006 rey4: Add URL reference document, currently rough and incomplete. Idea
+#27.03.2006 cmpilato: * viewvc.org/url-reference.html.   Make the stylesheet more like
+#31.03.2006 cmpilato: Advertise RSS capabilities even to browsers that don't have buil
+#31.03.2006 cmpilato: At Garrett Rooney's suggestion, use a fast-becoming-a-standard R
+#31.03.2006 cmpilato: Rename the 'rev' CGI parameter to 'revision' so that ViewVC can 
+#31.03.2006 cmpilato: * lib/viewvc.py.   (Request.run_viewvc): Move the 'rev' param au
+#31.03.2006 cmpilato: * lib/viewvc.py.   (_orig_path): Update comment which include 'r
+#02.04.2006 rey4: Add information about compatibility with old versions of Highlig
+#02.04.2006 rey4: * lib/viewvc.py.   (view_log): don't add unused parameter to 'se
+#03.04.2006 rey4: Fix ambiguities in URL handling for tarballs. These ambiguites d
+#03.04.2006 rey4: Remove summary tables and brackets from URL document. . * viewvc
+#03.04.2006 rey4: Break up 'url fragment' tables in URL reference document into se
+#03.04.2006 rey4: * viewvc.org/url-reference.html.     replace more occurrences of
+#03.04.2006 rey4: Basically finish up URL reference, filling out section on Backwa
+#03.04.2006 cmpilato: * lib/viewvc.py.   (Request.run_viewvc): Don't overwrite good pa
+#03.04.2006 cmpilato: Finish issue #226 - RSS feed title name always reads 'CVS'. . * 
+#04.04.2006 rey4: Make various improvements to URL reference document. In particul
+#04.04.2006 rey4: Restore ViewCVS 0.9.x behavior when 'checkout_magic' option is d
+#06.04.2006 rey4: Remove Codewarrior project file for aspfool. It's a good compile
+#06.04.2006 rey4: Change make-release script to generate ZIPs with CRLF line endin
+#06.04.2006 cmpilato: Branch rename: V0_9_x -> 0.9.x. 
+#06.04.2006 cmpilato: Tag rename: V0_3 -> 0.3.0. 
+#06.04.2006 cmpilato: Tag rename: V0_4 -> 0.4.0. 
+#06.04.2006 cmpilato: Tag rename: V0_5 -> 0.5.0. 
+#06.04.2006 cmpilato: Tag rename: V0_6 -> 0.6.0. 
+#06.04.2006 cmpilato: Tag rename: V0_7 -> 0.7.0. 
+#06.04.2006 cmpilato: Tag rename: V0_8 -> 0.8.0. 
+#06.04.2006 cmpilato: Tag rename: V0_9 -> 0.9.0. 
+#06.04.2006 cmpilato: Tag rename: V0_9_1 -> 0.9.1. 
+#06.04.2006 cmpilato: Tag rename: V0_9_2 -> 0.9.2. 
+#06.04.2006 cmpilato: Tag rename: V0_9_3 -> 0.9.3. 
+#06.04.2006 cmpilato: Tag rename: V0_9_4 -> 0.9.4. 
+#06.04.2006 cmpilato: * viewvc.org/contributing.html.   (Release Management): Update i
+#06.04.2006 cmpilato: Branch for 1.0.0 release.. 
+#06.04.2006 cmpilato: * lib/viewvc.py.   (__version__): Bump to 1.1-dev.. 
+#07.04.2006 cmpilato: * www/index.html.   (Latest Release): New section.. . 
+#09.04.2006 rey4: Doc updates. . * CHANGES. * INSTALL. * viewvc.org/index.html. * 
+#09.04.2006 rey4: Merge trunk doc updates from 1330 and 1331 onto 1.0 branch. . * 
+#14.04.2006 rey4: Make rlog parsing compatible with output from Debian's 5.7-18. R
+#14.04.2006 cmpilato: * templates/docroot/styles.css.   New 'vc_icon' style.. . * temp
+#14.04.2006 cmpilato: Make the dir_new template able to show as much of the log messag
+#14.04.2006 rey4: Merge trunk revision 1333 into 1.0 branch. . * branches/1.0.x. .
+#19.04.2006 cmpilato: * templates/dir_new.ezt.   Followup to r1335.  Drop whitespace f
+#19.04.2006 cmpilato: * templates/dir_new.ezt.   Use pixels instead of percentages for
+#20.04.2006 cmpilato: Fix a bug in the revision view URL generation and auto-upgrade..
+#20.04.2006 cmpilato: Merge r1339 from trunk into the 1.0.x branch.. 
+#20.04.2006 cmpilato: * viewvc.org/download.html.   Thomas Guttler points out that app
+#20.04.2006 cmpilato: Create a quick feature branch for merging the 'NAVDATA' and 'COM
+#20.04.2006 cmpilato: The first of several steps towards eliminating the NAVDATA templ
+#21.04.2006 rey4: Fix bug intepreting EZT substitution patterns. . * lib/ezt.py.  
+#24.04.2006 rey4: Fix possible incompatibility between loginfo-handler script and.
+#24.04.2006 rey4: Implement support for full diffs. Change based on a patch from. 
+#24.04.2006 rey4: Add title attributes to links that don't have other descriptive 
+#25.04.2006 cmpilato: Finish ridding ViewVC of the NAVDATA stuff by merging the last o
+#01.05.2006 cmpilato: Branch: commonize-navdata. . * viewcvs.sourceforge.net/.   Remov
+#01.05.2006 cmpilato: Merge -r1349 from the `commonize-navdata' branch (it was actuall
+01.05.2006 Version 1.0
+#02.05.2006 cmpilato: Tag the 1.0.0 final release.. 
+#02.05.2006 cmpilato: * lib/viewvc.py.   (__version__): Bump to 1.0.1-dev.. . * CHANGE
+#02.05.2006 cmpilato: * CHANGES.   Add date for the 1.0.0 release.. 
+#02.05.2006 rey4: * www/index.html.     update latest release section on viewvc.ti
+#02.05.2006 rey4: Merge -r1354 from the `commonize-navdata' branch. It was an acci
+#16.05.2006 rey4: Fix exception on log page when use_pagesize is enabled. Patch fr
+#16.05.2006 rey4: Update old paths in installation docs. Patch and bug report from
+#18.05.2006 cmpilato: * CHANGES.   Add change for r1357's bugfix.. 
+#18.05.2006 cmpilato: Consistify version heading formats, and lose intra-release dates
+#18.05.2006 cmpilato: Backport r1357 to the 1.0.x release branch.  That log message re
+#19.05.2006 cmpilato: Merge -r1342:1360 from trunk to the commonize-navdata branch.. .
+#19.05.2006 cmpilato: * tools/make-release.   Only try to delete directories that exis
+#19.05.2006 cmpilato: Merge the commonize-navdata branch into the trunk.  For change l
+#20.05.2006 cmpilato: * lib/viewvc.py.   (view_diff): Fix call to common_template_data
+#20.05.2006 cmpilato: * lib/viewvc.py.   (DiffSource.__init__, DiffSource._get_row, Di
+#26.05.2006 cmpilato: Apply the patch in issue #239, provided by 'mbroadbent (Mark B)'
+#26.05.2006 cmpilato: Backport the patch from r1367 (from issue #239), and not the cha
+#26.05.2006 cmpilato: Syncronize the 1.0.x CHANGES file with recent formatting fixes f
+#26.05.2006 maxb: * tparse/Setup.py: Set svn:executable.. . 
+#27.05.2006 maxb: Resolve some inconsistency in the rcsparse library, concerning t
+#27.05.2006 maxb: * tparse/tparse.h: For istream, include <istream>, not <iostream
+#02.06.2006 maxb: * lib/vclib/ccvs/rcsparse/texttools.py: Document what the textto
+#12.07.2006 cmpilato: Add some helpful text and warnings to the sample conf file, clos
+#14.07.2006 cmpilato: Finish issue #237.. . Patch by: Russell Yanofsky <russ@yanofsky.
+#14.07.2006 cmpilato: Backport fix for issue #237 (r1375) to the 1.0.x branch.. . * li
+#14.07.2006 cmpilato: Finish issue #241.. . * lib/viewvc.py.   (get_file_view_info): F
+#14.07.2006 cmpilato: Backport fix for issue #241 (r1377) to the 1.0.x branch.. . * li
+#14.07.2006 cmpilato: * bin/standalone.py.   (cli): Tweak the layout of the usage mess
+#14.07.2006 cmpilato: Finish issue #235.. . * bin/standalone.py.   (Options):  Add dae
+#14.07.2006 cmpilato: * bin/standalone.py.   (GUI.__init__): Fix minor spelling errors
+#14.07.2006 cmpilato: Finish issue #249.. . * lib/query.py.   (main): Add 'rss_href' t
+#14.07.2006 cmpilato: Backport fix for issue #249 (r1382) to the 1.0.x branch.. . * li
+#15.07.2006 cmpilato: Finish issue #250 -- Tarballs from Subversion repositories don't
+#15.07.2006 cmpilato: Backport fix for issue #250 (r1384) to the 1.0.x branch.. . * li
+#20.07.2006 cmpilato: Correct a bunch of paths in the INSTALL document.  Reported by .
+20.07.2006 Version 1.0.1
+#21.07.2006 cmpilato: * CHANGES.   Note recent change that uses real modification time
+#21.07.2006 cmpilato: Tag the 1.0.1 final release.. . 
+#21.07.2006 cmpilato: Oops.  Stick a datestamp in the CHANGES file.. 
+#21.07.2006 cmpilato: Repair a paragraph suffering from missing words.. 
+#21.07.2006 cmpilato: * www/index.html.   Bump note about the latest release to 1.0.1.
+#21.07.2006 cmpilato: * CHANGES.   Merge in 1.0.1 changes.. 
+#21.07.2006 cmpilato: * lib/viewvc.py.   (__version__): Bump to 1.0.2-dev.. 
+#21.07.2006 cmpilato: * viewvc-install.   Complete rework this script for uniform code
+#21.07.2006 cmpilato: Merge the corrections to the INSTALL file made in r1386 to the 1
+#21.07.2006 cmpilato: Fix issue #18 (Annotate not working in windows for subversion)..
+#21.07.2006 cmpilato: Backport to the 1.0.x branch r1396, whose log message readly thu
+#21.07.2006 cmpilato: * CHANGES.   Update with recent fixes.. . 
+#24.07.2006 cmpilato: * lib/viewvc.py.   (common_template_data): Populate tarball_href
+#24.07.2006 cmpilato: * viewvc.org/template-authoring-guide.html.   Track new location
+#27.07.2006 cmpilato: Do a documentation reorganization I've been dying to do for some
+#27.07.2006 cmpilato: Add .htaccess file.  No sense in not versioning it.. 
+#27.07.2006 cmpilato: * viewvc.org/download.html,. * viewvc.org/contributing.html,. * 
+#27.07.2006 cmpilato: Add 'nightly' to the svn:ignores.. 
+#28.07.2006 cmpilato: Add a step in releases.txt for updating the Issue Tracker config
+#28.07.2006 cmpilato: Stub out a section in the upgrading-howto.html document for 1.1.
+#28.07.2006 cmpilato: Cleanup ViewVC's configuration and use of external utilities by.
+#28.07.2006 cmpilato: Remove spurious blank line.. 
+#28.07.2006 cmpilato: * docs/upgrading-howto.html.   Bring this, I think, up-to-date w
+#31.07.2006 cmpilato: * docs/template-authoring-guide.html.   Fill in the remaining bl
+#01.08.2006 cmpilato: Remove useless .cvsignore file.. 
+#01.08.2006 cmpilato: Website tweaks, mostly visual and validational in nature.. . * v
+#01.08.2006 cmpilato: Fix some grammar issues and, while here, rant about SF.net a lit
+#01.08.2006 cmpilato: Finish issue #208 (Annotate aborts on #include './filename').  P
+#01.08.2006 cmpilato: Backport fix for issue #208 (r1414) to the 1.0.x branch.. . * li
+#01.08.2006 cmpilato: * lib/vclib/svn/__init__.py.   (BlameSource.__init__):  Pass the
+#01.08.2006 cmpilato: Finish issue #245 by making the generated RSS feed URL match. sc
+#01.08.2006 cmpilato: Backport fix for issue #245 (r1417) to the 1.0.x branch.. . * li
+#01.08.2006 cmpilato: Backport r1416 to the 1.0.x branch.. . * lib/vclib/svn/__init__.
+#02.08.2006 cmpilato: Update contact information with the IRC channel.. . * www/index.
+#04.08.2006 cmpilato: Fix some bugs introduced in r1407.  Noticed by maxb.. . * lib/vi
+#16.08.2006 cmpilato: Fix a bug noticed by Michael Guntsche <mike@it-loops.com> which 
+#16.08.2006 cmpilato: Port r1422 to the 1.0.x branch.. . * lib/viewvc.py.   (view_mark
+#17.08.2006 cmpilato: * lib/compat.py.   (mkdtemp): Flesh out the parameter list for m
+#17.08.2006 cmpilato: * lib/viewvc.py.   (common_template_data): Expose request.rootpa
+#18.08.2006 cmpilato: Expose the path for each root in the [roots] common template dat
+#19.08.2006 cmpilato: Minor vclib interface cleanup, adding a new Annotation object, a
+#28.09.2006 rey4: Update the PHP CGI hack and add a comment to the config file poi
+#28.09.2006 cmpilato: Backport to the 1.0.x branch r1428 from trunk, whose log message
+#28.09.2006 cmpilato: * viewvc.conf.dist.   Make some tweaks recommended in IRC by use
+#29.09.2006 cmpilato: Follow-up to r1407, fixing some calls to modified APIs that I. o
+#29.09.2006 cmpilato: Tag the 1.0.2 final release.. 
+#29.09.2006 cmpilato: Remove bogus branch (which was supposed to be a tag).. 
+#29.09.2006 cmpilato: Update some branch files post-release.. . * lib/viewvc.py.   (__
+#29.09.2006 cmpilato: Merge 1.0.2 CHANGES into trunk's copy of the file.. 
+#29.09.2006 cmpilato: * notes/releases.txt.   Fix sample `make-release' command-line, 
+#29.09.2006 cmpilato: Bump the stated latest version of the software.. 
+29.09.2006 Version 1.0.2
+#12.10.2006 cmpilato: Remove some redundancy by teaching generate_page(), which is *al
+#13.10.2006 cmpilato: *** WARNING:  THIS CHANGE BREAKS STUFF; ALSO NEED r1443 and r144
+#13.10.2006 cmpilato: Backport to the 1.0.x branch r1440, whose log message read thusl
+#13.10.2006 cmpilato: Tweak releases.txt to point out our Tigris.org milestone sort ke
+#13.10.2006 cmpilato: Followup to r1440, in which I butchered some code under the guis
+#13.10.2006 cmpilato: * lib/vclib/svn/__init__.py.   (get_revision_info): Removing som
+13.10.2006 Version 1.0.3 
+#14.10.2006 cmpilato: Merge r1443 and r1444 from trunk, which were follow-ups to the i
+#14.10.2006 cmpilato: Dictate UTF-8 as the output character set for all ViewVC templat
+#14.10.2006 cmpilato: Tag the 1.0.3 final release.. 
+#14.10.2006 cmpilato: * CHANGES.   Finalize 1.0.3 changes list.  Begin a new section f
+#14.10.2006 cmpilato: * CHANGES.   Merge 1.0.3 change list from the 1.0.x branch.. . 
+#14.10.2006 cmpilato: Merge security fix made in r1446 from 1.0.x to trunk.  That log 
+#14.10.2006 cmpilato: * www/index.html.   Bump the stated latest version number to 1.0
+#17.10.2006 cmpilato: * viewvc/bin/standalone.py.   (serve): Fix some leftover referen
+#17.10.2006 cmpilato: Finish issue #261 -- detect SVN repository from standalone.. . *
+#18.10.2006 cmpilato: Begin a section for 1.1.0 in CHANGES.. 
+#18.10.2006 cmpilato: Try to note the changes so far which are aimed for release in 1.
+#18.10.2006 cmpilato: Finish issue #266 -- Query result shows file names with @ as ema
+#18.10.2006 cmpilato: Backport to 1.0.x r1456, whose log message ran thusly:. .    Fin
+#27.10.2006 cmpilato: * viewvc-install.   (install_file, install_tree): Replace '/' wi
+#27.10.2006 cmpilato: Create a new 'authz-dev' feature branch.. 
+#31.10.2006 cmpilato: Branch: authz-dev. . Begin work on a new authorization subsystem
+#01.11.2006 cmpilato: Add some debug code to facilitate tarball generation debugging..
+#02.11.2006 cmpilato: Add support for two levels of quietness to the obnoxiously noisy
+#02.11.2006 cmpilato: Update loginfo-handler to be able to deal with the new loginfo f
+#02.11.2006 cmpilato: (Effectively) whitespace changes only.. 
+#02.11.2006 cmpilato: * bin/loginfo-handler.   (__main__): Fix a syntax error I overlo
+#02.11.2006 cmpilato: Backport to the 1.0.x branch from trunk revisions 1345 and 1463:
+#02.11.2006 cmpilato: Add missing CHANGES item for full diff support.. 
+#08.11.2006 cmpilato: On the 'viewvc-authz-dev', fix view_directory() to filter out. u
+#08.11.2006 cmpilato: On the 'viewvc-authz-dev' branch, introduce a new exception for 
+#08.11.2006 cmpilato: On the 'viewvc-authz-dev' branch, starting use the new. ViewVCNo
+#08.11.2006 cmpilato: * lib/vclib/ccvs/rcsparse/common.py.   Remove dependency on comp
+#08.11.2006 cmpilato: Allow ViewVC to work when rcsparse is backed by the tparse modul
+#09.11.2006 cmpilato: Followup to r1439, with the correct logic in generate_page().. .
+#09.11.2006 cmpilato: On the 'viewvc-authz-dev', add a 'roottype' parameter to the. au
+#09.11.2006 cmpilato: * lib/vclib/svn/__init__.py.   Bump version requirement to Subve
+#10.11.2006 cmpilato: * lib/vclib/svn_ra/__init__.py.   Purge the svn_ra module of unn
+#10.11.2006 cmpilato: On the 'viewvc-authz-dev' branch, add an authz plugin provided b
+#27.11.2006 cmpilato: On the 'viewvc-authz-dev' branch, add some TODO thoughts.. 
+#01.12.2006 cmpilato: * INSTALL.   (SUBVERSION INTEGRATION): Tweak the example for tes
+#04.12.2006 cmpilato: Fix a bug that prevented the population of 'rev' for annotate vi
+#04.12.2006 cmpilato: Finish issue #273.. . * templates/docroot/styles.css.   (vc_row_
+#06.12.2006 cmpilato: Add some links to ViewVC instances.. 
+#14.12.2006 cmpilato: * viewvc-install.   (install_file, install_tree): Replace '/' wi
+#14.12.2006 cmpilato: Minor stylistic tweaks.. 
+#18.12.2006 cmpilato: Minor improvements to some exception strings and their handling.
+#19.12.2006 cmpilato: Prep PyFontify.py for Python 2.6 readiness, and make it stop giv
+#20.12.2006 rey4: Interpret relative paths in viewvc.conf as being relative to the
+#20.12.2006 cmpilato: Make viewvc-install able to be run from an arbitrary location (i
+#20.12.2006 cmpilato: Backport to viewvc-1.0.x the latest and greatest viewvc-install,
+#21.12.2006 cmpilato: Remove the dead commonize-navdata branch.. 
+#21.12.2006 cmpilato: Allow highlight to choose the syntax language based on the file'
+#21.12.2006 cmpilato: Finish issue #276.. . * bin/make-database.   Up the length of th
+#21.12.2006 cmpilato: For Issue #271, implement 'purge' commands for both cvsdbadmin a
+#22.12.2006 cmpilato: Add some missing issue IDs to CHANGES entries.. 
+#02.01.2007 cmpilato: Add a new 'uri' format to EZT.. . NOTE: This is not currently us
+#03.01.2007 cmpilato: Fix issue #280.  Follow-up to r1493 with tweaks to INSTALL for t
+#04.01.2007 cmpilato: * lib/viewvc.py.   (MarkupHighlight.__call__): Minor indentation
+#05.01.2007 cmpilato: * lib/cvsdb.py.   (CheckinDatabase.AddCommit): Add some more inf
+#05.01.2007 cmpilato: * lib/cvsdb.py.   (CheckinDatabase.AddCommit): Add some newlines
+#06.01.2007 cmpilato: Finish issue #262 - svndbadmin doesn't commit data to MySQL Inno
+#06.01.2007 cmpilato: Backport to 1.0.x the fix for issue #262 (svndbadmin doesn't com
+#09.01.2007 cmpilato: Provide another hint to folks for whom ViewVC can't find Subvers
+#11.01.2007 cmpilato: * viewvc.org/faq.html.   Drop a skeletal FAQ page into place, bu
+#18.01.2007 cmpilato: Optimize directory displays where paging is enabled and sorting 
+#22.01.2007 cmpilato: * lib/viewvc.py.   (view_directory): Initialize file.size, too. 
+#22.01.2007 cmpilato: * lib/compat.py.   (mkdtemp): Fix the compatibility implementati
+#23.01.2007 cmpilato: Finish issue #12 -- Long paths in tarballs get truncated.. . Use
+#23.01.2007 cmpilato: Backport to the viewvc-1.0.x branch the fix for issue #12, commi
+#23.01.2007 cmpilato: Finish issue #22 - Query on Log Messages.. . Add the ability to 
+#23.01.2007 cmpilato: * CHANGES.   Note new search-by-log-message feature, committed i
+#23.01.2007 cmpilato: * lib/vclib/svn/__init__.py.   (_rev2optrev): Moved here from th
+#23.01.2007 cmpilato: Finish issue #221 - Annotate confused by long author names. . * 
+#23.01.2007 cmpilato: * CHANGES.   Add the bugfix for issue #221 completed in r1512.. 
+#23.01.2007 cmpilato: Improve the error display when trying to view annotations on a b
+#23.01.2007 cmpilato: Finish issue #234 - standalone.py uses not registered port per d
+#23.01.2007 cmpilato: * CHANGES.   Note the fix for issue #234, committed in r1515.. 
+#23.01.2007 cmpilato: * bin/loginfo-handler.   Fix the loginfo-handler's argument hand
+#23.01.2007 cmpilato: * bin/loginfo-handler.   Add some more debugging, and consume st
+#23.01.2007 cmpilato: * bin/loginfo-handler.   Backport to the viewvc-1.0.x branch tru
+#23.01.2007 cmpilato: Fix issue #284 - Regression: 'Modify query' link no longer funct
+#26.01.2007 cmpilato: Update the INSTALL file.. 
+#31.01.2007 cmpilato: * lib/vclib/svn_ra/__init__.py.   (created_rev): Update use of r
+#01.02.2007 cmpilato: * lib/vclib/svn_ra/__init__.py.   (created_rev): Because the way
+#01.02.2007 cmpilato: Add optional integration with GNU source-highlight.  Patch again
+#01.02.2007 cmpilato: Add notes to INSTALL about using source-highlight.. 
+#02.02.2007 cmpilato: Miscellaneous cleanups around the source-highlight integration..
+#02.02.2007 cmpilato: I think I'm finished messing around with source-highlight integr
+#02.02.2007 cmpilato: Add new CHANGES item for source-highlight integration.. . 
+#13.02.2007 cmpilato: * viewvc.conf.dist (use_source_highlight): Default to 0.. 
+#26.02.2007 cmpilato: Un-bind ViewVC's core libraries from the assumption that sys.std
+#26.02.2007 cmpilato: Robustness fixes where empty or missing revision metadata occurs
+#26.02.2007 cmpilato: Robustness fixes in the query stuffs where empty or missing revi
+#27.02.2007 cmpilato: * INSTALL.   Add a note about the security implications of the c
+#09.03.2007 cmpilato: Rename the Mod_Python stub scripts to avoid triggering an import
+#09.03.2007 cmpilato: * bin/mod_python/viewvc_mp.py,. * bin/mod_python/query_mp.py.   
+#12.03.2007 cmpilato: * templates/error.ezt.   Only show the stacktrace when we've not
+#12.03.2007 cmpilato: * lib/viewvc.py.   (_orig_path, common_template_data, view_direc
+#12.03.2007 cmpilato: Backport applicable portions of r1539 from trunk to the 1.0.x br
+#16.03.2007 cmpilato: Backport to the 1.0.x branch r1344, which fixes a logic error th
+#27.03.2007 cmpilato: * docs/url-reference.html.   Reformat to (mostly) fit in 80 colu
+#27.03.2007 cmpilato: Rename the 'rev' view to the 'revision' view (at the CGI param l
+#27.03.2007 cmpilato: Unify the allowable views configury, and all support for disabli
+#28.03.2007 cmpilato: * bin/svndbadmin.   De-pool-ize the use of the Subversion bindin
+#28.03.2007 cmpilato: Finish issue #224 by allowing svndbadmin to optionally accept a 
+#28.03.2007 cmpilato: Note some recently made CHANGES.. 
+#28.03.2007 cmpilato: * lib/viewvc.py.   (view_markup): Raise an exception if the mark
+#28.03.2007 cmpilato: Remove a change that was backported to 1.0.x.. 
+#28.03.2007 cmpilato: Finish issue #244 by normalizing the input search directory valu
+#28.03.2007 cmpilato: Begin the work of merging the markup and annotate views by at le
+#28.03.2007 cmpilato: * templates/docroot/styles.css,. * templates/annotate.ezt.   Try
+#29.03.2007 cmpilato: * INSTALL.   (SECURITY INFORMATION): Update this with the latest
+#29.03.2007 cmpilato: * INSTALL.   (SECURITY INFORMATION): New section (copied from tr
+#29.03.2007 cmpilato: * bin/svndbadmin.   (SvnRev.__init__): Don't use secs_from_times
+#02.04.2007 cmpilato: * windows/README.   Update Python for Windows Extensions URL (th
+#02.04.2007 cmpilato: On the 1.0.x branch: backport from trunk r1557, which updates th
+#02.04.2007 cmpilato: Fix a bug reported by Jens Peters <jpeters7677@gmx.de> which cau
+#02.04.2007 cmpilato: * lib/viewvc.py.   Backport bugfix from trunk@r1559.. . * CHANGE
+#02.04.2007 cmpilato: * viewvc-install.   (install_file): Test e.errno instead of e[0]
+#02.04.2007 cmpilato: Backport from trunk r1561, which fixes bugs in viewvc-install's.
+#02.04.2007 cmpilato: Turn on root_as_url_component by default for ViewVC 1.1.. . * li
+#02.04.2007 cmpilato: * viewvc-install.   (install_file): Use os.sep instead of '/' as
+#04.04.2007 cmpilato: * lib/viewvc.py.   (redirect_pathrev): Automagically transform b
+#06.04.2007 cmpilato: * templates/include/footer.ezt,. * templates/include/header.ezt.
+#06.04.2007 cmpilato: Finish issue #296 - Query links for SVN deletions produce bad li
+#06.04.2007 cmpilato: Backport to 1.0.x r1569 from trunk, whose log message read thusl
+#06.04.2007 cmpilato: Backport to 1.0.x r1568 from trunk, which fixes some XHTML valid
+#06.04.2007 cmpilato: * lib/viewvc.py.   (common_template_data): Don't forget to take 
+#09.04.2007 cmpilato: Finish issue #180 - Query results cache staleness under mod_pyth
+#09.04.2007 cmpilato: Backport from trunk r1573, whose log message read thusly:. .    
+#09.04.2007 cmpilato: * viewvc.conf.dist.   (allow_tar): Move this to be closer to oth
+#10.04.2007 cmpilato: * templates/include/diff_form.ezt,. * templates/include/pathrev_
+#10.04.2007 cmpilato: Backport from trunk r1486, whose lead message read thusly:. .   
+#10.04.2007 cmpilato: (Hopefully) really finish issue #262 by enabling auto-commit in 
+#10.04.2007 cmpilato: Backport from trunk r1579, whose log message read thusly:. .    
+#10.04.2007 cmpilato: Nail down a release date for 1.0.4.. 
+#10.04.2007 cmpilato: Tag the 1.0.4 final release.. 
+#10.04.2007 cmpilato: Begin a new release cycle.. 
+#10.04.2007 cmpilato: Note new latest release of ViewVC.. 
+#10.04.2007 cmpilato: Copy 1.0.4 CHANGES block to trunk.. 
+#10.04.2007 cmpilato: * tools/make-release.   Fix some bugs in this script which preve
+#10.04.2007 cmpilato: Do some documentation and website reorg and purging.. . * docs. 
+#10.04.2007 cmpilato: Lose some .cvsignore files.. 
+#10.04.2007 cmpilato: * viewvc.org/license-1.html.   Bump copyright years.. . * viewvc
+#10.04.2007 cmpilato: Update copyright years.. 
+#10.04.2007 cmpilato: * tools/make-release.   Uh... actually copy the LICENSE.html fil
+#10.04.2007 cmpilato: Add some steps to releases.txt.. 
+#10.04.2007 cmpilato: Update copyright years.. 
+#10.04.2007 cmpilato: Update license-1.html file.. 
+#10.04.2007 cmpilato: Copy notes directory from trunk.. 
+#10.04.2007 cmpilato: Update make-release script with latest from trunk.. 
+#10.04.2007 cmpilato: The whole license file dance is annoying.  Just put the thing wh
+#10.04.2007 cmpilato: 'Gaaaaah.'. . That's what I say to the Universe.. . 'Gaaaaah.'. 
+#10.04.2007 cmpilato: Add the nightly build scripts to version control.. 
+#10.04.2007 cmpilato: Delete the svn:mergeinfo property.. 
+#10.04.2007 cmpilato: Merge from trunk r1596-1599, which is bunch of license-related j
+10.04.2007 Version 1.0.4 
+#13.04.2007 cmpilato: * viewvc.conf.dist.   Take a stab at documenting ViewVC's vhost 
+#13.04.2007 cmpilato: * viewvc.conf.dist.   Clean up some more option documentation.. 
+#13.04.2007 cmpilato: Move the 'use_rcsparse' option from 'general' to 'options'.. . *
+#13.04.2007 cmpilato: Finish issue #287 by ensuring that in a clash of root names, the
+#13.04.2007 cmpilato: Backport from trunk r1605, whose log message read thusly:. .    
+#16.04.2007 cmpilato: Add support for per-root option overrides using sections named. 
+#16.04.2007 cmpilato: Catchup on trunk changes by merging from trunk -r 1458:1607.. . 
+#17.04.2007 cmpilato: Use forward-slash (/) as the separator in config section names b
+#17.04.2007 cmpilato: Merge from trunk r1609.. . 
+#17.04.2007 cmpilato: On the authz-dev branch (for issue #268):. . Rework the authoriz
+#17.04.2007 cmpilato: * lib/config.py.   (Config.load_config): Stash a reference to th
+#17.04.2007 cmpilato: Merge from trunk r1612, and make similar additional tweaks for t
+#17.04.2007 cmpilato: Rework Alex Russell's <arussell@tigris.org> patch to the svnauth
+#17.04.2007 cmpilato: Remove some completed TODO items.. 
+#18.04.2007 cmpilato: * lib/viewvc.py. * lib/vclib/ccvs/rcsparse/common.py. * lib/vcli
+#18.04.2007 cmpilato: * lib/blame.py.   (make_html): Not that I think anybody actually
+#18.04.2007 cmpilato: * docs/upgrading-howto.html.   Don't refer to 'ViewCVS 1.0'.  It
+#25.04.2007 cmpilato: Create a new top-level directory for contributed template sets..
+#25.04.2007 cmpilato: Populate the templates-contrib top-level directory with some. or
+#25.04.2007 cmpilato: Add an externals definition which pulls in contributed template 
+#26.04.2007 cmpilato: Merge the authz-dev branch work into trunk.  Let's let the plugg
+#26.04.2007 cmpilato: Remove authz-dev branch, whose contents now live on trunk.. 
+26.04.2007 Welcome jens7677!
+#26.04.2007 jens7677: * templates-contrib/1.0/viewsvn.   Initial commit of a template-
+#26.04.2007 cmpilato: * viewsvn/INSTALL. * viewsvn/README.   Set svn:eol-style propert
+#26.04.2007 cmpilato: * bin/loginfo-handler.   (Cvs1Dot12ArgParse): Handle the importe
+#26.04.2007 cmpilato: * CHANGES.   Note the fix from r1628.. . 
+#27.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/docroot/images/logo-sv
+#27.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/include/dir_footer.ezt
+#28.04.2007 cmpilato: * templates-contrib/1.1/tabbed.   Add my 'tabbed' ViewVC 1.1 tem
+#29.04.2007 cmpilato: * lib/viewvc.py.   (view_directory): Move the tarball_href calcu
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/docroot/images/tortois
+#29.04.2007 jens7677: * templates-contrib/1.0viewsvn/templates/include/header.ezt.   R
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/directory.ezt.   Fixed
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/screenshots. * templates-contrib
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/dir_new.ezt. * templat
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/include/dir_footer.ezt
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/INSTALL. * templates-contrib/1.0
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/include/dir_footer.ezt
+#29.04.2007 jens7677: * templates-contrib/1.0/viewsvn/INSTALL.   Reflect recent line n
+#03.05.2007 cmpilato: * lib/viewvc.py.   Fix some long lines.  No functional changes..
+#03.05.2007 cmpilato: * viewvc-install.   (TREE_LIST): Install the contributed templat
+#03.05.2007 cmpilato: Remove reference to merged-and-removed authz-dev branch.. 
+#05.05.2007 jens7677: * templates-contrib/1.0/viewsvn/extras/fix-blame-output.diff.   
+#05.05.2007 jens7677: * templates-contrib/1.0/viewsvn/templates.   Removed some unused
+#05.05.2007 jens7677: * templates-contrib/1.0/viewsvn/extras/svnindex.xsl.   Fixes the
+#09.05.2007 cmpilato: Fix parse of multi-user svnauthz groups.. . * lib/vcauth/svnauth
+#10.05.2007 cmpilato: * lib/vcauth/svnauthz/__init__.py.   (ViewVCAuthorizer.__init__)
+#11.05.2007 cmpilato: Ensure that vclib.Repository objects are aware of their name, pa
+#11.05.2007 cmpilato: Pass the Repository object to the vcauth modules so they can mor
+#11.05.2007 cmpilato: * tabbed/templates/query_form.ezt. * tabbed/templates/docroot/st
+#14.05.2007 cmpilato: Remove vcauth/test module.. 
+#14.05.2007 cmpilato: Fix the diff display (and remove unused CSS class definitions)..
+#15.05.2007 cmpilato: Consistify blockquote stylation, and update cvsweb link.. 
+#16.05.2007 cmpilato: For issue #268:  Merge the Authorizers' check_directory_access()
+#20.05.2007 jens7677: * templates-contrib/1.0/viewsvn/extras/svnindex.xsl. * templates
+#20.05.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/docroot/images/tortois
+#20.05.2007 jens7677: * templates-contrib/1.0/viewsvn/extras/svnindex.xsl.   Remove so
+#21.05.2007 cmpilato: * lib/vcauth/forbidden/__init__.py.   (): import vclib (so tryin
+#25.05.2007 cmpilato: Fix the vcauth interactions of the tarball generation code.. . *
+#25.05.2007 cmpilato: Improve the vcauth stuffs error handling logic a bit.. . * lib/v
+#01.06.2007 cmpilato: Add some notes on improving the vclib API.. 
+#02.06.2007 cmpilato: Finish issue #290 - Introduce an option for mangling email addre
+#02.06.2007 cmpilato: Add email address mangling feature to CHANGES.. 
+#04.06.2007 cmpilato: For issue #290 - Re-work the way email address mangling is manag
+#07.06.2007 cmpilato: The disconnected query interface throws all the root-centric han
+#14.06.2007 cmpilato: Website tweaks to support the FAQ page.. . * viewvc.org/styles.c
+#15.06.2007 cmpilato: Flesh out the 'rlog output ended early' answer.. 
+#15.06.2007 cmpilato: Tweak the tigris.org left-nav a bit.. 
+#15.06.2007 cmpilato: Fix some webstuffs spelling oopses.. 
+#15.06.2007 cmpilato: For issue #303, duplicate the commented-out LD_LIBRARY_PATH sett
+#15.06.2007 cmpilato: Add FAQ item for 'COMalformedOutput: ...' as suggested by Heathe
+#20.06.2007 cmpilato: * lib/vcauth/forbidden/__init__.py.   (ViewVCAuthorizer.__init__
+#20.06.2007 cmpilato: * viewvc.conf.dist,. * lib/config.py.   Re-sync (and re-order) t
+#27.06.2007 cmpilato: Minor code simplification.. . * lib/vclib/svn_ra/__init__.py.   
+#27.06.2007 cmpilato: Minor code cleanups.. . * lib/vclib/svn/__init__.py.   (get_logs
+#27.06.2007 cmpilato: Minor code cleanups (doing in vclib.svn_ra what I recently did i
+#27.06.2007 cmpilato: Implement a more-or-less generic global revision info function i
+#27.06.2007 cmpilato: * templates/rss.ezt.   For issue #238, properly XML-entity-encod
+#27.06.2007 cmpilato: XML-entity-escape the RSS description data.. 
+#28.06.2007 cmpilato: Update the vhosts config example to not use 'cvs' and 'svn' in v
+#30.06.2007 jens7677: * templates-contrib/1.0/viewsvn/templates/rss.ezt.   Merge r1685
+#05.07.2007 cmpilato: * viewvc.org/styles.css.   (faq-section): New style name.. . * v
+#05.07.2007 cmpilato: * viewvc.org/faq.html.   Populate the answer to the 'missing tem
+#05.07.2007 cmpilato: * viewvc.org/faq.html.   Reformat 'questions' as (of all things)
+#05.07.2007 cmpilato: * viewvc.org/faq.html.   Answer the 'no module named svn' questi
+#05.07.2007 cmpilato: * viewvc.org/faq.html.   (standalone-only): New question and ans
+#09.07.2007 cmpilato: Finish issue #306 - RSS content type should be more specific.. .
+#09.07.2007 cmpilato: Merge from trunk to the 1.0.x release branch r1695, whose log me
+#13.07.2007 cmpilato: Add a FAQ item about path-based authz.. 
+#20.07.2007 cmpilato: Note some completed enhancements.. 
+#26.07.2007 cmpilato: Finish issue #307: RSS feeds should include a <channel><link> el
+#27.07.2007 cmpilato: * docs/upgrading-howto.html.   Followup to r1699, noting new 'rs
+#27.07.2007 cmpilato: Finish issue #309: add links from diff view to revision views.. 
+#30.07.2007 cmpilato: Add FAQ-n-A about RSS feeds.. 
+#16.08.2007 cmpilato: * bin/cvsdbadmin,. * bin/svndbadmin.   (usage): Make it clear th
+#04.09.2007 cmpilato: Track changes to default templates, and add per-VC logos to the 
+#04.09.2007 cmpilato: Oops.  Remove a bit of debugging logic accidentally committed.. 
+#14.09.2007 cmpilato: Prevent Exception when generating tarballs for remote Subversion
+#14.09.2007 cmpilato: Backport from trunk r1706:. .    Prevent Exception when generati
+#01.10.2007 cmpilato: * viewvc.org/faq.html.   (missing-files): Start answering this q
+#09.10.2007 cmpilato: * docs/upgrading-howto.html.   Add a note about the change to 's
+#31.10.2007 cmpilato: * viewvc.org/faq.html.   Add a FAQ entry for the '...but none ma
+#16.11.2007 cmpilato: Add a new test/demonstration script.. . Submitted by: Michael Ha
+#16.11.2007 cmpilato: Add a very primitive testing infrastructure for rcsparse, and th
+#16.11.2007 cmpilato: * lib/vclib/ccvs/rcsparse/parse_rcs_file.py.   Set svn:executabl
+#16.11.2007 cmpilato: Fix a syntax error that was preventing compilation.. . Submitted
+#16.11.2007 cmpilato: Welcome aboard, Michael.. 
+18.11.2007 Welcome mhagger!
+#18.11.2007 mhagger: Reorder definitions in the approximate order that they will be c
+#18.11.2007 mhagger: Separate handling of the 'strict' keyword into a separate 'if' b
+#18.11.2007 mhagger: Rewrite _Parser.parse_rcs_admin() to use a token lookup table.. 
+#18.11.2007 mhagger: Remove dead code.. . * lib/vclib/ccvs/rcsparse/common.py (_Parse
+#18.11.2007 mhagger: Handle a 'head' keyword with no revision number.. . According to
+#18.11.2007 mhagger: Handle files with empty 'delta' (a.k.a., 'tree') part.. . Accord
+#18.11.2007 mhagger: Simplify the logic in texttools._mxTokenStream.match() (remove d
+#18.11.2007 mhagger: Improve the error message for RCSExpected exceptions.. . * lib/v
+#18.11.2007 mhagger: Change the token stream match() methods to raise RCSExpected exc
+#18.11.2007 mhagger: Use match() to handle semicolons when possible.. . This simplifi
+#18.11.2007 mhagger: Rename some local variables to better describe their uses.. . * 
+#18.11.2007 mhagger: Simplify _Parser._parse_admin_access().. . * lib/vclib/ccvs/rcsp
+#19.11.2007 mhagger: Extract method _Parser._parse_rcs_tree_entry().. . * lib/vclib/c
+#19.11.2007 mhagger: Simplify _Parser._parse_rcs_tree_entry().. . * lib/vclib/ccvs/rc
+#19.11.2007 mhagger: Don't carry zeros along in date tuple.. . * lib/vclib/ccvs/rcspa
+#19.11.2007 mhagger: Fix and simplify the handling of dates in _Parser._parse_rcs_tre
+#19.11.2007 mhagger: Add method _Parser._read_until_semicolon(), and use it in other 
+#19.11.2007 mhagger: Change the way that rcsparse.parse() is imported in parse_rcs_fi
+#19.11.2007 mhagger: Change the way that rcsparse components are imported in run-test
+#01.12.2007 cmpilato: Create a new 'options-overhaul' branch.. 
+#01.12.2007 cmpilato: Put all the CVS logic -- both the rcsparse-ing and bincvs-ing. i
+#01.12.2007 cmpilato: Put all the Subversion logic -- both the local-accessing and RA-
+#01.12.2007 cmpilato: Fixup some old references to the vclib.bincvs module.. . * bin/l
+#03.12.2007 cmpilato: Merge changes (r1735:1738) from the (misnamed) options-overhaul.
+#03.12.2007 cmpilato: Remove completed branch.. 
+#03.12.2007 cmpilato: Create a new 'vcauth-reorg' branch/playground.. 
+#03.12.2007 cmpilato: On the 'vcauth-reorg' branch, begin the work of making the Repos
+#03.12.2007 cmpilato: On the 'authz-reorg' branch, fix a bug in the Subversion authz a
+#04.12.2007 cmpilato: On the 'vcauth-reorg' branch, begin moving authz checks into the
+#04.12.2007 cmpilato: Add some hints to INSTALL about getting Subversion and its bindi
+#10.01.2008 cmpilato: Add an href to the root listing view to the common template data
+#24.01.2008 cmpilato: Try to use Python's gzip module for the tarball generation view,
+#25.01.2008 cmpilato: * INSTALL.   Note that we now expect source-highlight 2.6.. . * 
+#28.01.2008 cmpilato: * lib/viewvc.py.   (Request.__init__): Stop calculating and stor
+#28.01.2008 cmpilato: Formatting and comment changes only.. 
+#06.02.2008 cmpilato: Add roots-listing view link to the breadcrumbs.. 
+#06.02.2008 cmpilato: Remove stray svn:mergeinfo properties.. 
+#06.02.2008 cmpilato: Merge -r1741:1752 from /trunk.. 
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, get root checking into place.  (Sa
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, speed up that root-authz-checking 
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, finish (I think) getting local Sub
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, cleanup the authz init logic.. . *
+#06.02.2008 cmpilato: * lib/config.py.   (Config.set_defaults): Clear the default admi
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, revert r1755, whose log message re
+#06.02.2008 cmpilato: On the 'vcauth-reorg' branch, unify some auth-checking logic, an
+#06.02.2008 cmpilato: Merge -r1752:r1760 from trunk.. . 
+#06.02.2008 cmpilato: Merge to trunk all the changes from the 'vcauth-reorg' branch as
+#07.02.2008 cmpilato: Introduce a new authz module, like 'forbidden' but with support 
+#07.02.2008 cmpilato: * viewvc.conf.dist.   (authorizer): Update comment to describe p
+#07.02.2008 cmpilato: * INSTALL: Recommend adding ViewVC to the site-wide robots.txt f
+#07.02.2008 cmpilato: Backport trunk's r1765, in which we recommend adding ViewVC to r
+#08.02.2008 cmpilato: Create a new 'issue-57-dev' branch.. 
+#08.02.2008 cmpilato: On the 'issue-57-dev' branch, take a first shot at implementing 
+#08.02.2008 cmpilato: Fix a little buglet -- referencing a non-existant object.. . * l
+#11.02.2008 cmpilato: This is a cleanup commit, mostly around making sure that Reposit
+#11.02.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   (BlameSource._blame_cb): Increme
+#11.02.2008 cmpilato: Mostly unify the markup and annotate view logic.  This does *not
+#12.02.2008 cmpilato: Be so bold as to claim that the authz subsystem is in 1.1.. 
+#12.02.2008 cmpilato: Fix some minor oversights.. 
+#12.02.2008 cmpilato: Finish issue #305 by allowing 'markup' to be the configured defa
+#12.02.2008 cmpilato: * lib/config.py.   (Config.get_authorizer_params): Rework this t
+#12.02.2008 cmpilato: * bin/loginfo-handler,. * bin/cvsdbadmin.   Update calls to vcli
+#12.02.2008 cmpilato: Finish issue #238 by not making HTML out of short log messages i
+#12.02.2008 cmpilato: Merge r1779 from trunk, whose log message read thusly:. .    Fin
+#12.02.2008 cmpilato: Entity-escape RSS descriptions, and wrap them in <pre> tags.. 
+#12.02.2008 cmpilato: Add support for display of locked status.. . * docs/template-aut
+#12.02.2008 cmpilato: Track changes to default templates.. 
+#12.02.2008 cmpilato: Remove obsolete branch.. 
+#13.02.2008 cmpilato: Finish issue #57 with more support for showing locked status.. .
+13.02.2008 Welcome root!
+#13.02.2008 root: auto commit for alm editor.. 
+#13.02.2008 root: Committed through web interface.. 
+#13.02.2008 root: auto commit for alm editor.. 
+#13.02.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   (LocalSubversionRepository.dirlo
+#13.02.2008 cmpilato: Create a new branch for development of merged file views.. 
+#14.02.2008 cmpilato: On the 'merged-file-views' branch, take a crack at merging the. 
+#14.02.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   Tweak all uses of vclib.svn.core
+#14.02.2008 cmpilato: Put a link to the FAQ and open issues on the Contact page.. 
+#14.02.2008 cmpilato: Tweak the contact summary a bit.. 
+#14.02.2008 cmpilato: Refactor some common template logic from the markup and annotate
+#15.02.2008 cmpilato: Minor fixes required by new authz logic.. . * lib/viewvc.py.   (
+#21.02.2008 cmpilato: On the 1.0.x branch:. . Fix buglets (and minor security leak) re
+#21.02.2008 cmpilato: Backport (sorta) the 'forbiddenre' support from trunk.. . * lib/
+#21.02.2008 cmpilato: Tweak authz changes a bit.. 
+#21.02.2008 cmpilato: Forward-port the r1800 bugfixes made in the 1.0.x branch, whose 
+#21.02.2008 cmpilato: * viewvc.conf.dist: Note that you can use this to hide roots, to
+#22.02.2008 cmpilato: Honor hide_cvsroot more like the CVSROOT is forbidden than simpl
+#22.02.2008 cmpilato: Merge from trunk r1806, whose log message read thusly:. .    Hon
+#22.02.2008 cmpilato: Fix a buglet that, for some reason, only shows up when viewing C
+#22.02.2008 cmpilato: Security fixes: strip forbidden changed paths in the Subversion.
+#22.02.2008 cmpilato: * templates/error.ezt.   Bring up-to-date with trunk's version, 
+#22.02.2008 cmpilato: Security fix: block access to forbidden paths via the p1 and p2 
+#22.02.2008 cmpilato: * viewvc.org/nightly/build-viewvc-snapshot. Completely rework th
+#22.02.2008 cmpilato: Update copyright years.. 
+#25.02.2008 cmpilato: Fix the plus/minus line change counting in query results to igno
+#25.02.2008 cmpilato: merge from 1.0.x -r1815, whose log message read thusly:. .    Fi
+#25.02.2008 cmpilato: Make 'forbiddenre' significantly more powerful by allowing folks
+#26.02.2008 cmpilato: Forward-port tweak to forbiddenre support made in r1817 on the 1
+#26.02.2008 cmpilato: Security fixes for remote Subversion repositories.. . * lib/vcli
+#27.02.2008 cmpilato: Avoid errors caused by invoking the Subversion command-line clie
+#27.02.2008 cmpilato: * lib/viewvc.py.   (_get_svn_location): Doh!  Return the parts w
+#28.02.2008 cmpilato: Update copyright years.. 
+#28.02.2008 cmpilato: Update to use new name of the license file.. 
+#28.02.2008 cmpilato: Tag the 1.0.5 final release.. 
+#28.02.2008 cmpilato: Ahh ... begin the cycle anew .... 
+#28.02.2008 cmpilato: Update the www/ area and CHANGES file in light of 1.0.5 release.
+#28.02.2008 cmpilato: Update copyright years.. 
+#28.02.2008 cmpilato: Add some missing module imports.. 
+28.02.2008 Version 1.0.5
+#03.03.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   (LocalSubversionRepository.openf
+#04.03.2008 cmpilato: Make some minor (though nice in terms of code readability). opti
+#04.03.2008 cmpilato: Truncate Subversion item log history if it dips into unreadable.
+#04.03.2008 cmpilato: When I added the various view hrefs to the common template data 
+#04.03.2008 cmpilato: * lib/vclib/ccvs/bincvs.py.   (BaseCVSRepository.itemtype): Init
+#18.03.2008 cmpilato: Stop generating tarball URLs that are outside the URL namespace 
+#19.03.2008 cmpilato: Rename the forbiddenre authorizer's configuration token to avoid
+#19.03.2008 cmpilato: * templates/docroot/styles.css.   Add 'white-space: nowrap' to t
+#01.04.2008 cmpilato: Clarify the working copy / repository distinction for CVS newbie
+#04.04.2008 cmpilato: Mostly just formatting changes.. 
+#08.04.2008 cmpilato: Add support to standalone.py for specifying a configuration file
+#10.04.2008 cmpilato: For issue #39, bang in some rudimentary support for displaying v
+#10.04.2008 cmpilato: Add CHANGES item for property display.. 
+#10.04.2008 cmpilato: Catch the 'tabbed' templates up with trunk's latest.. 
+#10.04.2008 cmpilato: Fixup styles on the property lists.. 
+#11.04.2008 cmpilato: * lib/viewvc.py.   (_legal_params): Move some params to a new gr
+#11.04.2008 cmpilato: Fix a bug in directory views that appeared when pagination was e
+#11.04.2008 cmpilato: Fix another bug in directory views that appeared when pagination
+#11.04.2008 cmpilato: Create a new branch 'log-paging' for improving pagination of the
+#11.04.2008 cmpilato: On the 'log-paging' branch, defer log sorting to the vclib layer
+#11.04.2008 cmpilato: On the 'log-paging' branch, fix an obvious oops.. . * lib/viewvc
+#12.04.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   (RemoteSubversionRepository.itempro
+#12.04.2008 cmpilato: Merge the bugfix in r1851 (which see) from trunk.. . 
+#14.04.2008 cmpilato: On the 'log-paging' branch, get sliding-window-style paging most
+#14.04.2008 cmpilato: On the 'log-paging' branch, fix sliding-window-style paging.. . 
+#15.04.2008 cmpilato: On the 'log-paging' branch, get sliding-window-style paging work
+#15.04.2008 cmpilato: Add picklist.more documentation, and sort picklist members alpha
+#15.04.2008 cmpilato: Merge changes from the 'log-paging' branch:. .   $ svn merge -c1
+#15.04.2008 cmpilato: Remove obsolete (merged) branch.. 
+#15.04.2008 cmpilato: * CHANGES.   Add a note about recent pagination improvements.. 
+#17.04.2008 cmpilato: * lib/viewvc.py.   (common_template_data): Remove an obsolete TO
+#17.04.2008 cmpilato: * lib/vclib/ccvs/ccvs.py.   (CCVSRepository.rawdiff): Update cal
+#17.04.2008 cmpilato: Fix some inconsistencies in the way the roots listing is handled
+#17.04.2008 cmpilato: Minor code refactoring.. . * lib/viewvc.py.   (expand_root_paren
+#17.04.2008 cmpilato: Remove the roots collection from the common-to-every-page data. 
+#18.04.2008 cmpilato: Update 'tabbed' template set with some recent changes.. 
+#18.04.2008 cmpilato: Add upgrading notes about the removal of 'roots' from most views
+#18.04.2008 cmpilato: Add some ViewVC logo ideas I've been sitting on for a while.. 
+#22.04.2008 cmpilato: Restore website files to XHTML validation standards.. 
+#22.04.2008 cmpilato: Cleanup the design a bit: contrast the greens some more, thicken
+#22.04.2008 cmpilato: Add 'viewvc' text to the logo.. 
+#22.04.2008 cmpilato: * lib/viewvc.py.   (view_revision): Use repos.get_youngest_revis
+#23.04.2008 cmpilato: Lose gzip-binary-using fallback code, and actually make the. all
+#28.04.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   (RemoteSubversionRepository.created
+#28.04.2008 cmpilato: Fix some URI encoding level issues with remote Subversion reposi
+#28.04.2008 cmpilato: * viewvc.conf.dist.   Clarify that only one authorizer can be in
+#28.04.2008 cmpilato: Support a couple of different flavors of email address mangling.
+#29.04.2008 cmpilato: Fix issue #259 - the latest revision details page gets cached in
+#29.04.2008 cmpilato: Note the bugfix made in r1878.. 
+#29.04.2008 cmpilato: Don't ignore whitespace by default.  That can be confusing to fo
+#07.05.2008 cmpilato: Reduce the size of the 'highlight dots', and add an SVG version.
+#12.05.2008 cmpilato: Avoid problems caused by trying to search files in a given CVS t
+#12.05.2008 cmpilato: Don't show dead files at all when using search-based filtering..
+#12.05.2008 cmpilato: Merge from trunk r1882 and r1883, fixing issue #346 on the 1.0.x
+#12.05.2008 cmpilato: Add CHANGES item for recent bugfix.. 
+#13.05.2008 cmpilato: At least in one area of the codebase, avoid requiring a Python-2
+#13.05.2008 cmpilato: Make the .itemprops() interface work for remote Subversion files
+#14.05.2008 cmpilato: Fix issue #348 by making the 'co' parser more resilient to multi
+#14.05.2008 cmpilato: Backport r1888 from trunk:. .    Fix issue #348 by making the 'c
+#14.05.2008 jens7677: * templates-contrib/1.0/viewsvn/extras/svnindex.xsl.   Specify d
+#15.05.2008 cmpilato: Group some similarly-colored regions.. 
+#16.05.2008 cmpilato: Add some variations on the eye theme.. 
+#21.05.2008 cmpilato: Give template authors the ability to reveal the active username.
+#21.05.2008 cmpilato: Continuing the endless quest to purge all HTML generation from. 
+#21.05.2008 cmpilato: Merge r1894 from the trunk templates.. 
+#22.05.2008 cmpilato: * templates/include/dir_footer.ezt.   Fix an old reference to a 
+#22.05.2008 cmpilato: Backport from trunk r1896, and note the fix in CHANGES.. 
+#22.05.2008 cmpilato: * lib/viewvc.py.   (common_template_data): Generate RSS hrefs fo
+#22.05.2008 cmpilato: * lib/viewvc.py.   (view_directory): Always show the search form
+#22.05.2008 cmpilato: Add another new template set, this one aimed at being a possible
+#22.05.2008 cmpilato: Lose div hover-highlighting.. 
+#23.05.2008 cmpilato: Add support for remote creation of ViewVC checkins database, and
+#23.05.2008 cmpilato: Re-add dirlist row highlight, but make the whole cell clickable.
+#23.05.2008 cmpilato: * bin/make-database.   (__main__): Add some comments, and don't 
+#23.05.2008 cmpilato: On the 'merged-file-views' branch, make a few cleanups.. . * lib
+#23.05.2008 cmpilato: As part of issue #394, add support for integration with Pygments
+#23.05.2008 cmpilato: Unify the option for enabling line numbers, and add support for 
+#23.05.2008 cmpilato: Avoid having the Pygments integration keeping two copies of the 
+#24.05.2008 cmpilato: * lib/viewvc.py.   (MarkupPygments.__call__): The parameter is '
+#24.05.2008 cmpilato: Merge all outstanding revisions from trunk (r1791:1910).. 
+#25.05.2008 cmpilato: On the 'merged-file-views' branch: Reduce the set of supported s
+#27.05.2008 cmpilato: On the 'merged-file-views' branch, de-annotate-ize the template.
+#27.05.2008 cmpilato: On the 'merged-file-views' branch, reinstate diff links on the. 
+#30.05.2008 cmpilato: * nightly/build-viewvc-snapshot.   Duh.  Actually removing the t
+#30.05.2008 cmpilato: Merge all outstanding revisions from trunk (r1910:1915).. 
+#30.05.2008 cmpilato: * lib/viewvc.py.   (markup_or_annotate): Lose uninteresting stat
+#30.05.2008 cmpilato: Merge the work done on the 'merged-file-views' branch in full.  
+#30.05.2008 cmpilato: Remove obsolete (already-merged) branch.. 
+#30.05.2008 cmpilato: Track changes made to trunk in r1918.. 
+#30.05.2008 cmpilato: Update ViewVC logo, and add favicon.. . * templates/docroot/imag
+#30.05.2008 cmpilato: Promote a ViewVC logo idea to The Real Thang(tm).. . * notes/log
+#30.05.2008 cmpilato: Update online help documents.. 
+#30.05.2008 cmpilato: * lib/viewvc.py.   (markup_stream_pygments): Use 'utf-8' output 
+#30.05.2008 cmpilato: * lib/viewvc.py.   (markup_stream_pygments): CGI-escape the orig
+#31.05.2008 cmpilato: Workaround some Subversion 1.4.x Python bindings shortcomings.. 
+#31.05.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   (svn_client_ls3): New helper (to de
+#31.05.2008 cmpilato: * templates/include/dir_header.ezt,. * templates/include/dir_foo
+#02.06.2008 cmpilato: Ensure zero-padded dates in the nightly tarball names.. 
+#02.06.2008 cmpilato: * viewvc.conf.dist.   (show_subdir_lastmod): Tweak description t
+#02.06.2008 cmpilato: * lib/vclib/ccvs/bincvs.py.   (BaseCVSRepository, BinCVSReposito
+#02.06.2008 cmpilato: Add missing authz checks for rcsparse-backed CVS module.. . * li
+#02.06.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   (LocalSubversionRepository): Thr
+#02.06.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   Begin adding authz checks where nec
+#03.06.2008 cmpilato: * lib/viewvc.py.   (_get_diff_path_parts): Store the result of _
+#03.06.2008 cmpilato: Finish issue #233:  tarball entries from Subversion repositories
+#03.06.2008 cmpilato: * lib/viewvc.py.   (check_freshness): Move a comment closer to t
+#03.06.2008 cmpilato: Make dates appear again in remote Subversion directory views.. .
+#05.06.2008 cmpilato: Fix conditional for directory revision log link, and add 'View C
+#05.06.2008 cmpilato: Finish issue #351, which solves a regression against 1.0.x *and*
+#05.06.2008 cmpilato: * CHANGES: Note the change committed in r1940.. 
+#06.06.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   (RemoteSubversionRepository.itemlog
+#06.06.2008 cmpilato: * lib/vclib/svn/svn_ra.py.   Fix a syntax error.  (This is what 
+#11.06.2008 cmpilato: Re-brand the viewvc.org pages.. 
+#11.06.2008 cmpilato: Add favicon.ico, and try to settle on a background color.. 
+#11.06.2008 cmpilato: Shrink the title image a bit.. 
+#11.06.2008 cmpilato: Tweak website credits text just a bit.. 
+#12.06.2008 cmpilato: Don't specify how syntax highlighting is provided.. 
+#12.06.2008 cmpilato: Add vclib-specific path canonicalization and root-parent expansi
+#12.06.2008 cmpilato: Update the upgrade documentation.. 
+#12.06.2008 cmpilato: Make annotations work again for Subversion repositories.. . * li
+#12.06.2008 cmpilato: Interpret the per-template override options as relative to the. 
+#12.06.2008 cmpilato: Some intra-page link tweaks.. . * lib/viewvc.py.   (Request.run_
+#13.06.2008 cmpilato: * viewvc.conf.dist.   (log_sort): Rename 'cvs' value to 'none'..
+#13.06.2008 cmpilato: * viewvc.conf.dist.   (hide_cvsroot): Move closer to 'authorizer
+#13.06.2008 cmpilato: Formatting changes only.. 
+#19.06.2008 cmpilato: * viewvc.conf.dist.   Fix example use of 'svn_dir' to 'svn'.. . 
+#19.06.2008 cmpilato: * bin/svndbadmin.   Import 'vclib' so bad stuff doesn't happen. 
+#19.06.2008 cmpilato: Finish issue #357.. . Only populate rss_href and queryform_href 
+#20.06.2008 cmpilato: Add CHANGES line for issue #357 change.. 
+#20.06.2008 cmpilato: * bin/standalone.py.   (cli): Add 'host' to the list of accepted
+#21.06.2008 cmpilato: * lib/debug.py.   (ViewVCNotAuthorizedException.__init__): Use '
+#21.06.2008 cmpilato: I *thought* something seemed wrong.  We don't *want* ViewVC to c
+#24.06.2008 cmpilato: * lib/cvsdb.py.   (GetCommitListFromRCSFile): Update call to Rep
+#24.06.2008 cmpilato: Make the check-the-database-for-roots-before-creating-RSS-and-qu
+#25.06.2008 cmpilato: Address issue #358 as best as possible (I believe).. . * lib/vie
+#26.06.2008 cmpilato: Fix a regression against 1.0.x which caused the wrong revision m
+#26.06.2008 cmpilato: Add a helper function, use it, and fix a little authz oopsy alon
+#26.06.2008 cmpilato: Add some more authz checks for remote SVN repositories, and fix 
+#26.06.2008 cmpilato: More authz stuff for remote SVN repositories.. . * lib/vclib/svn
+#26.06.2008 cmpilato: * lib/vclib/svn/svn_ra.py (SelfCleanFP.readlines): New.. . 
+#30.06.2008 cmpilato: Add support for Subversion authz-file aliases, a feature new to.
+#07.07.2008 cmpilato: Fix issue #360 - Purge functionality can orphan rows in checkins
+#19.07.2008 jens7677: * templates-contrib/1.1/viewsvn.   Add initial version of viewsv
+#19.07.2008 jens7677: * viewsvn/templates/diff.ezt. * viewsvn/templates/directory.ezt.
+#28.07.2008 jens7677: * viewsvn/templates/directory.ezt.   Honor allow_views correctly
+#28.07.2008 cmpilato: Finish issue #354: Lose ability to set Content-type via CGI para
+#28.07.2008 cmpilato: Backport from trunk r1978:. .    Finish issue #354: Lose ability
+#28.07.2008 cmpilato: Update the URL reference in light of r1978 and r1979.. 
+#05.08.2008 cmpilato: Finish issue #364 - Recognize Subversion's svn:mime-type propert
+#13.08.2008 cmpilato: Fix some indentation-based syntax exceptions caused by stray tab
+#13.08.2008 cmpilato: * lib/viewvc.py,. * lib/vclib/ccvs/rcsparse/common.py,. * lib/vc
+#14.08.2008 cmpilato: * lib/blame.py.   Only import vclib.ccvs.blame for the one funct
+#18.08.2008 cmpilato: Finish issue #361 - Support reasonable copy-pasting of the path.
+#18.08.2008 cmpilato: Port r1987 template changes to 'newvc' template set.. 
+#20.08.2008 cmpilato: * lib/vclib/svn/svn_repos.py.   (LocalSubversionRepository._revi
+#20.08.2008 cmpilato: * lib/viewvc.py.   (calculate_mime_type): Gracefully handle exce
+#20.08.2008 cmpilato: * lib/viewvc.py.   (build_commit): Remove duplicated authz check
+#20.08.2008 cmpilato: * lib/viewvc.py.   (build_commit): Ahem.  And then commit the fi
+#20.08.2008 cmpilato: Fix the import cycle problem with the mod_python stuffs (issue #
+#20.08.2008 cmpilato: Reverse-merge changes made in r1536 and r1537 (in which our mod_
+#20.08.2008 cmpilato: Add missing module import statement.. 
+#21.08.2008 cmpilato: In the CVS vclib providers, mark entries which have no revisions
+#21.08.2008 cmpilato: Add some svn:ignore properties.. 
+#21.08.2008 cmpilato: Finish issue #105 (add option hide_errorful_entries).. . * viewv
+#21.08.2008 jens7677: * viewsvn/templates/file.ezt.   Display a file's MIME type. (as 
+#08.09.2008 cmpilato: * lib/viewvc.py.   (setup_authorizer): Use the 'imp' module inst
+#10.09.2008 cmpilato: * viewvc.conf.dist.   No longer recommend that folks set use_ens
+#11.09.2008 cmpilato: * lib/viewvc.py.   (setup_authorizer): Avoid try/except/finally
+16.09.2008 Version 1.0.6  
+#16.09.2008 jens7677: * viewsvn/templates/directory.ezt. * viewsvn/templates/include/p
+#16.09.2008 cmpilato: Tag the 1.0.6 final release.. 
+#16.09.2008 cmpilato: Begin a new release cycle.. 
+#16.09.2008 cmpilato: Bump most recent release version in website note.. 
+#16.09.2008 cmpilato: Lose fixed-width formatting of a URL.. 
+#16.09.2008 cmpilato: Copy 1.0.6 changes into trunk CHANGES file.. 
+#16.09.2008 cmpilato: Tigris.org homepage updates.. 
+#22.09.2008 cmpilato: * lib/viewvc.py.   (setup_authorizer): Use the prescribed mechan
+#26.09.2008 jens7677: * viewsvn/templates/include/props.ezt.   Add relative table cell
+#26.09.2008 jens7677: * viewsvn/templates/docroot/styles.css.   Delete deprecated styl
+#27.09.2008 jens7677: * viewsvn/templates/directory.ezt.   Add an inner table to the f
+#27.09.2008 jens7677: * viewsvn/templates/docroot/images/logo-viewvc.png. * viewsvn/te
+#02.10.2008 cmpilato: Fix issue #373: Regression: 'as text' view no longer transmits. 
+#02.10.2008 cmpilato: Backport from trunk r2016, whose log message reads thusly:. .
+14.10.2008 Version 1.0.7   
+#15.10.2008 cmpilato: Finalize release date for 1.0.7.  Need to get this regression fi
+#15.10.2008 cmpilato: Tag the 1.0.7 final release.. 
+#15.10.2008 cmpilato: Begin a new release cycle.. 
+#15.10.2008 cmpilato: Minor tweaks to the release process docs.. 
+#15.10.2008 cmpilato: Bump the version named as the latest release.. 
+#15.10.2008 cmpilato: Merge 1.0.7 changes into CHANGES file (and fix a long line while
+#15.10.2008 cmpilato: Expose the authenticated username in the templates.. . * templat
+#15.10.2008 cmpilato: Get per-root overrides of authorizer stuffs working, and adverti
+#15.10.2008 cmpilato: Add support for allowing/disallow the root listing view.. . * li
+#15.10.2008 cmpilato: Note per-root configuration override change.. 
+#20.10.2008 cmpilato: * lib/vcauth/svnauthz/__init__.py.   (ViewVCAuthorizer._process_
+#22.10.2008 cmpilato: Add FAQ entry about installation docs.. 
+#24.10.2008 cmpilato: Remove redundant CHANGES line.. 
+#29.10.2008 cmpilato: * docs/upgrading-howto.html.   Reorder some sections, and docume
+#30.10.2008 cmpilato: Support rule inversion in the 'svnauthz' module, just as Subvers
+#30.10.2008 cmpilato: Branch for 1.1 stabilization.. 
+#30.10.2008 cmpilato: * lib/viewvc.py (__version__): Bump to '1.2-dev'.. . 
+#04.11.2008 cmpilato: Tag the 1.1.0-beta1 release.. 
+#04.11.2008 cmpilato: Remove prematurely created tag.. 
+#05.11.2008 cmpilato: Tag the 1.1.0-beta1 release.. 
+#05.11.2008 cmpilato: Website and CHANGES file updates.. 
+#05.11.2008 cmpilato: Doh!  Remove empty <div> section.. 
+#05.11.2008 cmpilato: * CHANGES: Combine some changes, and remove a now-bogus one.. 
+#05.11.2008 cmpilato: Merge r2040 from the 1.1.x branch:. . * CHANGES: Combine some ch
+#06.11.2008 cmpilato: docs/upgrading-howto.html: Don't claim as removed options not in
+#06.11.2008 cmpilato: Minor website tweakage.. . * viewvc.org/index.html.   Lose 'Futu
+#10.11.2008 cmpilato: * viewvc.org/faq.html: Update the answer to the authz question..
+#11.11.2008 cmpilato: * viewvc.org/faq.html: Minor wording tweak.. 
+#11.11.2008 cmpilato: Avoid returning huge lists of variables from get_file_view_info(
+#13.11.2008 cmpilato: Minor improvements to the debug timer code.. . * lib/debug.py.  
+#13.11.2008 cmpilato: Merge r2048 from trunk.. 
+#14.11.2008 cmpilato: Finish issue #384 - repos._revinfo_raw() is doing far too much w
+#14.11.2008 cmpilato: Merge from trunk r2051, whose log message read thusly:. .    Fin
+#14.11.2008 cmpilato: It's very confusing to comment out the authorizer configuration 
+#14.11.2008 cmpilato: Merge from trunk r2053, whose log message read thusly:. .    It'
+#14.11.2008 cmpilato: Add a configuration option for telling ViewVC to *not* honor the
+#14.11.2008 cmpilato: Merge from trunk r2055, whose log message read thusly:. .    Add
+#20.11.2008 cmpilato: Merge from trunk r2047, whose log message read thusly:. .    Avo
+#05.12.2008 cmpilato: Allow admins to enable/disable diff/patch views via the allowed_
+#05.12.2008 cmpilato: Remove unnecessary empty mergeinfo.. 
+#05.12.2008 cmpilato: Record recent merges to this branch.. 
+#05.12.2008 cmpilato: Record a bunch of old merges (as determined from log message har
+#05.12.2008 cmpilato: Merge from trunk r2058, whose log message read thusly:. .    All
+#10.12.2008 cmpilato: Remove unnecessary module imports.. 
+#10.12.2008 cmpilato: Fix issue #385 (Hide/show annotations links mismanaged for binar
+#10.12.2008 cmpilato: Merge from trunk r2063 and r2064.. 
+#10.12.2008 cmpilato: Rework the 'rlog-ended-early' FAQ bit with a more generic entry.
+#19.12.2008 cmpilato: Expose to revision.ezt a count of the total number of changed pa
+#19.12.2008 cmpilato: Document new num_changes item in upgrade notes.. 
+#19.12.2008 cmpilato: Backport from trunk r2067 and r2068.. 
+#19.12.2008 cmpilato: Try to deal with Subversion versions that lack the. SVN_ERR_CEAS
+#19.12.2008 cmpilato: Backport from trunk r2070.. 
+#22.12.2008 cmpilato: Create branch for issue #366 (cvsdb purge operation is painfully
+#22.12.2008 cmpilato: On the issue-366-dev branch: Add a new version of the commits da
+#22.12.2008 cmpilato: On the 'issue-366-dev' branch: Add a new index to version 1 of t
+#23.12.2008 cmpilato: On the 'issue-366-dev' branch: Rename the 'checkins' table to. '
+#23.12.2008 cmpilato: On the 'issue-366-dev' branch:  add 'make-database --help' param
+#13.01.2009 cmpilato: Remove unnecessary empty svn:mergeinfo.. 
+#13.01.2009 cmpilato: Merge to trunk all changes made on the issue-366-dev branch,. co
+#13.01.2009 cmpilato: Add some real command-line parameter handling to 'make-database'
+#13.01.2009 cmpilato: On the 1.1.x branch:  Merge from trunk r2078 and r2079.. . * lib
+#13.01.2009 cmpilato: Document the new database schema stuff.. 
+#13.01.2009 cmpilato: Merge from trunk r2081.. 
+#13.01.2009 cmpilato: Finish issue #334 by adding an empty CSS class def and some refe
+#13.01.2009 cmpilato: Merge from trunk r2083.. 
+#15.01.2009 cmpilato: Add a skeletal version of some semblance of 1.1.0 release notes,
+#02.02.2009 cmpilato: Fix issue #398 (File Log Viewer Shows Wrong Log Message) by aski
+#02.02.2009 cmpilato: Backport from trunk r2086, whose log message read thusly:. .    
+#03.02.2009 cmpilato: Remove dead code.. . * lib/popen.py.   (pipe_cmds, _copy): Remov
+#03.02.2009 cmpilato: Merge from trunk r2088, whose log message read:. .    Remove dea
+#20.02.2009 cmpilato: ViewVC doesn't 'do' directory entry sorting by revision for CVS,
+#20.02.2009 cmpilato: Merge relevant r2090 templates changes here.. 
+#20.02.2009 cmpilato: Merge from trunk r2090, whose log message read thusly:. .    Vie
+#20.02.2009 cmpilato: Note r2092 merge CHANGE.. 
+#20.02.2009 cmpilato: Allow ViewVC to (optionally) use the 'chardet' module during syn
+#24.02.2009 cmpilato: Add FAQ entry about exposing ViewVC at a vhost root.. 
+#26.02.2009 cmpilato: Finish issue #396 - Malformed accept-language header crashes vie
+#26.02.2009 cmpilato: Tweak a CHANGES entry for line length reduction.. 
+#26.02.2009 cmpilato: Merge from trunk r2097, whose log message read thusly:. .    Fin
+#06.03.2009 cmpilato: Finish issue #401: Support MIME type overrides in ViewVC configu
+#06.03.2009 cmpilato: Merge from trunk r2101, whose log message read thusly:. .    Fin
+#18.03.2009 cmpilato: Fix namespace problem with raised Exception.. . * lib/viewvc.py.
+#18.03.2009 cmpilato: Merge from trunk r2103, whose log message read thusly:. .    Fix
+#18.03.2009 cmpilato: Update copyright years.. 
+#18.03.2009 cmpilato: Merge from trunk r2107, which updates copyright info only.. 
+#18.03.2009 cmpilato: Update copyright years.. 
+#18.03.2009 cmpilato: Create a branch to track the creation of some sort of ViewVC aut
+#19.03.2009 cmpilato: * lib/ezt.py.   (Template._cmd_print): Raise a more helpful exce
+#19.03.2009 cmpilato: On the 'test-suite' branch: Add a new server class which kinda m
+#19.03.2009 cmpilato: On the 'test-suite' branch: An incremental commit of a not-yet-w
+#19.03.2009 cmpilato: Bring this branch up-to-date with trunk. (Merged /trunk:r2110-21
+#19.03.2009 cmpilato: * lib/ezt.py.   (Template._cmd_for): Raise a more useful excepti
+#19.03.2009 cmpilato: * lib/viewvc.py.   (common_template_data): Stop initializing an 
+#19.03.2009 cmpilato: Attempt to compensate for the fact that some versions of Subvers
+#19.03.2009 cmpilato: Merge from trunk a few relavent and recent changes (r2110:2117).
+#19.03.2009 cmpilato: Clutterkiller!  Put the default configuration files into a conf/
+#19.03.2009 cmpilato: Merge from trunk r2119, whose log message read thusly:. .    Clu
+#24.03.2009 cmpilato: * templates/include/file_header.ezt.   Lose template reference o
+#24.03.2009 cmpilato: Merge from trunk r2121, whose log message read thusly:. .    * t
+#24.03.2009 cmpilato: Try to make ViewVC provide a consistent, predictable data dictio
+#24.03.2009 cmpilato: * lib/viewvc.py.   (view_directory, view_log): Add some comments
+#11.04.2009 jens7677: * viewsvn/templates/include/file_header.ezt.   Remove template r
+#11.04.2009 jens7677: * viewsvn/templates/include/header.ezt.   For consistency, don't
+#11.04.2009 jens7677: * viewsvn/templates/include/file_header.ezt.   Show link to Revi
+#20.04.2009 cmpilato: * tools/make-release.   Make this able to build any branch, not 
+#20.04.2009 cmpilato: Slight terminology tweak.. 
+#20.04.2009 cmpilato: Merge from trunk r2128-2129.. 
+#20.04.2009 cmpilato: Call make-release correctly.. 
+#27.04.2009 jens7677: * viewsvn/templates/include/header.ezt.   Showing the username i
+#04.05.2009 cmpilato: Fix an exception in log views of Subversion repositories with 0.
+#04.05.2009 cmpilato: Backport to the 1.1.x branch trunk's r2134, whose log message re
+#04.05.2009 cmpilato: Backport to the 1.0.x branch trunk's r2134, whose log message re
+#05.05.2009 cmpilato: Fix issue #409, an exception thrown when sorting by revision in 
+#05.05.2009 cmpilato: Backport from trunk r2137: Fix issue #409, an exception thrown w
+#05.05.2009 cmpilato: Merge from trunk r2137, whose log message read thusly:. .    Fix
+#05.05.2009 cmpilato: Fix the GUI mode of standalone.py -- it wasn't even starting. co
+#05.05.2009 cmpilato: Merge from trunk r2140, whose log message read thusly:. .    Fix
+#05.05.2009 cmpilato: Finish issue #402: Split the 'use_pagesize' configuration direct
+#05.05.2009 cmpilato: Merge from trunk r2142, whose log message read thusly:. .    Fin
+#05.05.2009 cmpilato: Merge from trunk r2123 and r2124, the log message summary of whi
+#05.05.2009 cmpilato: Update copyright years.. 
+#05.05.2009 cmpilato: Record a merge that effectively happened in r2147.. 
+#05.05.2009 cmpilato: Let's pretend we'll release 1.0.8 today, shall we?. 
+#05.05.2009 cmpilato: Tag the 1.0.8 final release.. 
+#05.05.2009 cmpilato: Note new version of ViewVC.. 
+#05.05.2009 cmpilato: Merge from trunk r2152, recording 1.0.8's CHANGES here.. 
+#05.05.2009 cmpilato: * lib/viewvc.py.   (__version__): Bump to 1.0.9-dev.. 
+#05.05.2009 cmpilato: Add placeholder for 1.0.9's CHANGES.. 
+#05.05.2009 cmpilato: Remove obsolete branch (merged to trunk in r2078).. 
+05.05.2009 Version 1.0.8
+#09.05.2009 jens7677: Adjust templates according to r2142.. . * viewsvn/templates/incl
+#13.05.2009 cmpilato: Tag the 1.1.0 final release.. 
+#13.05.2009 cmpilato: Add date to CHANGES file.. 
+#13.05.2009 cmpilato: Tag the 1.1.0 final release.. 
+#13.05.2009 cmpilato: And the release cycle begins again.... 
+#13.05.2009 cmpilato: Add left-nav link to source tarballs.. 
+#13.05.2009 cmpilato: Update Tigris homepage.. 
+#13.05.2009 cmpilato: More Tigris homepage tweaks.. 
+#13.05.2009 cmpilato: Need ... homepage ... beauty.... 
+#13.05.2009 cmpilato: Update the viewvc.org site.. 
+#13.05.2009 cmpilato: Update CHANGES list for 1.1.0 release.. 
+#18.05.2009 cmpilato: Note that these templates are for 1.1.x, not 1.0.x.. 
+#18.05.2009 cmpilato: Add placeholder directory and README for 1.2 contributed templat
+#18.05.2009 cmpilato: Update external to point to 1.2 versions of contributed template
+#18.05.2009 cmpilato: Sync some relatively recent changes to the default templates.. 
+#18.05.2009 cmpilato: Ditch the 'tabbed' contributed template.. 
+#28.05.2009 cmpilato: Fix issue #416 - Can't see query form due to missing template va
+#28.05.2009 cmpilato: Merge from trunk r2175, whose log message read thusly:. .    Fix
+#28.05.2009 cmpilato: Add issue number to recent CHANGES addition.. 
+#29.05.2009 cmpilato: Fix issue #417 - 'cvsdbadmin rebuild' fails to record some of th
+#29.05.2009 cmpilato: * lib/cvsdb.py.   (CheckinDatabase.PurgeRepository): Don't allow
+#29.05.2009 cmpilato: Merge from trunk r2178, whose log message read thusly:. .    Fix
+#29.05.2009 cmpilato: * templates/file.ezt.   Use 'Contents of /path/to/file' instead 
+#29.05.2009 cmpilato: Merge from trunk r2181, whose log message read like so:. .    * 
+#29.05.2009 cmpilato: Finish (for now) the 1.1.0 release ntoes.. 
+#03.06.2009 cmpilato: Let's get 1.1.1 out today, shall we?. 
+#03.06.2009 cmpilato: Tag the 1.1.1 final release.. 
+#03.06.2009 cmpilato: Post-release fun.. . * CHANGES.   Copy 1.1.1's changes here.. . 
+#03.06.2009 cmpilato: Begin a new release cycle.. 
+#04.06.2009 cmpilato: [Merge from trunk r2095]. . Fix issue #400: Allow ViewVC to (opt
+#04.06.2009 cmpilato: Remove CHANGES item for change that should appear in 1.1.2 inste
+#05.06.2009 cmpilato: Consistify the layout -- at least on a section-by-section basis 
+#05.06.2009 cmpilato: Merge from trunk r2190, whose log message read:. .    Consistify
+#05.06.2009 cmpilato: Finish issue #419: svnauthz module doesn't match Subversion's. c
+#05.06.2009 cmpilato: Merge from trunk r2192, whose log message read:. .    Finish iss
+#08.06.2009 cmpilato: Make error handling in cvsdb a little more flexible.. . * lib/cv
+#08.06.2009 cmpilato: Finish issue #420 - 'cvsdbadmin rebuild' and 'svndbadmin rebuild
+#08.06.2009 cmpilato: Merge from trunk r2194 and r2195, whose combined log messages mi
+#15.06.2009 cmpilato: Minor documentation wording tweak.. 
+#15.06.2009 cmpilato: Merge from trunk a minor doc tweak made in r2197.. 
+#15.06.2009 cmpilato: Tighten up some input validation.. . * lib/viewvc.py.   (_re_val
+#15.06.2009 cmpilato: Merge from trunk r2199, whose log message read thusly:. .    Tig
+#16.06.2009 cmpilato: Correct some inconsistent markup in documentation.. 
+#16.06.2009 cmpilato: Merge from trunk r2201, which contains some minor documentation.
+#16.06.2009 cmpilato: Finish issue #336 - Custom cvsgraph rendering via CGI parameters
+#16.06.2009 cmpilato: Finish issue #415 - ModPythonServer shouldn't call sys.exit().. 
+#16.06.2009 cmpilato: Merge from trunk r2205, whose log message read thusly:. .    Fin
+#17.06.2009 cmpilato: * conf/viewvc.conf.dist.   Comment out all the options here, for
+#17.06.2009 cmpilato: Merge from trunk r2207, whose log message read thusly:. .    * c
+#18.06.2009 cmpilato: Merge a minor comment tweak from trunk r2209.. 
+#06.07.2009 cmpilato: * lib/viewvc.py.   (Request.run_viewvc): Use an intermediate var
+#06.07.2009 cmpilato: * lib/viewvc.py.   (Request.run_viewvc): Move the logic that map
+#06.07.2009 cmpilato: Some more around input validation, cleaning up some code and. ti
+#06.07.2009 cmpilato:              ### NOTE: Part of this was reverted in r2216. ###. 
+#06.07.2009 cmpilato: Merge from trunk r2211, r2212, and r2213, whose combined log mes
+#06.07.2009 cmpilato: * lib/viewvc.py.   (Request.run_viewvc): Oops!  Remove a mapping
+#06.07.2009 cmpilato: Try to avoid content spoofing errors.  Prior to this change, a U
+#06.07.2009 cmpilato: Merge from trunk r2217, whose log message read thusly:. .    Try
+#07.07.2009 cmpilato: * conf/viewvc.conf.dist.   (allow_compress): Add a note about th
+#07.07.2009 cmpilato: Merge from trunk r2220, whose log message read as follows:. .   
+#13.07.2009 cmpilato: Document some shortcomings of the path-based authz subsystem.. 
+#13.07.2009 cmpilato: Fix issue #422: syntax coloration dropping initial blank lines f
+#13.07.2009 cmpilato: Merge from trunk r2223, whose log message read as follows:. .   
+#15.07.2009 cmpilato: * lib/viewvc.py.   (view_error): Settle for simple HTML-escaping
+#15.07.2009 cmpilato: Merge from trunk r2225, whose log message read:. .    * lib/view
+#16.07.2009 cmpilato: Make it easier for folks to show/hide binary file contents in th
+#16.07.2009 cmpilato: Merge from trunk r2228, whose log message read thusly:. .    Mak
+#26.07.2009 jens7677: Adjust templates according to r2228. Set hide_binary_garbage def
+#11.08.2009 cmpilato: Let's roll 1.0.9 today.. 
+#11.08.2009 cmpilato: Tag the 1.0.9 final release.. 
+#11.08.2009 cmpilato: Begin a new release cycle.. 
+#11.08.2009 cmpilato: Merge 1.0.9 changes, and prep for 1.1.2 release today.. 
+#11.08.2009 cmpilato: Tag the 1.1.2 final release.. 
+#11.08.2009 cmpilato: Begin a new release cycle.. 
+#11.08.2009 cmpilato: Begin a new release cycle, the sequel.. 
+#11.08.2009 cmpilato: Update 'Mailing Lists' left-nav link.. 
+#11.08.2009 cmpilato: Rename 'Subversion' left-nav as 'Source Code'.. 
+#11.08.2009 cmpilato: Rename 'Source tarballs' left-nav as 'Downloads'.. 
+#11.08.2009 cmpilato: Note new latest release on project homepage.. 
+#11.08.2009 cmpilato: Merge in 1.0.9 and 1.1.2's changes.. 
+11.08.2009 Version 1.0.9
+#17.08.2009 cmpilato: Partially merge from trunk r1875 in order to fix some bugs viewi
+#21.08.2009 cmpilato: Begin taking steps toward customizable log message markup/format
+#21.08.2009 cmpilato: Follow-up to r2244 with some changes that allow you to register.
+#21.08.2009 cmpilato: Merge from trunk r2244 and r2245, which fixes issue #3 (where tr
+#21.08.2009 cmpilato: Follow-up to r2244 and r2245, supplying a way for the HtmlFormat
+#21.08.2009 cmpilato: Merge from trunk r2247, whose log message read:. .    Follow-up 
+#24.08.2009 cmpilato: Add configurable support for tabstop-to-space translation.. . * 
+#24.08.2009 cmpilato: Merge from trunk r2249, whose log message read thusly:. .    Add
+#25.08.2009 cmpilato: * lib/viewvc.py.   (view_diff): Tweak some logic ordering, and e
+#25.08.2009 cmpilato: Make the installing of the 'templates-contrib' tree optional.. .
+#25.08.2009 cmpilato: Merge from trunk r2251, whose log message read:. .    * lib/view
+#25.08.2009 cmpilato: Merge from trunk r2252, whose log read:. .    Make the installin
+#27.08.2009 cmpilato: Make some tweaks to the HtmlFormatter to allow more complex usag
+#27.08.2009 cmpilato: Merge from trunk r2255, which has some HtmlFormatter improvement
+#31.08.2009 cmpilato: * lib/viewvc.py.   (HtmlFormatter._tokenize_text): Give preferen
+#31.08.2009 cmpilato: Merge from trunk r2257, whose log message read like so:. .    *
+13.05.2009 Version 1.1.0 
+03.06.2009 Version 1.1.1
+11.08.2009 Version 1.1.2
