@@ -96,7 +96,7 @@ filename="%(filename)s" comment="%(comment)s" />
         for event in self.events:
             ev = copy(event)
             ev.date = int(ev.date/1000)
-            ev.filename = ev.filename.decode("utf-8")
+            ev.filename = unicodeanyway(ev.filename)
             s = u"%(date)s|%(author)s|%(action)s|%(filename)s|\n" % vars(ev)
             lf.write(s.encode("utf-8"))
         lf.close()
