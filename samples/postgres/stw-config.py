@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="contrib""/pgsql/contrib.*" 243,128,184, 243,128,184
-ColorAssign2="doc""/pgsql/doc.*" 80,143,173, 80,143,173
-ColorAssign3="doc/Attic""/pgsql/doc/Attic.*" 103,19,226, 103,19,226
-ColorAssign4="doc/src""/pgsql/doc/src.*" 170,229,254, 170,229,254
-ColorAssign5="src""/pgsql/src.*" 33,41,33, 33,41,33
-ColorAssign6="src/backend""/pgsql/src/backend.*" 193,53,77, 193,53,77
-ColorAssign7="src/bin""/pgsql/src/bin.*" 254,253,164, 254,253,164
-ColorAssign8="src/include""/pgsql/src/include.*" 118,238,141, 118,238,141
-ColorAssign9="src/interfaces""/pgsql/src/interfaces.*" 240,49,45, 240,49,45
-ColorAssign10="src/pl""/pgsql/src/pl.*" 128,81,91, 128,81,91
-ColorAssign11="src/test""/pgsql/src/test.*" 81,37,28, 81,37,28
-ColorAssign12="src/tools""/pgsql/src/tools.*" 215,41,183, 215,41,183
+ColorAssign1="contrib", "/pgsql/contrib.*", 67,132,17, 67,132,17
+ColorAssign2="doc", "/pgsql/doc.*", 43,249,241, 43,249,241
+ColorAssign3="doc/Attic", "/pgsql/doc/Attic.*", 144,168,136, 144,168,136
+ColorAssign4="doc/src", "/pgsql/doc/src.*", 109,13,25, 109,13,25
+ColorAssign5="src", "/pgsql/src.*", 230,242,140, 230,242,140
+ColorAssign6="src/backend", "/pgsql/src/backend.*", 220,96,59, 220,96,59
+ColorAssign7="src/bin", "/pgsql/src/bin.*", 237,1,2, 237,1,2
+ColorAssign8="src/include", "/pgsql/src/include.*", 253,251,254, 253,251,254
+ColorAssign9="src/interfaces", "/pgsql/src/interfaces.*", 232,225,60, 232,225,60
+ColorAssign10="src/pl", "/pgsql/src/pl.*", 201,249,165, 201,249,165
+ColorAssign11="src/test", "/pgsql/src/test.*", 68,235,98, 68,235,98
+ColorAssign12="src/tools", "/pgsql/src/tools.*", 221,90,30, 221,90,30
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

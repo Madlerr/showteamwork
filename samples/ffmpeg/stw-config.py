@@ -9,8 +9,17 @@
 config="""
 
 
-ColorAssign1="/branches", "/branches.*", 243,98,19, 243,98,19
-ColorAssign2="/trunk", "/trunk.*", 25,105,32, 25,105,32
+ColorAssign1="/trunk/doc", "/trunk/doc.*", 17,32,147, 17,32,147
+ColorAssign2="/trunk/libav", "/trunk/libav.*", 24,210,134, 24,210,134
+ColorAssign3="/trunk/libavcodec", "/trunk/libavcodec.*", 39,239,141, 39,239,141
+ColorAssign4="/trunk/libavcodec/i386", "/trunk/libavcodec/i386.*", 57,180,123, 57,180,123
+ColorAssign5="/trunk/libavcodec/libpostproc", "/trunk/libavcodec/libpostproc.*", 93,77,213, 93,77,213
+ColorAssign6="/trunk/libavcodec/ppc", "/trunk/libavcodec/ppc.*", 126,29,171, 126,29,171
+ColorAssign7="/trunk/libavdevice", "/trunk/libavdevice.*", 174,17,57, 174,17,57
+ColorAssign8="/trunk/libavfilter", "/trunk/libavfilter.*", 177,254,218, 177,254,218
+ColorAssign9="/trunk/libavformat", "/trunk/libavformat.*", 208,218,82, 208,218,82
+ColorAssign10="/trunk/libavutil", "/trunk/libavutil.*", 230,206,65, 230,206,65
+ColorAssign11="/trunk/tests", "/trunk/tests.*", 253,141,114, 253,141,114
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

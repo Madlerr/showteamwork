@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="branches""/branches.*" 30,147,125, 30,147,125
-ColorAssign2="branches/ApiEdit_Vodafone""/branches/ApiEdit_Vodafone.*" 213,108,202, 213,108,202
-ColorAssign3="branches/liquidthreads""/branches/liquidthreads.*" 13,62,50, 13,62,50
-ColorAssign4="branches/new-installer""/branches/new-installer.*" 248,241,187, 248,241,187
-ColorAssign5="branches/new-upload""/branches/new-upload.*" 133,212,232, 133,212,232
-ColorAssign6="civicrm""/civicrm.*" 166,5,218, 166,5,218
-ColorAssign7="civicrm/trunk""/civicrm/trunk.*" 255,220,67, 255,220,67
-ColorAssign8="civicrm/vendor""/civicrm/vendor.*" 27,54,227, 27,54,227
-ColorAssign9="trunk""/trunk.*" 187,163,169, 187,163,169
-ColorAssign10="trunk/debs""/trunk/debs.*" 196,228,11, 196,228,11
-ColorAssign11="trunk/extensions""/trunk/extensions.*" 53,104,125, 53,104,125
-ColorAssign12="trunk/phase3""/trunk/phase3.*" 122,224,72, 122,224,72
+ColorAssign1="branches", "/branches.*", 37,86,219, 37,86,219
+ColorAssign2="branches/ApiEdit_Vodafone", "/branches/ApiEdit_Vodafone.*", 136,204,52, 136,204,52
+ColorAssign3="branches/liquidthreads", "/branches/liquidthreads.*", 49,3,129, 49,3,129
+ColorAssign4="branches/new-installer", "/branches/new-installer.*", 226,69,62, 226,69,62
+ColorAssign5="branches/new-upload", "/branches/new-upload.*", 228,213,115, 228,213,115
+ColorAssign6="civicrm", "/civicrm.*", 225,239,253, 225,239,253
+ColorAssign7="civicrm/trunk", "/civicrm/trunk.*", 104,43,8, 104,43,8
+ColorAssign8="civicrm/vendor", "/civicrm/vendor.*", 53,195,101, 53,195,101
+ColorAssign9="trunk", "/trunk.*", 198,41,233, 198,41,233
+ColorAssign10="trunk/debs", "/trunk/debs.*", 21,86,110, 21,86,110
+ColorAssign11="trunk/extensions", "/trunk/extensions.*", 138,114,246, 138,114,246
+ColorAssign12="trunk/phase3", "/trunk/phase3.*", 56,237,120, 56,237,120
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="trunk""/trunk.*" 89,139,31, 89,139,31
-ColorAssign2="trunk/DOCS""/trunk/DOCS.*" 17,83,90, 17,83,90
-ColorAssign3="trunk/gui""/trunk/gui.*" 230,170,150, 230,170,150
-ColorAssign4="trunk/help""/trunk/help.*" 218,107,240, 218,107,240
-ColorAssign5="trunk/libass""/trunk/libass.*" 211,255,45, 211,255,45
-ColorAssign6="trunk/libmpcodecs""/trunk/libmpcodecs.*" 242,255,246, 242,255,246
-ColorAssign7="trunk/libmpdemux""/trunk/libmpdemux.*" 33,1,212, 33,1,212
-ColorAssign8="trunk/libswscale""/trunk/libswscale.*" 95,70,166, 95,70,166
-ColorAssign9="trunk/libvo""/trunk/libvo.*" 165,121,207, 165,121,207
-ColorAssign10="trunk/loader""/trunk/loader.*" 183,78,75, 183,78,75
-ColorAssign11="trunk/stream""/trunk/stream.*" 231,20,3, 231,20,3
-ColorAssign12="trunk/vidix""/trunk/vidix.*" 77,183,18, 77,183,18
+ColorAssign1="trunk", "/trunk.*", 84,81,103, 84,81,103
+ColorAssign2="trunk/DOCS", "/trunk/DOCS.*", 18,15,247, 18,15,247
+ColorAssign3="trunk/gui", "/trunk/gui.*", 56,204,232, 56,204,232
+ColorAssign4="trunk/help", "/trunk/help.*", 254,243,211, 254,243,211
+ColorAssign5="trunk/libass", "/trunk/libass.*", 192,63,240, 192,63,240
+ColorAssign6="trunk/libmpcodecs", "/trunk/libmpcodecs.*", 210,214,75, 210,214,75
+ColorAssign7="trunk/libmpdemux", "/trunk/libmpdemux.*", 142,253,250, 142,253,250
+ColorAssign8="trunk/libswscale", "/trunk/libswscale.*", 26,91,20, 26,91,20
+ColorAssign9="trunk/libvo", "/trunk/libvo.*", 123,75,116, 123,75,116
+ColorAssign10="trunk/loader", "/trunk/loader.*", 250,163,235, 250,163,235
+ColorAssign11="trunk/stream", "/trunk/stream.*", 58,28,84, 58,28,84
+ColorAssign12="trunk/vidix", "/trunk/vidix.*", 153,75,45, 153,75,45
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

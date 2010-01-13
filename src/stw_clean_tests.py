@@ -36,7 +36,8 @@ def runme():
             for p in os.listdir("."):
                 if p != "getlog.py" and p not in ["stw-config.py",
                                                   "stw-filter-events.py",
-                                                  "stw-scenario.txt"]:
+                                                  "stw-scenario.txt",
+                                                  "stw-config.py"]:
                     if os.path.isdir(p):
                         shutil.rmtree(p, ignore_errors=False, onerror=handle_remove_readonly)
                     else:    

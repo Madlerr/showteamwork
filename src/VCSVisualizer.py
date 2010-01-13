@@ -30,16 +30,19 @@ class VCSVisualizer:
        Measuring of audiofile «stw-audio.mp3» length and various metrics of input «activity.xml» file.
        Can generate template of script scenario file and template of coloring most used directories.
     """
-    version__ = "$Id$"
+    version__ = "$Id4$"
     
     def __init__(self, inputfile):
         """
            Check for input files,
            substitute random defaults for missing audio files.
         """
-        self.exedir = os.path.realpath(
+        self.toolsdir = os.path.realpath(
                         os.path.join(os.path.dirname(sys.argv[0]),
                                        "../tools"))
+        
+        exesubdir = os.name
+        self.exedir = os.path.realpath(os.path.join(self.toolsdir, exesubdir ))
         #home/working directory 
         self.homedir = os.getcwd()
         
@@ -54,7 +57,7 @@ class VCSVisualizer:
         
         self.audiopath = os.path.join(self.projectdir, "stw-audio.mp3")
         if not file_is_ok(self.audiopath):
-            audiodir = os.path.realpath(os.path.join(self.exedir, "../audio"))
+            audiodir = os.path.realpath(os.path.join(self.toolsdir, "../audio"))
             audiolist = os.listdir(audiodir)
             mp3list = [s for s in audiolist if os.path.splitext(s)[1] == ".mp3"]
             if  len(mp3list) == 0:
@@ -119,17 +122,14 @@ Please, provide audio track for your clip.
             
         for event in elist.events:
             reducedpath = event.filename[len(commonprefix):]
+            reducedpath = reducedpath.replace("\\","/")
             path = reducedpath.split("/")
-            code1 = "/".join(path[:1])
-            code2 = "/".join(path[:2])
-            if code1 != reducedpath and code1 != "":    
-                if code1 not in rating:
-                    rating[code1] = 0
-                rating[code1] += 1
-            if code2 != reducedpath:    
-                if (code2 not in rating):
-                    rating[code2] = 0
-                rating[code2] += 1
+            for i in xrange(1, len(path)):
+                code = "/".join(path[:i])
+                if code != reducedpath and code != "":    
+                    if code not in rating:
+                        rating[code] = 0
+                    rating[code] += 1
 
             vcstime = time.localtime(float(event.date)/1000)
             if vcstime < self.startdate:
@@ -247,7 +247,7 @@ print config, engine
            Process simple user config and
            get codeswarm config and gource config
         """
-        self.cswd = os.path.realpath(os.path.join(self.exedir, "..")
+        self.cswd = os.path.realpath(os.path.join(self.toolsdir, "..")
                                      ).replace("\\","/")
         self.cwsnapshotdir = os.path.join(self.workdir, self.confighash)
         createdir(self.cwsnapshotdir)
@@ -546,10 +546,10 @@ def filter_events(event):
         if self.need_codeswarm:
             if not file_is_ok(os.path.join(self.cwsnapshotdir, "cs-00007.png")):
                 s = "".join([ 'java -Xmx1000m -classpath ',
-                             self.exedir, '/code_swarm.jar;',
-                             self.exedir, '/lib/core.jar;',
-                             self.exedir, '/lib/xml.jar;',
-                             self.exedir, '/lib/vecmath.jar;. ',
+                             self.toolsdir, '/code_swarm.jar;',
+                             self.toolsdir, '/lib/core.jar;',
+                             self.toolsdir, '/lib/xml.jar;',
+                             self.toolsdir, '/lib/vecmath.jar;. ',
                              'code_swarm ', self.configobjpath, '/' ])
                 os.system(s)
 
@@ -602,7 +602,7 @@ def filter_events(event):
                              ' -oac copy ',
                              ' -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.exedir, '/data/fonts/FreeSans.ttf"',
+                             ' -utf8 -font "', self.toolsdir, '/data/fonts/FreeSans.ttf"',
                              ' -subfont-text-scale 3 -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', codeswarmpath ])
                 os.system(s)
@@ -627,8 +627,8 @@ def filter_events(event):
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                              ' -oac copy -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.exedir, '/consola.ttf"',
-                             ' -subfont-text-scale 4 ',
+                             ' -utf8 -font "', self.toolsdir, '/data/fonts/FreeSans.ttf"',
+                             ' -subfont-text-scale 3 ',
                              ' -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', gourcepath ])
                 os.system(s)

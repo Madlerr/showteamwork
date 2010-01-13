@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="branches""/subversion/branches.*" 173,109,183, 173,109,183
-ColorAssign2="branches/fsfs-pack""/subversion/branches/fsfs-pack.*" 111,206,245, 111,206,245
-ColorAssign3="branches/ignore-mergeinfo""/subversion/branches/ignore-mergeinfo.*" 24,35,149, 24,35,149
-ColorAssign4="branches/svnpatch-diff""/subversion/branches/svnpatch-diff.*" 35,142,90, 35,142,90
-ColorAssign5="trunk""/subversion/trunk.*" 112,66,31, 112,66,31
-ColorAssign6="trunk/build""/subversion/trunk/build.*" 227,251,176, 227,251,176
-ColorAssign7="trunk/contrib""/subversion/trunk/contrib.*" 224,235,40, 224,235,40
-ColorAssign8="trunk/notes""/subversion/trunk/notes.*" 186,157,105, 186,157,105
-ColorAssign9="trunk/packages""/subversion/trunk/packages.*" 78,163,169, 78,163,169
-ColorAssign10="trunk/subversion""/subversion/trunk/subversion.*" 76,78,80, 76,78,80
-ColorAssign11="trunk/tools""/subversion/trunk/tools.*" 133,209,35, 133,209,35
-ColorAssign12="trunk/www""/subversion/trunk/www.*" 159,163,54, 159,163,54
+ColorAssign1="branches", "/subversion/branches.*", 60,68,138, 60,68,138
+ColorAssign2="branches/fsfs-pack", "/subversion/branches/fsfs-pack.*", 60,203,216, 60,203,216
+ColorAssign3="branches/ignore-mergeinfo", "/subversion/branches/ignore-mergeinfo.*", 191,216,195, 191,216,195
+ColorAssign4="branches/svnpatch-diff", "/subversion/branches/svnpatch-diff.*", 66,156,50, 66,156,50
+ColorAssign5="trunk", "/subversion/trunk.*", 7,21,223, 7,21,223
+ColorAssign6="trunk/build", "/subversion/trunk/build.*", 253,252,112, 253,252,112
+ColorAssign7="trunk/contrib", "/subversion/trunk/contrib.*", 189,42,119, 189,42,119
+ColorAssign8="trunk/notes", "/subversion/trunk/notes.*", 154,235,8, 154,235,8
+ColorAssign9="trunk/packages", "/subversion/trunk/packages.*", 196,221,200, 196,221,200
+ColorAssign10="trunk/subversion", "/subversion/trunk/subversion.*", 151,182,147, 151,182,147
+ColorAssign11="trunk/tools", "/subversion/trunk/tools.*", 97,70,165, 97,70,165
+ColorAssign12="trunk/www", "/subversion/trunk/www.*", 33,162,81, 33,162,81
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

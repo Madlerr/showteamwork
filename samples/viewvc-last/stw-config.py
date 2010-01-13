@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="branches""/branches.*" 239,244,186, 239,244,186
-ColorAssign2="branches/1.0.x""/branches/1.0.x.*" 70,239,156, 70,239,156
-ColorAssign3="branches/1.1.x""/branches/1.1.x.*" 226,95,157, 226,95,157
-ColorAssign4="tags""/tags.*" 14,159,103, 14,159,103
-ColorAssign5="templates-contrib""/templates-contrib.*" 178,37,50, 178,37,50
-ColorAssign6="templates-contrib/1.1""/templates-contrib/1.1.*" 17,13,193, 17,13,193
-ColorAssign7="trunk""/trunk.*" 199,234,76, 199,234,76
-ColorAssign8="trunk/bin""/trunk/bin.*" 109,21,110, 109,21,110
-ColorAssign9="trunk/conf""/trunk/conf.*" 211,115,232, 211,115,232
-ColorAssign10="trunk/lib""/trunk/lib.*" 123,103,28, 123,103,28
-ColorAssign11="trunk/templates""/trunk/templates.*" 22,68,241, 22,68,241
-ColorAssign12="trunk/viewvc.org""/trunk/viewvc.org.*" 252,42,49, 252,42,49
+ColorAssign1="branches", "/branches.*", 158,133,29, 158,133,29
+ColorAssign2="branches/1.0.x", "/branches/1.0.x.*", 134,21,158, 134,21,158
+ColorAssign3="branches/1.1.x", "/branches/1.1.x.*", 78,223,39, 78,223,39
+ColorAssign4="tags", "/tags.*", 192,230,154, 192,230,154
+ColorAssign5="templates-contrib", "/templates-contrib.*", 25,31,100, 25,31,100
+ColorAssign6="templates-contrib/1.1", "/templates-contrib/1.1.*", 223,40,79, 223,40,79
+ColorAssign7="trunk", "/trunk.*", 254,237,255, 254,237,255
+ColorAssign8="trunk/bin", "/trunk/bin.*", 211,162,226, 211,162,226
+ColorAssign9="trunk/conf", "/trunk/conf.*", 97,220,253, 97,220,253
+ColorAssign10="trunk/lib", "/trunk/lib.*", 192,14,2, 192,14,2
+ColorAssign11="trunk/templates", "/trunk/templates.*", 91,7,233, 91,7,233
+ColorAssign12="trunk/viewvc.org", "/trunk/viewvc.org.*", 193,152,90, 193,152,90
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

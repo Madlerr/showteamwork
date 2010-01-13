@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="contrib""contrib.*" 197,48,102, 197,48,102
-ColorAssign2="doc""doc.*" 167,209,158, 167,209,158
-ColorAssign3="hgext""hgext.*" 26,199,240, 26,199,240
-ColorAssign4="hgext/convert""hgext/convert.*" 59,24,191, 59,24,191
-ColorAssign5="hgext/inotify""hgext/inotify.*" 243,255,25, 243,255,25
-ColorAssign6="i18n""i18n.*" 253,255,252, 253,255,252
-ColorAssign7="mercurial""mercurial.*" 153,134,7, 153,134,7
-ColorAssign8="mercurial/hgweb""mercurial/hgweb.*" 114,62,60, 114,62,60
-ColorAssign9="templates""templates.*" 46,232,52, 46,232,52
-ColorAssign10="templates/coal""templates/coal.*" 138,86,149, 138,86,149
-ColorAssign11="templates/gitweb""templates/gitweb.*" 54,237,64, 54,237,64
-ColorAssign12="tests""tests.*" 70,174,109, 70,174,109
+ColorAssign1="contrib", "contrib.*", 97,17,143, 97,17,143
+ColorAssign2="doc", "doc.*", 208,136,67, 208,136,67
+ColorAssign3="hgext", "hgext.*", 138,202,218, 138,202,218
+ColorAssign4="hgext/convert", "hgext/convert.*", 30,119,85, 30,119,85
+ColorAssign5="hgext/inotify", "hgext/inotify.*", 217,227,136, 217,227,136
+ColorAssign6="i18n", "i18n.*", 2,199,12, 2,199,12
+ColorAssign7="mercurial", "mercurial.*", 251,249,243, 251,249,243
+ColorAssign8="mercurial/hgweb", "mercurial/hgweb.*", 21,42,4, 21,42,4
+ColorAssign9="templates", "templates.*", 226,121,198, 226,121,198
+ColorAssign10="templates/coal", "templates/coal.*", 91,226,135, 91,226,135
+ColorAssign11="templates/gitweb", "templates/gitweb.*", 38,93,138, 38,93,138
+ColorAssign12="tests", "tests.*", 101,148,208, 101,148,208
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

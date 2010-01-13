@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="cache""cache.*" 70,30,173, 70,30,173
-ColorAssign2="foreign""foreign.*" 253,17,93, 253,17,93
-ColorAssign3="layout""layout.*" 78,248,89, 78,248,89
-ColorAssign4="mapping3""mapping3.*" 194,124,96, 194,124,96
-ColorAssign5="specs""specs.*" 226,228,209, 226,228,209
-ColorAssign6="subvertpy""subvertpy.*" 55,22,20, 55,22,20
-ColorAssign7="subvertpy/subvertpy""subvertpy/subvertpy.*" 114,253,178, 114,253,178
-ColorAssign8="subvertpy/tests""subvertpy/tests.*" 224,89,10, 224,89,10
-ColorAssign9="testdata""testdata.*" 122,105,168, 122,105,168
-ColorAssign10="tests""tests.*" 174,18,147, 174,18,147
-ColorAssign11="tests/mapping3""tests/mapping3.*" 159,249,155, 159,249,155
-ColorAssign12="tests/mapping_implementations""tests/mapping_implementations.*" 11,210,59, 11,210,59
+ColorAssign1="cache", "cache.*", 30,174,42, 30,174,42
+ColorAssign2="foreign", "foreign.*", 62,239,117, 62,239,117
+ColorAssign3="layout", "layout.*", 99,49,98, 99,49,98
+ColorAssign4="mapping3", "mapping3.*", 210,226,90, 210,226,90
+ColorAssign5="specs", "specs.*", 27,10,178, 27,10,178
+ColorAssign6="subvertpy", "subvertpy.*", 229,245,252, 229,245,252
+ColorAssign7="subvertpy/subvertpy", "subvertpy/subvertpy.*", 107,152,210, 107,152,210
+ColorAssign8="subvertpy/tests", "subvertpy/tests.*", 116,97,5, 116,97,5
+ColorAssign9="testdata", "testdata.*", 223,252,12, 223,252,12
+ColorAssign10="tests", "tests.*", 174,201,210, 174,201,210
+ColorAssign11="tests/mapping3", "tests/mapping3.*", 159,92,165, 159,92,165
+ColorAssign12="tests/mapping_implementations", "tests/mapping_implementations.*", 59,240,145, 59,240,145
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     
