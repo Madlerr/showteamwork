@@ -7,22 +7,20 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="tags""/tags.*" 231,214,30, 231,214,30
-ColorAssign2="tags/prototype""/tags/prototype.*" 45,177,173, 45,177,173
-ColorAssign3="trunk""/trunk.*" 4,58,63, 4,58,63
-ColorAssign4="trunk/code_swarm""/trunk/code_swarm.*" 145,33,133, 145,33,133
-ColorAssign5="trunk/convert_logs""/trunk/convert_logs.*" 246,240,209, 246,240,209
-ColorAssign6="trunk/data""/trunk/data.*" 24,166,21, 24,166,21
-ColorAssign7="trunk/dist""/trunk/dist.*" 255,129,130, 255,129,130
-ColorAssign8="trunk/eclipse""/trunk/eclipse.*" 211,191,125, 211,191,125
-ColorAssign9="trunk/lib""/trunk/lib.*" 245,40,188, 245,40,188
-ColorAssign10="trunk/physics_engine""/trunk/physics_engine.*" 128,140,154, 128,140,154
-ColorAssign11="trunk/prototype""/trunk/prototype.*" 123,234,36, 123,234,36
-ColorAssign12="trunk/src""/trunk/src.*" 216,68,75, 216,68,75
+ColorAssign1="tags", "/tags.*", 253,172,143, 253,172,143
+ColorAssign2="tags/prototype", "/tags/prototype.*", 38,170,110, 38,170,110
+ColorAssign3="trunk", "/trunk.*", 87,39,87, 87,39,87
+ColorAssign4="trunk/code_swarm", "/trunk/code_swarm.*", 161,186,47, 161,186,47
+ColorAssign5="trunk/convert_logs", "/trunk/convert_logs.*", 210,250,230, 210,250,230
+ColorAssign6="trunk/data", "/trunk/data.*", 250,8,104, 250,8,104
+ColorAssign7="trunk/dist", "/trunk/dist.*", 32,5,177, 32,5,177
+ColorAssign8="trunk/eclipse", "/trunk/eclipse.*", 217,236,86, 217,236,86
+ColorAssign9="trunk/lib", "/trunk/lib.*", 203,26,120, 203,26,120
+ColorAssign10="trunk/physics_engine", "/trunk/physics_engine.*", 172,254,160, 172,254,160
+ColorAssign11="trunk/prototype", "/trunk/prototype.*", 110,208,208, 110,208,208
+ColorAssign12="trunk/src", "/trunk/src.*", 151,59,148, 151,59,148
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -51,6 +49,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

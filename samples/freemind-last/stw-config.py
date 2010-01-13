@@ -7,19 +7,17 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-GOURCE=1
-CODESWARM=1
 
 
-ColorAssign1="Attic""/cvsroot/freemind/freemind/Attic.*" 131,251,74, 131,251,74
-ColorAssign2="doc""/cvsroot/freemind/freemind/doc.*" 94,124,2, 94,124,2
-ColorAssign3="doc/Attic""/cvsroot/freemind/freemind/doc/Attic.*" 221,87,235, 221,87,235
-ColorAssign4="freemind""/cvsroot/freemind/freemind/freemind.*" 68,53,99, 68,53,99
-ColorAssign5="freemind/common""/cvsroot/freemind/freemind/freemind/common.*" 226,255,180, 226,255,180
-ColorAssign6="freemind/main""/cvsroot/freemind/freemind/freemind/main.*" 16,14,158, 16,14,158
-ColorAssign7="freemind/modes""/cvsroot/freemind/freemind/freemind/modes.*" 204,202,237, 204,202,237
-ColorAssign8="freemind/preferences""/cvsroot/freemind/freemind/freemind/preferences.*" 95,196,95, 95,196,95
-ColorAssign9="freemind/view""/cvsroot/freemind/freemind/freemind/view.*" 22,100,28, 22,100,28
+ColorAssign1="Attic", "/cvsroot/freemind/freemind/Attic.*", 185,229,15, 185,229,15
+ColorAssign2="doc", "/cvsroot/freemind/freemind/doc.*", 150,95,148, 150,95,148
+ColorAssign3="doc/Attic", "/cvsroot/freemind/freemind/doc/Attic.*", 89,21,33, 89,21,33
+ColorAssign4="freemind", "/cvsroot/freemind/freemind/freemind.*", 249,248,132, 249,248,132
+ColorAssign5="freemind/common", "/cvsroot/freemind/freemind/freemind/common.*", 229,9,38, 229,9,38
+ColorAssign6="freemind/main", "/cvsroot/freemind/freemind/freemind/main.*", 11,230,150, 11,230,150
+ColorAssign7="freemind/modes", "/cvsroot/freemind/freemind/freemind/modes.*", 60,142,227, 60,142,227
+ColorAssign8="freemind/preferences", "/cvsroot/freemind/freemind/freemind/preferences.*", 71,241,68, 71,241,68
+ColorAssign9="freemind/view", "/cvsroot/freemind/freemind/freemind/view.*", 147,34,106, 147,34,106
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -48,6 +46,9 @@ else:
 Width=640
 Height=640
     """
+
+GOURCE=1
+CODESWARM=1
 
 print config, engine    
     

@@ -24,7 +24,7 @@ class RandomColor:
             g = random.randint(1, 255)
         if not b:
             b = random.randint(1, 255)
-        self.__rgb = [r, g, b]
+        self.__rgb = (r, g, b)
 
     def __getitem__(self, key):
         """
@@ -68,6 +68,13 @@ class RandomColor:
     def __repr__(self):
         return "<%03d,%03d,%03d:%03d>" % \
             (self[0], self[1], self[2], self.get_brightness())
+        
+    def __cmp__(self, other):
+        """
+          compare colors as tuples:
+        """
+        return cmp(self.__rgb, other.__rgb)
+        
 
 class RandomColorPalette:
     """
@@ -115,6 +122,7 @@ class RandomColorPalette:
             contrast_colors_limit = max( 0,
                         math.ceil(contrast_colors_limit*countdown/try_limit)) 
         
+        colors.sort().reverse()
         self.colors = colors
 
 if __name__ == '__main__':
