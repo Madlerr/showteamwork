@@ -122,7 +122,8 @@ class RandomColorPalette:
             contrast_colors_limit = max( 0,
                         math.ceil(contrast_colors_limit*countdown/try_limit)) 
         
-        colors.sort().reverse()
+        colors.sort()
+        colors.reverse()
         self.colors = colors
 
 if __name__ == '__main__':
