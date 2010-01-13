@@ -47,8 +47,8 @@ class VCSVisualizer:
         self.projectdir, self.filename = os.path.split(self.inputfile)
         l = os.path.split(self.projectdir)
         self.projectname = l[-1]
-        if len(l) > 1:
-           self.projectname = "-".join([l[-1], self.projectname])    
+        if len(l) > 1 and l[-1] in ["trunk", "tags", "branches"]:
+           self.projectname = "-".join( l[-2:] )    
         self.tempdir = tempfile.gettempdir()
         self.inputhash = hash4file(inputfile)
         
