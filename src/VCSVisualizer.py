@@ -45,7 +45,10 @@ class VCSVisualizer:
         
         self.inputfile = os.path.realpath(os.path.join(self.homedir, inputfile))
         self.projectdir, self.filename = os.path.split(self.inputfile)
-        self.projectname = os.path.split(self.projectdir)[-1]
+        l = os.path.split(self.projectdir)
+        self.projectname = l[-1]
+        if len(l) > 1:
+           self.projectname = "-".join([l[-1], self.projectname])    
         self.tempdir = tempfile.gettempdir()
         self.inputhash = hash4file(inputfile)
         
