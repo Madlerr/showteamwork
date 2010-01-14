@@ -62,7 +62,7 @@ class VCSVisualizer:
             mp3list = [s for s in audiolist if os.path.splitext(s)[1] == ".mp3"]
             if  len(mp3list) == 0:
                 raise Exception("""
-«stw-audio.mp3» is missing and no default MP3 files in «audio» folder.
+<stw-audio.mp3> is missing and no default MP3 files in <audio> folder.
 Please, provide audio track for your clip.
 """)
             audio = random.choice(mp3list)
@@ -98,7 +98,7 @@ Please, provide audio track for your clip.
             movielength = hours*3600+minutes*60+seconds
             return movielength
         else:   
-            raise Exception("Can not determine duration of «%s»" % filepath) 
+            raise Exception("Can not determine duration of <%s>" % filepath) 
     
     
     def analyze_events(self, elist):

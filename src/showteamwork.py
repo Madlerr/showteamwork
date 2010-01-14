@@ -99,9 +99,9 @@ def guess_inputfile():
     print "We are waiting for one of the following nonempty log files\n:"
     for v, vcs in vcss.items():
         scmd = getvcscommand(vcs)
-        print "".join([ 'for «', v, '» we need «', vcs["logfile"], '», so run command\n',
+        print "".join([ 'for <', v, '> we need <', vcs["logfile"], '>, so run command\n',
                        '-' * 24, '\n', scmd, '\n', '=' * 24, '\n' ])
-    print "Or provide «activity.xml» file in native XML-format."
+    print "Or provide <activity.xml> file in native XML-format."
     sys.exit(0)
 
 def runme():
