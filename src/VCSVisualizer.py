@@ -551,6 +551,7 @@ def filter_events(event):
                              self.toolsdir, '/lib/xml.jar;',
                              self.toolsdir, '/lib/vecmath.jar;. ',
                              'code_swarm ', self.configobjpath, '/' ])
+                print s
                 os.system(s)
 
         gourceconfhash = hash4file(None, "".join([self.exedir, r'\gource',
@@ -574,12 +575,14 @@ def filter_events(event):
                          ' --log-format custom ',
                          ' --output-ppm-stream ', gourcerawpath, '.ppm ',
                          activitygourcepath ])
+            print s
             os.system(s)
             #PPM-file is very Huge. We need to compress it to h264-avi, and kill it.
             s = "".join([self.exedir, r'\ffmpeg',
                          ' -y -b 9000K -f image2pipe -vcodec ppm ',
                          ' -i ', gourcerawpath, '.ppm',
                          ' -vcodec libx264 ', gourcerawpath ])
+            print s
             os.system(s)
             os.unlink(gourcerawpath + ".ppm")
             
@@ -602,9 +605,10 @@ def filter_events(event):
                              ' -oac copy ',
                              ' -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.toolsdir, '/data/fonts/FreeSans.ttf"',
+                             ' -utf8 -font "', self.exedir, '/data/fonts/FreeSans.ttf"',
                              ' -subfont-text-scale 3 -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', codeswarmpath ])
+                print s
                 os.system(s)
                 os.chdir(self.homedir)
 
@@ -621,16 +625,18 @@ def filter_events(event):
                                ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                                ' -ofps 25 -speed ' , str(gourcefps),
                                ' -o ', gourcerawpath, '.fps' ])
+                    print s
                     os.system(s)
                 s = "".join([self.exedir, r'\mencoder ',
                              gourcerawpath,'.fps',
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                              ' -oac copy -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.toolsdir, '/data/fonts/FreeSans.ttf"',
+                             ' -utf8 -font "', self.exedir, '/data/fonts/FreeSans.ttf"',
                              ' -subfont-text-scale 3 ',
                              ' -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', gourcepath ])
+                print s
                 os.system(s)
                 os.chdir(self.homedir)
             
