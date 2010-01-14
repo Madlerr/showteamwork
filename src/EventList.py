@@ -118,7 +118,7 @@ filename="%(filename)s" comment="%(comment)s" />
             return default
 
         if not os.path.exists(logfilename):
-            raise Exception("File «%s» not exists!" % logfilename)
+            raise Exception("File <%s> not exists!" % logfilename)
      
         logfile = os.path.split(logfilename)[1]
 
@@ -374,7 +374,7 @@ filename="%(filename)s" comment="%(comment)s" />
         lf.close()
         root = doc.getroot() 
         if not root.tag == "file_events":
-            raise Exception("Root tag of projects.xml must be «file_events»")
+            raise Exception("Root tag of projects.xml must be <file_events>")
 
         for event in root:
             assert(event.tag == "event")
