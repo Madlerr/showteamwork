@@ -102,6 +102,12 @@ def guess_inputfile():
         print "".join([ 'for <', v, '> we need <', vcs["logfile"], '>, so run command\n',
                        '-' * 24, '\n', scmd, '\n', '=' * 24, '\n' ])
     print "Or provide <activity.xml> file in native XML-format."
+    print "Java (JRE) must be installed."
+    if os.name != "nt":
+        print """
+        If you under Linux, you have to install following utilities:
+ffmpeg, mencoder (from mplayer project), gource.
+"""        
     sys.exit(0)
 
 def runme():

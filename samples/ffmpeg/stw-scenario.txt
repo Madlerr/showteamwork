@@ -20831,3 +20831,280 @@
 #11.01.2010 lucabe: Remove the inclusion of unneeded headers. . 
 #11.01.2010 mru: AAC: use table for cbrtf(n)*n. . The maximum length of escape_se
 #12.01.2010 cehoyos: Support uncompressed ('Resolution 1:1') Avid AVI Codec, (partial
+
+
+2009-09-23 Windows Media Audio Pro support!
+2009-08-24 Supports decoding of TwinVQ 
+2009-07-24 non-free libamr => free libopencore-amr
+2009-03-26 take part in the Google Summer of Code
+2009-03-23 new mailing list for ffserver users
+2009-03-10 FFmpeg 0.5: ALAC, Flash Screen, WMAv1/v2, Atrac3, MLP/TrueHD, RealVideo/Audio...
+2008-12-20 RealVideo 3.0 decoder added.
+2008-09-08 + QCELP/PureVoice, float PCM, Nellymoser ASAO, Electronic Arts TGQ, MXF, ASS/SSA, E-AC-3, RealVideo 4.0.
+2008-08-21 major changes in its API/ABI + AAC decoder from SoC-2006 + floating point PCM, MLP/TrueHD decoding 
+2008-06-16 Nellymoser ASAO compatible decoder and encoder 
+2008-06-11 Oma demuxer, QuickTime/IMA ADPCM, VFW grabber, iPod/iPhone-compatible MP4 muxer, Mimic, MSN TCP Webcam, RL2, IFF, 8SVX, BFI.
+2008-02-07 Ogg, AVM2 (Flash 9), TechnoTrend PVA, Linux Media Labs MPEG-4 (LMLM4), PCX, Sun Rasterfile.
+2007-11-11 FFmpeg now supports XIntra8 frames (WMV2/3 decoded correctly).
+2007-10-22 Beam Software SIFF demuxer and video decoder support.
+2007-10-15 Nellymoser speech codec used in flash.
+2007-10-09 DNxHD encoder, PAFF decoding support for H.264.
+2007-09-29 AMV audio and video decoding.
+2007-09-13 DXA and Monkey's Audio, DNxHD, Atrac3 and AC-3, QTRLE, NUT and Matroska.
+2007-07-14 FFmpeg got 8 projects this year in the Google Summer of Code
+2007-03-09 decoders for VC-1/WMV3/WMV9, VMware, VP5, VP6 video and WavPack, IMC, DCA audio and a WMA encoder. 
+
+
+#version 0.4.1
+#version 0.4.0
+#version 0.3.4: - added stereo in MPEG audio encoder
+#version 0.3.3: 'high quality' mode which use motion vectors.
+#version 0.3.2: small fixes
+#version 0.3.1: added avi/divx support
+#version 0.3: initial public release
+
+
+2001-07-22 glantau: Initial revision. . 
+2001-08-08 glantau: updated. . 
+2001-11-19 pulento: - Preliminary RTP friendly mode for H.263.. - GOB headers for H.
+2002-02-09 pulento: - Fixes on RTP and GOB headers for H.263.. - RTP callback system
+2002-05-19 glantau: update. . 
+2002-05-26 glantau: updated. . 
+2002-10-28 bellard: updated - feel free to correct/improve. . 
+2002-10-29 bellard: update. . 
+2002-10-29 bellard: updated. . 
+2002-11-14 michaelni: 16-bit and 15-bit rgb/bgr patch by (Joel Yliluoma <joel dot ylil
+2002-12-28 bellard: update. . 
+2003-06-10 hetz: A newer Changelog. . 
+2003-06-10 hetz: small fix. . 
+2003-06-11 hetz: No more HTML in Changelog. . 
+2003-06-12 hetz: Typo fixes (ok, mplayer team, enough laughing ;). . 
+2003-06-13 hetz: Changelog update. . 
+2003-09-08 tmmm: fringe feature update. . 
+2003-09-14 tmmm: initial Interplay video decoder. . 
+2003-09-15 bellard: update. . 
+2003-10-01 tmmm: New demuxers: Sega FILM/CPK, Westwood VQA & AUD; new decoders: M
+2003-10-02 romansh:     * preAlpha DV encoding support -- there's still a truckload.
+2003-10-03 tmmm: implemented Id Quake II CIN support. . 
+2003-11-14 melanson: yep, FLI support. . 
+2003-12-03 melanson: initial support for Duck TrueMotion v1 (think of it as On2 VP1);
+2004-01-02 melanson: VMD support. . 
+2004-02-05 melanson: initial commit for Quicktime Animation (RLE) video decoder; bit 
+2004-05-07 melanson: first pass at a Sorenson Video 1 (SVQ1) encoder. . 
+2004-07-10 michael: update. . 
+2004-08-14 melanson: TechSmith Camtasia (TSCC) video decoder, courtesy of Konstantin 
+2004-09-16 melanson: IBM Ultimotion video decoder, courtesy of Konstantin Shishkov. .
+2004-09-28 melanson: support for Sierra Online audio files and Apple QuickDraw codec,
+2004-10-12 melanson: Creative ADPCM decoder, format 0x200, courtesy of Konstantin Shi
+2004-10-16 melanson: Electronic Arts Game Multimedia format demuxer (WVE/UV2/etc.). .
+2004-10-27 melanson: Miro VideoXL (VIXL) decoder, courtesy of Konstantin Shishkov. . 
+2004-10-28 melanson: H.261 stuff. . 
+2004-11-17 melanson: native QPEG video decoder, courtesy of Konstantin Shishkov. . 
+2004-11-21 melanson: new NSV demuxer. . 
+2005-02-26 melanson: doc update for Shorten codec. . 
+2005-03-01 melanson: go LOCO, courtesy of Kostya Shishkov. . 
+2005-03-06 melanson: decoder works fine now, when fed properly-sized chunks by the de
+2005-03-26 melanson: Winnov WNV1 video decoder, courtesy of Konstantin Shishkov. . 
+2005-04-03 melanson: Autodesk Animator Studio Codec (AASC) video decoder, courtesy of
+2005-04-21 diego: Indeo 2. . 
+2005-05-18 melanson: Fraps FPS1 video decoder (v1 & v2), courtesy of Roine Gustafsson
+2005-07-02 alex: some missing additions. . 
+2005-10-13 melanson: documentation update. . 
+2005-10-25 lorenm: h264 custom quant matrices. . 
+2005-11-15 diego: ffserver fixed. . 
+2005-12-17 diego: COSMETICS: Remove all trailing whitespace.. . 
+2005-12-27 rtognimp: wma2 fix. . 
+2005-12-29 diego: spelling/wording/grammar. . 
+2005-12-29 diego: updates. . 
+2006-01-03 diego: TrueSpeech compatible audio decoder by Konstantin Shishkov. . 
+2006-01-14 diego: CamStudio video decoder. . 
+2006-01-30 diego: typo, RealAudio 14.4/28.8. . 
+2006-02-02 diego: JPEG-LS codec fixed.. . 
+2006-02-02 michael: AIFF format support by (Patrick Guimond <patg a.t patg d.o.t hom
+2006-02-08 mru: bump version numbers and update docs for adts aac support. . 
+2006-02-10 aurel: add a Creative VOC (de)muxer. . 
+2006-02-12 alex: tta and theora improvements. . 
+2006-02-12 melanson: complete American Laser Games MM playback system, courtesy of Pe
+2006-02-12 melanson: dosbox native ZMBV decoder, courtesy of Kostya. . 
+2006-02-16 aurel: Clarify creative ADPCM changelog entry. . 
+2006-02-17 melanson: complete AVS playback system (from Creature Shock computer game)
+2006-03-01 banan: Set 'MJLS' FOURCC for JPEG-LS in AVI and documentation fix. Patc
+2006-03-21 kostya: Smacker demuxer and decoder.. . 
+2006-03-28 reimar: NuppelVideo/MythTVVideo support, including rtjpeg decoder. . 
+2006-03-30 romansh:    * fixing -target *dv issues with not setting pix_fmt and addi
+2006-04-07 kostya: KMVC (used in Worms games) decoder. Works fine with samples from
+2006-05-16 bcoudurier: MPEG-2 4:2:2 encoding support. . 
+2006-06-01 banan: Flash Screen Video decoder (fourcc:FSV1). . 
+2006-07-03 reimar: add GXF demuxer. . 
+2006-07-07 diego: Chinese AVS decoder. . 
+2006-07-25 bcoudurier: Changelog update for GXF muxer. 
+2006-07-25 bcoudurier: MXF demuxer. 
+2006-08-03 diego: VC-1/WMV3/WMV9 decoder. . 
+2006-08-13 gpoirier: Mention MacIntel support. . 
+2006-08-29 gpoirier: AVISynth support, patch by Steve Lhomme % slhomme A divxcorp P c
+2006-09-05 kostya: VMware Video decoder (fourcc: VMnc). . 
+2006-09-09 aurel: VP5 and VP6 video decoder. 
+2006-09-26 kostya: WavPack lossless audio decoder. 
+2006-10-02 ods15: add vorbis encoder to changelog/MAINTAINERS. . 
+2006-10-11 bcoudurier: update doc, changelog, and increase libavcodec version for .cin 
+2006-10-11 kostya: Targa image decoder. 
+2006-10-12 bcoudurier: support for Tiertex .seq files demuxing/video decoding, by Grego
+2006-10-13 kostya: TIFF decoder. 
+2006-10-13 reynaldo: Adds forgotten changelog's entry about the new mtv demuxer. 
+2006-10-22 bcoudurier: change gif demuxer to gif decoder. 
+2006-10-30 kostya: IMC decoder. 
+2006-12-07 kostya: ZMBV encoder. 
+2006-12-24 kostya: Musepack SV7 decoding support. 
+2007-01-22 banan: Add flashsv encoder to changelog and fix the encoder so it actua
+2007-01-25 diego: Theora encoding via libtheora.. courtesy of Paul Richards, paul.
+2007-02-05 diego: BMP encoder by Michel Bardiaux, mbardiaux mediaxim be. . 
+2007-02-07 diego: WMA encoder. . 
+2007-02-20 mbardiaux: Add support for MS-GSM codec. . 
+2007-02-27 kostya: DCA decoder. 
+2007-03-14 kostya: DXA demuxer and decoder. 
+2007-03-19 bcoudurier: dnxhd decoder. 
+2007-04-01 diego: support for the THP game format by Marco Gerards, mgerards xs4al
+2007-04-02 diego: bfin optimizations. . 
+2007-04-02 diego: spelling fix as suggested by Mans. . 
+2007-04-03 michael: tiff encoder by (Bartlomiej Wolowiec  b.wolowiec  students mimuw
+2007-04-07 diego: Interplay C93 demuxer and video decoder. patch by Anssi Hannula,
+2007-04-08 diego: Bethsoft VID demuxer and video decoder. patch by Nicholas Tung, 
+2007-04-08 diego: CRYO APC demuxer. patch by Anssi Hannula, anssi.hannula gmail co
+2007-04-18 banan: Atrac3 decoder.. . 
+2007-04-29 ivo: add V.Flash PTX decoder. . 
+2007-05-08 diego: RoQ audio encoder. . 
+2007-05-08 ivo: Renderware TXD decoder and demuxer. . 
+2007-05-10 diego: RoQ muxer. . 
+2007-05-11 diego: Merge RoQ entries. . 
+2007-05-23 ivo: -sws_flags command line option to set swscaler flags. . 
+2007-05-24 diego: extern C declarations were removed.. . 
+2007-06-04 benoit: Codebook generator using the ELBG algorithm. patch by Vitor: pri
+2007-06-25 benoit: remove clear email addresses. . 
+2007-06-25 benoit: RoQ video encoder. patch by Vitor: \vitor1001 gmail com/. origin
+2007-07-02 benoit: QT RLE encoder. patch by Alexis Ballier: [alexis ballier gmail c
+2007-07-11 ramiro: Remove OS/2 support. 
+2007-08-07 jbr: enable the native AC-3 decoder. 
+2007-08-10 michael: nut muxer. . 
+2007-09-05 conrad: Enable Matroska muxer. . 
+2007-09-06 gpoirier: mention slice-based parallel H.264 decoding in changelog. . 
+2007-09-13 kostya: Monkey Audio decoder. 
+2007-09-28 vitor: Documentation update for AMV audio decoder. 
+2007-09-29 vitor: AMV video decoder.. Patch by Vladimir Voroshilov (voroshil - gma
+2007-09-30 diego: Mention SPARC optimizations.. . 
+2007-10-08 bcoudurier: DNxHD (SMPTE VC-3) encoder. 
+2007-10-09 cehoyos: Enable PAFF decoding. 
+2007-10-15 banan: Nellymoser ASAO decoder. 
+2007-10-22 kostya: Beam Software SIFF demuxer and video decoder. 
+2007-11-04 diego: Remove libvorbis Vorbis decoding support.  Our native decoder is
+2007-11-10 bcoudurier: ogg muxer. 
+2007-11-10 compn: IntraX8 (J-Frame) sub-decoder for WMV2 and VC-1. 
+2007-11-10 diego: cosmetics: Fix vissual --> visual typo.. . 
+2007-11-22 lucabe: Introduce libavdevice. . 
+2007-11-23 diego: spelling. . 
+2007-12-02 diego: Misc spelling fixes, prefer American over British English.. . 
+2007-12-06 diego: OS/2 support restored in cleaner form.. patch by Dave Yeo, daver
+2007-12-28 ivo: add PCX and Sun Rasterfile decoders. . 
+2008-01-02 ivo: TechnoTrend PVA Demuxer. . 
+2008-01-08 ivo: LMLM4 demuxer. . 
+2008-01-21 bcoudurier: mention avm2 (flash 9) muxer in documentation and changelog. 
+2008-03-06 kostya: IMA ADPCM encoder - QT variant. 
+2008-03-09 ramiro: VFW grabber. 
+2008-03-16 bcoudurier: ipod/iphone compatible mp4 muxer. 
+2008-03-18 ramiro: Mimic decoder.. 
+2008-03-18 ramiro: MSN TCP Webcam stream demuxer.. 
+2008-03-21 faust3: rl2 documentation update. 
+2008-04-02 diego: Add IFF demuxer and 8SVX audio decoder to changelog and document
+2008-04-14 vitor: BFI demuxer. . Patch by Sisir Koppaka (sisir.koppaka at G.M!A.I!
+2008-04-16 diego: documentation update for new Maxis EA XA decoder/demuxer. patch 
+2008-04-18 benoit: BFI video decoder.. Patch by Sisir Koppaka sisir koppaka gmail. 
+2008-06-12 banan: We have an Oma demuxer now. 
+2008-07-04 ramiro: MLP/TrueHD decoder.. 
+2008-07-08 pross: Electronic Arts CMV latent changelog entry. 
+2008-07-10 ramiro: Update Changelog and documentation for MVI demuxer and decoder..
+2008-07-14 compn: only animated gif (gifdec.c) was removed). 
+2008-07-14 compn: removed gif decoder in r14209. 
+2008-08-04 pross: Add D-Cinema audio muxer. . 
+2008-08-06 pross: Electronic Arts TGV decoder. . 
+2008-08-19 jai_menon: Update changelog and general.texi to reflect . addition of the a
+2008-08-21 pross: Include floating point PCM in changelog and documentation. . . 
+2008-08-21 superdump: Last hunk of the AAC decoder code to be OKed and build system an
+2008-08-26 cehoyos: Remaining parts of GSoC MXF muxer by Zhentan Feng.. 
+2008-08-29 romansh: Intial implementation of the DV100 (AKA DVCPRO HD) decoder and d
+2008-08-31 jbr: turn on E-AC-3 decoding support and update the Changelog. 
+2008-09-01 bwolowiec: Remaining parts of Nellymoser encoder. . 
+2008-09-26 michael: Forgotten changelog update for ASS/SSA (de)muxer.. . 
+2008-10-06 diego: Remove obsolete liba52 wrapper code.. . 
+2008-10-25 conrad: Documentation and changelog update for libspeex decoding. 
+2008-11-08 pross: Electronic Arts TGQ video decoder. 
+2008-12-01 kostya: enable RV40 decoder. 
+2008-12-02 vitor: Commit last ok'ed parts of QCELP decoder and enable it.. patch b
+2008-12-20 kostya: RV30 decoder. 
+2009-01-16 compn: add svq3 watermark support entry. 
+2009-01-16 compn: hybrid wavpack support. 
+2009-01-17 stefang: added demuxer for FunCom ISS audio files,. extended ADPCM decode
+2009-01-20 bcoudurier: R3D REDCODE demuxer. 
+2009-01-26 benoit: Add a Changelog entry for the ALSA stuff.. . 
+2009-02-05 pross: Electronic Arts TQI decoder. 
+2009-02-06 cehoyos: Use libopenjpeg for jpeg2k decoding.. . Patch by Jaikrishnan Men
+2009-02-08 vitor: NC camera demuxer. . Patch by Nicolas Martin - elvadrias at gmai
+2009-02-11 diego: Gopher protocol, patch by Toshimitsu Kimura, lovesyao gmail com.
+2009-02-13 bcoudurier: MXF D-10 muxer. 
+2009-03-01 aurel: new metadata API is now officially part of public API. 
+2009-03-01 diego: Add release version number.. . 
+2009-03-02 compn: figure out which muxers support which codecs? new api required!.
+2009-03-02 compn: ogg muxer is vorbis only. 
+2009-03-02 compn: vorbis and flac ogg muxer only. 
+2009-03-02 diego: cosmetics: spelling/wording fixes. . 
+2009-03-02 diego: Mention non-recursive Makefiles in the changelog.. . 
+2009-03-02 superdump: The Ogg muxer will handle Theora as well. . 
+2009-03-03 diego: Add vhook removal to the changelog.. . 
+2009-03-03 diego: cosmetics: Add some empty lines for readability.. . 
+2009-03-03 diego: Start Changelog for next version.. . 
+2009-03-04 michael: Add 'deprecated old scaler removed'. . 
+2009-03-06 diego: cosmetics: Order changelog entries chronologically.. . 
+2009-03-06 diego: cosmetics: Zip Blocks Motion Video --> Zip Motion Blocks Video. 
+2009-03-08 vitor: VQF demuxer. . 
+2009-03-20 cehoyos: PCX encoder that handles 1-, 8-, and 24-bpp pixfmts.. . Patch by
+2009-03-20 sdrik: Add a changelog entry for the alpha scaler support. 
+2009-04-07 lucabe: Add support for H.263 video in the RTP muxer. patch by Martin St
+2009-04-08 lucabe: Add support for AMR audio in the RTP muxer. patch by Martin Stor
+2009-04-14 rbultje: Add a Vorbis payload parser. Implemented by Colin McQuillan as a
+2009-04-15 diego: Explain the sort order for changelog entries.. . 
+2009-04-25 banan: Add Changelog for Cook multi channel support. 
+2009-04-27 benoit: Add avlanguage helpers in libavformat.. Patch by Cyril Comparon:
+2009-05-07 stefano: Update docs after the 8088flex TMV demuxer and decoder addition.
+2009-05-12 bcoudurier: V210 Uncompressed 4:2:2 10-bit encoder and decoder. 
+2009-05-12 benoit: Per-stream language-tags extraction in asfdec.. Patch by Cyril C
+2009-05-20 diego: Mention LGPL AC-3 decoder in the changelog.. . 
+2009-05-20 kmalaussene: Add QCP demuxer.. 
+2009-05-25 compn: CorePNG can be decoded since 18421. 
+2009-05-30 stefano: Implement SoX native format muxer and demuxer.. . Patch by Danie
+2009-06-05 diego: Add support for external OpenCORE libraries for AMR-NB/WB suppor
+2009-06-12 diego: DPX (Digital Picture Exchange) image decoder. patch by Jimmy Chr
+2009-06-13 pross: Electronic Arts Madcow decoder. . 
+2009-06-19 reimar: Add support for encoding XSUB subtitles. Muxing support is still
+2009-07-08 diego: Mention removal of libamr support in the changelog.. . 
+2009-07-09 alexc: Merge the AAC encoder from SoC svn. It is still considered exper
+2009-07-27 rbultje: Implement RTSP-MS/ASF packet parsing - this completes RTSP-MS su
+2009-07-31 kostya: RTMP protocol support (as a client). 
+2009-08-05 benoit: Add a Changelog entry for noX handling for OPT_BOOL X.. . 
+2009-08-10 diego: Sony Wave64 demuxer. patch by Daniel Verkamp, daniel drv nu. . 
+2009-08-21 bwolowiec: Add support for S/PDIF encapsulation.. . 
+2009-08-23 vitor: TwinVQ decoder. . 
+2009-08-25 cehoyos: Add Bluray Subtitle Support. . Patch by Stephen Backway, stev391
+2009-08-27 cehoyos: Decoder for LPCM as used in Bluray discs.. . Patch by Christian 
+2009-09-02 faust3: add missing wmapro decoder parts. 
+2009-09-16 pross: Core Audio Format demuxer. 
+2009-09-22 banan: Hook up the MD studio demuxer and Atrac1 decoder.. . 
+2009-10-06 daniel: Add RF64 support to wav demuxer.. . . 
+2009-11-12 cehoyos: Add MPEG-4 Audio Lossless Coding (ALS) decoder.. . Patch by Thil
+2009-11-20 daniel: Document -formats split. . . 
+2009-12-03 ramiro: Update Changelog, documentation, and libavformat minor version n
+2009-12-17 reimar: Add decoder for R210 (uncompressed 10-bit RGB) codec.. . 
+2009-12-17 vitor: CD+G demuxer and decoder. . Patch by Michael Tison (gmail addres
+2009-12-23 kostya: Add Auravision Aura decoding support. 
+2009-12-23 kostya: Auravision Aura 2 decoder. 
+2010-01-10 pross: Deluxe Paint Animation demuxer. . 
+2010-01-11 vitor: SIPR decoder for modes 8k5, 6k5 and 5k0.. . Patch by Vladimir Vo
+2010-01-14 pross: Adobe Filmstrip muxer and demuxer. 
+2010-01-16 vitor: SIPR16k decoder. . 

@@ -9,15 +9,16 @@
 config="""
 
 
-ColorAssign1="Attic", "/cvsroot/freemind/freemind/Attic.*", 185,229,15, 185,229,15
-ColorAssign2="doc", "/cvsroot/freemind/freemind/doc.*", 150,95,148, 150,95,148
-ColorAssign3="doc/Attic", "/cvsroot/freemind/freemind/doc/Attic.*", 89,21,33, 89,21,33
-ColorAssign4="freemind", "/cvsroot/freemind/freemind/freemind.*", 249,248,132, 249,248,132
-ColorAssign5="freemind/common", "/cvsroot/freemind/freemind/freemind/common.*", 229,9,38, 229,9,38
-ColorAssign6="freemind/main", "/cvsroot/freemind/freemind/freemind/main.*", 11,230,150, 11,230,150
-ColorAssign7="freemind/modes", "/cvsroot/freemind/freemind/freemind/modes.*", 60,142,227, 60,142,227
-ColorAssign8="freemind/preferences", "/cvsroot/freemind/freemind/freemind/preferences.*", 71,241,68, 71,241,68
-ColorAssign9="freemind/view", "/cvsroot/freemind/freemind/freemind/view.*", 147,34,106, 147,34,106
+ColorAssign1="Attic", "/cvsroot/freemind/freemind/Attic.*", 245,242,251, 245,242,251
+ColorAssign2="doc", "/cvsroot/freemind/freemind/doc.*", 181,231,151, 181,231,151
+ColorAssign3="doc/Attic", "/cvsroot/freemind/freemind/doc/Attic.*", 176,217,137, 176,217,137
+ColorAssign4="freemind", "/cvsroot/freemind/freemind/freemind.*", 205,128,247, 205,128,247
+ColorAssign5="freemind/common", "/cvsroot/freemind/freemind/freemind/common.*", 190,153,153, 190,153,153
+ColorAssign6="freemind/modes/mindmapmode", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode.*", 99,171,12, 99,171,12
+ColorAssign7="freemind/modes/mindmapmode/actions", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions.*", 205,56,96, 205,56,96
+ColorAssign8="freemind/modes/mindmapmode/actions/Attic", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions/Attic.*", 131,57,127, 131,57,127
+ColorAssign9="freemind/modes/mindmapmode/actions/xml", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions/xml.*", 143,32,1, 143,32,1
+ColorAssign10="freemind/modes/mindmapmode/actions/xml/Attic", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions/xml/Attic.*", 59,19,61, 59,19,61
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

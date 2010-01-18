@@ -73,7 +73,8 @@ class RandomColor:
         """
           compare colors as tuples:
         """
-        return cmp(self.__rgb, other.__rgb)
+        return cmp( (self.get_brightness(),  self.__rgb),
+                    (other.get_brightness(), other.__rgb))
         
 
 class RandomColorPalette:

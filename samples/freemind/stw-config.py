@@ -9,18 +9,16 @@
 config="""
 
 
-ColorAssign1="Attic", "/cvsroot/freemind/freemind/Attic.*", 238,38,215, 238,38,215
-ColorAssign2="accessories", "/cvsroot/freemind/freemind/accessories.*", 76,231,132, 76,231,132
-ColorAssign3="accessories/plugins", "/cvsroot/freemind/freemind/accessories/plugins.*", 172,5,109, 172,5,109
-ColorAssign4="freemind", "/cvsroot/freemind/freemind/freemind.*", 233,195,250, 233,195,250
-ColorAssign5="freemind/controller", "/cvsroot/freemind/freemind/freemind/controller.*", 2,60,15, 2,60,15
-ColorAssign6="freemind/extensions", "/cvsroot/freemind/freemind/freemind/extensions.*", 254,254,160, 254,254,160
-ColorAssign7="freemind/main", "/cvsroot/freemind/freemind/freemind/main.*", 33,194,199, 33,194,199
-ColorAssign8="freemind/modes", "/cvsroot/freemind/freemind/freemind/modes.*", 101,103,18, 101,103,18
-ColorAssign9="freemind/view", "/cvsroot/freemind/freemind/freemind/view.*", 196,11,11, 196,11,11
-ColorAssign10="images", "/cvsroot/freemind/freemind/images.*", 4,210,39, 4,210,39
-ColorAssign11="lib", "/cvsroot/freemind/freemind/lib.*", 254,60,136, 254,60,136
-ColorAssign12="plugins", "/cvsroot/freemind/freemind/plugins.*", 228,160,13, 228,160,13
+ColorAssign1="accessories", "/cvsroot/freemind/freemind/accessories.*", 246,254,251, 246,254,251
+ColorAssign2="accessories/plugins", "/cvsroot/freemind/freemind/accessories/plugins.*", 226,215,155, 226,215,155
+ColorAssign3="freemind", "/cvsroot/freemind/freemind/freemind.*", 83,235,43, 83,235,43
+ColorAssign4="freemind/controller", "/cvsroot/freemind/freemind/freemind/controller.*", 152,118,21, 152,118,21
+ColorAssign5="freemind/main", "/cvsroot/freemind/freemind/freemind/main.*", 143,93,132, 143,93,132
+ColorAssign6="freemind/modes/mindmapmode", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode.*", 97,60,232, 97,60,232
+ColorAssign7="freemind/modes/mindmapmode/actions", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions.*", 198,26,70, 198,26,70
+ColorAssign8="freemind/modes/mindmapmode/actions/Attic", "/cvsroot/freemind/freemind/freemind/modes/mindmapmode/actions/Attic.*", 67,57,168, 67,57,168
+ColorAssign9="freemind/view", "/cvsroot/freemind/freemind/freemind/view.*", 6,40,142, 6,40,142
+ColorAssign10="plugins", "/cvsroot/freemind/freemind/plugins.*", 33,11,147, 33,11,147
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

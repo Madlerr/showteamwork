@@ -9,18 +9,15 @@
 config="""
 
 
-ColorAssign1="Attic", "/cvsroot/mozilla/webtools/bugzilla/Attic.*", 69,182,99, 69,182,99
-ColorAssign2="Bugzilla", "/cvsroot/mozilla/webtools/bugzilla/Bugzilla.*", 10,115,20, 10,115,20
-ColorAssign3="Bugzilla/DB", "/cvsroot/mozilla/webtools/bugzilla/Bugzilla/DB.*", 243,155,33, 243,155,33
-ColorAssign4="docs", "/cvsroot/mozilla/webtools/bugzilla/docs.*", 157,79,118, 157,79,118
-ColorAssign5="docs/en", "/cvsroot/mozilla/webtools/bugzilla/docs/en.*", 202,225,154, 202,225,154
-ColorAssign6="docs/html", "/cvsroot/mozilla/webtools/bugzilla/docs/html.*", 33,18,171, 33,18,171
-ColorAssign7="docs/sgml", "/cvsroot/mozilla/webtools/bugzilla/docs/sgml.*", 244,249,252, 244,249,252
-ColorAssign8="docs/xml", "/cvsroot/mozilla/webtools/bugzilla/docs/xml.*", 234,164,203, 234,164,203
-ColorAssign9="t", "/cvsroot/mozilla/webtools/bugzilla/t.*", 27,192,208, 27,192,208
-ColorAssign10="template", "/cvsroot/mozilla/webtools/bugzilla/template.*", 163,180,48, 163,180,48
-ColorAssign11="template/default", "/cvsroot/mozilla/webtools/bugzilla/template/default.*", 20,179,134, 20,179,134
-ColorAssign12="template/en", "/cvsroot/mozilla/webtools/bugzilla/template/en.*", 86,3,214, 86,3,214
+ColorAssign1="Attic", "/cvsroot/mozilla/webtools/bugzilla/Attic.*", 215,242,146, 215,242,146
+ColorAssign2="Bugzilla", "/cvsroot/mozilla/webtools/bugzilla/Bugzilla.*", 207,240,62, 207,240,62
+ColorAssign3="docs", "/cvsroot/mozilla/webtools/bugzilla/docs.*", 198,152,247, 198,152,247
+ColorAssign4="docs/html", "/cvsroot/mozilla/webtools/bugzilla/docs/html.*", 172,143,250, 172,143,250
+ColorAssign5="docs/xml", "/cvsroot/mozilla/webtools/bugzilla/docs/xml.*", 155,131,184, 155,131,184
+ColorAssign6="template", "/cvsroot/mozilla/webtools/bugzilla/template.*", 6,195,37, 6,195,37
+ColorAssign7="template/en/default", "/cvsroot/mozilla/webtools/bugzilla/template/en/default.*", 132,120,49, 132,120,49
+ColorAssign8="template/en/default/admin", "/cvsroot/mozilla/webtools/bugzilla/template/en/default/admin.*", 9,115,81, 9,115,81
+ColorAssign9="template/en/default/bug", "/cvsroot/mozilla/webtools/bugzilla/template/en/default/bug.*", 75,21,104, 75,21,104
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
