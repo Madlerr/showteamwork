@@ -9,18 +9,17 @@
 config="""
 
 
-ColorAssign1="trunk", "/trunk.*", 84,81,103, 84,81,103
-ColorAssign2="trunk/DOCS", "/trunk/DOCS.*", 18,15,247, 18,15,247
-ColorAssign3="trunk/gui", "/trunk/gui.*", 56,204,232, 56,204,232
-ColorAssign4="trunk/help", "/trunk/help.*", 254,243,211, 254,243,211
-ColorAssign5="trunk/libass", "/trunk/libass.*", 192,63,240, 192,63,240
-ColorAssign6="trunk/libmpcodecs", "/trunk/libmpcodecs.*", 210,214,75, 210,214,75
-ColorAssign7="trunk/libmpdemux", "/trunk/libmpdemux.*", 142,253,250, 142,253,250
-ColorAssign8="trunk/libswscale", "/trunk/libswscale.*", 26,91,20, 26,91,20
-ColorAssign9="trunk/libvo", "/trunk/libvo.*", 123,75,116, 123,75,116
-ColorAssign10="trunk/loader", "/trunk/loader.*", 250,163,235, 250,163,235
-ColorAssign11="trunk/stream", "/trunk/stream.*", 58,28,84, 58,28,84
-ColorAssign12="trunk/vidix", "/trunk/vidix.*", 153,75,45, 153,75,45
+ColorAssign1="trunk", "/trunk.*", 253,244,171, 253,244,171
+ColorAssign2="trunk/DOCS/man", "/trunk/DOCS/man.*", 83,253,250, 83,253,250
+ColorAssign3="trunk/DOCS/xml", "/trunk/DOCS/xml.*", 212,142,51, 212,142,51
+ColorAssign4="trunk/gui", "/trunk/gui.*", 16,222,128, 16,222,128
+ColorAssign5="trunk/help", "/trunk/help.*", 106,121,156, 106,121,156
+ColorAssign6="trunk/libmpcodecs", "/trunk/libmpcodecs.*", 88,78,213, 88,78,213
+ColorAssign7="trunk/libmpdemux", "/trunk/libmpdemux.*", 162,38,190, 162,38,190
+ColorAssign8="trunk/libswscale", "/trunk/libswscale.*", 9,114,187, 9,114,187
+ColorAssign9="trunk/libvo", "/trunk/libvo.*", 245,2,120, 245,2,120
+ColorAssign10="trunk/stream", "/trunk/stream.*", 7,55,229, 7,55,229
+ColorAssign11="trunk/vidix", "/trunk/vidix.*", 1,47,31, 1,47,31
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

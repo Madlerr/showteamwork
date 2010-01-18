@@ -41,8 +41,15 @@ class VCSVisualizer:
                         os.path.join(os.path.dirname(sys.argv[0]),
                                        "../tools"))
         
-        exesubdir = os.name
-        self.exedir = os.path.realpath(os.path.join(self.toolsdir, exesubdir ))
+        if os.name == "nt":
+            self.exedir = os.path.realpath(os.path.join(self.toolsdir, os.name ))
+        else:
+            # Under Linux you have to [build and] install ffmpeg, mencoder, gource to PATH 
+            self.exedir = ''
+
+        self.fontpath = os.path.realpath(os.path.join(self.toolsdir,
+                                                      "/".join(["fonts","FreeSans.ttf"])))
+
         #home/working directory 
         self.homedir = os.getcwd()
         
@@ -51,7 +58,7 @@ class VCSVisualizer:
         l = self.projectdir.split(os.path.sep)
         self.projectname = l[-1]
         if len(l) > 1 and l[-1] in ["trunk", "tags", "branches"]:
-           self.projectname = "-".join( l[-2:] )    
+            self.projectname = "-".join( l[-2:] )    
         self.tempdir = tempfile.gettempdir()
         self.inputhash = hash4file(inputfile)
         
@@ -136,7 +143,7 @@ Please, provide audio track for your clip.
                 self.startdate = vcstime
             if vcstime > self.enddate:
                 self.enddate = vcstime
-            dates = time.strftime("%d.%m.%Y", vcstime)
+            dates = time.strftime("%Y-%m-%d", vcstime)
 
             prevcommentline = commentline
 
@@ -182,6 +189,13 @@ Please, provide audio track for your clip.
                                 )
         
         ls = ""
+        
+        commonprefix2 = os.path.commonprefix(self.toppaths)
+        if commonprefix2 != "":
+            self.commonprefix += commonprefix2
+            for i,p in enumerate(self.toppaths):
+                self.toppaths[i] = p[len(commonprefix2):]
+        
         for i, c in enumerate(rcp.colors):
             ix = i + 1
             path = self.toppaths[i]
@@ -499,8 +513,10 @@ def filter_events(event):
 
         hash_filter = hash4file(filtereventspath)
 
-        self.activitypath = os.path.join(self.workdir,"".join(["activity-", hash_filter, ".xml"]))
-        activitygourcepath  = os.path.join(self.workdir,"".join(["activity-", hash_filter, ".gource"]))
+        self.activitypath = os.path.join(self.workdir,
+                                         "".join(["activity-", hash_filter, ".xml"]))
+        activitygourcepath  = os.path.join(self.workdir,
+                                         "".join(["activity-", hash_filter, ".gource"]))
         
         events = EventList()    
         if not file_is_ok(self.activitypath) or not file_is_ok(activitygourcepath):
@@ -605,7 +621,7 @@ def filter_events(event):
                              ' -oac copy ',
                              ' -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.exedir, '/data/fonts/FreeSans.ttf"',
+                             ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', codeswarmpath ])
                 print s
@@ -632,7 +648,7 @@ def filter_events(event):
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                              ' -oac copy -audiofile ', self.audiopath,
                              ' -sub ', srtpath,
-                             ' -utf8 -font "', self.exedir, '/data/fonts/FreeSans.ttf"',
+                             ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 ',
                              ' -sub-bg-color 20 -sub-bg-alpha 70 ',
                              ' -o ', gourcepath ])

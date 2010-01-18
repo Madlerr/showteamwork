@@ -9,18 +9,18 @@
 config="""
 
 
-ColorAssign1="contrib", "contrib.*", 97,17,143, 97,17,143
-ColorAssign2="doc", "doc.*", 208,136,67, 208,136,67
-ColorAssign3="hgext", "hgext.*", 138,202,218, 138,202,218
-ColorAssign4="hgext/convert", "hgext/convert.*", 30,119,85, 30,119,85
-ColorAssign5="hgext/inotify", "hgext/inotify.*", 217,227,136, 217,227,136
-ColorAssign6="i18n", "i18n.*", 2,199,12, 2,199,12
-ColorAssign7="mercurial", "mercurial.*", 251,249,243, 251,249,243
-ColorAssign8="mercurial/hgweb", "mercurial/hgweb.*", 21,42,4, 21,42,4
-ColorAssign9="templates", "templates.*", 226,121,198, 226,121,198
-ColorAssign10="templates/coal", "templates/coal.*", 91,226,135, 91,226,135
-ColorAssign11="templates/gitweb", "templates/gitweb.*", 38,93,138, 38,93,138
-ColorAssign12="tests", "tests.*", 101,148,208, 101,148,208
+ColorAssign1="contrib", "contrib.*", 249,249,225, 249,249,225
+ColorAssign2="doc", "doc.*", 242,232,80, 242,232,80
+ColorAssign3="hgext", "hgext.*", 180,215,135, 180,215,135
+ColorAssign4="hgext/convert", "hgext/convert.*", 174,206,3, 174,206,3
+ColorAssign5="hgext/inotify", "hgext/inotify.*", 118,192,219, 118,192,219
+ColorAssign6="i18n", "i18n.*", 168,127,244, 168,127,244
+ColorAssign7="mercurial", "mercurial.*", 159,104,247, 159,104,247
+ColorAssign8="mercurial/hgweb", "mercurial/hgweb.*", 237,77,164, 237,77,164
+ColorAssign9="templates", "templates.*", 13,156,49, 13,156,49
+ColorAssign10="templates/coal", "templates/coal.*", 127,52,39, 127,52,39
+ColorAssign11="templates/gitweb", "templates/gitweb.*", 165,10,41, 165,10,41
+ColorAssign12="tests", "tests.*", 56,1,150, 56,1,150
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

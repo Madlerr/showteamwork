@@ -9,18 +9,16 @@
 config="""
 
 
-ColorAssign1="branches", "/branches.*", 158,133,29, 158,133,29
-ColorAssign2="branches/1.0.x", "/branches/1.0.x.*", 134,21,158, 134,21,158
-ColorAssign3="branches/1.1.x", "/branches/1.1.x.*", 78,223,39, 78,223,39
-ColorAssign4="tags", "/tags.*", 192,230,154, 192,230,154
-ColorAssign5="templates-contrib", "/templates-contrib.*", 25,31,100, 25,31,100
-ColorAssign6="templates-contrib/1.1", "/templates-contrib/1.1.*", 223,40,79, 223,40,79
-ColorAssign7="trunk", "/trunk.*", 254,237,255, 254,237,255
-ColorAssign8="trunk/bin", "/trunk/bin.*", 211,162,226, 211,162,226
-ColorAssign9="trunk/conf", "/trunk/conf.*", 97,220,253, 97,220,253
-ColorAssign10="trunk/lib", "/trunk/lib.*", 192,14,2, 192,14,2
-ColorAssign11="trunk/templates", "/trunk/templates.*", 91,7,233, 91,7,233
-ColorAssign12="trunk/viewvc.org", "/trunk/viewvc.org.*", 193,152,90, 193,152,90
+ColorAssign1="branches", "/branches.*", 242,225,165, 242,225,165
+ColorAssign2="branches/1.1.x/conf", "/branches/1.1.x/conf.*", 218,250,5, 218,250,5
+ColorAssign3="branches/1.1.x/lib", "/branches/1.1.x/lib.*", 74,233,231, 74,233,231
+ColorAssign4="templates-contrib", "/templates-contrib.*", 131,212,160, 131,212,160
+ColorAssign5="templates-contrib/1.1", "/templates-contrib/1.1.*", 169,152,70, 169,152,70
+ColorAssign6="trunk", "/trunk.*", 202,58,121, 202,58,121
+ColorAssign7="trunk/bin", "/trunk/bin.*", 163,72,146, 163,72,146
+ColorAssign8="trunk/conf", "/trunk/conf.*", 131,68,35, 131,68,35
+ColorAssign9="trunk/lib", "/trunk/lib.*", 87,41,171, 87,41,171
+ColorAssign10="trunk/viewvc.org", "/trunk/viewvc.org.*", 97,5,5, 97,5,5
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

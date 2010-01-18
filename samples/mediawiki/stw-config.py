@@ -9,18 +9,16 @@
 config="""
 
 
-ColorAssign1="branches", "/branches.*", 37,86,219, 37,86,219
-ColorAssign2="branches/ApiEdit_Vodafone", "/branches/ApiEdit_Vodafone.*", 136,204,52, 136,204,52
-ColorAssign3="branches/liquidthreads", "/branches/liquidthreads.*", 49,3,129, 49,3,129
-ColorAssign4="branches/new-installer", "/branches/new-installer.*", 226,69,62, 226,69,62
-ColorAssign5="branches/new-upload", "/branches/new-upload.*", 228,213,115, 228,213,115
-ColorAssign6="civicrm", "/civicrm.*", 225,239,253, 225,239,253
-ColorAssign7="civicrm/trunk", "/civicrm/trunk.*", 104,43,8, 104,43,8
-ColorAssign8="civicrm/vendor", "/civicrm/vendor.*", 53,195,101, 53,195,101
-ColorAssign9="trunk", "/trunk.*", 198,41,233, 198,41,233
-ColorAssign10="trunk/debs", "/trunk/debs.*", 21,86,110, 21,86,110
-ColorAssign11="trunk/extensions", "/trunk/extensions.*", 138,114,246, 138,114,246
-ColorAssign12="trunk/phase3", "/trunk/phase3.*", 56,237,120, 56,237,120
+ColorAssign1="branches", "/branches.*", 252,243,241, 252,243,241
+ColorAssign2="civicrm", "/civicrm.*", 185,229,195, 185,229,195
+ColorAssign3="civicrm/trunk/sites", "/civicrm/trunk/sites.*", 241,194,129, 241,194,129
+ColorAssign4="civicrm/trunk/sites/all", "/civicrm/trunk/sites/all.*", 84,217,181, 84,217,181
+ColorAssign5="civicrm/trunk/sites/all/modules", "/civicrm/trunk/sites/all/modules.*", 82,214,100, 82,214,100
+ColorAssign6="civicrm/trunk/sites/all/modules/civicrm", "/civicrm/trunk/sites/all/modules/civicrm.*", 227,58,203, 227,58,203
+ColorAssign7="trunk", "/trunk.*", 236,15,89, 236,15,89
+ColorAssign8="trunk/extensions", "/trunk/extensions.*", 18,93,212, 18,93,212
+ColorAssign9="trunk/phase3/languages", "/trunk/phase3/languages.*", 160,1,41, 160,1,41
+ColorAssign10="trunk/phase3/languages/messages", "/trunk/phase3/languages/messages.*", 70,9,132, 70,9,132
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
