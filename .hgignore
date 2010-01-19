@@ -8,5 +8,6 @@ stw-scenario.txt.template
 ^[^\.]*\.log
 ^[^\.]*\.pyc
 src/build
+[^\.]*\.orig
 bin
 
