@@ -6,21 +6,7 @@
 
 import sys
 import os
-import shutil
-import errno
-import stat
-
-def handle_remove_readonly(func, path, exc):
-    """
-    To kill read-only files.
-    """
-    excvalue = exc[1]
-    if func in (os.rmdir, os.remove) and excvalue.errno == errno.EACCES:
-        os.chmod(path, stat.S_IRWXU| stat.S_IRWXG| stat.S_IRWXO) # 0777
-        func(path)
-    else:
-        raise
-
+from STWUtils import removedirorfile
 
 def runme():
     """
@@ -39,7 +25,7 @@ def runme():
                                                   "stw-scenario.txt",
                                                   "stw-config.py"]:
                     if os.path.isdir(p):
-                        shutil.rmtree(p, ignore_errors=False, onerror=handle_remove_readonly)
+                        removedir(p)
                     else:    
                         os.unlink(p)
             os.chdir(samplesdir)

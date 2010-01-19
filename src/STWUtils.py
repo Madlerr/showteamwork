@@ -6,6 +6,9 @@
 import os
 import time
 import re
+import shutil
+import errno
+import stat
 
    
 def getintparam(config, attrname, default):
@@ -97,4 +100,28 @@ def dateanyway(sdate):
     if date:    
         return date
     raise Exception("Cannot guess date format for %s " % sdate)
+
+def handle_remove_readonly(func, path, exc):
+    """
+    To kill read-only files.
+    """
+    excvalue = exc[1]
+    if func in (os.rmdir, os.remove) and excvalue.errno == errno.EACCES:
+        os.chmod(path, stat.S_IRWXU| stat.S_IRWXG| stat.S_IRWXO) # 0777
+        func(path)
+    else:
+        raise
+
+def removedirorfile(p):
+    if type(p) == type([]):
+        for pp in p:
+            removedirorfile(pp)
+    else:
+        if not os.path.exists(p):
+            return
+        if os.path.isdir(p):
+            shutil.rmtree(p, ignore_errors=False, onerror=handle_remove_readonly)
+        else:    
+            os.unlink(p)
+    
 
