@@ -24,10 +24,7 @@ def runme():
                                                   "stw-filter-events.py",
                                                   "stw-scenario.txt",
                                                   "stw-config.py"]:
-                    if os.path.isdir(p):
-                        removedir(p)
-                    else:    
-                        os.unlink(p)
+                    removedirorfile(p)                        
             os.chdir(samplesdir)
     
 if __name__ == '__main__':
