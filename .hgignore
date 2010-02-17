@@ -1,0 +1,13 @@
+^[^\.]*\.kpf
+^[^\.]*\.template
+^[^\.]*\.avi
+stw-audio.mp3
+stw-scenario.txt.template
+^[^\.]*\.avi
+^[^\.]*\.src
+^[^\.]*\.log
+^[^\.]*\.pyc
+src/build
+[^\.]*\.orig
+bin
+
