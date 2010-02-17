@@ -30,7 +30,7 @@ class VCSVisualizer:
        Measuring of audiofile «stw-audio.mp3» length and various metrics of input «activity.xml» file.
        Can generate template of script scenario file and template of coloring most used directories.
     """
-    version__ = "$Id4$"
+    version__ = "1.0RC2"
     
     def __init__(self, inputfile):
         """
@@ -196,12 +196,24 @@ Please, provide audio track for your clip.
             for i,p in enumerate(self.toppaths):
                 self.toppaths[i] = p[len(commonprefix2):]
         
+        def sort_childs_first(x,y):
+            maxlen = max(len(x),len(y))
+            x = x.lower()+"z"*(maxlen-len(x))
+            y = y.lower()+"z"*(maxlen-len(y))
+            res = cmp(x, y)
+            return res 
+
+        self.toppaths.sort(sort_childs_first)
+        
         for i, c in enumerate(rcp.colors):
             ix = i + 1
             path = self.toppaths[i]
+            label = path
+            if label == "":
+                label = "/"
 #            if path != "":
             ls += "".join([
-                    '\nColorAssign', str(ix), '="', path, '", ',
+                    '\nColorAssign', str(ix), '="', label, '", ',
                     '"', self.commonprefix, path, '.*", ', str(c), ', ', str(c) ])
 
         lf = open(self.configpath, "w")

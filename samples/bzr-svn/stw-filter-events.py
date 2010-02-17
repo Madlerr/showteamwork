@@ -12,8 +12,7 @@ def filter_events(event):
        return False # Something wrong — event from future
 
     if event.author.startswith("jelmer"):
-       event.author="jelmer@samba.org" 	    
-    event.author = event.author.replace('OFFICE\\', '')
+       event.author="jelmer@samba.org"      
     event.author = event.author.lower().replace('"',"'")
     m = emailre_.search(event.author)
     if m:
@@ -29,15 +28,4 @@ def filter_events(event):
     if len(event.comment) < 10:
         event.comment = ""
 
-    #
-    #crap_prefixes=[
-    #    "/Users/dumb/myproject/cvs_root/",
-    #    "/home/projects/myproject/cvsroot/"
-    #]
-
-    #for p in crap_prefixes:
-    #    if event.filename.startswith(p):
-    #       event.filename=event.filename.replace(p,"/") 
-
-    #event.action=event.action
     return True

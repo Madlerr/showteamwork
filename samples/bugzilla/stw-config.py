@@ -7,18 +7,14 @@
 # Label is optional.  If it is omitted, the regex will be used.
 #
 config="""
-
-
-ColorAssign1="Attic", "/cvsroot/mozilla/webtools/bugzilla/Attic.*", 215,242,146, 215,242,146
-ColorAssign2="Bugzilla", "/cvsroot/mozilla/webtools/bugzilla/Bugzilla.*", 207,240,62, 207,240,62
-ColorAssign3="docs", "/cvsroot/mozilla/webtools/bugzilla/docs.*", 198,152,247, 198,152,247
-ColorAssign4="docs/html", "/cvsroot/mozilla/webtools/bugzilla/docs/html.*", 172,143,250, 172,143,250
-ColorAssign5="docs/xml", "/cvsroot/mozilla/webtools/bugzilla/docs/xml.*", 155,131,184, 155,131,184
-ColorAssign6="template", "/cvsroot/mozilla/webtools/bugzilla/template.*", 6,195,37, 6,195,37
-ColorAssign7="template/en/default", "/cvsroot/mozilla/webtools/bugzilla/template/en/default.*", 132,120,49, 132,120,49
-ColorAssign8="template/en/default/admin", "/cvsroot/mozilla/webtools/bugzilla/template/en/default/admin.*", 9,115,81, 9,115,81
-ColorAssign9="template/en/default/bug", "/cvsroot/mozilla/webtools/bugzilla/template/en/default/bug.*", 75,21,104, 75,21,104
+ColorAssign1="Bugzilla", "/cvsroot/mozilla/webtools/bugzilla/Bugzilla.*|.*\.cgi", 255,0,0,       255,0,0
+ColorAssign2="docs",     "/cvsroot/mozilla/webtools/bugzilla/docs.*",     212,183,3,     212,183,3
+ColorAssign3="template", "/cvsroot/mozilla/webtools/bugzilla/template.*", 77,175,90,     77,175,90
+ColorAssign4="contrib",  "/cvsroot/mozilla/webtools/bugzilla/contrib.*",  10,198,20,     10,198,20
+ColorAssign5="skins",    "/cvsroot/mozilla/webtools/bugzilla/skins.*",    201,28,194,    201,28,194
+ColorAssign6="Attic",    "/cvsroot/mozilla/webtools/bugzilla/Attic.*",    0,2,216,     0,2,216
 """
+
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
 
@@ -45,6 +41,7 @@ else:
     config+="""
 Width=640
 Height=640
+Background=0,0,20
     """
 
 GOURCE=1

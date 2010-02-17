@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-def filter_events_f(event):
+def filter_events(event):
     prefixes=[
         "/Users/neilc/postgres/cvs_root/",
         "/home/projects/pgsql/cvsroot/",
@@ -11,9 +11,6 @@ def filter_events_f(event):
         if event.filename.startswith(p):
            event.filename=event.filename.replace(p,"/") 
     return True
-
-filter_events=filter_events_f
-
 
     
 
