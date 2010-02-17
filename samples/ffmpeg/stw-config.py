@@ -35,7 +35,7 @@ nodesMultiplier=100.0
 drag=0.05
     """
 
-engine="""
+engine2="""
 # name of the engine class
 name=PhysicsEngineChaotic
 
