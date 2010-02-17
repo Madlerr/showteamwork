@@ -35,6 +35,14 @@ nodesMultiplier=100.0
 drag=0.05
     """
 
+engine="""
+# name of the engine class
+name=PhysicsEngineChaotic
+
+# parameters specific to this engine
+drag=0.00001
+"""
+
 draft=0
 if draft:
     config+="""
