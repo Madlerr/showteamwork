@@ -127,11 +127,18 @@ class RandomColorPalette:
         colors.reverse()
         self.colors = colors
 
+    def __str__(self):
+        return "\n".join([str(c) for c in self.colors])
+
+    def __repr__(self):
+        return "\n".join([c.__repr__() for c in self.colors])
+
 if __name__ == '__main__':
     import time
     STIME = time.time()
-    for n in xrange(6, 16):
+    for n in xrange(6, 7):
         print "\n\n!!!!!!===>", n
         rcp = RandomColorPalette(num = n, contrast_colors_num = n)
+        print rcp
     print "It takes ", time.time()-STIME, " seconds" 
 

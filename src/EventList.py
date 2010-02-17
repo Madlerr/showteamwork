@@ -80,8 +80,9 @@ class EventList:
             ev.filename = escape(ev.filename)
             ev.author   = escape(ev.author)   
             ev.comment  = escape(ev.comment)
-            s = u'''<event date="%(date)s" author="%(author)s"
-filename="%(filename)s" comment="%(comment)s" />
+            s = u'''<event
+  date="%(date)s"  author="%(author)s"  filename="%(filename)s"
+        action="%(action)s" comment="%(comment)s" />
 ''' % vars(ev)   
             lf.write(s.encode("utf-8"))
         lf.write('</file_events>\n')
