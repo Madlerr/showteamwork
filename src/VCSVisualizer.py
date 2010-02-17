@@ -30,7 +30,7 @@ class VCSVisualizer:
        Measuring of audiofile «stw-audio.mp3» length and various metrics of input «activity.xml» file.
        Can generate template of script scenario file and template of coloring most used directories.
     """
-    version__ = "1.0RC2"
+    version__ = "1.0RC4"
     
     def __init__(self, inputfile):
         """
@@ -572,12 +572,15 @@ def filter_events(event):
         self.process_user_config()
 
         if self.need_codeswarm:
+            jarsep = ":"
+            if os.name == "nt":
+               jarsep = ";"
             if not file_is_ok(os.path.join(self.cwsnapshotdir, "cs-00007.png")):
                 s = "".join([ 'java -Xmx1000m -classpath ',
-                             self.toolsdir, '/code_swarm.jar:',
-                             self.toolsdir, '/lib/core.jar:',
-                             self.toolsdir, '/lib/xml.jar:',
-                             self.toolsdir, '/lib/vecmath.jar:. ',
+                             self.toolsdir, '/code_swarm.jar', jarsep, 
+                             self.toolsdir, '/lib/core.jar', jarsep,
+                             self.toolsdir, '/lib/xml.jar', jarsep,
+                             self.toolsdir, '/lib/vecmath.jar', jarsep, '. ',
                              'code_swarm ', self.configobjpath, '/' ])
                 print s
                 os.system(s)
