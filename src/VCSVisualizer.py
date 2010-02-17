@@ -574,10 +574,10 @@ def filter_events(event):
         if self.need_codeswarm:
             if not file_is_ok(os.path.join(self.cwsnapshotdir, "cs-00007.png")):
                 s = "".join([ 'java -Xmx1000m -classpath ',
-                             self.toolsdir, '/code_swarm.jar;',
-                             self.toolsdir, '/lib/core.jar;',
-                             self.toolsdir, '/lib/xml.jar;',
-                             self.toolsdir, '/lib/vecmath.jar;. ',
+                             self.toolsdir, '/code_swarm.jar:',
+                             self.toolsdir, '/lib/core.jar:',
+                             self.toolsdir, '/lib/xml.jar:',
+                             self.toolsdir, '/lib/vecmath.jar:. ',
                              'code_swarm ', self.configobjpath, '/' ])
                 print s
                 os.system(s)
