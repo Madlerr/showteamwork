@@ -13,6 +13,7 @@ import tempfile
 import shutil
 import math
 import random
+import trans
 from ColorPalette       import RandomColorPalette
 from EventList          import EventList
 from RingBuffer         import RingBuffer
@@ -30,7 +31,7 @@ class VCSVisualizer:
        Measuring of audiofile «stw-audio.mp3» length and various metrics of input «activity.xml» file.
        Can generate template of script scenario file and template of coloring most used directories.
     """
-    version__ = "1.0RC4"
+    version__ = "1.0RC5"
     
     def __init__(self, inputfile):
         """
@@ -58,7 +59,8 @@ class VCSVisualizer:
         l = self.projectdir.split(os.path.sep)
         self.projectname = l[-1]
         if len(l) > 1 and l[-1] in ["trunk", "tags", "branches"]:
-            self.projectname = "-".join( l[-2:] )    
+            self.projectname = "-".join( l[-2:] )
+        self.projectname = self.projectname.replace(" ", "-")
         self.tempdir = tempfile.gettempdir()
         self.inputhash = hash4file(inputfile)
         
@@ -88,7 +90,7 @@ Please, provide audio track for your clip.
         """
         Measure length of audio or movie file using ``ffmpeg``.
         """
-        scmd = r'%s\ffmpeg -i %s' % (self.exedir, filepath)
+        scmd = r'%s\ffmpeg -i "%s"' % (self.exedir, filepath)
         progin, progout = os.popen4(scmd)
         mp3info = progout.read()
         progin.close()
@@ -217,8 +219,7 @@ Please, provide audio track for your clip.
                     '"', self.commonprefix, path, '.*", ', str(c), ', ', str(c) ])
 
         lf = open(self.configpath, "w")
-        lf.write(
-'''
+        s = '''
 # -*- coding: utf-8 -*-
 # Color assignment rules
 # Keep in order, do not skip numbers. Numbers start at 1.
@@ -264,7 +265,9 @@ CODESWARM=1
 print config, engine    
     
 
-''' %  ls.encode("utf-8"))
+''' %  ls.encode("utf-8")
+        s = unicodeanyway(s).encode("trans")
+        lf.write(s)
         lf.close()
     
     
@@ -310,7 +313,7 @@ print config, engine
 GOURCE=1
 CODESWARM=1
 Height=800
-InputFile=%(workdir)s/activity.xml
+InputFile=%(activitypath)s
 PhysicsEngineConfigDir=%(cswd)s/tools/codeswarm_physics_engine
 ParticleSpriteFile=%(cswd)s/tools/particle.png
 Font=DejaVu SansSerif
@@ -368,7 +371,8 @@ UseOpenGL=false
 
 
         lf = open(self.configobjpath, "w")
-        lf.write(usrcfg.encode("utf-8"))
+        usrcfg = unicodeanyway(usrcfg)
+        lf.write(usrcfg.encode("trans"))
         lf.close()
         
         background_re = re.compile(r"(?sm)Background=(?P<R>[\d]+),(?P<G>[\d]+),(?P<B>[\d]+)\s+\n")
@@ -489,7 +493,7 @@ def filter_events(event):
     emailre_ = re.compile(r"(?P<email>[-a-z0-9_.]+@(?:[-a-z0-9]+\.)+[a-z]{2,6})",
                     re.IGNORECASE)
 
-    if event.date > time.time()*1000:
+    if long(event.date) > long(time.time()*1000):
        return False # Something wrong — event from future
     
     event.author = event.author.replace('OFFICE\\', '')
@@ -581,7 +585,7 @@ def filter_events(event):
                              self.toolsdir, '/lib/core.jar', jarsep,
                              self.toolsdir, '/lib/xml.jar', jarsep,
                              self.toolsdir, '/lib/vecmath.jar', jarsep, '. ',
-                             'code_swarm ', self.configobjpath, '/' ])
+                             'code_swarm "', self.configobjpath, '/"' ])
                 print s
                 os.system(s)
 
@@ -604,15 +608,15 @@ def filter_events(event):
                          r' --date-format "%Y-%m-%d"',
                          ' --seconds-per-day ', str(self.secs4day),
                          ' --log-format custom ',
-                         ' --output-ppm-stream ', gourcerawpath, '.ppm ',
-                         activitygourcepath ])
+                         ' --output-ppm-stream "', gourcerawpath, '.ppm"',
+                         '"', activitygourcepath, '"' ])
             print s
             os.system(s)
             #PPM-file is very Huge. We need to compress it to h264-avi, and kill it.
             s = "".join([self.exedir, r'\ffmpeg',
                          ' -y -b 9000K -f image2pipe -vcodec ppm ',
-                         ' -i ', gourcerawpath, '.ppm',
-                         ' -vcodec libx264 ', gourcerawpath ])
+                         ' -i "', gourcerawpath, '.ppm"',
+                         ' -vcodec libx264 "', gourcerawpath, '"'])
             print s
             os.system(s)
             os.unlink(gourcerawpath + ".ppm")
@@ -634,11 +638,11 @@ def filter_events(event):
                              ' fps=', str(codeswarmfps), ':type=png',
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                              ' -oac copy ',
-                             ' -audiofile ', self.audiopath,
-                             ' -sub ', srtpath,
+                             ' -audiofile "', self.audiopath, '"',
+                             ' -sub "', srtpath, '"',
                              ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 -sub-bg-color 20 -sub-bg-alpha 70 ',
-                             ' -o ', codeswarmpath ])
+                             ' -o "', codeswarmpath, '"'])
                 print s
                 os.system(s)
                 os.chdir(self.homedir)
@@ -652,21 +656,21 @@ def filter_events(event):
                 gourcefps = float(gourcerawlenght / self.movielength)
                 os.chdir(self.cwsnapshotdir)
                 if not file_is_ok(gourcerawpath + ".fps"):
-                    s = "".join([self.exedir, r'\mencoder ', gourcerawpath,
+                    s = "".join([self.exedir, r'\mencoder "', gourcerawpath, '"',
                                ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                                ' -ofps 25 -speed ' , str(gourcefps),
-                               ' -o ', gourcerawpath, '.fps' ])
+                               ' -o "', gourcerawpath, '.fps"' ])
                     print s
                     os.system(s)
                 s = "".join([self.exedir, r'\mencoder ',
                              gourcerawpath,'.fps',
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
-                             ' -oac copy -audiofile ', self.audiopath,
-                             ' -sub ', srtpath,
+                             ' -oac copy -audiofile "', self.audiopath, '"',
+                             ' -sub "', srtpath, '"',
                              ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 ',
                              ' -sub-bg-color 20 -sub-bg-alpha 70 ',
-                             ' -o ', gourcepath ])
+                             ' -o "', gourcepath, '"' ])
                 print s
                 os.system(s)
                 os.chdir(self.homedir)
@@ -682,12 +686,12 @@ def filter_events(event):
             return res
 
             
-        if self.need_codeswarm:
+        if self.need_codeswarm and file_is_ok(codeswarmpath):
             resultcodeswarmpath = get_result_path(codeswarmpath, "codeswarm")
             if not file_is_ok(resultcodeswarmpath):
                 shutil.copy(codeswarmpath, resultcodeswarmpath)
         
-        if self.need_gource:
+        if self.need_gource and file_is_ok(gourcepath   ):
             resultgourcepath = get_result_path(gourcepath, "gource")
             if not file_is_ok(resultgourcepath ):
                 shutil.copy(gourcepath, resultgourcepath)
