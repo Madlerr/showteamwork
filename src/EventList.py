@@ -11,6 +11,7 @@ Writing to XML or custom formats.
 import os
 import time
 import re
+import trans
 
 from copy import copy
 from xml.sax.saxutils   import escape
@@ -84,7 +85,7 @@ class EventList:
   date="%(date)s"  author="%(author)s"  filename="%(filename)s"
         action="%(action)s" comment="%(comment)s" />
 ''' % vars(ev)   
-            lf.write(s.encode("utf-8"))
+            lf.write(s.encode("trans"))
         lf.write('</file_events>\n')
         lf.close()
     
@@ -96,10 +97,10 @@ class EventList:
         self.events.sort()
         for event in self.events:
             ev = copy(event)
-            ev.date = int(ev.date/1000)
+            ev.date = long(ev.date)/1000
             ev.filename = unicodeanyway(ev.filename)
             s = u"%(date)s|%(author)s|%(action)s|%(filename)s|\n" % vars(ev)
-            lf.write(s.encode("utf-8"))
+            lf.write(s.encode("trans"))
         lf.close()
     
     def read_log(self, logfilename):
