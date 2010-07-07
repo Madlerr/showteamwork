@@ -15,7 +15,7 @@ setup(
     author_email = "stanislav.fomin@gmail.com",
     options = {
         'py2exe': {
-            'packages' : ['lxml', 'gzip', 'shutil'],
+            'packages' : ['lxml', 'gzip', 'shutil', 'trans'],
             'dist_dir' : DISTDIR,    
         }
     }
