@@ -13,6 +13,7 @@ import tempfile
 import shutil
 import math
 import random
+import trans
 from ColorPalette       import RandomColorPalette
 from EventList          import EventList
 from RingBuffer         import RingBuffer
@@ -611,9 +612,10 @@ def filter_events(event):
             #PPM-file is very Huge. We need to compress it to h264-avi, and later kill it.
             s = "".join([self.exedir, r'\ffmpeg',
                          ' -y -b 9000K -f image2pipe -vcodec ppm ',
+                         ' -i "', gourcerawpath, '.ppm"',
                          ' -fpre ', os.path.join(self.toolsdir,'ll.ffpreset'),
-                         ' -i ', gourcerawpath, '.ppm',
-                         ' -vcodec libx264 ', gourcerawpath ])
+                         ' -i "', gourcerawpath, '.ppm"',
+                         ' -vcodec libx264 "', gourcerawpath, '"'])
             print s
             os.system(s)
             if file_is_ok(gourcerawpath):
@@ -638,11 +640,11 @@ def filter_events(event):
                              ' fps=', str(codeswarmfps), ':type=png',
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                              ' -oac copy ',
-                             ' -audiofile ', self.audiopath,
-                             ' -sub ', srtpath,
+                             ' -audiofile "', self.audiopath, '"',
+                             ' -sub "', srtpath, '"',
                              ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 -sub-bg-color 20 -sub-bg-alpha 70 ',
-                             ' -o ', codeswarmpath ])
+                             ' -o "', codeswarmpath, '"'])
                 print s
                 os.system(s)
                 os.chdir(self.homedir)
@@ -656,21 +658,21 @@ def filter_events(event):
                 gourcefps = float(gourcerawlenght / self.movielength)
                 os.chdir(self.cwsnapshotdir)
                 if not file_is_ok(gourcerawpath + ".fps"):
-                    s = "".join([self.exedir, r'\mencoder ', gourcerawpath,
+                    s = "".join([self.exedir, r'\mencoder "', gourcerawpath, '"',
                                ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
                                ' -ofps 25 -speed ' , str(gourcefps),
-                               ' -o ', gourcerawpath, '.fps' ])
+                               ' -o "', gourcerawpath, '.fps"' ])
                     print s
                     os.system(s)
                 s = "".join([self.exedir, r'\mencoder ',
                              gourcerawpath,'.fps',
                              ' -ovc x264 -x264encopts pass=1:bitrate=10000 ',
-                             ' -oac copy -audiofile ', self.audiopath,
-                             ' -sub ', srtpath,
+                             ' -oac copy -audiofile "', self.audiopath, '"',
+                             ' -sub "', srtpath, '"',
                              ' -utf8 -font "', self.fontpath, '"',
                              ' -subfont-text-scale 3 ',
                              ' -sub-bg-color 20 -sub-bg-alpha 70 ',
-                             ' -o ', gourcepath ])
+                             ' -o "', gourcepath, '"' ])
                 print s
                 os.system(s)
                 os.chdir(self.homedir)
@@ -686,12 +688,12 @@ def filter_events(event):
             return res
 
             
-        if self.need_codeswarm:
+        if self.need_codeswarm and file_is_ok(codeswarmpath):
             resultcodeswarmpath = get_result_path(codeswarmpath, "codeswarm")
             if not file_is_ok(resultcodeswarmpath):
                 shutil.copy(codeswarmpath, resultcodeswarmpath)
         
-        if self.need_gource:
+        if self.need_gource and file_is_ok(gourcepath   ):
             resultgourcepath = get_result_path(gourcepath, "gource")
             if not file_is_ok(resultgourcepath ):
                 shutil.copy(gourcepath, resultgourcepath)
