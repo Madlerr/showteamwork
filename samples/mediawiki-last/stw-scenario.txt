@@ -1,0 +1,2455 @@
+
+31.10.2009 Hi aaron!
+31.10.2009 aaron: plural tweak for  
+01.11.2009 Hi raymond!
+01.11.2009 raymond: * : Show global block log snippet for Special:GlobalBlock/127.0.
+01.11.2009 Hi siebrand!
+01.11.2009 siebrand: Localisation updates for core messages from translatewiki.net. 
+01.11.2009 Hi jdpond!
+01.11.2009 jdpond: The <cshow> tag in conditionalshowsection-desc choked Special:Ve
+01.11.2009 Hi philip!
+01.11.2009 philip: Update the Chinese conversion tables. Modify Makefile.py for Uni
+01.11.2009 Hi catrope!
+01.11.2009 catrope: API: () Add support for tags. Patch by Matthew Britton. 
+01.11.2009 Hi daniel!
+01.11.2009 daniel: rest api for thesaurus (in progress). 
+01.11.2009 Hi demon!
+01.11.2009 demon: Fix another regression from r57558,  - Lowercase logins causes M
+01.11.2009 daniel: wikiword thesaurus api. 
+01.11.2009 catrope: Revert accidentally committed stuff in r58399. . 
+01.11.2009 Hi churchofemacs!
+01.11.2009 churchofemacs: Make it possible to link to Special:Ipblocklist/<ip> instead of 
+01.11.2009 siebrand: Properly load l10n for magic words (shuts up ''' is not a valid 
+01.11.2009 raymond: Localisation updates for core and extension messages from transl
+02.11.2009 siebrand: Fix PHP Notice:  Undefined index:  lqtnotifytalk in extensions/L
+02.11.2009 siebrand: Get prefixed table name. Needs review. Looks really ugly.. 
+02.11.2009 Hi yaron!
+02.11.2009 yaron: Fix by Cam Webb to allow negative numbers to pass 'number' valid
+02.11.2009 siebrand: Should fix Undefined index:  tag in includes/api/ApiQueryRevisio
+02.11.2009 Hi ialex!
+02.11.2009 ialex: Fix for r58410: isset already checks for null, no need to do a d
+02.11.2009 yaron: Tag for version 1.8.5. . 
+02.11.2009 siebrand: i18n for header tab. 
+02.11.2009 siebrand: Fix database error when using table prefix.. 
+02.11.2009 daniel: wikiword navigator to use web api as backend. 
+02.11.2009 siebrand: Move $wgPasswordSender to where it is actually used.. . 
+02.11.2009 Hi juliano!
+02.11.2009 juliano: More parameters for TemplatePager.. * Added date, time, updatedD
+02.11.2009 catrope: Redo r58410, r58411 (attempts to to fix r58399) properly: isset 
+02.11.2009 Hi mkroetzsch!
+02.11.2009 mkroetzsch: improved/shortened Denny's implementation of additional printout
+02.11.2009 mkroetzsch: use doxygen markup in comment. . 
+02.11.2009 catrope: EditToolbar: Add special characters for Sinhala and Gujarati. Th
+02.11.2009 catrope: EditToolbar: () API for adding dialogs is broken. Also make open
+02.11.2009 catrope: NavigableTOC: Make sure the left/right arrow hidden while the NT
+02.11.2009 catrope: EditToolbar: () Selected value not copied to page title field in
+02.11.2009 catrope: * NavigableTOC: () Display hand cursor over highlighted sections
+02.11.2009 catrope: EditToolbar: () Tabbing to a button and pressing Enter doesn't w
+02.11.2009 yaron: Added handling for 'default=now', accidentally removed in previo
+02.11.2009 raymond: Partly revert r57148. The search&replace was a bit too wide. It 
+02.11.2009 Hi happy-melon!
+02.11.2009 happy-melon: Usability tweaks to SecurePoll from feedback on enwiki:. * Entry
+02.11.2009 yaron: Changed text for 'sd_browsedata_addanothervalue'. . 
+02.11.2009 Hi warx!
+02.11.2009 warx:  adding 1 user to pl.planet. 
+02.11.2009 yaron: Added 'is_date' field. . 
+02.11.2009 raymond: Follow-up r58430: set messages to ignore for translatewiki. 
+02.11.2009 yaron: Added printFilterValue() helper function, fixed problem with whi
+02.11.2009 yaron: Improved special-property initialization to handle missing prope
+02.11.2009 yaron: New version: 0.6.2. . 
+02.11.2009 raymond: i18n tweak: Use 'colon-separator' instead of hardcoded colon. 
+02.11.2009 aaron: Merged r58429: message fix. 
+02.11.2009 raymond: Localisation updates for core and extension messages from transl
+02.11.2009 catrope: NaNavigableTOC: Fix autoellipse bugginess. 
+03.11.2009 Hi tparscal!
+03.11.2009 tparscal: Basic shell for enabling the code module for the wikiEditor exte
+03.11.2009 tparscal: Added resources for the code module of wikiEditor.. 
+03.11.2009 tparscal: Fixed the version number of the code module of wikiEditor.. 
+03.11.2009 Hi adam!
+03.11.2009 adam: Improvements to the collapsible TOC. Switching the side the arro
+03.11.2009 yaron: New extension. . 
+03.11.2009 Hi nimishg!
+03.11.2009 nimishg: Added stricter checking for min and max dates, escaped dates, re
+03.11.2009 tparscal: Fixes regression in r57836 which changed the event from click to
+03.11.2009 tparscal: Added a handler to unfocus the tab on mouseup - since the focus 
+03.11.2009 nimishg: unified-ish engine. . 
+03.11.2009 adam: Addressing Brion's comment on r58070 and making the indent toolb
+03.11.2009 Hi jeroendedauw!
+03.11.2009 jeroendedauw: Changes for 0.4 (see: http://www.mediawiki.org/wiki/Extension:Ma
+03.11.2009 adam: minor changes to experimental vector stylesheets. 
+03.11.2009 jeroendedauw: Changes for 0.4 (see: http://www.mediawiki.org/wiki/Extension:Ma
+03.11.2009 Hi sergeychernyshev!
+03.11.2009 sergeychernyshev: Reverting back to old style of Magic words until there is a back
+03.11.2009 sergeychernyshev: HTML is inserted as is now, thanks to Joshua C. Lerner.. . 
+03.11.2009 sergeychernyshev: Release 0.8.8: HTML is inserted as is now, thanks to Joshua C. L
+03.11.2009 Hi dale!
+03.11.2009 dale: more language updates. 
+03.11.2009 siebrand: Fix parse error from r58419. 
+03.11.2009 dale: * added more broad java detection ( look for both navigator.java
+03.11.2009 raymond: Partly revert r58454. Seems to be an accident because it reverts
+03.11.2009 mkroetzsch: fixed typo in variable name that affected unstubbing mechanism i
+03.11.2009 mkroetzsch: minimal laout corrections. . 
+03.11.2009 mkroetzsch: support limit and order parameters for individual printouts as w
+03.11.2009 siebrand: Setting 'w' to ignored until RobertL will fix issue.. 
+03.11.2009 mkroetzsch: allow printouts of individual values of a multi-valued property;
+03.11.2009 siebrand: Revert r58468: no longer needed. Temporarily resolved with a liv
+03.11.2009 mkroetzsch: inclued printout parameters in hash value, so that printout that
+03.11.2009 Hi rotem!
+03.11.2009 rotem: Localization update.. 
+03.11.2009 Hi werdna!
+03.11.2009 werdna: Fix  Checking for replies on a thread that had not yet been save
+03.11.2009 werdna: LiquidThreads: comment out the custom edit handler, it is not qu
+03.11.2009 werdna: Merge LiquidThreads from trunk. 
+03.11.2009 catrope: Another fatal in r58419. 
+03.11.2009 siebrand: Fix special page alias variable name. 
+03.11.2009 catrope: Overhaul TemplateInfo big time:. * Don't use an $eg global to st
+03.11.2009 mkroetzsch: preserve format when displaying further results (). . 
+03.11.2009 catrope: TemplateInfo: Spaces -> tabs. 
+03.11.2009 catrope: TemplateInfo: eol-style native, keywords Id. 
+03.11.2009 Hi freakolowsky!
+03.11.2009 freakolowsky: DatabaseOracle removed makeList overload and added delete overlo
+03.11.2009 werdna: Add check that $this->thread is defined for LiquidThreads Indivi
+03.11.2009 werdna: LiquidThreads whitespace fixes. 
+03.11.2009 Hi mark!
+03.11.2009 mark: wikimedia-base (0.21) hardy; urgency=low. .   * Remove NTP confi
+03.11.2009 Hi root!
+03.11.2009 root: Remove APT proxying, now handled better by puppet. Remove yaseo 
+03.11.2009 werdna: Use content language for pre-generated summaries. 
+03.11.2009 mkroetzsch: be more careful about inverse n-aries (not supported, but should
+03.11.2009 werdna: LiquidThreads notifications: whitespace fixes, and use the prope
+03.11.2009 ialex: svn:eol-style native. . 
+03.11.2009 ialex: * $fname -> __METHOD__. * spaces -> tabs for indentation. . 
+03.11.2009 ialex: whitespaces change only: consistent spacing in $wgUpdates' defin
+03.11.2009 werdna: LiquidThreads: Fix checking for enotif preference. 
+03.11.2009 werdna: Merge LiquidThreads r58493. 
+03.11.2009 raymond: Localisation updates for core and extension messages from transl
+03.11.2009 Hi maxsem!
+03.11.2009 maxsem: EditUser: fixed a typo in variable name. 
+03.11.2009 raymond: Add TemplateInfo to translatewiki. Tweak i18n file a bit. 
+03.11.2009 jeroendedauw: Tag for version 0.4.. 
+04.11.2009 werdna: LiquidThreads: Fix several bugs with history pages. Talk page hi
+04.11.2009 aaron: doc typo. 
+04.11.2009 catrope: TemplateInfo: Fix stupid bug. 
+04.11.2009 adam: Prototyping a drag resiable NTOC with collapsible option. 
+04.11.2009 adam: adding an image that should have been included in r58503. 
+04.11.2009 Hi tstarling!
+04.11.2009 tstarling: Added Convex proxy, from logs after tipoff by Mike.lifeguard. . 
+04.11.2009 tstarling: Merged r58505 from trunk (convex proxy). . 
+04.11.2009 adam: Resizable NTOC: Adding proper returns to mouse events to avoid u
+04.11.2009 adam: Resizable NTOC: adding a missing data call which was breaking co
+04.11.2009 adam: copy paste fail on r58508. 
+04.11.2009 adam: Making all headings normal weight for babaco experimental color 
+04.11.2009 aaron: rm unused var. 
+04.11.2009 dale: * (  ) improved mwEmbed localization support. ** switched to use
+04.11.2009 dale: (  ) fixed default search repository . 
+04.11.2009 dale: opps followup to 58512. 
+04.11.2009 siebrand: php mergeJavascriptMsg.php -j. 
+04.11.2009 siebrand: * winks at Michael Dale and mumbles something about Title Case *
+04.11.2009 sergeychernyshev: Added backwards compatible Magic Words handling similar to r5534
+04.11.2009 dale: * set $wgScriptModifiedMsgCheck to off by default. 
+04.11.2009 Hi tomasz!
+04.11.2009 tomasz: missing comma. 
+04.11.2009 tomasz: Adding simple theming. 
+04.11.2009 tomasz: Removing check as its broken on current ubuntu php version. 
+04.11.2009 tomasz: adding configurable queue name. 
+04.11.2009 catrope: wmf-deployment: Add DonationInterface extension for Tomasz. . 
+04.11.2009 dale: * sequencer updates / other small fixes. 
+04.11.2009 catrope: Add new extension SideBySidePreview that allows the user to swit
+04.11.2009 catrope: Bump style versions for r58525. . 
+04.11.2009 catrope: Fix nasty typo in r58525. . 
+04.11.2009 ialex: Fix Special:ProtectedTitles' canonical name (Protectedtitles) to
+04.11.2009 raymond: Add SideBySidePreview to translatewiki. 
+04.11.2009 raymond: fix for r58529. 
+04.11.2009 raymond: follow-up r58525: Fix typo. 
+04.11.2009 tomasz: Correcting ref name of messages file. 
+04.11.2009 raymond: Add desc message key. 
+04.11.2009 tomasz: picking up r58532. 
+04.11.2009 ialex: Fix for r58517: use $dir, not $edgIP. . 
+04.11.2009 Hi btongminh!
+04.11.2009 btongminh: * Disable autofill for reuploads. * Fix UploadFromStash::initial
+04.11.2009 btongminh: * () Fixed protecting images from uploading only. * Added upload
+04.11.2009 daniel: fixed image search using remote api. 
+04.11.2009 catrope: Create branch for usability releases. . 
+04.11.2009 catrope: usability branch: Create acaifix (wmf-deployment version of Usab
+04.11.2009 catrope: usability: Update acaifix branch with acaifix revs. Remove Click
+04.11.2009 raymond: Donation interface enabled on test.wikipedia.org. 
+04.11.2009 catrope: acaifix branch: Add ClickTracking extension (trunk r58205, with 
+04.11.2009 tomasz: removing js validation temporarily as its busted. hard coding pa
+04.11.2009 catrope: acaifix branch: Remove obsolete and unused file. . 
+04.11.2009 tomasz: Pickin up latest changes. . 
+04.11.2009 tomasz: Commenting out brokeness. 
+04.11.2009 maxsem: () Search index was empty for some pages. 
+04.11.2009 raymond: Follow-up r55613: Fix typo. I guess that 'baddaccess-groups' was
+04.11.2009 daniel: improving image search using remote api. 
+04.11.2009 ialex: * () API: list=allusers no longer returns current timestamp for 
+04.11.2009 juliano: Revert r58477, reenable the use of special page aliases.. The ne
+04.11.2009 ialex: Fix for r58269: move RELEASE-NOTES entry to correct section as t
+04.11.2009 tomasz: Adding toggle for testing mode. 
+04.11.2009 tomasz: Pulling in r58554. 
+04.11.2009 tparscal: Made some style changes to the preview module of wikiEditor, and
+04.11.2009 Hi skizzerz!
+04.11.2009 skizzerz: * () Fix unclosed tag in ExtensionDistributor (patch by juliano)
+04.11.2009 yaron: Tag for version 0.6.2. . 
+04.11.2009 freakolowsky: Fixed some Oracle-specific installer and Strict Standards issues
+04.11.2009 raymond: Localisation updates for core and extension messages from transl
+04.11.2009 freakolowsky: Fixed replace function behaviour when required ID not specified.
+04.11.2009 catrope: UsabilityInitiative: Clean up indentation in engine.js. . 
+04.11.2009 catrope: Missed one. . 
+04.11.2009 aaron: *Abstraction refactoring:. **Made getTitle() and such actually w
+05.11.2009 yaron: Stephan Gambke's fix for templates with slashes in their names. 
+05.11.2009 yaron: Second tag for version 1.8.5, with some bug fixes. . 
+05.11.2009 tparscal: This code is useless because this functionality is going to be i
+05.11.2009 tomasz: picking up 58325. 
+05.11.2009 Hi shinjiman!
+05.11.2009 shinjiman: Localisation updates Cantonese, Chinese and Literary Chinese. 
+05.11.2009 adam: adding a styling rule to ensure vector menu h5s aren't f#ed with
+05.11.2009 tparscal: Beginings of the unification of all extensions for Vector, which
+05.11.2009 tparscal: Much more work on actually integrating the scripts and i18n for 
+05.11.2009 aaron: * Added class description. * Added setTemplateVersions()/setFile
+05.11.2009 aaron: Fixed old bug where titleInstance() was called on an Article. 
+05.11.2009 aaron: Make newFromID() inherit correctly (ImagePage/CategoryPage...) b
+05.11.2009 siebrand: Update FUDforum. 
+05.11.2009 siebrand: Follow-up r58576. I did not yet remove enough of the path.. 
+05.11.2009 aaron: * Align FlaggedArticle and Article constructors. * Removed getIn
+05.11.2009 siebrand: Small clarification of 'mediawarning': 'file' -> 'file type' and
+05.11.2009 siebrand: * remove comma from 'wikilog-post-count-published' which I accid
+05.11.2009 siebrand: Remove another comma.. 
+05.11.2009 rotem: Localization update.. 
+05.11.2009 siebrand: Fix typo. 
+05.11.2009 siebrand: Remove incorrect optional. 
+05.11.2009 yaron: Re-added XML validation; using the SimpleXML library for now. . 
+05.11.2009 aaron: Holding off r58575 for now. 
+05.11.2009 yaron: Moving XML validation from API querying to parsing. . 
+05.11.2009 aaron: Use 'self' rather than class name. 
+05.11.2009 Hi diana!
+05.11.2009 diana: another few code changes, internationalize currency. 
+05.11.2009 ialex: svn:eol-style native. . 
+05.11.2009 Hi mgrabovsky!
+05.11.2009 mgrabovsky: Added myself. 
+05.11.2009 mgrabovsky: UTF-8 encoding. 
+05.11.2009 tparscal: Changed sidebysidepreview to wikieditor-preview.. 
+05.11.2009 tparscal: Commented out some code that was causing errors (need to solve i
+05.11.2009 maxsem: implicitOrderby() seems to be true for SQLite, removing the over
+05.11.2009 tomasz: Calling correct js validator. 
+05.11.2009 freakolowsky: removed x-codeBlob functions and modified blob handling acording
+05.11.2009 tparscal: Finished getting everything working with the unified loader - no
+05.11.2009 ialex: Avoid fatals in Special:Translate/manage :). . 
+05.11.2009 tparscal: Finished renaming some things.. 
+05.11.2009 tomasz: picking up r58589, r58596. 
+05.11.2009 freakolowsky: added encoding handlin on delete() and selectRow(), switched man
+05.11.2009 raymond: Localisation updates for core and extension messages from transl
+05.11.2009 tparscal: Minor line breaking adjustments.. 
+06.11.2009 raymond: Follow-up for moving UI extensions to new directories. 
+06.11.2009 raymond: Follow-up r58605: typo. 
+06.11.2009 tparscal: Renamed some things.. 
+06.11.2009 tparscal: Finished moving all the vector-related extensions into this unif
+06.11.2009 tparscal: Cleaning up things here and there.. 
+06.11.2009 ialex: Update check blacklist for new messages. . 
+06.11.2009 ialex: Per Siebrand: commit live hack so that it stops conflicting :). 
+06.11.2009 dale: * removed display of preview video for iframe uploads. * fixed t
+06.11.2009 tparscal: Removed the old loaders in favor of the new ones.. 
+06.11.2009 siebrand: Tweak description message (no closing period). 
+06.11.2009 tstarling: testing authz. 
+06.11.2009 dale: * removed some debug statements . * added more testLang examples
+06.11.2009 tparscal: Used the array format for multiple authors in the credits.. 
+06.11.2009 tstarling: authz test. 
+06.11.2009 tparscal: Updated the makefile and rebuilt all combined and minified scrip
+06.11.2009 tomasz: adding url bits. 
+06.11.2009 catrope: UsabilityInitiative: Temporarily delete some directories so I ca
+06.11.2009 catrope: UsabilityInitiative: Re-add files using svn copy.. . 
+06.11.2009 catrope: UsabilityInitiative: Move Preview files to the right place. . 
+06.11.2009 catrope: UsabilityInitiative: Restoring changes between the last restruct
+06.11.2009 catrope: ... and some more. . 
+06.11.2009 dale: * some fixes to the style sheet for volume display. 
+06.11.2009 werdna: LiquidThreads: implement protection of threads and discussion pa
+06.11.2009 dale: * switched skin over to class attribute (ie class='kskin'). 
+06.11.2009 dale: * more volume skin fixes. 
+06.11.2009 maxsem: Abstracted some parts of database interaction for parser tests, 
+06.11.2009 siebrand: Fix typo. 
+06.11.2009 werdna: Enabling changes for r56828: some refactoring and code cleanup o
+06.11.2009 werdna: Remove upload from wgRestrictionTypes, it is added as a special 
+06.11.2009 Hi ariel!
+06.11.2009 ariel: Add hook CacheHeadersAfterSet to permit override of cache header
+06.11.2009 ariel: formatting, send cache headers, use memcached, php format instea
+06.11.2009 aaron: Fixed comment. 
+06.11.2009 raymond: Follow-up for moving UI extensions to new directories. 
+06.11.2009 raymond: i18n tweaks. 
+06.11.2009 dale: * fix tag height for text tabs. 
+06.11.2009 catrope: UsabilityInitiative: Fix copy-paste mistake. Vector has no globa
+06.11.2009 aaron: * Added class description. * Disabled clone(). 
+06.11.2009 tomasz: Adding working proof of concept for quick geo ip redirection. . 
+06.11.2009 tomasz: Wrong dir ... deleting .. om nom nom. . 
+06.11.2009 tomasz: Adding working proof of concept for quick geo ip redirection. . 
+06.11.2009 catrope: API: () Expose average slave lag (avglag) as well as maxlag. Pat
+06.11.2009 demon: eol-style, trailing newlines, remove ?>. 
+06.11.2009 raymond: Add GeoLite to translatewiki. 
+06.11.2009 catrope: API: () action=edit allows creation of invalid titles that look 
+06.11.2009 aaron:  FlaggedRevs: retrieve review levels/flags by API. 
+06.11.2009 ariel: no pass-by-ref needed for CacheHeadersAfterSet. 
+06.11.2009 demon: Add new global $wgUseInstantCommons for quick && easy enabling o
+06.11.2009 aaron: Add quick version info. 
+06.11.2009 demon: Followup r58634, also remove RELEASE-NOTES entry. 
+06.11.2009 Hi j!
+06.11.2009 j: update readme to reflect current tools used. 
+06.11.2009 j: update cortado to 0.5.1. 
+06.11.2009 btongminh: Changes after review by Andrew:. * Changed all hooks to *Complet
+06.11.2009 btongminh: Add accessor to LinksUpdate::mImages. 
+06.11.2009 ariel: set meaningful Expires: header, validate page title. 
+06.11.2009 ialex: * () Fix for r27043: typo. . 
+06.11.2009 demon: rm unused global. 
+06.11.2009 werdna: Add links to globalusage. 
+06.11.2009 werdna: Update GlobalUsage to trunk state, merge related r53381. 
+06.11.2009 werdna: Partial revert of r58663, included random unrelated changes to T
+06.11.2009 ariel: document CacheHeadersAfterSet hook. 
+06.11.2009 werdna: Restore relevant parts of r58663, which was 'partially' reverted
+06.11.2009 werdna: Copy GlobalUsage extension to wmf-deployment. . 
+06.11.2009 maxsem: Removed extra transactions on table creation introduced in r5863
+06.11.2009 freakolowsky: Started working on parserTests Oracle compatibility, still getti
+06.11.2009 freakolowsky: Changed duplication function. 
+06.11.2009 ariel: use Title:newFromText instead of checking wgLegalTitleChars. 
+06.11.2009 aaron: Clearify precedence a bit using FR_QUALITY. 
+06.11.2009 raymond: Localisation updates for core and extension messages from transl
+06.11.2009 raymond: GlobalUsage deployed on test.wikipedia.org today. 
+06.11.2009 aaron: * Added getDefaultVisibilitySettings() and useProtectionLevels()
+06.11.2009 aaron: Use useProtectionLevels() in some places. 
+06.11.2009 tparscal: Merged the code module into the core wikiEditor plugin. Got star
+06.11.2009 tparscal: Effin closures man!. 
+06.11.2009 tparscal: Started pushing towards conversion to interacting with the ifram
+06.11.2009 shinjiman: Localisation updates Cantonese, Chinese and Literary Chinese. 
+06.11.2009 shinjiman: Update the DPL codebase to 1.8.9.. code based on Gero aka Algori
+07.11.2009 Hi simetrical!
+07.11.2009 simetrical: Reduce false positives for PHP in MimeMagic. . () This was detec
+07.11.2009 siebrand: * Allow special page aliases variables other than $aliases for M
+07.11.2009 tomasz: Removing 2008 theming in favor of integrated look. . 
+07.11.2009 siebrand: Follow-up r58683: fix oversights. 
+07.11.2009 tomasz: pulling in r58684. 
+07.11.2009 siebrand: Exception for Wikilog. . 
+07.11.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+07.11.2009 siebrand: check blacklist fixes. 
+07.11.2009 dale: * re-added timed text example. 
+07.11.2009 dale: (missing .= part) r58512#c4384. 
+07.11.2009 btongminh: Add hook ImagePageAfterImageLinks for showing extra information 
+07.11.2009 btongminh: Show globalusage on the imagepage. 
+07.11.2009 daniel: allow <a> tags and RDFa attributes to support RDFa output from l
+07.11.2009 siebrand: i18n for special page name. 
+07.11.2009 ialex: Sync docs/hooks.txt:. * removed AbortNewAccountAuto since it was
+07.11.2009 dale: * basic subtitle support (via wikiTitleKey) . * some language te
+07.11.2009 siebrand: php mergeJavascriptMsg.php -j. 
+07.11.2009 dale: * fixed selector. 
+07.11.2009 Hi roberthl!
+07.11.2009 roberthl: Translate:. * Fix importing the last key of the OpenLayers messa
+07.11.2009 mark: wikimedia-task-appserver (1.40) hardy; urgency=low. .   * Add de
+07.11.2009 dale: * fixed rewrite ogg handler . 
+07.11.2009 dale: * more rewrite fixes. 
+07.11.2009 siebrand: * winks at Michael Dale and mumbles something about Title Case *
+07.11.2009 btongminh: File forgotten to commit in r58693: Show globalusage on the imag
+07.11.2009 btongminh: Add script to refresh the globalimagelinks table. 
+07.11.2009 dale: * uses url for title key. 
+07.11.2009 j: also support cmml subtitles. 
+07.11.2009 ialex: $fname -> __METHOD__. . 
+07.11.2009 dale: * added wiki title key to oggHanderl video tag output. 
+07.11.2009 daniel: reverting r58694, needs to be done as parser tag hook in order t
+07.11.2009 daniel: allow RDFa attributes; missing support for <a>, will be added as
+07.11.2009 dale: * fixed wpSourceTypeURL rename to wpSourceTypeUrl. 
+07.11.2009 daniel: better pattern for detecting evil scripts in rdfa attributes. 
+07.11.2009 btongminh: Follow-up to r58706: Commit missing fix to GlobalUsage_body.php 
+07.11.2009 dale: * archive.org duration query is currently broken (added checks a
+07.11.2009 daniel: adding support for <a> tags as a parser tag hook, in order to su
+07.11.2009 j: create TimedText extension. . . 
+07.11.2009 dale: * fixed subtitles language msg. 
+07.11.2009 j: add TimedText extension to enable srt upload on local installs. 
+07.11.2009 j: TimedText javascript interface to upload srt files, js2 part. 
+07.11.2009 Hi ashley!
+07.11.2009 ashley: DataCenter: coding style cleanup for controllers & resources. 
+07.11.2009 ashley: DataCenter: coding style cleanup for UI/Inputs. 
+07.11.2009 ashley: DataCenter: coding style cleanup for UI/Layouts. 
+07.11.2009 ashley: DataCenter: coding style cleanup for UI/Widgets. 
+07.11.2009 ashley: DataCenter: coding style cleanup for Views. 
+07.11.2009 ashley: DataCenter:. *coding style cleanup for remaining files. *doxygen
+07.11.2009 mark: Update locale setting for Ubuntu. . 
+07.11.2009 raymond: Localisation updates for core and extension messages from transl
+07.11.2009 maxsem: Now that rebuildtextindex.php is not MySQL-only, rebuildall.php 
+07.11.2009 mark: Put back the HTTP proxy, as it is still needed during installs. 
+08.11.2009 raymond: Restore message accidently removed with r58267.. 
+08.11.2009 siebrand: image->file. 
+08.11.2009 ialex: svn:eol-style native. . 
+08.11.2009 catrope: Icon: Fix fatal: wfFindFile() returns false for nonexistent imag
+08.11.2009 ashley: cleanup to ExternalPages. 
+08.11.2009 juliano: Added a 'sign and publish' checkbox to edit pages when editing w
+08.11.2009 Hi purodha!
+08.11.2009 purodha: html tags balanced in message mv_edit_strea_docu. . 
+08.11.2009 j: * use loadGM for interface strings. * hide default toolbar and o
+08.11.2009 werdna: Update GlobalUsage extension to trunk state. 
+08.11.2009 werdna: Merge r58692. 
+08.11.2009 j: make language selection a radio button, switch back to subtitles
+08.11.2009 dale: * mwEmbed fix to audio interface display. 
+08.11.2009 Hi avar!
+08.11.2009 avar: Actually this test runs 1120 tests. . 
+08.11.2009 Hi husky!
+08.11.2009 husky: Adding Wikiportrait 1.1-beta3 sourcecode. 
+08.11.2009 husky: adding userinfo file for yours truly. 
+08.11.2009 demon: eol-style. 
+08.11.2009 j: add link to video on subtitle edit page. 
+08.11.2009 j: remove debug. 
+08.11.2009 btongminh: Mark gil_title and gil_to as binary. 
+08.11.2009 j: indicate which languages have subtitles already. 
+08.11.2009 btongminh: Properly normalize spaces of page titles.. 
+08.11.2009 werdna: Merge r58752. 
+08.11.2009 demon: rm completely obsolete variable, not used annnnnnnyyyywhere. 
+08.11.2009 raymond: Add a class to the h2 element for easier linking to this section
+08.11.2009 avar: * () Mark failing test for resolved  as TODO. Is this OK? No ide
+08.11.2009 avar: * () Bitrotted tests in the t/ directory were failing. Patch by 
+08.11.2009 btongminh: * Add globalusage link to the file toc. * Add thumb of the file 
+08.11.2009 dale: * some subtitles fixes. * onClipDone thumb display. 
+08.11.2009 Hi alexsh!
+08.11.2009 alexsh: eol-style. 
+08.11.2009 ialex: * removed ?>. * use tabs for indentation, not spaces. * added 'p
+08.11.2009 avar: * () Bitrotted tests in the t/ directory were failing.. 
+08.11.2009 btongminh: Show the pretty name of the wiki instead of the internal represe
+08.11.2009 avar: This test needs to include HTMLForm.php. . 
+08.11.2009 avar: forgot to update the test count.... . 
+08.11.2009 avar: have to require stuff in this order to get defines in LocalSetti
+08.11.2009 maxsem: Rm TODOs introduced in r58756, Avar had a bug with SVN updates, 
+08.11.2009 dale: * better compatibility for subtitles on commons while embedding 
+08.11.2009 j: use wgPageName. 
+08.11.2009 j: define TimedText namespace. 
+08.11.2009 j: use wgPageName. 
+08.11.2009 dale: * updates to timed text inter-wiki links. 
+08.11.2009 dale: * timed text hide show languages support. 
+08.11.2009 siebrand: Remove unused 'mv_of'. 
+08.11.2009 j: Display other available languages on edit page. 
+08.11.2009 siebrand: Add GENDER support for 'wikilog-comment-by-user'. 
+08.11.2009 j: use TimedText prefix to query related languages. 
+08.11.2009 btongminh: Set default maxlag to 5 seconds. 
+08.11.2009 dale: * localized and fixed height for video player interface. 
+08.11.2009 aaron: * Reserve 'none' protection level. * Tweak comments. 
+08.11.2009 dale: * fixed js2AddOnloadHook loading order. 
+08.11.2009 dale: removed debug statment. 
+08.11.2009 husky: fixed a security issue with  parameters. 
+08.11.2009 siebrand: Allow import of page translation groups also. Tweak by neverendi
+08.11.2009 catrope: * UsabilityInitiative: Implement the wireframed preview design, 
+08.11.2009 aaron: * Added userCanSetAutoreviewLevel(). * Validate autoreview level
+08.11.2009 siebrand: Follow-up 58785 to allow web uploads.. 
+08.11.2009 aaron: merged r58786: Stabilization form validation fix. 
+08.11.2009 btongminh: * Add API module for GlobalUsage. * Move query module to separat
+08.11.2009 siebrand: Only pt-br uses singular form for 0. removing it for pt.. 
+08.11.2009 raymond: Localisation updates for core and extension messages from transl
+09.11.2009 ialex: Fix a parse error (I suppose this is the correct place to end th
+09.11.2009 dale: * only call callback once. 
+09.11.2009 aaron: Break some long lines. 
+09.11.2009 dale: * js_log msgs striped from non-debug output (smaller size no con
+09.11.2009 dale: * wgUserLanguage instead of wgContentLang for default subtitles 
+09.11.2009 dale: * friendly request for improved documentation (a few files have 
+09.11.2009 jeroendedauw: Changes for 0.4.1 (a1). http://www.mediawiki.org/wiki/Extension:
+09.11.2009 tomasz: Adding Tim's suggestions. Use wfGetIP instead of REMOTE_ADDR. Us
+09.11.2009 tstarling: * Added histogram/range tallier. * Give the Tallier access to th
+09.11.2009 tstarling: Merging r58282 through r58801 from trunk for AUSC election tally
+09.11.2009 dale: * added textSelection plugin from usability. 
+09.11.2009 dale: * minor code clean up for remote add-media-wizard. 
+09.11.2009 raymond: follow-up r58801: Change message keys here too. 
+09.11.2009 tomasz: Adding default participating chapters. New landing page. Small t
+09.11.2009 dale: * fix for usage with js2stopgap loadGM putting msgs in depreciat
+09.11.2009 tomasz: Missing case were ip is valid but no landing page for redirect. 
+09.11.2009 tomasz: Delisting GeoLite and adding referrer information. 
+09.11.2009 tomasz: Pulling in latest rev of GeoLite. . 
+09.11.2009 dale: * some small bug & language fixes for mvTextInterface. 
+09.11.2009 catrope: UsabilityInitiative: Fix some magic iframe brokenness (copying f
+09.11.2009 Hi questpc!
+09.11.2009 questpc: My USERINFO. 
+09.11.2009 btongminh: Introduce $wiki parameter to wfWaitForSlaves in order to be able
+09.11.2009 questpc: Initial commit of QPoll extension. 
+09.11.2009 btongminh: Follow-up to r58633 and r58628 (lqt): Rename Title::getProtectio
+09.11.2009 siebrand: Should be possible to do this without the global (same as in Par
+09.11.2009 siebrand: Adding default false for $bulkLoad in Threads::loadFromResult() 
+09.11.2009 siebrand: Fix typo. 
+09.11.2009 freakolowsky: Fixed parserTests to work with Oracle (added Anonymous user 0 to
+09.11.2009 freakolowsky: Fixed parserTests to only insert USER_ID 0 and 1 because it somh
+09.11.2009 adam: adding a Hide Contents link to the editing toolbar when the coll
+09.11.2009 raymond: Fix a PHP notice which happens when you try to modidy an IP addr
+09.11.2009 siebrand: Fix typo. 
+09.11.2009 ialex: svn:eol-style native. . 
+09.11.2009 tomasz: dropping for now as it causes misaligned banners. 
+09.11.2009 catrope: UsabilityInitiative: Refactor the textSelection plugin per Micha
+09.11.2009 siebrand: Remove unused messages 'lqt_subject_change_forbidden', 'lqt_in_r
+09.11.2009 raymond: Localisation updates for core and extension messages from transl
+09.11.2009 jeroendedauw: Changes for 0.4.1 (a2). http://www.mediawiki.org/wiki/Extension:
+09.11.2009 raymond: * Add path to extension credits, create a desc message for the s
+09.11.2009 Hi kipcool!
+09.11.2009 kipcool: * faster script (removed a superflouous sql query). * also rearr
+10.11.2009 kipcool: randomized a bit the displayed result. 
+10.11.2009 kipcool: Also gives the exact number of results (not limited to 100). 
+10.11.2009 kipcool: Changed display of Expression page title (now takes a parameter)
+10.11.2009 kipcool: changed Ow_Multiple_meanings and Datasearch_showing_only. 
+10.11.2009 siebrand: * fix typo (specialpage -> special page). * duplicate 'qp_browse
+10.11.2009 adam:  removing the unused collapsible toc stylesheet. 
+10.11.2009 tparscal: Added a splash of color to our oh so wonderful toolbar! Also twe
+10.11.2009 siebrand: Add a bunch of FIXMEs for bad i18n. 
+10.11.2009 siebrand: Add parameter that was missing in 'qp_users_answered_questions'.
+10.11.2009 siebrand: Tweak messages.. 
+10.11.2009 siebrand: Fix typo. 
+10.11.2009 jeroendedauw: Changes for 0.4.1 (rc1). http://www.mediawiki.org/wiki/Extension
+10.11.2009 siebrand: Add a bunch of FIXMEs for bad i18n. 
+10.11.2009 siebrand: Marking QPoll's 'qp_voice_link' and 'qp_spec_line' as ignored fo
+10.11.2009 siebrand: $wgDefaultUserOptions['lqtnotifytalk'] = false (from true). . Al
+10.11.2009 adam: adding state saving to the resizable ntoc. 
+10.11.2009 Hi straussd!
+10.11.2009 straussd: Fix newlines to match RFC 2821.. 
+10.11.2009 nimishg: getSelection has code in it. 
+10.11.2009 tparscal: Made first attempt to adjust the layout of the wikiEditor plugin
+10.11.2009 nimishg: View the last n days instead of weekly aggregations. 
+10.11.2009 tomasz: changing header template. 
+10.11.2009 siebrand: Remove unused messages. Spotted by Dani in http://translatewiki.
+10.11.2009 siebrand: Fix typo. 
+10.11.2009 questpc: Fixed some i18n issues. 
+10.11.2009 questpc: Optimized one message. 
+10.11.2009 dale: * some comment updates. * added flag to disable script-loader in
+10.11.2009 siebrand: Update optionals and ignored for QPoll. 
+10.11.2009 siebrand: Update optionals. 
+10.11.2009 Hi thomasv!
+10.11.2009 thomasv: disable this test because wgTitle is not used during deferred up
+10.11.2009 siebrand: Update optionals. 
+10.11.2009 catrope: * UsabilityInitiative: Implement encapsulateSelection for iframe
+10.11.2009 diana: javascript internationalization, database saving for tracking, a
+10.11.2009 raymond: Follow-up r58868: i18n tweak for consistency.. Remove trailing w
+10.11.2009 tparscal: Simple search auto-hiding label was rendering wrong in IE6 becau
+10.11.2009 ialex: * added $wgBreadCrumbsShowAnons to control whether anons will ha
+10.11.2009 raymond: Localisation updates for core and extension messages from transl
+10.11.2009 catrope: * EditToolbar: Make header dropdown whitespace-tolerant. * Fix s
+10.11.2009 catrope: usability: Merge part of r58873 (header dropdown whitespace tole
+11.11.2009 ashley: GeoLite:. *add version number to extension credits. *use tabs fo
+11.11.2009 catrope: UsabilityInitiative: Don't show the iframe on pages if all usabi
+11.11.2009 ialex: * svn:keywords Id on ApiQueryGlobalUsage.php. * removed trailing
+11.11.2009 siebrand: Consistency fixes. 
+11.11.2009 happy-melon: Parse wikitext in candidate names on Tally page.. 
+11.11.2009 tparscal: Added shading to toolbar modules.. 
+11.11.2009 tparscal: Updated the shading for toolbars and renamed it since it's being
+11.11.2009 adam: Adjusting some styles with the overhauled wikiEditor so that it 
+11.11.2009 adam: cleanup of my last commit. 
+11.11.2009 nimishg: new divs for layout, css for layout. 
+11.11.2009 happy-melon: Fix code flow so that messages added to questions by the ballot 
+11.11.2009 tparscal: Moved handling of user preferences for Vector and WikiEditor mod
+11.11.2009 tparscal: Using 'minified' instead of 'min' since that's what the Usabilit
+11.11.2009 adam: restoring most of the resizing functionality to the NTOC. 
+11.11.2009 jeroendedauw: Changes for 0.4.2 (a1). http://www.mediawiki.org/wiki/Extension:
+11.11.2009 adam: fixing a botched image path. 
+11.11.2009 aaron: Re-validate override parameter. 
+11.11.2009 alexsh: eol-style. 
+11.11.2009 siebrand: Update code made. 
+11.11.2009 Hi rainman!
+11.11.2009 rainman: Forgot to set the default when the properties heading is global 
+11.11.2009 Hi danny_b!
+11.11.2009 danny_b: * cs planet update. 
+11.11.2009 danny_b: * encoding fix. 
+11.11.2009 ialex: Check for 'isset( $content_actions['history'] )' before changing
+11.11.2009 ialex: * () MediaWiki:Sp-contributions-explain is now wrapped in a <p> 
+11.11.2009 rotem: Localization update.. 
+11.11.2009 jeroendedauw: Changes for 0.4.2 (a1). http://www.mediawiki.org/wiki/Extension:
+11.11.2009 dale: * editpage add-media-wizard binding fix. * fixed remoteMw embed 
+11.11.2009 ialex: Fix html error. . 
+11.11.2009 siebrand: Typo and style fix. 
+11.11.2009 siebrand: php mergeJavascriptMsg.php -j. 
+11.11.2009 siebrand: Update optionals. 
+11.11.2009 sergeychernyshev: Wrong slash in base64 identification regex.. . 
+11.11.2009 siebrand: Remove Title Case - can this stop, please!?. 
+11.11.2009 sergeychernyshev: Bugfix release 0.8.9 - base64 wasn't identified properly which c
+11.11.2009 siebrand: Consistency fix. 
+11.11.2009 jeroendedauw: Added my userinfo. 
+11.11.2009 maxsem: Fix Special:Activeusers for SQLite. 
+11.11.2009 aaron: Small code cleanups. 
+11.11.2009 aaron: Added getRestrictionLevels() function for clean up. 
+11.11.2009 aaron: Comment tweaks and code spacing. 
+11.11.2009 aaron:  API module for page stabilization. 
+11.11.2009 siebrand: .. -> .... 
+11.11.2009 raymond: Localisation updates for core and extension messages from transl
+11.11.2009 diana: rewrite HTML output, javascript for country/state, add discover,
+11.11.2009 catrope: UsabilityIntiative: Toolbar: Fix header dropdown per  comment #2
+11.11.2009 siebrand: Update optionals. 
+11.11.2009 catrope: usability: Merge r58923 (header dropdown fix) from trunk to acai
+11.11.2009 catrope: UsabilityInitiative: Toolbar: Don't add empty sections resulting
+11.11.2009 catrope: usability: Merge r58926 (double line in toolbar fix) to acaifix.
+11.11.2009 kipcool: supposedly faster query. 
+12.11.2009 siebrand: Fix incorrect blacklist check. 
+12.11.2009 tomasz: rolling back part of r54909. 
+12.11.2009 tomasz: pulling in rr58930. 
+12.11.2009 Hi brion!
+12.11.2009 brion: Fix total regression in ability to act as OpenID server in r5223
+12.11.2009 tstarling: () Fixed missing tex_use_ams() for \overleftrightarrow. Patch su
+12.11.2009 simetrical: Upper-case DOCTYPE in HTML5 for well-formedness. . Apparently <!
+12.11.2009 jeroendedauw: Changes for 0.4.2 (a2). http://www.mediawiki.org/wiki/Extension:
+12.11.2009 raymond: Follow-up r58385: Initialize variable to avoid a PHP notice.. 
+12.11.2009 dale: * replaced global $mw with mw ($ in front of a var should mean j
+12.11.2009 alexsh: eol-style. 
+12.11.2009 maxsem: Some measures to prevent people from update.php/upgrade1_5.php c
+12.11.2009 siebrand: Config file as delivered by Tor through Tim Bartels. Marked CHEC
+12.11.2009 siebrand: Use PLURAL in 'qp_user_polls_link'. 
+12.11.2009 siebrand: Updates based on review. * set optionals and ignored. * added FI
+12.11.2009 ialex: Added new message 'regexblock-link' for the link at the top of S
+12.11.2009 dale: * some re-factoring and comments clean up. 
+12.11.2009 werdna: LiquidThreads: Render the new top-level thread as part of the AP
+12.11.2009 werdna: Copy LiquidThreads trunk state to extensions/LiquidThreads_beta,
+12.11.2009 ialex: Use tabs for indentation, not spaces. . 
+12.11.2009 werdna: Rename LiquidThreads beta to alpha.. . 
+12.11.2009 jeroendedauw: Changes for 0.4.2 (rc1). http://www.mediawiki.org/wiki/Extension
+12.11.2009 catrope: * UsabilityIntiative: Hopefully fix  (e.button != 0 check doesn'
+12.11.2009 werdna: LiquidThreads live-hack, to be replaced later, fixing issue with
+12.11.2009 jeroendedauw: Changes for 0.4.2 (rc1). http://www.mediawiki.org/wiki/Extension
+12.11.2009 dale: * some minor refactoring and comment clean up. 
+12.11.2009 ialex: Fix for r58949: correct indentation. . 
+12.11.2009 dale: removed jCrop.min (scriptLoader handles min). 
+12.11.2009 siebrand: Run patched version of stylize.php (http://pywiki.pastey.net/128
+12.11.2009 dale: * partial fix of regEx... (might be worth reverting) fixing rex 
+12.11.2009 nimishg: PHP Datetime fixes. 
+12.11.2009 raymond: Remove $1 (filename) from this message. It's clutter the pages..
+12.11.2009 btongminh: * Honor $wgUseDumpLinkUpdate by using incremental updates (used 
+12.11.2009 tomasz: moving the landing pages to local settings. 
+12.11.2009 tomasz: pulling in r58964. 
+12.11.2009 raymond: Localisation updates for core and extension messages from transl
+12.11.2009 siebrand: Fix plural processing. 
+12.11.2009 siebrand: Replace unknown variable $renderpos by LqtView::viewThread's def
+12.11.2009 adam: Fixing a bug on collapsible tabs where the tabs would get stuck 
+12.11.2009 raymond: Added a user group that I found on huwiki. 
+12.11.2009 catrope: usability: Merge r58969 (CollapsibleTabs bouncing fix) from trun
+12.11.2009 catrope: usability: Merge r58953 (IE fixes) from trunk to acaifix. . 
+13.11.2009 catrope: UsabilityInitiative: Fix for r58953. . 
+13.11.2009 catrope: Fix for r58973: needs parentheses. . 
+13.11.2009 catrope: usability: Merge r58973, r58974 from trunk into acaifix. . 
+13.11.2009 siebrand: Correct spelling. 
+13.11.2009 siebrand: Shut up more PHP notices for non-initialised variables.. All thr
+13.11.2009 btongminh: () Fix caching for Recent ChangesFeed. Patch by Mormegil.. 
+13.11.2009 ialex: One more fix for r58949: convert these lines too *STAB*. . 
+13.11.2009 btongminh: * () Customizable default preload/editintro in add-new-section l
+13.11.2009 catrope: NavigableTOC: Fix up the TOC collapse/resize code big time so it
+13.11.2009 nimishg: date formatting. 
+13.11.2009 catrope: UsabilityInitiative: Fix indentation and coding style for TOC re
+13.11.2009 nimishg: more fields for analysis. 
+13.11.2009 btongminh: Update language maintenance scripts for r58980 . 
+13.11.2009 nimishg: Fixed PHP syntax, added messages. . 
+13.11.2009 werdna: LiquidThreads: Add configurable $wgLiquidThreadsExtensionName va
+13.11.2009 catrope: UsabilityInitiative: Update the README file to reflect the recen
+13.11.2009 werdna: Remove LiquidThreads alpha version in prep for another pass. 
+13.11.2009 werdna: Re-grab LiquidThreads alpha version from trunk.. . 
+13.11.2009 catrope: UsabilityInitiative: () WikiEditor breaks when NTOC disabled. Th
+13.11.2009 catrope: Update style versions and recombine for r58991. . 
+13.11.2009 catrope: usability: Merge r57425 from trunk to acaifix. . 
+13.11.2009 aaron:  Colorcode Special:UnreviewedPages by age. 
+13.11.2009 nimishg: moved allowed templates to local settings. 
+13.11.2009 aaron: Code style cleanup. 
+13.11.2009 Hi mrzman!
+13.11.2009 mrzman: Firefox doesn't like spaces between the pattern and the modifier
+13.11.2009 raymond: Update extensions used by WMF. 
+13.11.2009 siebrand: Remove Title Case. 
+13.11.2009 maxsem: Fixed variable name in error message. 
+13.11.2009 ialex: Removed $wgSpecialVersionExtended, not used anymore since r54735
+13.11.2009 siebrand: Add a FIXME and update version to today.. 
+13.11.2009 Hi nikerabbit!
+13.11.2009 nikerabbit: Purge caches. . 
+13.11.2009 nikerabbit: Correct syntax. . 
+13.11.2009 dale: * added in language mapping for commons upload form language hac
+13.11.2009 werdna: LiquidThreads: Allow LiquidThreads to be disabled per-page on ta
+13.11.2009 werdna: Update LiquidThreads alpha branch to trunk state. 
+13.11.2009 werdna: LiquidThreads: Stop considering a talkpage with no content as ha
+13.11.2009 daniel: allow UploadVerification hooks to return error details. 
+13.11.2009 werdna: LiquidThreads: Fix E_STRICT. 
+13.11.2009 werdna: LiquidThreads: Another E_STRICT call-time pass by reference. 
+13.11.2009 siebrand: () Mark MapsYahooMapsUtils::createTypesString() static to preven
+13.11.2009 nimishg: average donations and links to templates. 
+13.11.2009 nimishg: added 'special'. 
+13.11.2009 werdna: Reload the TOC when posting a new thread. 
+13.11.2009 werdna: LiquidThreads: Fix bug where new threads were not loaded by AJAX
+13.11.2009 nimishg: div by zero gone. 
+13.11.2009 aaron: Tweak for  
+13.11.2009 nimishg: date order makes sense now. 
+13.11.2009 nimishg: days order. 
+13.11.2009 raymond: Localisation updates for core and extension messages from transl
+13.11.2009 daniel: RDFa/microdata follow-up. 
+14.11.2009 siebrand: Allow suppression of progress report. 
+14.11.2009 siebrand: Follow-up r59025. Something about 'Using $this when not in objec
+14.11.2009 daniel: rm debug echo (oops). 
+14.11.2009 aaron: Use reverse chronological order for all item lists. 
+14.11.2009 aaron: Use isDeleted() instead of raw bitfield op. 
+14.11.2009 tparscal: Added support for target parameter.. 
+14.11.2009 werdna: Update LiquidThreads alpha to trunk state. 
+14.11.2009 daniel: only allow xmlns:* if RDFa is enabled. 
+14.11.2009 daniel: add a version attribute to the <html> tag if RDFa is used with H
+14.11.2009 tomasz: picking up r59030. 
+14.11.2009 daniel: use newer spec for html5 metadata. 
+14.11.2009 maxsem: Now syntaxChecker.php checks for typical coding errors such as B
+14.11.2009 diana: add PF currency field, CVV explain popup, split table, disable i
+14.11.2009 ialex: Convert lag.php maintenance script to new format (using the Main
+14.11.2009 siebrand: Follow-up to r59037:. * revert removed l10n updates from r59037 
+14.11.2009 siebrand: Disabling Donate Interface and PayPal Gateway as they are not us
+14.11.2009 brion: Fix regression in r53665 which broke ability to act as OpenID se
+14.11.2009 siebrand: Localisation updates from translatewiki.net. * rebuild payflowpr
+14.11.2009 siebrand: Fix for incomplete PLURAL. 
+14.11.2009 straussd: Add more logging. Add fallback currency conversion. Add timeout 
+14.11.2009 nimishg: daily max. 
+14.11.2009 tomasz: pulling in r59045, r59046. 
+14.11.2009 nimishg: add trailing zeroes for MW_TIMESTAMP format. 
+14.11.2009 nimishg: Generalized links. 
+14.11.2009 tomasz: picking up r59049. 
+14.11.2009 tomasz: adding temporary message during weekend testing. 
+14.11.2009 shinjiman: Localisation updates Cantonese, Chinese and Literary Chinese. 
+14.11.2009 maxsem: * Removed remaining trailing ?> from core.. * This involved upda
+14.11.2009 siebrand: --quiet is a standard option in the Translate commandline script
+14.11.2009 raymond: Add 'search-summary' which is empty by default as generic specia
+14.11.2009 siebrand: Remove leading space in 'payflowpro_gateway-cvv-link'. 
+14.11.2009 raymond: Consistency tweak: coalesce tool links with pipes instead of () 
+14.11.2009 mgrabovsky: () Fixed 'Watch this page' checkbox appearing on some special pa
+14.11.2009 maxsem: syntaxChecker.php:. * added LocalSettings.php and AdminSettings.
+14.11.2009 siebrand: * fix svn properties. * update indentation and remove trailing w
+14.11.2009 ialex: Fix for r58652: use tabs for indentation, not spaces :). . 
+14.11.2009 ialex: svn:eol-style native. . 
+14.11.2009 siebrand: * added a missing </h2> in admin/index.php. * <br> -> <br />. * 
+14.11.2009 maxsem: Fixed numerous problems in extensions found with new features of
+14.11.2009 siebrand: Fix Dutchism. 
+14.11.2009 jeroendedauw: Changes for 0.4.2 (rc2) (see http://www.mediawiki.org/wiki/Exten
+14.11.2009 philip: Update the Chinese conversion tables.. 
+14.11.2009 dale: * baseRemoteSearch :: addRSSData re-factoring. * some comment up
+14.11.2009 thomasv: use Title from wgParser (follow up to r58865). 
+14.11.2009 siebrand: * fix incorrectly split negatives (f.e. '-1' -> '- 1'). * update
+14.11.2009 Hi greg!
+14.11.2009 greg: Allow tables to be sortable, both globally and per invocation.. 
+14.11.2009 greg: Extract epoch to make all date columns sortable.. . 
+14.11.2009 greg: Allow limit=xx as an alias for l=xx. . 
+14.11.2009 siebrand: Add tools link to user rights management for proviledged users. 
+14.11.2009 raymond: Localisation updates for core and extension messages from transl
+14.11.2009 siebrand: Sync contributionsSub from SpecialContributions.php and getSubTi
+14.11.2009 siebrand: Update break notation to self enclosed and properly spaced. 
+15.11.2009 Hi overlordq!
+15.11.2009 overlordq: Code cleanup, covert leading spaces into tabs per coding style. 
+15.11.2009 greg: Allow filtering by custom fields. Redo the way we build queries.
+15.11.2009 greg: Grammar. . 
+15.11.2009 dale: * changed 'wgSourceTypeUrl' back to 'wgSourceTypeURL'. 
+15.11.2009 ialex: Fix Karun Dambietz's name spelling in CREDITS. . 
+15.11.2009 rotem: Localization update.. 
+15.11.2009 ialex: ?* church of emacs, Emufarmers, Juliano F. Ravasi and Matej Grab
+15.11.2009 siebrand: * L10n: localisation updates from translatewiki.net. * RELEASE-N
+15.11.2009 ialex: Follow-up r59086: forgot Happy-melon. . 
+15.11.2009 siebrand: Add Romagnol. 
+15.11.2009 siebrand: Update capitalisation. 
+15.11.2009 siebrand: Localisation updates from translatewiki.net. * Backport compatib
+15.11.2009 Hi vrandezo!
+15.11.2009 vrandezo: updated signature of deprecated function (it shouldnt throw warn
+15.11.2009 jeroendedauw: Changes for 0.4.2 (rc2). http://www.mediawiki.org/wiki/Extension
+15.11.2009 siebrand: Follow-up to r59091: fix incompatible 'imagemaxsize' (revert whe
+15.11.2009 siebrand: Follow-up to r59092: fix incompatible 'imagemaxsize' (revert whe
+15.11.2009 vrandezo: Replaced deprecated split with explode. 
+15.11.2009 raymond: Add a subtitle navigation for all related special pages.. Show l
+15.11.2009 jeroendedauw: Changes for 0.4.2. http://www.mediawiki.org/wiki/Extension:Maps/
+15.11.2009 vrandezo: Checked if user agent field is set before using it. 
+15.11.2009 vrandezo: Replaced split with explode since deprecated. 
+15.11.2009 vrandezo: Initializing isAlias variable. 
+15.11.2009 raymond:  Suggenstion for OpenID i18n in Korean scripts. 
+15.11.2009 root: wikimedia-task-dns-auth (0.11) hardy; urgency=low. .   * Refacto
+15.11.2009 dale: * some sequence render fixes. * some IE regression fixes and ski
+15.11.2009 ashley: SocialProfile: cleanup to UserStats. 
+15.11.2009 ashley: SocialProfile: cleanup to UserWelcome. 
+15.11.2009 ashley: SocialProfile: cleanup to UserProfile. 
+15.11.2009 ashley: SocialProfile: cleanup to UserRelationship. 
+15.11.2009 diana: CVV explanation text added, internationalized. 
+15.11.2009 ashley: SocialProfile: cleanup to UserBoard. 
+15.11.2009 greg: Slightly clearer message.. . 
+15.11.2009 vrandezo: Learned to count (and sorted results more nicely). Resolving  
+15.11.2009 siebrand: Remove trailing space in 'payflowpro_gateway-donor-currency-labe
+15.11.2009 greg: Allow l10n_cache.lc_value to map mediumblob to text. . 
+15.11.2009 ashley: SocialProfile: remove unused file. 
+15.11.2009 raymond: i18n tweak. Add linebreaks for easiert translation. 
+15.11.2009 raymond: Localisation updates for core and extension messages from transl
+16.11.2009 greg: Postgres version of schema for Drafts extension.. . 
+16.11.2009 vrandezo: Replacing deprecated split with explode. 
+16.11.2009 jeroendedauw: Tag for version 0.4.2.. 
+16.11.2009 greg: Allow $wgMaxCredits to work for database backends with non-magic
+16.11.2009 werdna: LiquidThreads: Do not expect a subject for summarizing. 
+16.11.2009 werdna: Update LiquidThreads alpha to trunk state. 
+16.11.2009 werdna: Merge r58865 and r59070 from trunk -- fixes for deferred updates
+16.11.2009 werdna: Update LiquidThreads to alpha version, seems to have been adequa
+16.11.2009 werdna: LiquidThreads: Add error-handling for an odd case where threads 
+16.11.2009 werdna: Handle odd case where moved thread with no title is shown. 
+16.11.2009 werdna: LiquidThreads: Fix warning. 
+16.11.2009 greg: Revert recent change: more implicit fields are needed for the gr
+16.11.2009 werdna: Merge r58816, r58633 (enabling changes for LiquidThreads thread 
+16.11.2009 vrandezo: no need for backslashes when exploding. 
+16.11.2009 werdna: Merge error fixes. 
+16.11.2009 werdna: LiquidThreads error fixes merged. 
+16.11.2009 werdna: E_STRICT. 
+16.11.2009 nikerabbit: Spaces weren't surviving, too lazy to figure out why. I hope the
+16.11.2009 werdna: Fix incompatibility with PHP<5.2. 
+16.11.2009 werdna: Live-bind AJAX save handler. 
+16.11.2009 werdna: LiquidThreads: Some advances to history usefulness:. * Display '
+16.11.2009 dale: * some updates for less round trips for remoteMwEmbed.js / mwEmb
+16.11.2009 raymond: Localisation updates for core and extension messages from transl
+16.11.2009 ialex: svn:eol-style native. . 
+16.11.2009 ialex: Fix parse error: syntax error, unexpected $end in extensions/Ant
+17.11.2009 catrope: * OptIn: () Trying to opt in as an already opted-in user display
+17.11.2009 catrope: Recombine, bump style versions for r59146. . 
+17.11.2009 catrope: () Missing global. . 
+17.11.2009 catrope: usability: Merge r59048 (ClickTracking fix) and r59146 (partial;
+17.11.2009 siebrand: Give StringMatcher::emptyMatcher() on getMangler() if mangler no
+17.11.2009 dale: * more specific profile info for fffmpeg2theora call. * added 's
+17.11.2009 adam: migrating the toc resizing to use jquery ui resizable. 
+17.11.2009 adam: Missed a javascriot revision bump on r59152. 
+17.11.2009 siebrand: Localisation updates from translatewiki.net. * update special pa
+17.11.2009 siebrand: Localisation updates from translatewiki.net. * update magic word
+17.11.2009 Hi dantman!
+17.11.2009 dantman: These two methods are generic enough to be public. Protecting th
+17.11.2009 siebrand: Localisation updates from translatewiki.net. * update namespace 
+17.11.2009 siebrand: Fix sloppyness from r59157 (duplicate $namespaceAliases and synt
+17.11.2009 siebrand: Fix more sloppyness from r59157 (time for bed). 
+17.11.2009 dantman: Turn the Contributors' extension's getMainContributors and getCo
+17.11.2009 nimishg: Added cc-reporting stub. 
+17.11.2009 nimishg: cc-reporting JS support. . 
+17.11.2009 tparscal: Added 2009 fundraiser to default configuration.. 
+17.11.2009 tomasz: picking up to r59163. 
+17.11.2009 tparscal: Changed 30 to 35 to match donation for for 2009 fundraiser.. 
+17.11.2009 aaron:  Added missing article existence check for protect UI. 
+17.11.2009 mkroetzsch: minor code layout improvements. . 
+17.11.2009 freakolowsky: replaced charset definition to php var instead of forced env var
+17.11.2009 werdna: Fix LiquidThreads IE7 compatibility. There is still a bug, but I
+17.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+17.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Semanti
+17.11.2009 dale: * added sequence render example. * added kdp kaltrua player fall
+17.11.2009 adam: experminental css changes for sandbox.5. 
+17.11.2009 dale: * some kplayer updates. * fix to the menu. 
+17.11.2009 maxsem: syntaxChecker: added option --modified to check only modified or
+17.11.2009 tparscal: Added CSS for 2009 fundraiser to make the data visible. Also mad
+17.11.2009 maxsem: syntaxChecker.php:. * Renamed --file to --path and extended its 
+17.11.2009 catrope: () Make Squid response limit configurable. Patch by Roi Aminoam.
+17.11.2009 Hi nojhan!
+17.11.2009 nojhan: + blog Otourly. 
+17.11.2009 raymond: Localisation updates for core and extension messages from transl
+17.11.2009 werdna: Merge LiquidThreads alpha to trunk state. 
+17.11.2009 ialex: * removed $this in parameters list since it's a reserved word. *
+18.11.2009 nimishg: cc-reporting bordering functional now. 
+18.11.2009 nimishg: comments. . 
+18.11.2009 catrope: acaifix: Some IE fixes. This should fix , ,  and  . 
+18.11.2009 adam: Rewriting the collapse and expand functions for jquery.wikiEdito
+18.11.2009 Hi nad!
+18.11.2009 nad: remember values after populating form. 
+18.11.2009 werdna: LiquidThreads: For IE7, disable animation of reply window showin
+18.11.2009 werdna: Merge r59188 from trunk. 
+18.11.2009 werdna: Merge LiquidThreads IE7 compatibility updates r59169 and r59188 
+18.11.2009 catrope: acaifix: Change tactics for handling browsers that don't restore
+18.11.2009 catrope: Revert r58570 (override overspecific CSS on dewiki): can be done
+18.11.2009 tstarling: Fixed corruption of long UDP debug log messages by using socket_
+18.11.2009 tomasz: adding the ability to have the preferred setting for wikipedia a
+18.11.2009 werdna: LiquidThreads: fix some fatals in cases where threads have been 
+18.11.2009 Hi reedy!
+18.11.2009 reedy: userinfo for reedy. 
+18.11.2009 catrope: LiquidThreads: Switch from using js2.combined.js to the js2stopg
+18.11.2009 catrope: wmf-deployment: Merge some revs for the upcoming usability deplo
+18.11.2009 werdna: LiquidThreads debugging code. 
+18.11.2009 maxsem: Checking images for syntax errors can yield funky results:). 
+18.11.2009 catrope: UsabilityInitiative: Per Tim's CR comments, go back to using cli
+18.11.2009 catrope: usability: Merge r59202 from trunk to acaifix. . 
+18.11.2009 catrope: wmf-deployment: Merging usability changes from trunk. * Collapsi
+18.11.2009 nimishg: escaping using addQuotes. 
+18.11.2009 siebrand: * zip code -> postal code. * Amex -> American Express. 
+18.11.2009 siebrand: zip (code) -> postal code. 
+18.11.2009 catrope: wmf-deployment: Usability fix: forgot jquery.collapsibletabs.js 
+18.11.2009 tomasz: picking up r59176. 
+18.11.2009 raymond: Localisation updates for core and extension messages from transl
+18.11.2009 aaron: last tweak for  (RevDelete messages). 
+18.11.2009 catrope: USabilityInitiative: Add support for versioning toolbar icons. .
+18.11.2009 ialex: svn:eol-style native. . 
+18.11.2009 catrope: wmf-deployment: Merge r59212. . 
+19.11.2009 churchofemacs: Make adding sidebar elements easier for extensions (e.g. Extensi
+19.11.2009 churchofemacs: New Extension:GroupsSidebar. More information about this extensi
+19.11.2009 catrope: wmf-deployment: Forgot some files in the last merge. . 
+19.11.2009 werdna: LiquidThreads: fix bug in bulk loading whereby replies would not
+19.11.2009 werdna: Update LiquidThreads to trunk state. 
+19.11.2009 werdna: Merge r59218. 
+19.11.2009 raymond: Add missing messages for the existing idention icon. What to do 
+19.11.2009 werdna: Unmerge r59197, breaks without related core updates. 
+19.11.2009 raymond: Consistency tweaks for 'IP address'. 
+19.11.2009 adam: Fixing a spacing issue with RTL langauges and the dropdown menu.
+19.11.2009 diana: add tracking field to transaction. 
+19.11.2009 aaron:  Remove second suppression button from pages with single edit ('
+19.11.2009 siebrand: Fix autonym for rgn. 
+19.11.2009 adam: improvements to ntoc resizing and collapsing. 
+19.11.2009 nimishg: commented out SpecialClickTracking. 
+19.11.2009 tstarling: Merged r59205 from trunk ($dbr->addQuotes()). . 
+19.11.2009 greg: Postgres version of table. . 
+19.11.2009 dantman: Add a wgCategories variable to the js variables so users don't n
+19.11.2009 nad: move some globals into the object and prevent queries during job
+19.11.2009 simetrical: Avoid pointless $wgHtml5 checks. . Html::rawElement() should str
+19.11.2009 tomasz: Adding uniform input fields, styling and removing debugging info
+19.11.2009 dantman: Implement labels for dropdowns/listboxes/checkboxes/radios using
+19.11.2009 alexsh: * eol-style. * self info update. 
+19.11.2009 catrope: Fix r59228: somehow it did increment the right style versions an
+19.11.2009 dantman: Modify Special:RunQuery so that it can be embedded into an artic
+19.11.2009 tomasz: adding missing global for testing. 
+19.11.2009 tomasz: updating ways to give page. 
+19.11.2009 tomasz: adding styling. 
+19.11.2009 dantman: Add {{{standard input|run query}}} to control the location and l
+19.11.2009 questpc: Fixed SQL tables prefix issue. 
+19.11.2009 tomasz: Fixing double submit of currency code. 
+19.11.2009 werdna: Remove RC customisation for further discussion. 
+19.11.2009 werdna: LiquidThreads: Add direct descendent selector to CSS rule that w
+19.11.2009 tomasz: adding missing visibility bits. 
+19.11.2009 ialex: * add 'path' item to $wgExtensionCredits for version display on 
+19.11.2009 mark: wikimedia-task-dns-auth (0.12) hardy; urgency=high. .   * Add 'e
+19.11.2009 werdna: Add LiquidThreads support to OAI-based search. 
+19.11.2009 werdna: LiquidThreads: Add pre-save transform to signature handling. 
+19.11.2009 catrope: ClickTracking: Fix bug with handling javascript: links that caus
+19.11.2009 adam: a followup, better fix for what r59224 aimed to do: Fixing a spa
+19.11.2009 werdna: LiquidThreads: use main page URL instead of extension page as fe
+19.11.2009 werdna: Respect MW_INSTALL_PATH. 
+19.11.2009 adam: cleaning up the collapsibletabs code to make it more readable in
+19.11.2009 reedy:  prop=info&inprop=watched. 
+19.11.2009 maxsem: tab to spaces. 
+19.11.2009 aaron: * Added reviewAfterEdit(),autoReviewEdits(),autoReviewNewPages()
+19.11.2009 maxsem: Fixed E_DEPRECATED. 
+19.11.2009 mgrabovsky: () Fixed feed links in sidebar not complying with URL parameters
+19.11.2009 nimishg: Made DB calls more mediawiki-friendly in specialclicktracking. 
+19.11.2009 nimishg: changed ==false to 0. 
+19.11.2009 siebrand: Update optionals. 
+19.11.2009 nimishg: forgot trailing zeroes for MW time format. 
+19.11.2009 rotem: Localization update for he.. 
+19.11.2009 raymond: Localisation updates for core and extension messages from transl
+19.11.2009 maxsem: SyntaxHighlight_GeSHi: fixed bug with <source lang=''> spewing z
+19.11.2009 nikerabbit: Fix one plural issue. . 
+20.11.2009 kipcool: When adding an expression: do not create an already existing pag
+20.11.2009 ialex: Fix for r59258: move entry to RELEASE-NOTES. . 
+20.11.2009 aaron: break long lines. 
+20.11.2009 vrandezo: Made fitting to upstream patch 21574, so that we can redirect to
+20.11.2009 tparscal: Initial setup for the highlight module of wikiEditor.. 
+20.11.2009 tparscal: Initial check in for the SVGZoom tool.. 
+20.11.2009 dantman: SemanticForms: Add a raw=true mode for use via ajax and fix up t
+20.11.2009 tstarling: Rework of libAddMedia. The changes are entirely untested and the
+20.11.2009 ialex: Fix for r59276: move extension to correct location. . 
+20.11.2009 siebrand: Update mwEmbed.i18n.php. 
+20.11.2009 siebrand: * use 'Donate' button text instead of duplicating the text. * re
+20.11.2009 siebrand: Hack to make gettext plural export a little better.. 
+20.11.2009 catrope: * ClickTracking: Add index on action_time. * Make table definiti
+20.11.2009 catrope: wmf-deployment: Merge r59253 (ClickTracking bugfix) from trunk. 
+20.11.2009 werdna: LiquidThreads: Per suggestions on feedback page, give an unobtru
+20.11.2009 siebrand: Tweaks in formatting of messages. 
+20.11.2009 werdna: LiquidThreads: Hide all menus when you click outside of a menu. 
+20.11.2009 siebrand: Tweak 'lqt-sign-not-necessary'. 
+20.11.2009 ialex: * () memcached class renamed to MWMemecached to avoid conflict w
+20.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+20.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Semanti
+20.11.2009 werdna: LiquidThreads: instead of deleting a thread altogether when mark
+20.11.2009 ialex: *STAB STAB STAB* Fix for r59289: forgot to rename the constructo
+20.11.2009 ialex: Fix for r59289 and 59293: finish to rename the class, really sor
+20.11.2009 raymond: * : Make table columns sortable. * Consistency tweak: Move submi
+20.11.2009 raymond: Localisation updates for core and extension messages from transl
+20.11.2009 ialex: svn:eol-style native. . 
+20.11.2009 raymond: * Fix typo in desc message, remove trailing . for consistency. *
+21.11.2009 siebrand: Yay. Can remove codeMap. 
+21.11.2009 reedy:  MagicWord::match function documentation is wrong. . +Similar ch
+21.11.2009 nimishg: removed table prefix on sql. 
+21.11.2009 siebrand: Prevent empty gettext plural imports. 
+21.11.2009 siebrand: Add TSV file with plural rules from http://translate.sourceforge
+21.11.2009 siebrand: Replace ' or ' with ' || '. 
+21.11.2009 mrzman: Fix from r59152. . 
+21.11.2009 dantman: Pass a {{{#}}} parameter to the template= in an #ask query with 
+21.11.2009 catrope: Revert r59305: makes toolbar overlap iframe. . 
+21.11.2009 catrope: UserDailyContribs: Spaces -> tabs. . 
+21.11.2009 catrope: UsabilityInitiative: Move existence status up to next to the 'Pa
+21.11.2009 thomasv: allow to override prev and next parameters. 
+21.11.2009 siebrand: Update optionals. 
+21.11.2009 catrope: wmf-deployment: Fix missing message for indent button in usabili
+21.11.2009 catrope: Followup for r59312: actually use the indent-example message. . 
+21.11.2009 catrope: ...and bump the style version. Sorry for the commit spam. . 
+21.11.2009 catrope: UsabilityInitiative: Export indent messages and fix one of them.
+21.11.2009 catrope: UsabilityInitiative: Whitespaces fixes for TOC CSS. . 
+21.11.2009 thomasv: match multiline pattern. 
+21.11.2009 catrope: UsabilityInitiative: Misc RTL fixes. . 
+21.11.2009 questpc: Set version number to 0.6.3 for the bugfixed tarball distributio
+21.11.2009 dale: * fixed audio vs video display height in remoteMwEmbed rewrite. 
+22.11.2009 btongminh: Rename functions to more clearer names:. * setUsage	-> insertLin
+22.11.2009 siebrand: Add English language names. 
+22.11.2009 siebrand: Localisation updates for core messages from translatewiki.net. 
+22.11.2009 siebrand: Tweak 'mwe-select-other-language'. 
+22.11.2009 rainman: Parse the title into Title format for liquid threads. . 
+22.11.2009 rainman: Couple of changes to original andrews implementation:. * never u
+22.11.2009 rainman: Add yiddish exceptions and some yiddish tests. . 
+22.11.2009 ialex: Ignore varibale check for 'autoblockedtext' message, contains op
+22.11.2009 siebrand: Remove support for SlippyMap. Maps does it all and more.. 
+22.11.2009 siebrand: Localisation updates for core and extension messages from transl
+22.11.2009 maxsem: Small script to output page text to stdout. 
+22.11.2009 catrope: UsabilityInitiative: TOC: Another RTL fix. . 
+22.11.2009 nikerabbit: Another bug caused by forcing first letters to uppercase. . 
+22.11.2009 nikerabbit: Uh what? How has this not worked without producing any errer?. .
+22.11.2009 nikerabbit: * Remove code duplication. * Add some comments. * Preserve heade
+22.11.2009 reedy: Apply patch from  API: Separate summary and initial page text fo
+22.11.2009 kipcool: Faster sql query for attributes. 
+22.11.2009 churchofemacs: fixing r59216: adding i18n file for extension-desc. 
+22.11.2009 ialex: * Fix key in $wgExtensionMessagesFiles 'myextension' -> 'GroupsS
+22.11.2009 nikerabbit: Kill one ugly hack and be more error resistant. . 
+22.11.2009 nikerabbit: More error handling. . 
+22.11.2009 raymond: Don't prefill the reason field. This is not done with any other 
+22.11.2009 raymond: *  Change interwiki link for ku. 
+22.11.2009 simetrical: RELEASE-NOTES typo. . Pointed out by [[sroracle]] on IRC.. 
+22.11.2009 Hi vasilievvv!
+22.11.2009 vasilievvv: Commit a rewritten version of an inline scripts interpreter.. . 
+23.11.2009 reedy: Fix for r59336 Addition of bug to RELEASE-NOTES. 
+23.11.2009 siebrand: Follow-up to r59342: separate column headers and field labels. *
+23.11.2009 siebrand: Update optionals. 
+23.11.2009 btongminh: Schema change: add page_namespace_id to table definition. 
+23.11.2009 werdna: LiquidThreads: only customise new messages prompt if the new mes
+23.11.2009 werdna: Remove debugging code ;). 
+23.11.2009 werdna: Update LiquidThreads to trunk state. 
+23.11.2009 werdna: LiquidThreads: use the correct path for newmessages.js. 
+23.11.2009 werdna: Merge r59353. 
+23.11.2009 werdna: Merge new messages from trunk. 
+23.11.2009 werdna: LiquidThreads: remove summary field for posts and replies, use a
+23.11.2009 werdna: Enabling change for r59356, allow programmatic control over whet
+23.11.2009 ialex: removed trailing whitespaces. . 
+23.11.2009 btongminh: * Only show the TOC link if there are actual results. * Replace 
+23.11.2009 reedy:  Spellcheck attribute for editsummary. 
+23.11.2009 reedy: Minor followup for r59360. . Should really read the proper sourc
+23.11.2009 siebrand: Update optionals. 
+23.11.2009 reedy: Further followup to r59360. . Add spellcheck to html5attribs for
+23.11.2009 catrope: UsabilityInitiative: Make the TOC work nicely with the iframe. M
+23.11.2009 raymond: Localisation updates for core and extension messages from transl
+23.11.2009 tparscal: Moved some things around to correct the calling order issues of 
+23.11.2009 adam: temporary fix for the calls to context.modules. in jquery.wikiEd
+23.11.2009 dantman: Fix newline inside input which breaks embedding forms. Add suppo
+24.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+24.11.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Semanti
+24.11.2009 tparscal: Moved some comments around.. 
+24.11.2009 aaron: * line  breaks. * doc fix. 
+24.11.2009 dantman: Fixes for embedded forms. Don't preprocess, and replace the stri
+24.11.2009 nimishg: Formatting changes using stylize. . 
+24.11.2009 sergeychernyshev: Applied patch for . . 
+24.11.2009 siebrand: Update ignored. 
+24.11.2009 nikerabbit: Fix regexp to actually match inactive sections. . 
+24.11.2009 werdna: LiquidThreads: Remove username from reply title. Resolves  
+24.11.2009 werdna: LiquidThreads: Make bumping a thread optional. Resolves . * Also
+24.11.2009 werdna: LiquidThreads: Fix bug where removal of wpSummary field caused a
+24.11.2009 daniel: initStores/targetStores. 
+24.11.2009 daniel: no more WikiWordStoreFactory, instantiate stores directly. 
+24.11.2009 daniel: feature vector cache (INCOMPLETE, does not compile). 
+24.11.2009 siebrand: Support GENDER for 'qp_user_polls_link' ($2) and 'qp_user_missin
+24.11.2009 raymond: Followup r59363: Fix wrong syntax for Html::input. It accept oth
+24.11.2009 werdna: LiquidThreads tab re-working.. Previously, there was a hook bein
+24.11.2009 werdna: Fix fatals. 
+24.11.2009 churchofemacs: fixing FlagPage to also work in NS!= 0. 
+24.11.2009 ariel: prep for test and deployment for fundraising. 
+24.11.2009 dantman: Bugfix from  . 
+24.11.2009 werdna: Fix definition of TalkpageHeaderView::customizeTabs. 
+24.11.2009 ialex: svn:eol-style native. . 
+24.11.2009 dale: * added remote_insert_description (for adding linkback in html i
+24.11.2009 tparscal: Refactored the preview module, integrating much of the functiona
+24.11.2009 dale: * moved 'binPlayers' into libEmbedVideo (more modular folder lay
+24.11.2009 dantman: Fixing SemanticForms to properly use the parser output while in 
+24.11.2009 dale: * restored msg updates before to r59393 and merged in video stre
+24.11.2009 raymond: Localisation updates for core and extension messages from transl
+24.11.2009 tparscal: Took first step to move publish buttons to a new publish module.
+24.11.2009 dale: * some code comment cleanup. 
+24.11.2009 dantman: Fix form utils so unhandledFieldsHTML uses hiddenFieldHTML, and 
+24.11.2009 tparscal: Added publish to default config.. 
+24.11.2009 raymond: Follow-up r59399. Update translatewiki. 
+25.11.2009 ialex: Use 'word-separator' message rather than harcoded space. . 
+25.11.2009 ariel: steal CacheHeadersAfterSet hook from trunk  for ExternalPages ex
+25.11.2009 daniel: proximity store + builder (incomplete). 
+25.11.2009 tparscal: Removed old vector jquery ui theme.. 
+25.11.2009 tparscal: Added a much better jquery UI theme.. 
+25.11.2009 adam: Bringing back the state saving and ellipsis triggering to the TO
+25.11.2009 werdna: LiquidThreads: Increase textbox size to 12 rows, instead of 10. 
+25.11.2009 freakolowsky: removed output-disable in dbms-output fetching procedure. 
+25.11.2009 werdna: LiquidThreads: fix bug where toolbar overlapped post separator. 
+25.11.2009 greg: Remove the SQL comments. . 
+25.11.2009 vrandezo: Fixed ending time of multiday events export in iCalendar. 
+25.11.2009 greg: Postgres version of schema - untested.. . 
+25.11.2009 daniel: proximity matrix generation. needs optimization. 
+25.11.2009 werdna: Debugging code for LiquidThreads. 
+25.11.2009 werdna: Debugging code. 
+25.11.2009 werdna: Remove upload permission from box, it does not actually work. 
+25.11.2009 werdna: LiquidThreads: fix fatal error on 2nd and subsequent pages of ta
+25.11.2009 werdna: Merge r59420. 
+25.11.2009 yaron: Added query-parameter description messages, for use by the new g
+25.11.2009 werdna: Improve debugging code. 
+25.11.2009 werdna: Improve debugging. 
+25.11.2009 adam: Fixing spacing on jquery.collapsibleTabs.js to make it easier on
+25.11.2009 yaron: Added getParameters() and related functions, to allow query prin
+25.11.2009 werdna: Update LiquidThreads messages. 
+25.11.2009 demon: () Set hashLevels to 2 like commons, just in case. 
+25.11.2009 werdna: Update LiquidThreads alpha to trunk state. 
+25.11.2009 yaron: Added new 'plain' option for 'headers' param. . 
+25.11.2009 dale: * restored basic non-firefogg upload functionality per r59320 br
+25.11.2009 raymond: Localisation updates for core and extension messages from transl
+25.11.2009 dale: * restored basic firefogg upload functionality per r59320 breaka
+25.11.2009 ialex: Set the Title object to the new $wgOut in SpecialPage::capturePa
+25.11.2009 dale: * restored copy-by-url uploads in add-media-wizard per r59320 ch
+25.11.2009 catrope: UsabilityInitiative: Preview: Fix display when preview tab disab
+26.11.2009 dale: * added k-attribution link in credits. 
+26.11.2009 yaron: Added getParameters() to all query printers. . 
+26.11.2009 tstarling: Fixes for remoteSearchDriver.js and related. Untested, probably 
+26.11.2009 dantman: Commit RELEASE-NOTES line for the wgCategories js variable I add
+26.11.2009 tstarling: Demerging the js2 work from trunk to a branch, it's not ready fo
+26.11.2009 yaron: New version: 0.1.1. . 
+26.11.2009 yaron: Action exits quickly if there are no valid titles. . 
+26.11.2009 yaron: Error message returned for bad XML is now actual parsing error m
+26.11.2009 nikerabbit: Hack around for pt => pt-pt in mediawiki but pt =>  pt-br in cld
+26.11.2009 tstarling: Removed JS2 work (has been moved to the js2-work branch). Has be
+26.11.2009 nikerabbit: Make the code work withous js2 in the core. . 
+26.11.2009 raymond: * Add i18n file for description message. * Add extension to tran
+26.11.2009 freakolowsky: Simple sendmail 2 wiki redirection extension. 
+26.11.2009 catrope: Partial revert of r59446: add js2stopgap.js back in, some extens
+26.11.2009 catrope: usability branch: Rename .i18n.php files currently used on Wikip
+26.11.2009 mkroetzsch: allow cloumns parameter not just for ul and ol, there are useful
+26.11.2009 raymond: Fix typos in messages (en), consistent spelling of 'e-mail'. Add
+26.11.2009 werdna: IE compatibility. 
+26.11.2009 werdna: Handle revisions with data corruption from 65536-byte limit of B
+26.11.2009 catrope: usability: Rename messages for r59451. . 
+26.11.2009 ialex: Fix fatal error since r59446: replace call to OutputPage::addScr
+26.11.2009 ialex: Same as r59457; replaced call to OutputPage::addScriptClass() wi
+26.11.2009 werdna: Merge LiquidThreads alpha messages. 
+26.11.2009 raymond: Fix typo in extension credit  key.. 
+26.11.2009 raymond: Let's i18n work by adding registering the i18n file. Fix typo in
+26.11.2009 mark: wikimedia-task-search (1.04) hardy; urgency=low. .   * Remove de
+26.11.2009 catrope: usability: Add slashes to paths, add indent messages. . 
+26.11.2009 catrope: usability: Bump style versions. . 
+26.11.2009 catrope: wmf-deployment: Merge r59451, r59456, r59463, r59464 from acaifi
+26.11.2009 juliano: Fix UTF-8 encoding.. . 
+26.11.2009 juliano: * Fix pass-by-reference call on SkinTemplateTabs hook.. * Fix pa
+26.11.2009 ialex: * () Both calls to SkinTemplateTabs hook are now compatible. . 
+26.11.2009 kipcool: 'remove_transaction_id IS NULL' was missing in getSQLForClasses.
+26.11.2009 aaron: Break long line. 
+27.11.2009 ialex: Follow-up r9468: fix functions called by SkinTemplateTabs hook t
+27.11.2009 siebrand: Add live patch for ext-mwembed. 
+27.11.2009 siebrand: Update formatting; removes double space in the process. 
+27.11.2009 kipcool: getSQLForClasses: synt.identical_meaning=1 not needed and slowin
+27.11.2009 ialex: * replaced OutputPage::addScriptClass() with OutputPage::addScri
+27.11.2009 tstarling: Did --record-only merges of r59446 and r59450 so that we can lat
+27.11.2009 catrope: Delete a bunch of stuff that shouldn't have been readded in r594
+27.11.2009 tstarling: Don't include the old ExtensionMessages.php when you're building
+27.11.2009 tstarling: Merged r59478, mergeMessageFileList.php extension rename fix. . 
+27.11.2009 juliano: * Parse 'wikilog-log-cmt-rejdel' message, in order to enable GEN
+27.11.2009 tstarling: In RadioRangeBallot: added 'column-order' property to allow sort
+27.11.2009 tstarling: Merged r59481 from trunk to wmf-deployment for arbcom election s
+27.11.2009 dantman: Instead of using a poor trim implementation prototype .trim on f
+27.11.2009 freakolowsky: *() Added checkboxes to users with bot and ssop group membership
+27.11.2009 ialex: Follow-up r59484: add messages to messages.inc and rebuild Messa
+27.11.2009 freakolowsky: Added feature to RELEASE-NOTES and added messages to MessagesSl.
+27.11.2009 freakolowsky: Fixed wrong field definition for filearchive. Fixed delete funct
+27.11.2009 greg: Change to newer sequence name. . 
+27.11.2009 greg: Use the new sequence name. . 
+27.11.2009 greg: No time to fix, but leave a note about odd behavior of this exte
+27.11.2009 philip: Some performance improvements in LanguageConverter.php.. 
+27.11.2009 raymond: Fix a Fatal: Call to a member function isLoggedIn() on a non-obj
+27.11.2009 maxsem: Follow-up to r59484 - sysops -> administrators. 
+27.11.2009 raymond: Localisation updates for core and extension messages from transl
+27.11.2009 raymond: Add SendmailToWiki to translatewiki. Remove trailing point in th
+27.11.2009 raymond: Fix typo, Thanks to Hamilton Abreu@translatewiki.net. 
+27.11.2009 raymond: Revert r59496, accidently committed half done stuff :(. 
+28.11.2009 raymond: Fix PHP Strict Standards: Declaration of UploadFromUrl::initiali
+28.11.2009 aaron: *Fix < to <=. *Allow zero size filter. 
+28.11.2009 husky: reverting the png files, apparently something broke with fixing 
+28.11.2009 sergeychernyshev: Fixed a security whole in error message.. . 
+28.11.2009 sergeychernyshev: Security Release 0.8.10: Fixed a security whole in error message
+28.11.2009 sergeychernyshev: Remove empty string as well.. . 
+28.11.2009 juliano: Messages wikilog-item-brief-header/footer, wikilog-item-header/f
+28.11.2009 demon: Fix header. 
+28.11.2009 demon: Add path to extension credits. 
+28.11.2009 demon: Rm another file from js2 de-merge. 
+28.11.2009 raymond: Follow-up r59505: Update translatewiki. 
+28.11.2009 raymond: Fix typo, less tech speak, remove exclamation mark (a bit overdo
+28.11.2009 raymond: Make SpecialPage unlisted. As far as I see it does not make sens
+28.11.2009 shinjiman: Localisation updates Cantonese, Chinese and Literary Chinese. 
+28.11.2009 siebrand: Fix typo in 'wikilog-summary-categories'. 
+28.11.2009 juliano: Follow-up r59507: there is an independent subextension also, WlF
+28.11.2009 ialex: Optional PLURAL parameter in MediaWiki:Wikilog-summary-categorie
+28.11.2009 Hi grondin!
+28.11.2009 grondin: Fixed wrong call function SpecialContributorsAddon::getContribut
+28.11.2009 ialex: svn:eol-style native. . 
+28.11.2009 raymond: Per request of User:Meno25 who cannot commit atm.. 
+28.11.2009 siebrand: NewUserMessage will create a thread if configured correctly when
+28.11.2009 siebrand: Update ignored messages. 
+28.11.2009 catrope: UsabilityInitiative: Make publish module work. . 
+28.11.2009 philip: : Add Accept-Language to Vary and XVO headers to help Squid to d
+28.11.2009 philip: follow-up r59522, add missing credit. . 
+28.11.2009 raymond: Localisation updates for core and extension messages from transl
+28.11.2009 nikerabbit: Possible fix. . 
+28.11.2009 catrope: UsabilityInitiative: Cache browser compat check, combine some fo
+28.11.2009 philip: follow-up r59522. ONLY add Accept-Language when a valid variant 
+28.11.2009 siebrand: Fix fatal from r59525. 
+28.11.2009 philip: follow-up r59522. 'string-contains' added.. 
+28.11.2009 philip: follow-up r59522, r59529. Just include the current variant.. 
+29.11.2009 jeroendedauw: Changes for 0.5. Rewrote parameter handling and added strict val
+29.11.2009 aaron: * () Added maxsize to oldreviewedpages API . * Worked around max
+29.11.2009 siebrand: Add Okawix documentation and update Translate's README. 
+29.11.2009 siebrand: Add missing class. 
+29.11.2009 purodha: wikilog-summary-footer, and wikilog-summary-footeri-single have 
+29.11.2009 aaron: * Made log_user_type_time index available when needed. * Don't a
+29.11.2009 aaron: * Added filterwatched to olreviewedpages API (). * Killed some w
+29.11.2009 tstarling: More Opera Mini proxies from Mats Kronberg.. . 
+29.11.2009 tstarling: Merged Opera Mini update (r59539). . 
+29.11.2009 philip: follow-up r59522, r59523, r59527, r59529, r59530.. 1. Only use A
+29.11.2009 aaron: break long lines. 
+29.11.2009 siebrand: Revert r59537. Breaks page deletion with 'PHP Notice:  Array to 
+29.11.2009 philip: follow-up r59541. Fix the problem reported on [[Special:Code/Med
+29.11.2009 ialex: * () 'Edit block reasons' link at the bottom of Special:Blockip 
+29.11.2009 catrope: UsabilityInitiative: EditWarning: () Check for wgAction == 'subm
+29.11.2009 siebrand: Use FULLPAGENAMEE instead of {{urlencode:{{FULLPAGENAME}}}} in '
+29.11.2009 demon: Add $wgWikiId to override default wfWikiId() output. Solves  (se
+29.11.2009 aaron: Restored r59537 - fixed silly typo. 
+29.11.2009 simetrical: Allow \pagecolor and \definecolor in texvc. . \color was already
+29.11.2009 jeroendedauw: Fixed issue with default geocoding service.. 
+29.11.2009 yaron: Added parameter-description messages for use in the various prin
+29.11.2009 yaron: Added getName() and getParameters() functions. . 
+29.11.2009 yaron: Added getParameters() function. . 
+29.11.2009 philip: follow-up r59544. more comments added.. 
+29.11.2009 jeroendedauw: Changes for 0.5. Fixed several issues with parameter validation.
+30.11.2009 warx: Adding one blog to pl.planet. 
+30.11.2009 jeroendedauw: Changes for 0.5. Fixed several issues with parameter validation.
+30.11.2009 siebrand: Tweak 'maps_error_accepts_only'. 
+30.11.2009 kipcool: When removing an attribute_option, also remove the correponding 
+30.11.2009 yaron: Added parameter-description messages, for use by getParameters()
+30.11.2009 raymond: Localisation updates for core and extension messages from transl
+30.11.2009 siebrand: Follow up to r59567. Implement plural properly.. 
+30.11.2009 jeroendedauw: New extension: Validator. Version 0.1 alpha 1.. 
+30.11.2009 jeroendedauw: Splitted code from the Validator extension.. 
+30.11.2009 jeroendedauw: i18n changes originally by siebrand. 
+30.11.2009 jeroendedauw: Added README, INSTALL, COPYING and RELEASE-NOTES files.. 
+30.11.2009 yaron: Added getParameters() function. . 
+30.11.2009 siebrand: * renamed description message (underscore to hyphen). * stylize.
+30.11.2009 siebrand: Fix typo in key. 
+30.11.2009 mark: Change ntp hostname. Remove NIS. Remove httpd setup in early_com
+30.11.2009 ashley: bug #21684: Remove install.php, use wgExtNewTables. 
+30.11.2009 mark: Ubuntu 9.10 no longer has ifconfig, use ip if available. . 
+30.11.2009 mark: Whoops, wrong ip. . 
+30.11.2009 werdna: Fix crashing bug in FlaggedRevs where wgFlaggedRevsNamespaces is
+30.11.2009 mark: Keep local consoles working. . 
+30.11.2009 mark: No automatic unattended upgrades. . 
+30.11.2009 yaron: Added descriptions of the new 'paramdesc' messages. . 
+30.11.2009 yaron: Added two more messages for use by the upcoming new Special:Ask.
+30.11.2009 werdna: LiquidThreads: darken timestamp. 
+30.11.2009 mark: wikimedia-base (0.24) hardy; urgency=low. .   * Disable 'quiet s
+30.11.2009 root: Update late_command script for Ubuntu 9.10, and install puppet b
+30.11.2009 root: * Rename knams into esams. * As root, just to annoy Roan. . 
+30.11.2009 freakolowsky: * Added 5th parameter to texvc call (can be null and defaults to
+30.11.2009 yaron: Added handling for 'parsing' parameters if they're an array, nec
+30.11.2009 adam: Moving padding on toc elements onto the span to fix auto ellipse
+30.11.2009 tparscal: Small CSS tweak to make buttons not look so crowded together.. 
+30.11.2009 tparscal: Made some small CSS tweaks which make the toolbar look a little 
+30.11.2009 catrope: wmf-deployment: Fix i18n fail in usability dialogs. . 
+30.11.2009 catrope: Followup to r59598: add missing dashes. . 
+30.11.2009 yaron: Removed needless 'whether or not to' from two of the new message
+30.11.2009 ashley: UserStats: partial revert of r59106 - was causing fatals. 
+30.11.2009 yaron: New version of Special:Ask - the form now lets users input the f
+30.11.2009 raymond: Localisation updates for core and extension messages from transl
+30.11.2009 nimishg: click tracking for old toolbar. 
+30.11.2009 yaron: Removed usage of 'sortcount' (no longer needed (?)), fixed code 
+30.11.2009 yaron: Another 'PHP notice' fix. . 
+01.12.2009 nimishg: updated style version as per r59604. 
+01.12.2009 catrope: wmf-deployment: Merge r59604 and r59607 from trunk. . 
+01.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+01.12.2009 tstarling: Reverted r58646 as per my comments on . . 
+01.12.2009 yaron: More bug fixes. . 
+01.12.2009 tomasz: Adding rewording for pending trxn's. 
+01.12.2009 tstarling: svn:eol-style native. . . 
+01.12.2009 yaron: Reworded version of 'printouts' header. . 
+01.12.2009 aaron: * Added getReviewNamespaces()/getPatrolNamespaces(). * Moved som
+01.12.2009 aaron: Tweaks for SQLite. 
+01.12.2009 aaron: Reverted return style changes from r56326 (just used to reduce c
+01.12.2009 aaron: Follow up r56372: use addQuotes() to make sql escaping clear (va
+01.12.2009 daniel: standalone flat text extraction. 
+01.12.2009 werdna: LiquidThreads: Allow threads-per-page to be configured with a co
+01.12.2009 werdna: Only try to grab parser output if the article actually exists.. 
+01.12.2009 purodha: PLURAL support for message validator_error_parameters, on the nu
+01.12.2009 purodha: Message validator_error_parameters of ext-validator has optional
+01.12.2009 mark: Working automatic RAID1 partitioning. . 
+01.12.2009 purodha: typo ermoved in 'wikilog-summary-footer-single'. . 
+01.12.2009 mark: Working RAID1+LVM setup. . 
+01.12.2009 mark: Remove outdated example file (just google for it :). . 
+01.12.2009 mark: Attempt to fix karmic's grub_installer serial bug. . 
+01.12.2009 mark: grub_install not present yet during early_command, move to partm
+01.12.2009 mark: Initialize $SUITE. . 
+01.12.2009 yaron: Fixed Javascript errors. . 
+01.12.2009 catrope: UsabilityInitiative: Fix TOC a bit (still has some issues), unbr
+01.12.2009 tparscal: Made some tweaks to help the dialogs look less ugly.. 
+01.12.2009 raymond: Localisation updates for core and extension messages from transl
+01.12.2009 ialex: * () Redirects can now have '303 See Other' HTTP status. . Based
+02.12.2009 ialex: Follow-up r59638: add patch contributor to CREDITS file. . 
+02.12.2009 raymond: ExternalPages is live on test.wikipedia.org since yesterday. 
+02.12.2009 diana: added retry message and num attempts = 3. 
+02.12.2009 diana: change line 674 to 3. 
+02.12.2009 dale: * fixed most of the regressions of r59439 ( probably not all of 
+02.12.2009 tomasz: adding new message for rejected trxns. 
+02.12.2009 dale: * more comment updates and variable renaming for clarity. 
+02.12.2009 tstarling: Fixed SQLite and table prefix compatibility and changed /*$wgDBp
+02.12.2009 reedy:  Attempting to protect a page that doesn't exist (salting) retur
+02.12.2009 reedy: RELEASE-NOTES for r59647. 
+02.12.2009 Hi erik!
+02.12.2009 erik: Message tweaks:. 1) Reject action gets triggered for large gifts
+02.12.2009 nad: fix failing $wgRecordAdminAddTitleInfo feature. 
+02.12.2009 yaron: Added first attempt at display of XML data on page - lots of har
+02.12.2009 yaron: New version: 0.2. . 
+02.12.2009 tstarling: Fixed changelog entry broken in r59590.. . 
+02.12.2009 yaron: Added handling for MW 1.16. . 
+02.12.2009 dantman: EditPage refactor and improvements.. - EditPage::showEditForm br
+02.12.2009 catrope: API: Fix for r58551: WDDX formatter barfs on null. . 
+02.12.2009 catrope: API: Minor cleanup for r59258, general whitespace cleanup. . 
+02.12.2009 freakolowsky: () both redirects and links fixed if redirects-only switch not p
+02.12.2009 catrope: UsabilityInitiative: Trim some trailing whitespace in JS files. 
+02.12.2009 werdna: LiquidThreads hierarchical --> linear migration:. * Add new prim
+02.12.2009 ashley: UserStats: take custom namespaces defined in $wgNamespacesForEdi
+02.12.2009 werdna: Update LiquidThreads alpha to trunk state. 
+02.12.2009 werdna: Add new LiquidThreads messages for alpha compatibility. 
+02.12.2009 catrope: UsabilityIntiative: Add capability for language-specific icons t
+02.12.2009 werdna: Again unmerge r59197. 
+02.12.2009 catrope: Fix jQuery bug filed upstream as http://dev.jquery.com/ticket/55
+02.12.2009 catrope: Revert unintended change in r59666. . 
+02.12.2009 ialex: Fix E_STRICT: UploadFromUrl::initialize() should have the same s
+02.12.2009 tparscal: File which we may need to use to load the iframe with content.. 
+02.12.2009 dantman: Updates to FormEditPage. . 
+02.12.2009 catrope: Fix more abuses of spacing in regexes in jQuery. . 
+02.12.2009 dantman: Fixes for fixme comments on my r59655. . 
+02.12.2009 tparscal: Changed the title. 
+02.12.2009 werdna: LiquidThreads: Do not mark discussion tab as selected in thread 
+02.12.2009 raymond: Localisation updates for core and extension messages from transl
+02.12.2009 rotem: Localization update.. 
+03.12.2009 diana: change XML::tag per Tim's note. 
+03.12.2009 catrope: UsabilityInitiative: Rewrite TOC's parsing code to be recursive,
+03.12.2009 aaron: * Use getNamespaces() rather than global. * Made generalQueryOK(
+03.12.2009 adam: Adding some code to the ajax watch/unwatch to alter tooltips on 
+03.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+03.12.2009 adam: Follow change to r59680. Adding a better regex. 
+03.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+03.12.2009 jeroendedauw: Changes for 0.5. Moved GeoCoords type from SMW.. 
+03.12.2009 diana: change contribution_tracking_id variable. 
+03.12.2009 adam: adding invalid border coloring to link dialog. 
+03.12.2009 siebrand: Update optionals. 
+03.12.2009 aaron: Defer calling getRevCountSince(). 
+03.12.2009 tomasz: Fixing a bug in conversion rate due to wrong values being compar
+03.12.2009 tomasz: Pulling in r59690 for conversion rate fixes. 
+03.12.2009 overlordq: (): Change query to explicity select distinct rows instead of do
+03.12.2009 tstarling: Merged r56967 from wmf-deployment: for performance, don't consid
+03.12.2009 tstarling: Fixed miser mode hack broken by Brion in r57448: merged my versi
+03.12.2009 dantman: Fix notices. . 
+03.12.2009 dantman: Missing $wgRequest in showSummaryInput. . 
+03.12.2009 catrope: Revert js2stopgap to its good state before r58959 tried to prett
+03.12.2009 dantman: Expand a few comments. One as per Nikerabbit's comment on r59695
+03.12.2009 ialex: svn:eol-style native. . 
+03.12.2009 Hi jojo!
+03.12.2009 jojo: fixed SVN URL. 
+03.12.2009 jojo: remove sysmsg coll-or. 
+03.12.2009 freakolowsky: () thumbs rerendring if older that . 
+03.12.2009 jeroendedauw: Added static map support for display_map with service=osm. 
+03.12.2009 jeroendedauw: Fixed issues with form input parameters.. 
+03.12.2009 jeroendedauw: All ur static maps R belong to us!. 
+03.12.2009 raymond: Localisation updates for core and extension messages from transl
+03.12.2009 maxsem: Fixed warning introduced in r59702. 
+04.12.2009 raymond: Let the English source use PLURAL too, a lot of translation use 
+04.12.2009 ialex: Don't exit with status 0 after an exception, for the benefit of 
+04.12.2009 yaron: Re-adding this file, this time containing XML-parsing code. . 
+04.12.2009 yaron: Errors now get displayed in an 'error=' attribute. . 
+04.12.2009 yaron: Moved most of the code to new TemplateInfo.classes.php file. . 
+04.12.2009 yaron: New version: 0.2.1. . 
+04.12.2009 tparscal: Fixes issue that was caused by tweaks in r59224 and r59254 which
+04.12.2009 tparscal: Added formatting for contribution total to be in decimal million
+04.12.2009 siebrand: Fix register_globals vulnerability in r56261. WikimediaLicenseTe
+04.12.2009 dale: * moved embedVideo to embedPlayer  ( more embedPlayer clean up r
+04.12.2009 tstarling: Fix bug in BacklinkCache: the lack of an ORDER BY clause in getL
+04.12.2009 tstarling: Temporary hack to reduce the job queue size. Should be replaced 
+04.12.2009 tstarling: Update patch-job.sql for r57610 and documentation updates.. . 
+04.12.2009 tstarling: Merged r59720, patch-job.sql update, for use by a job queue fixu
+04.12.2009 siebrand: Remove period from description message. 
+04.12.2009 siebrand: Tweak 'semanticmaps_paramdesc_autozoom'. 
+04.12.2009 siebrand: Add separate message for special page title, as 'lqt_newmessages
+04.12.2009 siebrand: Add separate message for special page title, as 'blockip' is als
+04.12.2009 catrope: UsabilityInitiative: Add language-specific icons for bold and it
+04.12.2009 ialex: * () File that can have multiple pages (djvu, pdf, ...) no longe
+04.12.2009 ialex: Fix Special:ProtectedPages' canonical name (Protectedpages) to a
+04.12.2009 werdna: LiquidThreads: Fix bug in displaying error messages for blank su
+04.12.2009 demon: () Feeds for non-existing pages returned a feed of all pages whe
+04.12.2009 demon: Put an option on checking for non-syntax errors. 
+04.12.2009 demon: Change deleteSelfExternals to use Maintenance.php. 
+04.12.2009 yaron: Improved check for determining whether SMW is at version 1.5+. .
+04.12.2009 demon: Use spaces so these line up nicely for everybody. 
+04.12.2009 philip: follow-up r59522 and r59541. To make the condition when we'll us
+04.12.2009 demon: Followup r59731: Make it opt-out instead of opt-in. 
+04.12.2009 demon: Revert r59730 for now. Has some warnings and might be causing a 
+04.12.2009 raymond: Localisation updates for core and extension messages from transl
+04.12.2009 jojo: adjusted button label. 
+04.12.2009 ialex: * () 'logempty' message is now wrapped in a div with class 'mw-w
+04.12.2009 simetrical: Add DTD to fix well-formedness errors in HTML5. . Now actually t
+04.12.2009 werdna: LiquidThreads: Add inline AJAX editing of thread subjects. Seems
+04.12.2009 werdna: Add rewrite of sysop->protect for protection rights. 
+05.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+05.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Semanti
+05.12.2009 jeroendedauw: small i18n fix. 
+05.12.2009 adam: Follow up improvements to r59687. 
+05.12.2009 overlordq: Making the DBA handler configurable when using CACHE_DBA, still 
+05.12.2009 siebrand: Trim whitespace in key names in case the separator has surroundi
+05.12.2009 tomasz: Field 4 is actually max not min. Not using field 5 for now. 
+05.12.2009 tomasz: Bugfix where zero value in amount caused unnecessary division. 
+05.12.2009 tomasz: Removing unnecessary line due to r59751. 
+05.12.2009 tomasz: picking up r59750, 59165, 59751, 59752 and new translations.. 
+05.12.2009 philip: follow-up r59522 and r59735. only redirect to a variant URL when
+05.12.2009 maxsem: Eliminated deadlock during parser tests on SQLite. 
+05.12.2009 ialex: Fix documentation URL, requested by arseny92 on IRC. . 
+05.12.2009 daniel: plain text extraction: addendum. 
+05.12.2009 maxsem: Updated links for pages moved from Meta to mw.org, tweaked doc a
+05.12.2009 ialex: Doxygen fixes:. * remove duplicated definition of 'Wikimedia' gr
+05.12.2009 siebrand: Set time out for web importer to 60 seconds.. 
+06.12.2009 ialex: User::newFromName() can return false on invalid user name, and t
+06.12.2009 btongminh: Per comments on r56201:. * Use Title::makeTitleSafe instead of n
+06.12.2009 juliano: Usability improvement in wikilog actions tab. Fixes wl:issue 5..
+06.12.2009 overlordq: Followup to 59748, add comment describing option. 
+06.12.2009 maxsem: Fixed duplicateTableStructure() for SQLite, it previously didn't
+06.12.2009 overlordq: Fix 'performance' query conditions to actually work instead of a
+06.12.2009 overlordq: Add PG Schema to CodeReview. Fixing SQL queries to actually work
+06.12.2009 siebrand: Localisation updates from translatewiki.net. * update special pa
+06.12.2009 siebrand: Localisation updates from translatewiki.net. * update magic word
+06.12.2009 siebrand: Add FIXME for notice. 
+06.12.2009 siebrand: Add schema update. 
+06.12.2009 siebrand: Use $wgHooks['ParserFirstCallInit']. 
+06.12.2009 siebrand: * improve fethcing of valid projects. * show error message on Sp
+06.12.2009 siebrand: Update ignored list. 
+06.12.2009 siebrand: Implement magic i18n in a more visible way. 
+07.12.2009 siebrand: Remove unneeded global. 
+07.12.2009 siebrand: Reduce spacing a bit. 
+07.12.2009 purodha: Message cosmetic MediaWiki:sectioneditnotsupported-text. . 
+07.12.2009 dale: == Major refactor == . Much remains to be tested, incomplete com
+07.12.2009 tstarling: Replaced all instances of <<<END (which breaks vim syntax highli
+07.12.2009 werdna: Update LiquidThreads alpha to trunk state with r59197 unmerged. 
+07.12.2009 thomasv: follow-up to r56353 : do not use  from tag hooks. 
+07.12.2009 thomasv: do not transclude pages if from and to are missing; simply movin
+07.12.2009 purodha: Followup to r59625: reverting r59626 in favour of adapting the e
+07.12.2009 werdna: LiquidThreads AJAX:. * Reload Table of Contents after replies as
+07.12.2009 werdna: LiquidThreads: Modify getAnchorName() to return <subject>_<threa
+07.12.2009 thomasv: create a fresh parser object, as suggested by brion in r56878. 
+07.12.2009 werdna: Remove comment about micro-optimisation, it is pointless if you 
+07.12.2009 aaron: stop undefined variable notices. 
+07.12.2009 ialex: svn:eol-style native. . 
+07.12.2009 raymond: Remove stray character. My editor complained about non-UTF8-enco
+07.12.2009 danny_b: * () Empty project + language interwikis do not work anymore [pa
+07.12.2009 catrope: wmf-deployment: Disable ClickTracking for left nav and old toolb
+07.12.2009 catrope: wmf-deployment: Turns out we don't want to disable old toolbar c
+07.12.2009 rotem: Localization update.. 
+07.12.2009 ialex: Cosmetic fixes:. * indention for lines not starting with '* '. *
+07.12.2009 ialex: Per Nikerabbit, follow-up to r59761: just check for 'instanceof 
+07.12.2009 ialex: User::newFromName() can now return an instance of WikiError. . 
+07.12.2009 dale: * updated js2 stopgap stubs to reflect new function name. js2Add
+07.12.2009 raymond: Localisation updates for core and extension messages from transl
+08.12.2009 catrope: UsabilityInitiative: Some IE fixes, recombine for r59799. . 
+08.12.2009 dale: * some r59799 cleanup ( removed jsmin.c ). 
+08.12.2009 catrope: More cleanup for r59799: bump style versions, delete .project. .
+08.12.2009 catrope: Yet more fixes for r59799: fix typo, JS error in js2stopgap, rem
+08.12.2009 tstarling: Revert debugging code accidentally left in from r59780. . 
+08.12.2009 tparscal: Used more @noflip rules to make some of the margins a bit less c
+08.12.2009 sergeychernyshev: Applied patch for dropped returnto in $wgOpenIDOnly case (). . 
+08.12.2009 tparscal: Added event handling for change events.. 
+08.12.2009 nimishg: Created skeleton for 'TemplateEditor' module. 
+08.12.2009 tstarling: Clarified documentation of File::isMultipage() to avoid further 
+08.12.2009 dale: * some more fixes for r59278 breakage . 
+08.12.2009 adam: Adding a disabling button to the insert link dialog. 
+08.12.2009 tparscal: Switched the event handling scheme around a bit, now context.fn.
+08.12.2009 tparscal: Added core resize event handling.. 
+08.12.2009 tparscal: Added some handling for the event argument of trigger to be opti
+08.12.2009 tparscal: Fixed layout bug that happened when a toolbar wrapped multiple l
+08.12.2009 adam: minor copy labeling change on the insert table dialog. 
+08.12.2009 overlordq: Fix Parser transcache to correctly format timestamps. 
+08.12.2009 tomasz: re-enabling tracking. adding abondmonment based on numattempt=1.
+08.12.2009 dale: * improved libEmbedPlayer documentation. * unified getSrc and ge
+08.12.2009 nikerabbit: Fix mk plural as requested, CLDR seems to be wrong in this case.
+08.12.2009 freakolowsky: Fixed coding convention issue. 
+08.12.2009 alexsh: I don't like to handle this, but lots of people is focusing.. 
+08.12.2009 freakolowsky: extension for in-page modifying of tables. for now it supports s
+08.12.2009 catrope: UsabilityInitiative: Recombine JS and bump style versions for r5
+08.12.2009 catrope: Followup to r59825: forgot to recombine, minify WikiEditor JS. .
+08.12.2009 siebrand: Fix message. Plural for the verb was not included.. 
+08.12.2009 siebrand: Fix typo in 'expand_templates_remove_nowiki'. 
+08.12.2009 freakolowsky: TableMod extension fix. 
+08.12.2009 freakolowsky: TableMod extension fix (last for today). 
+08.12.2009 aaron: Partial revert of r59619: declare certain indexes PRIMARY again 
+08.12.2009 dantman: Fixes for comments on r59655. - Look for any textbox since just 
+08.12.2009 ialex: * Added 'path' item to extension's credits for revision display 
+08.12.2009 tparscal: Fixed unsafe check for undefined in r59815.. 
+08.12.2009 catrope: UsabilityInitiative: Fix incorrect hook name in comment. . 
+08.12.2009 catrope: UsabilityInitiative: Use BeforePageDisplay hook instead of AjaxA
+08.12.2009 catrope: UsabilityInitiative: Revert part of r59799 renaming getSelection
+08.12.2009 tparscal: Added resize triggers durring user-interaction with TOC resize h
+08.12.2009 tparscal: Added UI resize triggers to expand and collapse actions on the T
+08.12.2009 ialex: More doxygen fixes:. * added rebuildInterwiki.inc to Wikimedia g
+08.12.2009 tparscal: Fixed 1px wiggling effect on expand and collapse of TOC.. 
+08.12.2009 simetrical: Rename some extauth functions and fields. . Per Code Review at. 
+08.12.2009 tparscal: Made links in preview all link to # - to disable links.. 
+08.12.2009 tparscal: Fixed unsafe testing for undefined.. 
+08.12.2009 tparscal: Made table of contents links in preview still work.. 
+08.12.2009 dale: * comment updates. * removed autoLoader paths globals. * update 
+08.12.2009 tomasz: Removing old or incorrect information. Adding armed services sta
+08.12.2009 werdna: Migrate Threads::newThread --> Thread::create. 
+08.12.2009 catrope: UsabilityInitiative: Recombine and bump style versions for r5983
+09.12.2009 tparscal: Improves on r59843 by keeping the href information and using a c
+09.12.2009 tomasz: Picking up fixes from r59715#c4688. 
+09.12.2009 tomasz: Picking up r59194, r59851 and new translations. 
+09.12.2009 jeroendedauw: Small fix to aliasing code.. 
+09.12.2009 adam: Addressing Roan's comments on r59817 and r59812. Also adding a c
+09.12.2009 jeroendedauw: Added getParameters support.. 
+09.12.2009 dale: * apiProxy refactor & code comment updates ( tested ). * other c
+09.12.2009 catrope: wmf-deployment: Merge r59224, r59254, r59680, r59683, r59806 (us
+09.12.2009 tomasz: simplifying us military state abbreviations. 
+09.12.2009 catrope: UsabilityInitiative: Fix stupid typo in r59809, recombine for r5
+09.12.2009 tomasz: updating langugage code for serbia to follow ISO-3166-1. 
+09.12.2009 tparscal: Still not IE and Opera support, but this seems to be a more stab
+09.12.2009 tparscal: Removed a debug message.. 
+09.12.2009 tomasz: Sync with trunk to get caught up. 
+09.12.2009 tparscal: Simplified and documented regex for extracing url parameters. Re
+09.12.2009 tparscal: Bumped style version.. 
+09.12.2009 dale: * minor comment updates and refactor. 
+09.12.2009 nad: start support for more operators than just '='. 
+09.12.2009 overlordq: Followup to r59818, change transcache timestamp field to be cons
+09.12.2009 nad: store operator against arg key ready for use. 
+09.12.2009 nad: pass operator list to getRecords. 
+09.12.2009 thomasv: follow up to r59787 : preprocess, cache parser instance. 
+09.12.2009 mkroetzsch: committing updates from Fabian, addressing various feature reque
+09.12.2009 freakolowsky: Added missing braces.. 
+09.12.2009 nad: implement != operator. 
+09.12.2009 thomasv: fix counter bug for pages using old pagequality format. 
+09.12.2009 werdna: Make ThreadDiffView inherit from LqtView. 
+09.12.2009 werdna: Merge alpha updates from trunk in preparation for testing and pr
+09.12.2009 werdna: LiquidThreads: Fix js2 stop-gap broken by r59799, which appears 
+09.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+09.12.2009 werdna: merge r59879. 
+09.12.2009 werdna: Remove preview.js from LiquidThreads default output. 
+09.12.2009 werdna: Merge r59883. 
+09.12.2009 werdna: Remove JS2 conditional, since the variable does not exist anymor
+09.12.2009 werdna: Fix replying to top-level threads with no existing replies. 
+09.12.2009 werdna: Merge r59885, r59886. 
+09.12.2009 catrope: UsabilityInitiative: Add Changes tab to preview module. . 
+09.12.2009 daniel: proximity calculation. 
+09.12.2009 werdna: Delete Beta LiquidThreads to make way for update from alpha vers
+09.12.2009 werdna: Recreate LiquidThreads from LiquidThreads_alpha -- alpha version
+09.12.2009 ialex: * Added a space between the version and '(rXXX)' in SpecialVersi
+09.12.2009 demon: Fix r59761,r59797: check if is_object(). 
+09.12.2009 catrope: API: Add rvdifftotext parameter to prop=revisions to allow diffi
+09.12.2009 nimishg: switched 'update' to use Database function. 
+09.12.2009 raymond: * Add TableMod and UI/TemplateEditor to translatewiki. * Fix typ
+09.12.2009 adam: Toolbar table dialog - changing some of the language and styling
+09.12.2009 raymond: Localisation updates for core and extension messages from transl
+09.12.2009 raymond: Follow-up r59897: Make 'lorem ipsum...' optional for translatewi
+09.12.2009 jeroendedauw: Small fixed to OpenLayers functionality.. 
+09.12.2009 adam: WikiEditor dialogs - a few minor fixes. Removing an inline style
+10.12.2009 tparscal: Using append() rather than html() is making IE no longer crash. 
+10.12.2009 tparscal: Ensured that the TOC building code doesn't run even when the mod
+10.12.2009 catrope: UsabilityInitiative: Fix code preventing CSS from being added tw
+10.12.2009 tparscal: Cleaned up the use of context.modules and fixed a bug that cause
+10.12.2009 ialex: * () Special:MyContributions now keeps the query string paramete
+10.12.2009 tparscal: Removed the extra parameter from the attachEvent call, which onl
+10.12.2009 daniel: fix for different sources of upload comments. 
+10.12.2009 nad: implement greater and lessthan operators. 
+10.12.2009 tparscal: Fixed some textarea <-> iframe issues with IE.. 
+10.12.2009 nimishg: making sure templateEditor is included. 
+10.12.2009 nimishg: templateEditor plugin, more fleshed out. 
+10.12.2009 nimishg: added templateEditor. 
+10.12.2009 nad: dd/mm/yyyy format hack :-(. 
+10.12.2009 nimishg: correctly identifies nested templates. 
+10.12.2009 nad: start removing deprecated ereg and replace with preg. 
+10.12.2009 daniel: documentation of proximity calculation. 
+10.12.2009 aaron: merge r57114 to trunk. 
+10.12.2009 aaron: Rename variable (was misleading). 
+10.12.2009 aaron: Removed $file->load() call from r57148: already called internall
+10.12.2009 simetrical: Add new ExternalAuth mechanism, Hardcoded. . This just lets you 
+10.12.2009 simetrical: Add rudimentary MediaWiki support to ExternalAuth. 
+10.12.2009 adam: WikiEditor TOC - RTL fixes and adding a handler for wikiEditor u
+10.12.2009 dale: = More globals moved into mw object =. * mv_get_loading_img -> m
+10.12.2009 overlordq: Followup to r59869, add to MySQL section, and copy patch to SQLi
+10.12.2009 overlordq: Addendum to r59925, fix remaining straggling files that set rc_t
+10.12.2009 daniel: document and tweak proximity measures. 
+10.12.2009 daniel: proximity calculation parameters. 
+10.12.2009 mkroetzsch: better support 0 as a maximum for listings on property/type/conc
+10.12.2009 mkroetzsch: updated Italian namespace translation from user Melos (closing )
+10.12.2009 dale: fixed order of mw define in js2 stopgap. 
+10.12.2009 maxsem: Fixed updater borkage on SQLite from r59925 and r59926, tweaked 
+10.12.2009 catrope: UsabilityInitiative: Fix coding style for templateEditor and hig
+10.12.2009 nimishg: no missing comma. 
+10.12.2009 tparscal: Integrated the inherit plugin, which is supposed to make easy wo
+10.12.2009 nimishg: restored to working order. 
+11.12.2009 raymond: Localisation updates for core and extension messages from transl
+11.12.2009 simetrical: stylize.php on DatabaseOracle.php. . Please follow <http://www.m
+11.12.2009 nimishg: added 'typeof' check, less ambiguous. 
+11.12.2009 dale: * added scriptloader support for 'mw.load' system. * do_api_requ
+11.12.2009 dale: get_edit_token -> mw.getToken(). 
+11.12.2009 dale: * updated roe_url grabbing / rewriting ( still need to be tested
+11.12.2009 adam: WikiEditor Toolbar and TOC - better resize event triggering.. 
+11.12.2009 tparscal: Added Year-to-date field.. 
+11.12.2009 aaron: Removed wfLoadExtensionMessages no-ops. 
+11.12.2009 tstarling: Removed the popup feature. It's bloated (with a huge amount of u
+11.12.2009 tstarling: Fixed backup-index.html location per Brion's comment on r50354. 
+11.12.2009 tstarling: Restored the function of ApiMain::requestWriteMode(), as per the
+11.12.2009 aaron: () Added tri-state form for RevisionDelete when there are multip
+11.12.2009 siebrand: Revert r59095 for MessagesEn.php. Big mistake. Thanks to Mike Ca
+11.12.2009 siebrand: Revert r59096 for MessagesEn.php. Big mistake. Thanks to Mike Ca
+11.12.2009 catrope: wmf-deployment: Commit live hack for  (API list=usercontribs cho
+11.12.2009 catrope: API: () list=usercontribs chokes on empty ucuser. Patch by Paul 
+11.12.2009 freakolowsky: Fixed missing table in ora/tables.sql. Replaced instantiation of
+11.12.2009 rotem: Localization update.. 
+11.12.2009 ialex: svn:eol-style native. . 
+11.12.2009 catrope: wmf-deployment: Merge r59944 (year-to-date field in fundraiser s
+11.12.2009 ashley: more coding style cleanup to DatabaseOracle.php. 
+11.12.2009 tomasz: Changing label to be less confusing as this isn't a fiscal total
+11.12.2009 tomasz: and missing USD. 
+11.12.2009 tomasz: Picking up r59959 and dropping unused reporting. 
+11.12.2009 catrope: UsabilityInitiative: Clarify comments for getContents(), setCont
+11.12.2009 simetrical: Fix bugs in r59360, r59361, r59363. . * spellcheck is not a bool
+11.12.2009 simetrical: Delete refs to variable removed in r59692. 
+11.12.2009 maxsem: Per CR for r58631, moved default duplicateTableStructure() imple
+11.12.2009 simetrical: Improve documentation for $wgEnforceHtmlIds. . Per code review f
+11.12.2009 daniel: optimized iterative proximity calculation. 
+12.12.2009 nimishg: commenting and code clarity. 
+12.12.2009 demon: Mass convert NULL -> null. Left strings and comments alone, obvi
+12.12.2009 dale: * fix for menu display at lower embed resolutions. 
+12.12.2009 yaron: CSS file for display of TemplateInfo data. . 
+12.12.2009 yaron: Added support for attributes of <templateinfo> tag, especially '
+12.12.2009 dale: * fixed loader bug where array did not load completely . 
+12.12.2009 yaron: Overhaul of display: now uses CSS for formatting, custom functio
+12.12.2009 yaron: Version 0.3. . 
+12.12.2009 ialex: fix some doxygen errors. . 
+12.12.2009 dale: * some timed text fixes. 
+12.12.2009 yaron: Removed blank rule. . 
+12.12.2009 yaron: Replaced raw HTML with Html class functions. . 
+12.12.2009 dale: * getInlineLoadGMFromClass -> getInlineMsgFromClass. . 
+12.12.2009 dale: * fixed path conflict with gadget . 
+12.12.2009 dale: opps (moved mwEmbed.js gadget check to correct location ) . 
+12.12.2009 maxsem: Whee, a debugging piece of SQL had made it through in r59932. 
+12.12.2009 yaron: Fixed some escaping issues. . 
+12.12.2009 yaron: Removed some unnecessary quotes. . 
+12.12.2009 yaron: Changed inline code to a full 'if' statement. . 
+12.12.2009 tparscal: Fixed allot of wonkyness in jquery.wikiEditor.js, but there's st
+12.12.2009 tparscal: Bumped versions for r59987.. 
+12.12.2009 tparscal: Solved array index being 1 too high. Oops!. 
+12.12.2009 yaron: Fixes to make CSS simpler, more generic, more readable and work 
+12.12.2009 dale: * some comment updates. 
+12.12.2009 raymond: Localisation updates for core and extension messages from transl
+12.12.2009 Hi midom!
+12.12.2009 midom: I fail to see why we need to invalidate cache on watchlist edits
+12.12.2009 maxsem: Deleted the old copy of wikibugs script, the new one is at /trun
+12.12.2009 ialex: * () Subsections of Special:Version now also have anchors. . 
+12.12.2009 catrope: Add maintenance script for running queries in batches. This is e
+12.12.2009 siebrand: Add StatusNet YAML config files. Cannot be used until GettextFFS
+12.12.2009 siebrand: Reduce lines on Special:Translate/manage. 
+12.12.2009 ialex: Missing global; was throwing Fatal error: Call to a member funct
+12.12.2009 jeroendedauw: Changes for 0.5. http://www.mediawiki.org/wiki/Extension:Maps/Fu
+12.12.2009 jeroendedauw: Added parameter type handling.. 
+12.12.2009 siebrand: Fix typo from r60002. 
+12.12.2009 dale: * some code comment updates for scriptLoader. * some mwEmbed upd
+12.12.2009 ialex: For consistency with the other special pages, don't add wfSpecia
+13.12.2009 ialex: * Drop pre-1.7 compat :). * Add description to credits. * Pass t
+13.12.2009 ialex: Readded definition for doxygen's Maintenance group that was remo
+13.12.2009 jeroendedauw: Fixed http://www.mediawiki.org/wiki/Special:Code/MediaWiki/60002
+13.12.2009 ashley: *coding style cleanup. *marked public functions as such in memca
+13.12.2009 siebrand: () Estonian grammar forms for Wikimedia project names. 
+13.12.2009 raymond: Localisation updates for core and extension messages from transl
+13.12.2009 catrope: wmf-deployment: Merge r60010 from trunk for  (Estonian grammar f
+13.12.2009 ialex: * () Special:ListGroupRights no longer misses addables and remov
+13.12.2009 simetrical: Fix comment. . We don't strip whitespace from passwords, that wo
+13.12.2009 simetrical: vB strips whitespace from passwords. 
+13.12.2009 simetrical: Automatically link on login if passwords match. 
+13.12.2009 simetrical: More convenient format for $wgExternalAuthType. . Now is the who
+13.12.2009 ialex: * () meta=userinfo&uiprop=options no longer returns default opti
+14.12.2009 jeroendedauw: Fixed parameter result types. 
+14.12.2009 jeroendedauw: Fix to the list type. 
+14.12.2009 jeroendedauw: Parserfunction new lines output fix.. 
+14.12.2009 nad: give form buttons id's. 
+14.12.2009 nad: id's should be unique to RA. 
+14.12.2009 dale: * Added support for google closures java compiler for javascript
+14.12.2009 dale: * defaultSettings for r60024 closures compiler support. . 
+14.12.2009 dale: * js2 naming updates. 
+14.12.2009 simetrical: Begin work on allowing extauth login from cookies. . Still need 
+14.12.2009 dantman: One line bugfix for fixme on r59483.. . 
+14.12.2009 dale: * fixed double menu button binding for k-skin. 
+14.12.2009 dale: * stubs for timedText refactor. * some renames and documentation
+14.12.2009 nikerabbit: Remove unnecessary and broken converGrammar override. . 
+14.12.2009 midom: MFT 60033. . 
+14.12.2009 thomasv: follow-up to r59872. 
+14.12.2009 jeroendedauw: Maps 0.5 rc1. 
+14.12.2009 jeroendedauw: Semantic Maps 0.5 rc1. 
+14.12.2009 jeroendedauw: Validator 0.1 rc1. 
+14.12.2009 ialex: typo in comment. . 
+14.12.2009 raymond: Localisation updates for core and extension messages from transl
+14.12.2009 tparscal: Removed now unneeded TOC UI updating code from Toolbar code. The
+14.12.2009 tparscal: Combined, minified and version bumped for r60041.. 
+14.12.2009 raymond: * Change <h2> to <strong> for message 'loginerror' because this 
+14.12.2009 raymond: Follow-up r60043. Add accidently deleted strong. 
+14.12.2009 dale: * updates to vlcEmbed. * fix small video thumbnail in commons em
+14.12.2009 ialex: Whitespaces fixes:. * replaced tabs with spaces for Title member
+14.12.2009 ialex: Remove fixme, done since r53528. . 
+15.12.2009 tomasz: Adding passing on of tracking id. 
+15.12.2009 tomasz: updating text string to line up with live page and be a bit clea
+15.12.2009 tomasz: Adding external thank you page. Removing duplicate optout settin
+15.12.2009 demon: Update callers from immediateCommit() to commit(). The former's 
+15.12.2009 adam: New experimental tab styles for staging on sandbox1. 
+15.12.2009 demon: Followup r60051, with the rest of the callers and removing a use
+15.12.2009 simetrical: maxlength=200 for page move summary in HTML5. .   maxlength is n
+15.12.2009 nimishg: get wiki-editor contents without items marked as noinclude (for 
+15.12.2009 Hi bradneuberg!
+15.12.2009 bradneuberg: Wikipedia SVG Zoom and Pan tool. 
+15.12.2009 bradneuberg: SVG Web (http://code.google.com/p/svgweb) library, r1020 from Su
+15.12.2009 mrzman: Slight clarification to unusedimagestext per  . 
+15.12.2009 tomasz: Picking up r60048 - r60050. 
+15.12.2009 tomasz: matching changes in r60049. 
+15.12.2009 tstarling: Merged r56745 from wmf-deployment, with an adjusted comment. Fix
+15.12.2009 dale: * timedText updates ( basic integrated menu ) . * added simple h
+15.12.2009 tstarling: Add NS_USER to MWNamespace::$alwaysCapitalizedNamespaces, as sug
+15.12.2009 mrzman: () Don't show broken user tool links when rolling back an edit t
+15.12.2009 yaron: Fixed getting of header character to use $wgContLang->firstChar(
+15.12.2009 dale: * timed text updates. * fixed some edge cases in embedPlayer.mon
+15.12.2009 dale: * minor fixes to timed Text. 
+15.12.2009 tomasz: patching in place as merging is not picking the original change 
+15.12.2009 tomasz: Adding missing global. Fixing spelling. 
+15.12.2009 tomasz: syncing up global name. 
+15.12.2009 tomasz: picking up r60069, r60070. 
+15.12.2009 demon: () Multiple inputboxes make page invalid due to repetitive simil
+15.12.2009 werdna: LiquidThreads: Add drag-and-drop refactoring of threads.. * User
+15.12.2009 raymond: * Consistency tweaks: Shorten 'lqt-drag-reason' to be consistent
+15.12.2009 maxsem: Killed closing ?>. 
+15.12.2009 werdna: LiquidThreads: Do not allow redirect pages to be LiquidThreads-e
+15.12.2009 werdna: Remove errant console.log call. 
+15.12.2009 werdna: Dial down default display depth to 2. 
+15.12.2009 werdna: LiquidThreads: Fix offset detection for scrolling to the edit bo
+15.12.2009 maxsem: Backported r57862 to 1.15 (, updater failure on SQLite backend).
+15.12.2009 adam: WikiEditor - altering scrollToTop to restore NTOC functionallity
+15.12.2009 siebrand: Remove unneeded whitespace between 'Start a new discussion' and 
+15.12.2009 yaron: New version: 0.7. . 
+15.12.2009 yaron: Added HTML-escaping of values. . 
+15.12.2009 yaron: Added handling for __HIDEFROMDRILLDOWN__ and __SHOWINDRILLDOWN__
+15.12.2009 rotem: Localization update.. 
+15.12.2009 yaron: Added handling for magic words, fixed initialization of special 
+15.12.2009 raymond: Localisation updates for core and extension messages from transl
+15.12.2009 tparscal: Moved some things around in modules, mostly focusing on encapsul
+15.12.2009 tparscal: Fixed some animation on the toolbar.. 
+15.12.2009 adam: making the height of the wikieditor tabs a bit smaller with the 
+15.12.2009 raymond: Make some labels for reasons consistent over all reason labels: 
+16.12.2009 ialex: Replaced all @fixme with '@todo Fixme' since doxygen doesn't hav
+16.12.2009 rotem: Localization update for he.. 
+16.12.2009 aaron: * Various langauge cleanups. * Split 3 messages that should been
+16.12.2009 tomasz: Adding seperate workflow if it's a jimmy appeal banner. This cou
+16.12.2009 aaron: Don't show precedence in stability log items if there is only on
+16.12.2009 adam: Fixing the NTOC buidling in Safari, and probably other webkit br
+16.12.2009 dale: * fixed preview in add-media-wizard. * more robust on-load handl
+16.12.2009 catrope: UsabilityInitiative: Totally rewrote the wrap() function in the 
+16.12.2009 adam: A better regex for the code committed in r60098. 
+16.12.2009 tomasz: sync'ing to trunk. specifically to pick up r60096. 
+16.12.2009 adam: A better regex for the code committed in r60098. Again.. 
+16.12.2009 nimishg: created (yet untested) 'stylize' function for some basic functio
+16.12.2009 nimishg: changed to 'wikieditor' as opposed to 'wiki-editor' for style co
+16.12.2009 tparscal: Rewrote the template boundry parser. Cleaned some things up here
+16.12.2009 tparscal: Added back in the stylize function.. 
+16.12.2009 tparscal: Aie quant spale.. 
+16.12.2009 aaron: * Clear unreviewed rev count cache on edit. * Refactored $pendin
+16.12.2009 dale: * fixed aspect ratio for credits images. 
+16.12.2009 mrzman: () Fix JS error on Special:Search caused by not using the ID mws
+16.12.2009 dale: * some more timed text updates ( not fully working yet) . 
+16.12.2009 nimishg: reasonably handles open template calls. 
+16.12.2009 werdna: LiquidThreads: make reply title suffix localisable. 
+16.12.2009 werdna: Use content language in r60114. 
+16.12.2009 overlordq: Add option to enable AdSense Analytics Code. 
+16.12.2009 overlordq: Oops, forgot to return true. 
+16.12.2009 overlordq: Dont forget to make sure you can actually see the variables, tes
+16.12.2009 overlordq: Required tag attrib. 
+16.12.2009 catrope: Readd case statement for {{STYLEPATH}} that was accidentally rem
+16.12.2009 catrope: UsabilityInitiative: Make template wrapping work again, broken b
+16.12.2009 catrope: UsabilityInitiative: Whitespace changes in templateEditor. . 
+16.12.2009 catrope: UsabilityInitiative: Remove Safari newline handling fix introduc
+16.12.2009 werdna: Partial revert of r60074. {{int:}} does not work in JS.. 
+16.12.2009 werdna: Update LiquidThreads alpha to trunk state.. 
+16.12.2009 aaron: * Don't show precedence if there is only 1 level. * Depreciate -
+16.12.2009 catrope: UsabilityInitiative: Template folding works now, yay! Replace th
+16.12.2009 aaron: * Don't show ProblemChanges if there are no tags. * ProblemChang
+16.12.2009 raymond: Localisation updates for core and extension messages from transl
+16.12.2009 werdna: Add jQuery UI droppable to UsabilityInitiative JS, needed due to
+16.12.2009 aaron: Removed 'stabilized' checkbox when pending edits are always to s
+16.12.2009 tparscal: Added a bit of styling for templates.. 
+16.12.2009 tparscal: Added comment about updating style version, and also updated the
+16.12.2009 aaron: Minor subroutine refactoring and comments. 
+16.12.2009 tparscal: Bumped and rebuilt for r60133. 
+16.12.2009 adam: Experimental CSS updates. 
+16.12.2009 catrope: usability: Add citron branch (copy of wmf-deployment). . 
+16.12.2009 yaron: Removed custom initialization of namespace - should never be don
+16.12.2009 yaron: Removed handling of SMW < 1.4. . 
+16.12.2009 yaron: Fix to remove extra newline above #forminput display. . 
+16.12.2009 yaron: Added extra newline to form definition, since it's no longer com
+16.12.2009 yaron: Italian translation from Melos. . 
+17.12.2009 catrope: usability: Remove UsabilityInitiative in citron branch in order 
+17.12.2009 catrope: usability: Branch citron/extensions/UsabilityInitiative from tru
+17.12.2009 werdna: LiquidThreads: Add a new configuration variable, $wgLiquidThread
+17.12.2009 daniel: local proximity calculation. 
+17.12.2009 adam: Some dialog css tweaks. 
+17.12.2009 greg: Postgres version of the schema.. . 
+17.12.2009 dale: * added styleRuleExists check to avoid double jquery ui theme cs
+17.12.2009 dale: * opps, fix to styleRuleExists. 
+17.12.2009 dale: * fixed bug with audio player height resizing. 
+17.12.2009 dale: * some timed text fixes. 
+17.12.2009 dale: * improved timed Text support. * minor refactoring, and function
+17.12.2009 maxsem: Updated comment in accordance with r58030. 
+17.12.2009 raymond: Fix a wrong comparison: User::idFromName returns null (not 0) in
+17.12.2009 ialex: svn:eol-style native. . 
+17.12.2009 werdna: Remove useless configuration options. 
+17.12.2009 ialex: Per Tim Starling, fix for r58008: use StringUtils::escapeRegexRe
+17.12.2009 jeroendedauw: 0.5 Release.. Fix to display_point with OpenLayers.. 
+17.12.2009 jeroendedauw: 0.5 release.. 
+17.12.2009 jeroendedauw: 0.1 release.. 
+17.12.2009 maxsem: Fixup for r57989: removed artifacts of the previous version of m
+17.12.2009 happy-melon: () Add 'namespace' to cache key for RecentChanges RSS feed.  Pat
+17.12.2009 maxsem: While coding r58014, I thought that VACUUM on a 0-byte databse r
+17.12.2009 jeroendedauw: Tag for version 0.5. 
+17.12.2009 jeroendedauw: Tag for version 0.1. 
+17.12.2009 aaron: Made JS more OOP/reduce change of name collisions. 
+17.12.2009 aaron: Fixed stupid mistake from r60134 . 
+17.12.2009 dale: * some refactor fixes for player selection & preferences. 
+17.12.2009 raymond: Localisation updates for core and extension messages from transl
+17.12.2009 maxsem: Added GNSM extension, posted by Amgine as  attachment. Not ready
+17.12.2009 aaron: * Refactored/cleaned up setPageContent. * Simplified bad ID case
+17.12.2009 maxsem: Fixed encoding. 
+17.12.2009 raymond: * () Add URL of file source as comment to thumbs (for ImageMagic
+17.12.2009 happy-melon: Follow-up to r60163 - add new function parameters at the end of 
+18.12.2009 jeroendedauw: Added parameter support for the 'map' format on Special:Ask.. 
+18.12.2009 jeroendedauw: Version number fix. 
+18.12.2009 jeroendedauw: Changes for 0.5.1.. 
+18.12.2009 aaron: * Added stableOnlyIfConfigured(). * Fixed $this->override type. 
+18.12.2009 aaron: Finally renamed StableVersions -> ReviewedVersions; left old nam
+18.12.2009 yaron: Fix for templates whose names contain parentheses. . 
+18.12.2009 nimishg: made a little table appear with key/values. 
+18.12.2009 raymond: Follow-up r60182: Update translatewiki. 
+18.12.2009 catrope: UsabilityInitiative: Rearrange calls in r60184 a bit to exploit 
+18.12.2009 catrope: UsabilityInitiative: ...and some stylistic changes for r60184. .
+18.12.2009 raymond: Follow-up r60175: Avoid PHP Notice: Undefined index: description
+18.12.2009 aaron: Removed pointless contribs highlighting for protection-like setu
+18.12.2009 juliano: * Disabled minimum feed cache age check ($wgFeedCacheTimeout) in
+18.12.2009 tomasz: Adding header information. Droppping Conversion rate and centeri
+18.12.2009 tomasz: Breaking up auditing and fraud note. 
+18.12.2009 tomasz: Picking up r60191 & r60192 and sync'ing up to head. 
+18.12.2009 aaron: * reviewedpages . **Don't show level menu when there is only one
+18.12.2009 dale: * moved js2 to js. 
+18.12.2009 dale: * removed google closure compiler debug lines. 
+18.12.2009 tstarling: Fix breakage of LinkFilter::makeLike() due to attempted rewrite 
+18.12.2009 yaron: Bug fix for dantman's changes in r59236. . 
+18.12.2009 yaron: Removed support for SMW <1.4. . 
+18.12.2009 jeroendedauw: Fix to geocoder classes.. 
+18.12.2009 yaron: Commented out curl line causing problems in some installations. 
+18.12.2009 demon: () 'Migrated extensions' is in HISTORY now, not RELEASE-NOTES.. 
+18.12.2009 werdna: LiquidThreads (SCHEMA CHANGE): Make signatures a per-post affair
+18.12.2009 werdna: Add missing thread_signature.sql. 
+18.12.2009 thomasv: capability to switch between zoom and scroll with mouse wheel. 
+18.12.2009 aaron: Removed unused config var. 
+18.12.2009 aaron: Removed $wgReviewChangesAfterEdit; now always on (no WMF site ch
+18.12.2009 demon: () Fix poor phrasing in browser refresh message. 
+18.12.2009 aaron: * Fixed special case tracking row bugs. * Moved and renamed clea
+18.12.2009 ialex: * () XHTML error in Icon extension. . 
+18.12.2009 nimishg: fixed name-finding issue and comments chomping 1 char. 
+18.12.2009 yaron: Added handling of 'super_page' (courtesy of Stefan Harwarth) and
+18.12.2009 raymond: Localisation updates for core and extension messages from transl
+19.12.2009 ialex: * () ProfilerSimpleText no longer outputs comments on action=raw
+19.12.2009 ialex: PageHistory class renamed to HistoryPage. . 
+19.12.2009 adam: cursor fix on wikieditor table dialog example. 
+19.12.2009 adam: Cleanup of r60218. 
+19.12.2009 nad: must specify '=' operator in special page getRecords call. 
+19.12.2009 diana: add pending queue transactions. 
+19.12.2009 tparscal: Added memcache usage to reduce queries to once-per-minute. Refac
+19.12.2009 nad: white space problems with empty params. 
+19.12.2009 nad: escape slashes in value used as regex. 
+19.12.2009 dale: == More reorganization ==. * Moved loader code from mwEmbed.js c
+19.12.2009 dale: domReadyCheck fix. 
+19.12.2009 dale: * improved subtitle language selection. 
+19.12.2009 thomasv: zoom fix. 
+19.12.2009 dale: * timed text updates. 
+19.12.2009 ashley: SocialProfile: some cleanup to SystemGifts stuff. 
+20.12.2009 raymond: Follow-up r60182: Update translatewiki. 
+20.12.2009 btongminh: Fixed certain cases where license construction would be incorrec
+20.12.2009 juliano: Article summary extraction improvements.. Now a '--more--' marke
+20.12.2009 raymond: Localisation updates for core and extension messages from transl
+20.12.2009 daniel: proximity retrieval - work in progress. 
+20.12.2009 siebrand: Correct message text per http://translatewiki.net/wiki/Thread:Su
+20.12.2009 siebrand: Fix spelling. 
+20.12.2009 thomasv: apparently, self.skin cannot be relied upon in current versions.
+20.12.2009 ialex: Follow-up r59807: let's also use the 'returntoquery' parameter. 
+20.12.2009 ialex: Fix OutputPage::addReturnTo() and OutputPage::returnToMain()'s d
+20.12.2009 ialex: * () patch-uoi_user-not-unique.sql is now automatically applied 
+20.12.2009 ialex: Fixes for r60241:. * Of course this doesn't work for pg since it
+20.12.2009 ashley: RandomUsersWithAvatars: fix for PHP 5.3 + general cleanup. 
+20.12.2009 siebrand: * add a FIXME for an incorrect link in a message on the source p
+20.12.2009 siebrand: Remove trailing whitespace and update indentation. 
+20.12.2009 raymond: Localisation updates for core and extension messages from transl
+21.12.2009 aaron: * Made maybeMakeEditReviewed() check page-specific config for 'r
+21.12.2009 Hi conrad!
+21.12.2009 conrad: Fix very decomposed character handling, check prefix is not null
+21.12.2009 aaron: * Change history message for null-rollback auto-reviews (). * Tw
+21.12.2009 aaron: * Refactored getStableRev(). * Cleaned up setViewTabs(). 
+21.12.2009 aaron: Changed r52871 spacing style to match the rest. 
+21.12.2009 tstarling: Clearer (if slightly longer) text to indicate that the property 
+21.12.2009 tstarling: Fix for : To make google happy, set a dummy parameter (dpl_id) w
+21.12.2009 tstarling: Merged r60253 from trunk. . 
+21.12.2009 dale: * Added support for new module structure to script-loader . * Ti
+21.12.2009 siebrand: Support plural in 'transliterator-error-prefix'. 
+21.12.2009 dale: * some add-media-wizard fixes. * some timed text updates. 
+21.12.2009 nimishg: consistency in naming the noinclude class. 
+21.12.2009 jeroendedauw: Changes for 0.5.1. Extended static map support.. 
+21.12.2009 jeroendedauw: Changes for 0.5.1.. 
+21.12.2009 siebrand: i18n/L10n correction on r60259. 
+21.12.2009 overlordq: Some reason had each each update in there twice. 
+21.12.2009 midom: Reverting r59993, per Tim's comment at http://www.mediawiki.org/
+21.12.2009 jeroendedauw: php documentation. 
+21.12.2009 ialex: svn:eol-style native. . 
+21.12.2009 aaron: Fixed r57659 for high concurrency situations. 
+21.12.2009 nimishg: correctly recognizes what to do with multiple tokens in the same
+21.12.2009 Hi ipye!
+21.12.2009 ipye: WikiTrust: moving to the latest version of WikiTrust. 
+21.12.2009 ipye: WikiTrust: RC1. 
+21.12.2009 ipye: WikiTrust: removed the util dir, which is needed only for intern
+21.12.2009 catrope: UsabilityInitiative: Simplify sorting function, recombine and bu
+21.12.2009 philip: follow-up r59522. follow Tim's suggestion to serve same vary and
+21.12.2009 sergeychernyshev: Optimized for performance - combined all JS and all CSS and mini
+21.12.2009 sergeychernyshev: Removed duplicate factbox removing code.. . 
+21.12.2009 sergeychernyshev: Makefile to combine and minify JS and CSS.. . 
+21.12.2009 raymond: Localisation updates for core and extension messages from transl
+21.12.2009 btongminh: Restore hooks UploadForm:initial and UploadForm:BeforeProcessing
+21.12.2009 rotem: Localization update.. 
+21.12.2009 btongminh: Restored wpDestFileWarningAck, but this time in case this ignore
+22.12.2009 btongminh: Follow up to r60277: Restore the uploadFormTextTop and uploadFor
+22.12.2009 dale: * added in stubs for 'kaltura search'. 
+22.12.2009 dale: * fixed firefogg upload page integration. 
+22.12.2009 catrope: Create directory for ApiSVGProxy extension. . 
+22.12.2009 catrope: Add ApiSVGProxy extension that proxies SVG files from a (possibl
+22.12.2009 dale: * fixed bullets for timedText. 
+22.12.2009 siebrand: Remove trailing whitespace in messages. 
+22.12.2009 siebrand: Localisation updates for core messages from translatewiki.net. 
+22.12.2009 catrope: ApiSVGProxy: Fix reference to extension's name. . 
+22.12.2009 dale: * sequencer fixes. 
+22.12.2009 adam: RTL changes for dialogs and TOC. 
+22.12.2009 questpc: Explanation of some messages. 
+22.12.2009 philip: follow-up r60272. replace $_GET with $wgRequest->getText.. 
+22.12.2009 philip: follow-up r60272 and r60292. replace getText with getCheck.. 
+22.12.2009 ialex: Allow wikitext in fundraiserstats-day message (French need <sup>
+22.12.2009 ialex: * svn:eol-style native. * svn:keywords Id on ApiSVGProxy.body.ph
+23.12.2009 ashley: ApiSVGProxy: coding style cleanup. 
+23.12.2009 ashley: UserGifts: replace eregi with preg_match + coding style cleanup.
+23.12.2009 catrope: UsabilityInitiative: Fix loading order issues by adding a Usabil
+23.12.2009 adam: Follow change to r60290 to remove unnecssiary code. Introducing 
+23.12.2009 siebrand: Remove title case. 
+23.12.2009 dale: * some speed improvements of mw.EmbedPlayer functions: ( on a pa
+23.12.2009 Hi kim!
+23.12.2009 kim: Gigs applied the last patch and everything seems to be working. 
+23.12.2009 tstarling: Fix for r58087, the revision count obtained this way might not b
+23.12.2009 aaron: * Cleanup up getLevelTier(). * Removed some code duplication. * 
+23.12.2009 yaron: Replaced some hardcoded HTML with calls to Xml class functions. 
+23.12.2009 yaron: Changed number of fields to 25, replaced some hardcoded HTML wit
+23.12.2009 aaron: * Added pending edit notice to history. * Refactored out code in
+23.12.2009 yaron: Removed support for SMW < 1.4. . 
+23.12.2009 yaron: Changed to more conventional style for setting extension directo
+23.12.2009 kim: minor changes by bawolff. 'I've made some fixes to the copy of G
+23.12.2009 thomasv: show links if no toolbar available; container width tweak. 
+23.12.2009 dale: * some sequencer fixes. * some text edit enhancements. * languag
+23.12.2009 catrope: UsabilityInitiative: Whitespace cleanup for r60299. Also add new
+23.12.2009 catrope: UsabilityInitiative: Add wgVectorEnabledModules and wgWikiEditor
+23.12.2009 catrope: Usability: Fix disappearance of magnify icon in Help -> File cau
+23.12.2009 catrope: UsabilityInitiative: () Handle 'user' => false in config correct
+23.12.2009 catrope: Followup to r60136: hide all preferences when 'global' => false 
+23.12.2009 yaron: Tim Hessint's namespace-permissions fix; removed a seemingly-unn
+23.12.2009 thomasv: javascript for main namespace : backlink to sources. 
+23.12.2009 happy-melon: Make the lock icon for https links blue tint to match the link c
+23.12.2009 jeroendedauw: Fixed error causing error messages in the absence of any errors.
+23.12.2009 yaron: Removed support for SMW < 1.4, replaced some HTML with calls to 
+23.12.2009 yaron: Fixed handling of file names with parentheses, removed excess ve
+23.12.2009 yaron: UploadWindow class for version 1.16+ of MediaWiki. . 
+23.12.2009 yaron: Removed support for SMW < 1.4. . 
+23.12.2009 ialex: Trying to fix the error reported at http://www.mediawiki.org/wik
+23.12.2009 mkroetzsch: new (stub) translation for subcategory_of property. . 
+23.12.2009 mkroetzsch: dynamic extension path (), some new configuration parameters. . 
+23.12.2009 yaron: Removed helper functions for handling SMW < 1.4, replaced some H
+23.12.2009 mkroetzsch: aggregated fixes for Bugs 21887, 21891, 21868, 20039, 21108 (bas
+23.12.2009 adam: Adding images for collapsible left nav and updating the css. 
+23.12.2009 yaron: Removed extra spaces from file name output. . 
+23.12.2009 ialex: Follow-up r60326: call $wgParser->Options() to set the ParserOpt
+23.12.2009 yaron: Different dimensions for window based on version of UploadWindow
+23.12.2009 yaron: New UploadWindow class for MW 1.16+, removed namespace setting (
+23.12.2009 yaron: New version: 1.8.6. . 
+23.12.2009 dale: * comment updates. 
+23.12.2009 siebrand: Localisation updates for core messages from translatewiki.net (2
+23.12.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+23.12.2009 adam: A few tweaks to the collapsible left nav stuff. 
+24.12.2009 jeroendedauw: Changes for 0.5.1. Modified parameter definitions to work Valida
+24.12.2009 jeroendedauw: Changes for 0.2.. * Added support for list types. * Added per it
+24.12.2009 jeroendedauw: Changes for 0.2.. 
+24.12.2009 aaron: * Refactored review log code to FlaggedRevsLogs. * Cleaned up re
+24.12.2009 aaron: Fixed bug where edit diff didn't show. 
+24.12.2009 tomasz: Dropping unsupprted currencies as payflow only partially accepts
+24.12.2009 tomasz: Sync'ing from trunk. 
+24.12.2009 jeroendedauw: Changes for 0.5.1. Modified parameter definitions to work Valida
+24.12.2009 jeroendedauw: Changes for 0.2. Added php docs.. 
+24.12.2009 siebrand: Follow-up r60347: also drop from messages. 
+24.12.2009 dale: * language msg updates. * basic timed text uploading working. * 
+24.12.2009 dale: * bumped mwRemoteVersion. * fixed missing style sheet refrence f
+24.12.2009 dale: * msg updates. 
+24.12.2009 yaron: Removed HTML-escaping that was causing problems. . 
+24.12.2009 aaron: * Fixed getTagValueMsg(). * No tag case counts as binaryFlagging
+24.12.2009 aaron: Follow-up r60357: actually fix binaryFlagging() for no tag case.
+24.12.2009 ialex: * () Fix the tor check link in 'checkuser-toollinks' message. . 
+24.12.2009 ialex: And while I'm a it: Fix Special:BlockIP's canonical name (Blocki
+24.12.2009 ashley: CheckUser cleanup:. *spacing tweaks. *spaces -> tabs in indentat
+24.12.2009 rotem: Localization update for he.. 
+24.12.2009 siebrand: Localisation updates for core messages from translatewiki.net (2
+24.12.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+24.12.2009 catrope: UsabilityInitiative: Correct Nimish's last name in extension cre
+24.12.2009 conrad: Add missing static's. . . 
+24.12.2009 catrope: API: () Add chomp control in YAML. . 
+25.12.2009 btongminh: Follow up to r57868: Fix virus scanner on Windows (r57801 et al)
+25.12.2009 btongminh: Bump wgStyleVersion for various revision above r59683.. 
+25.12.2009 dale: *  fixed player supports overlays check.. * Added support for wi
+25.12.2009 dale: * updated request id . 
+25.12.2009 jeroendedauw: Changes for 0.5.1. Changes for 0.5.1. Modified parameter definit
+25.12.2009 jeroendedauw: Changes for 0.2.. * Created output format hook. * Added support 
+25.12.2009 dale: * set language timed text to 'wgUserLanguage' by default. 
+25.12.2009 simetrical: Handle minus signs in sortable tables. .   Patch by Conrad Irwin
+25.12.2009 dale: autoselect source improvement for cases where no language is ava
+25.12.2009 jeroendedauw: Changes for 0.5.1. Modified parameter definitions to work Valida
+25.12.2009 jeroendedauw: Changes for 0.2.. * Added list validation functions. * Added for
+25.12.2009 jeroendedauw: Changes for 0.5.1. Modified parameter definitions to work Valida
+25.12.2009 jeroendedauw: Changes for 0.2. See http://www.mediawiki.org/wiki/Extension:Val
+25.12.2009 jeroendedauw: Changes for 0.5.1. Added forceshow parameter to the query printe
+25.12.2009 jeroendedauw: Changes for 0.5.1. http://www.mediawiki.org/wiki/Extension:Maps/
+25.12.2009 jeroendedauw: Changes for 0.5.1. http://www.mediawiki.org/wiki/Extension:Seman
+25.12.2009 jeroendedauw: Changes for 0.2. http://www.mediawiki.org/wiki/Extension:Validat
+25.12.2009 jeroendedauw: Maps 0.5.1 rc1. 
+25.12.2009 jeroendedauw: Semantic Maps 0.5.1 rc1. 
+25.12.2009 jeroendedauw: Validator 0.2 rc1. 
+25.12.2009 jeroendedauw: Maps 0.5.1 rc2.. 
+25.12.2009 jeroendedauw: Semantic Maps 0.5.1 rc2.. 
+25.12.2009 jeroendedauw: Validator 0.2 rc2.. 
+25.12.2009 ialex: RELEASE-NOTES cleanup:. * removed JS2-specific settings since th
+25.12.2009 ialex: Readd $wgPhpCli (removed in r59446), it was already here before 
+25.12.2009 aaron: * Use review/unreview button for binary flagging case. * Removed
+25.12.2009 aaron: * Moved JS/CSS to its own folder.. * Separated out all-user JS f
+25.12.2009 aaron: Fixed stupid mistake from r60396. 
+25.12.2009 ialex: * findSettings.php now ignores some MediaWiki settings. . 
+25.12.2009 aaron: * Follow up r60396: removed reference to non-existing message. *
+26.12.2009 jeroendedauw: lang fix. 
+26.12.2009 jeroendedauw: 0.5.1 release.. 
+26.12.2009 jeroendedauw: 0.2 release.. 
+26.12.2009 jeroendedauw: Tag for version 0.5.1.. 
+26.12.2009 jeroendedauw: Tag for version 0.2.. 
+26.12.2009 siebrand: Revert bad update in r60339. 
+26.12.2009 siebrand: Localisation updates for core messages from translatewiki.net (2
+26.12.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+26.12.2009 aaron: * Updated relative CSS urls. * Reworded messages with confusing 
+26.12.2009 ialex: removed --output=metawiki from maintenance/language/transstat.ph
+26.12.2009 ialex: Follow-up r60412: forgot to remove the class from AutoLoader. . 
+26.12.2009 ialex: Whitespaces fixes:. * removed trailing spaces. * removed some us
+26.12.2009 ialex: Resync Configure with MediaWiki:. * Added $wgWikiId, $wgCrossSit
+26.12.2009 ialex: Fix for r60415: removed $wgEnableHtmlDiff too. . 
+27.12.2009 ialex: Per Siebrand: avoid title case in 'configure-section-externalaut
+27.12.2009 mrzman: Per CR on r58079, add a permission check for 'reupload-shared' t
+27.12.2009 ialex: More fixes:. * 'IPs' -> 'IP addresses' in 'configure-setting-wgR
+27.12.2009 mrzman: Fix for r60418, need to check whether the /destination/ file exi
+27.12.2009 overlordq: Followup to r56514 r56174 empty strings are not NULL. 
+27.12.2009 yaron: Made class names unique to avoid class-redeclaration error. . 
+27.12.2009 dale: * increased aplimit to subtitle listing query ( support more tha
+27.12.2009 dale: * timed text view remote page refactor for clarity. 
+27.12.2009 dale: * language updates. * sequence stub support. 
+27.12.2009 ialex: Added --prefix option to maintenance/language/checkLanguage.php 
+27.12.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+27.12.2009 ialex: conf-now.ser -> conf-now.php. . 
+27.12.2009 simetrical: - in regex character classes has special meaning. . Fix for r603
+27.12.2009 ialex: Remove 'non-message checks' from the header, like for the body t
+27.12.2009 ialex: fix variable name. . 
+27.12.2009 ialex: * Updated ignored settings list in findSettings.php. . 
+28.12.2009 ialex: * Updated AbuseFilter, AmazonPlus, BreadCrumbs, Collection, Exte
+28.12.2009 ipye: removing non MediaWIki PHP extension files. 
+28.12.2009 ipye: updated README for WikiTrust. 
+28.12.2009 siebrand: Add $wikimediaCodeMap to allow conversion from language code to 
+28.12.2009 dale: * refactored player html output. ** Less wrapping containers. **
+28.12.2009 dale: * partial IE fixes . 
+28.12.2009 catrope: UsabilityInitiative: Fix cursor moving in the TOC: clicking a TO
+28.12.2009 catrope: UsabilityInitiative: Add jsmin to svn:ignore. . 
+28.12.2009 siebrand: Add option 'wmfscore' to output a weighted localisation score fo
+28.12.2009 demon: Cleanup r60050, use string 'language' instead of constant langua
+28.12.2009 siebrand: Fix copy/paste omission. 
+28.12.2009 siebrand: Bug fix for header that ended up in the wrong place. 
+28.12.2009 ialex: * () Removed broken Special:ViewConfig's 'Read only mode'. . 
+28.12.2009 freakolowsky: query parser rewrite to get boolean operators to work. 
+28.12.2009 ialex: svn:eol-style native. . 
+28.12.2009 ialex: Follow-up r60093: forgot this one. . 
+28.12.2009 catrope: UsabilityInitiative: Make TOC highlighting work again. . 
+28.12.2009 ialex: squid -> Squid on 'configure-setting-wgSquidMaxage' and 'configu
+28.12.2009 diana: add pending transaction processing and civicrm_note_fix custom m
+29.12.2009 dale: * IE fixes . ** Was getting NaN on some width / height measureme
+29.12.2009 dale: more IE fixes:. TimedText example now works reasonably well with
+29.12.2009 dale: ~ version for updating prototye.wikimedia.org ~. * bumped versio
+29.12.2009 ashley: UserBoard: fix for 'missing argument' warning. 
+29.12.2009 dale: * Output itext source tracks for local video media.. ** Avoids a
+29.12.2009 thomasv: tabindexes. 
+29.12.2009 mkroetzsch: minor updates for random sorting feature, especially do not use 
+29.12.2009 dale: * initial attempt at some playlist clean up. * some embedPlayer 
+29.12.2009 yaron: Tag for version 0.7. . 
+29.12.2009 siebrand: Localisation updates for core messages from translatewiki.net (2
+29.12.2009 siebrand: Localisation updates for extension messages from translatewiki.n
+29.12.2009 catrope: API: Fix breakage due to MySQL 5.1 behavior change: replace an i
+29.12.2009 catrope: Make refreshLinks.php purge orphaned redirect table rows, i.e. r
+29.12.2009 mkroetzsch: Fixed random order query option so that $smwgQRandSortingSupport
+29.12.2009 catrope: wmf-deployment: Merge r60465 (MySQL 5.1 fix) from trunk. . 
+29.12.2009 siebrand: Update codeMap. 
+29.12.2009 ialex: Whitespaces fixes:. * removed trailing spaces. * use tabs for in
+29.12.2009 siebrand: Update codeMap. 
+29.12.2009 siebrand: Fix typo in r60471. 
+29.12.2009 ialex: * Updated maintenance scripts to subclass the Maintenance class 
+29.12.2009 catrope: * UsabilityInitiative: Migrate TOC generation code to highlight 
+29.12.2009 raymond: Consistency tweaks: 'IP' -> 'IP address'. * Reword 'checkuser-ta
+29.12.2009 ialex: cv_reason field is used now :). . 
+29.12.2009 mkroetzsch: fixed documentation. . 
+29.12.2009 jeroendedauw: Changes for 0.5.2. Fixed escaping issues with title and label pa
+29.12.2009 Hi neilk!
+29.12.2009 neilk: adding neilk to USERINFO. 
+29.12.2009 jeroendedauw: Changes for 0.2.1. Fixed minor issue with criteria ordering.. 
+29.12.2009 tomasz: Updating link for donor privacy page. 
+29.12.2009 tomasz: Sync'ing to latest rev from trunk. Picking up updated link for d
+29.12.2009 demon: eol-style. 
+29.12.2009 jeroendedauw: Fix for siebrand :p. 
+30.12.2009 btongminh: Remove debugging comment accidentily left in in r59762 . 
+30.12.2009 dale: * embedPlayer refactoring. * sequencer enhancements. * firefogg 
+30.12.2009 dale: minor playlist comments and refactor . 
+30.12.2009 tstarling: Remove unprefixed constant 'CASCADE' due to risk of conflicts. I
+30.12.2009 maxsem: Fixed geshi external that was broken and updated it to latest st
+30.12.2009 raymond: Tweak 'HMTL 5' -> 'HTML5' per suggestion on translatewiki: http:
+30.12.2009 tstarling: Fix for r58197, removed unnecessary array_merge(). . 
+30.12.2009 tstarling: () Fixed out-of-memory errors. Store data only for the first few
+30.12.2009 mkroetzsch: homepage of AIFB changed, updated credits. . 
+30.12.2009 raymond: Rename hook per Tim's CR on r58192. 
+30.12.2009 tstarling: * Removed buggy stopgap solution for bug #19476 (ffmpeg2theora s
+30.12.2009 dale: * playlist player fixes . 
+30.12.2009 raymond: Follow-up r60494: Forgot this one to rename.. 
+30.12.2009 dale: * removed reference to $wgEnableJS2system. * disabled timedText 
+30.12.2009 raymond: Consistency tweak: coalesce diff/hist links with pipe instead of
+30.12.2009 mkroetzsch: better support for extension datatypes for wiki pages (needed fo
+30.12.2009 dale: * firefogg render test. 
+30.12.2009 raymond: User 'escapenotentites' to allow entities like &bull;. 
+30.12.2009 raymond: fix for r60502. /selfslap. 
+30.12.2009 maxsem: Per Chad's suggestion on r60489 CR, updated compatibilty notice 
+30.12.2009 mkroetzsch: mention new printout paramters in release notes. . 
+30.12.2009 ialex: Per Tim Starling, fixes for r58061:. * renamed $wgEnableSorbs to
+30.12.2009 mkroetzsch: Added Type:Telephone number for tel: URIs (). . 
+30.12.2009 nikerabbit: Typo fix. . What's up with the date in the future? :). . 
+30.12.2009 mkroetzsch: do not attempt to link tel: URLs. . 
+30.12.2009 mkroetzsch: mention new Telephone number type in Release notes. . 
+30.12.2009 mkroetzsch: support intro/outro for format=count (). . 
+30.12.2009 raymond: * () Swap links of hist & diff location on Special:Contributions
+30.12.2009 mkroetzsch: enable ~ comparator by default (). . 
+30.12.2009 ialex: * scripts/manage.php now adds a reason while reverting to a vers
+30.12.2009 ialex: * fixed a bug introduced in 0.14.19, Special:ViewConfig was unab
+30.12.2009 raymond: Localisation updates for core and extension messages from transl
+31.12.2009 Hi pdhanda!
+31.12.2009 pdhanda: Switched to using request params. Cleaned up some code style.. 
+31.12.2009 tomasz: Sync'ing up to latest trunk version. 
+31.12.2009 dale: * removed extra type-check for firefogg. 
+31.12.2009 aaron: * Added category filter to oldreviewedpages API (). * Fixed type
+31.12.2009 mkroetzsch: +forgotten global declaration. . 
+31.12.2009 siebrand: Drop bot flag for web imports.. 
+31.12.2009 philip: , don't return $this->mPreferredVariant if $fromUser = false. 
+31.12.2009 siebrand: wfProfileOut in proper code part. 
+31.12.2009 demon: Remove useless commented global. 
+31.12.2009 dale: * minor css fix. * type check for unset var. 
+31.12.2009 siebrand: Fixes based on Erik Zachte's first version of integration.. 
+01.01.2010 siebrand: Localisation updates for core messages from translatewiki.net (2
+01.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+01.01.2010 siebrand: wmf: vro->fiu-vro. 
+01.01.2010 ashley: UserActivity:. *remove network-related stuff. *fix SiteActivityH
+01.01.2010 siebrand: Add SocialProfile/UserActivity to Translate. 
+01.01.2010 aaron: * Changed 2-stage parsing to 1-state parsing for review. Expande
+01.01.2010 mkroetzsch: allow null subjects; added getHash() function that will be usefu
+01.01.2010 ialex: * () Restored compatibility with MW 1.15 (and maybe earlier vers
+01.01.2010 siebrand: Localisation updates for core messages from translatewiki.net (2
+01.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+01.01.2010 siebrand: Localisation updates for core special page aliases from translat
+01.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+01.01.2010 siebrand: Localisation updates for core magic words from translatewiki.net
+01.01.2010 demon: () Special page names were are now capitalized by content langua
+01.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+01.01.2010 catrope: UsabilityInitiative: Run wikitext through PST before diffing. Th
+01.01.2010 siebrand: Update codeMap. 
+01.01.2010 ialex: * If two log type have the same description, they're now both di
+01.01.2010 catrope: UsabilityInitiative: Delay parsing for 250 ms, fix an issue with
+02.01.2010 Hi multichill!
+02.01.2010 simetrical: Annual copyright year update. 
+02.01.2010 multichill: the + dot at the end of the sentence.. 
+02.01.2010 yaron: Turned all database operations into a single transaction. . 
+02.01.2010 siebrand: Update copyright year. 
+02.01.2010 yaron: New version: 0.2. . 
+02.01.2010 multichill: Added a lot of country specific Creative Commons licenses. 
+02.01.2010 siebrand: Ran stylize.php and some other formatting updates. 
+02.01.2010 aaron: * Fixed duplicated message key and made checkbox clearer. * Mino
+02.01.2010 ialex: Fix for r60549: remove BOM. . 
+02.01.2010 ialex: Fix E_PARSE again. . 
+02.01.2010 siebrand: Update formatting. 
+02.01.2010 btongminh: Fix for r58980: use wfMsgForContent. 
+02.01.2010 ialex: * removed ?>. * added 'path' and 'description' items to extensio
+02.01.2010 mkroetzsch: The property objects passed to print requests are controlled by 
+02.01.2010 mkroetzsch: Do not SELECT fields by which result is ordered when using MySQL
+02.01.2010 catrope: () Special:Userlogin says 'Log in / create account' even if the 
+03.01.2010 catrope: Fix coding style. . 
+03.01.2010 sergeychernyshev: Fixed attribute initialization upon user creation ().. . 
+03.01.2010 sergeychernyshev: Release 0.9: Various bugfixes including preferences backport.. .
+03.01.2010 sergeychernyshev: Release tag for 0.9. 
+03.01.2010 sergeychernyshev: Ooops. Copied to the wrong extension - removing release tag.. . 
+03.01.2010 sergeychernyshev: Release tag for OpenID version 0.9. 
+03.01.2010 sergeychernyshev: Trunk version update to 0.10-dev for all new changes to go towar
+03.01.2010 siebrand: Localisation updates for core messages from translatewiki.net (2
+03.01.2010 siebrand: Localisation updates for core messages from translatewiki.net. *
+03.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+03.01.2010 aaron: Removed unused globals. 
+03.01.2010 siebrand: * set fallback for 'gl' to 'pt'. * remove superfluous newlines i
+03.01.2010 catrope: UsabilityInitiative: Fix out of bounds error. . 
+03.01.2010 siebrand: Updaet time formatting per http://translatewiki.net/wiki/Thread:
+03.01.2010 siebrand: Tweak date format further. 
+03.01.2010 ialex: Let's use the variables introduced in r59758 :). . 
+03.01.2010 ialex: And while I'm a it: also ignore style checks for geshi. . 
+03.01.2010 ialex: * () Special:OpenIDLogin now remembers user's OpenID URL. . 
+03.01.2010 ialex: * Fix varibale name in global declaration. * Fix E_STRICT: Only 
+03.01.2010 siebrand: Localisation updates for core messages from translatewiki.net (2
+03.01.2010 siebrand: Localisation updates for extension messages from translatewiki.n
+03.01.2010 yaron: Tag for version 0.2. . 
+03.01.2010 catrope: API: Per Domas, don't FORCE INDEX when doing an INNER JOIN with 
+03.01.2010 catrope: wmf-deployment: Merge r60587 from trunk. . 
+03.01.2010 catrope: Followup to r60587: wrong user_groups join. . 
+03.01.2010 catrope: wmf-deployment: Merge r60589 from trunk. . 
+04.01.2010 sergeychernyshev: Special:OpenIDLogin remembers user's provider and parameter valu
+04.01.2010 btongminh: () Red links for media files do not support shared repositories.
+04.01.2010 thomasv: footer template. 
+04.01.2010 Hi mah!
+04.01.2010 tstarling: Add missing class LanguageConverter. . 
+04.01.2010 rotem: Localization update for he.. 
+04.01.2010 maxsem: Removed dummy/obsolete language codes from installer. 
+04.01.2010 tstarling: Fix for  and the related Malayalam issue reported on wikitech-l.
+04.01.2010 siebrand: * update i18n in some places (remove use of static text and add 
+04.01.2010 btongminh: API: Expand the thumburl to an absolute url to make it consisten
+04.01.2010 ialex: * () Implemented memcached store. * () Implemented MySQL, Postgr
+04.01.2010 ialex: Follow-up r60602: this comment is no longer needed. . 
+04.01.2010 catrope: UsabilityInitiative: Don't load unneeded JS for Vector modules i
+04.01.2010 yaron: Small fixes, and information about new Special:Ask. . 
+04.01.2010 yaron: Got edit query/hide query links to work again, and improved hand
+04.01.2010 yaron: Added isHTML() setting, so that JSON link can work in Special:As
+04.01.2010 catrope: wmf-deployment: Merging WikimediaMessages to trunk state. . 
+04.01.2010 ialex: One more follow-up r60602: seems we have a README file :). . 
+04.01.2010 yaron: Added getParameters() function. . 
+04.01.2010 catrope: wmf-deployment: Merging GlobalUsage up to trunk state. . 
+04.01.2010 raymond: Localisation updates for core and extension messages from transl
+04.01.2010 ialex: Forbid to delete the last OpenID either if the user has no passw
+04.01.2010 yaron: Added 'srf_paramdesc_calendarlang' message. . 
+04.01.2010 yaron: Added handling for new 'lang' parameter. . 
+04.01.2010 dale: added itext-example. 
+04.01.2010 siebrand: Update from Tim Bartel. 
+04.01.2010 dale: * fixed timedText addition to request. * added iText example to 
+04.01.2010 nad: escape pipes in $k used in recordtable match. 
+05.01.2010 catrope: UsabilityInitiative: Wrap all Firefox-specific code in if blocks
+05.01.2010 siebrand: Add a group description anyway if no description is available.. 
+05.01.2010 siebrand: Rename and comment out mwEmbed message. Leaving it in because I 
+05.01.2010 siebrand: Fix syntax error and key name. 
+05.01.2010 siebrand: Exclusions based on testing.. 
+05.01.2010 siebrand: Add Wikia README and Translate bump version.. 
+05.01.2010 siebrand: Update optional and ignored.. 
+05.01.2010 adam: Changes to the collapsible left nav. 
+05.01.2010 aaron: Added two missing messages (). 
+05.01.2010 siebrand: Mark access key ignored. Follow-up to r60628.. 
+05.01.2010 yaron: Fixed bug so that a single result can be displayed in an outline
+05.01.2010 yaron: Added preliminary release notes for v1.5. . 
+05.01.2010 siebrand: Simplify config by removing unneeded 'file = ' and prettify exte
+05.01.2010 adam: More styling tweaks to collapsible left nav. 
+05.01.2010 siebrand: Update Wikimedia extensions. 
+05.01.2010 siebrand: Update optionals. 
+05.01.2010 aaron: Removed revreview-auto-w message clutter (disabled by default al
+05.01.2010 siebrand: Update optionals. 
+05.01.2010 ashley: ContactPage:. *add some comments to ContactPage.php. *added Cont
+05.01.2010 aaron: * Stick to simple icons (hide text) for review box for anons. * 
+05.01.2010 mah: Make phpunit on Ubuntu work out-of-the-box (at least for me) and
+05.01.2010 yaron: Updated description of extension. . 
+05.01.2010 yaron: Added more initialization of variables. . 
+05.01.2010 tstarling: Clarify comment on $wgBlockCIDRLimit, larger not below (r58377).
+05.01.2010 overlordq: Split rangeblock error message, allow configuring max size of IP
+05.01.2010 overlordq: Add missing message (r60644). 
+05.01.2010 tstarling: Don't attempt to format diffs more than 500KB in size. Fix for O
+05.01.2010 tstarling: Merged r60646 from trunk.. . 
+05.01.2010 overlordq: Helps to be consistent in adjective usage big->large (r60645). 
+05.01.2010 mah: Add documentation for $wgVariantArticlePath. . 
+05.01.2010 mah: Coding Convention cleanup, removed extraneous references to $_SE
+05.01.2010 siebrand: Follow-up r60650: run stylize.php and remove trailing whitespace
+05.01.2010 nad: remove OD-specific braces fromc comments. 
+05.01.2010 nad: add --no-title switch to htmldoc command. 
+05.01.2010 demon: Only cache author list for 1 day. The only thing using this is t
+05.01.2010 demon: Merge from trunk r53747-60651.. 
+05.01.2010 jojo: removed deprecated section from README. 
+05.01.2010 demon: Only use one if, not 2. 
+05.01.2010 jojo: transclude info text on rendering page. 
+05.01.2010 jojo: activate book tool when loading a collection. . Fixes http://cod
+05.01.2010 jojo: disable portlet and box for non-existant pages. . Fixes http://c
+05.01.2010 jojo: removed login-to-save text. . Fixes http://code.pediapress.com/w
+05.01.2010 jojo: different pages for single-page vs. collection. 
+05.01.2010 siebrand: Update optionals. 
+05.01.2010 freakolowsky: fixme for r58356. 
+05.01.2010 ialex: svn:eol-style native. . 
+05.01.2010 ialex: * scripts/writePHP.php now uses NS_FILE and NS_FILE_TALK rather 
+05.01.2010 siebrand: Update Wikia groups. 
+05.01.2010 yaron: Fixed typos. . 
+05.01.2010 yaron: Contains 'SemanticTasksMailer' class - holds functions formerly 
+05.01.2010 yaron: Version 1.2: functions moved from ST_Notify_Assignment.php to Se
+05.01.2010 yaron: Functions moved into SemanticTasks.classes.php. . 
+05.01.2010 yaron: New version: 1.2. . 
+05.01.2010 yaron: Directory for Semantic Tasks extension. . 
+05.01.2010 yaron: Tag for version 1.2. . 
+05.01.2010 aaron: * Edit view UI:. **Fixed quality level CSS. **Removed checkbox i
+05.01.2010 siebrand: Update optionals. 
+05.01.2010 tparscal: Switched to a silver non-directional portal-break.png image, whi
+05.01.2010 tparscal: Renamed CollapsibleLeftNav to CollapsibleNav - since it's not re
+05.01.2010 sergeychernyshev: Makefile for getting php-openid installed locally.. . 
+05.01.2010 tparscal: Made some tweaks to the collapsibleNav code to simplify the DOM 
+05.01.2010 ialex: Follow-up r60666 per Nikerabbit and Bryan's comments: change svn
+05.01.2010 tparscal: Fixed some broken built files. Also added cookies to Collapsible
+05.01.2010 tparscal: Removed some remaining bits of the word left in CollapsibleLeftN
+05.01.2010 btongminh: Don't add the namespace in self links. This fixes navigation iss
+05.01.2010 btongminh: r60685, now properly tested. 
+05.01.2010 tparscal: Removed some remaining bits of the word left in CollapsibleLeftN
+05.01.2010 tparscal: Bumped and rebuilt.. 
+05.01.2010 raymond: Localisation updates for core and extension messages from transl
+05.01.2010 btongminh: Put some more comments in the code. 
+05.01.2010 siebrand: Update optionals. 
+05.01.2010 catrope: wmf-deployment: Merge r60685, r60686 from trunk (GlobalUsage fix
+06.01.2010 siebrand: Update optionals. 
+06.01.2010 ialex: Fix some doxygen warnings. . 
+06.01.2010 catrope: wmf-deployment: Merge r58814 from trunk (fix wfWaitForSlaves() f
+06.01.2010 dale: * fixed archive.org with new search provider entry point, proper
+06.01.2010 tparscal: Used trick found at: http://www.n8williams.com/devblog/javascrip
+06.01.2010 reedy: Remove unused private 'filterPage' function from specials/Specia
+06.01.2010 tparscal: Fixed bug that happens when the match returns null.. 
+06.01.2010 tparscal: Bumped and rebuilt for r60699.. 
+06.01.2010 sergeychernyshev: Fix for r58517. Using MW_SUPPORTS_LOCALISATIONCACHE for capabili
+06.01.2010 tparscal: Moved styles for iframe from external styles into the HTML file 
+06.01.2010 mah: typo, clarification.. . 
+06.01.2010 catrope: Add $maxlag parameter to LoadBalancer::getMaxLag() so it'll actu
+06.01.2010 catrope: wmf-deployment: Merge r60704 (getMaxLag fix) from trunk. . 
+06.01.2010 dale: * fix for  ( work around for commons upload form processing ( re
+06.01.2010 mah: Random eol whitespace found while treking through files.. Removi
+06.01.2010 tstarling: () Document how to use PEAR. . 
+06.01.2010 mah: New tests for LanguageConverter->getPreferredVariant(). Refactor
+06.01.2010 tstarling: Don't count unions of bracketed selects as being write queries. 
+06.01.2010 tstarling: () Don't give a PHP notice when getSubitem() calls loadSubitem()
+06.01.2010 yaron: Changed number in 'smw_paramdesc_columns' message from 3 to $1. 
+06.01.2010 yaron: One more change of 3 to $1. . 
+06.01.2010 yaron: Default number for 'columns' parameter now varies between format
+06.01.2010 tstarling: Made Special:Allmessages many times faster for a typical install
+06.01.2010 nojhan: +blog Kiwix. 
+06.01.2010 mkroetzsch: Removed old implementation for value lists (SMWNAryValue) and ad
+06.01.2010 rotem: Localization update for he.. 
+06.01.2010 jojo: omit adding books category if sysmsg is empty. 
+06.01.2010 jojo: document Coll-bookscategory sysmsg. 
+06.01.2010 catrope: Per CR on r58358, refactor obtaining the language code from a fi
+06.01.2010 jojo: only add, when coll-bookscategory is set. 
+06.01.2010 mkroetzsch: remov special handling of n-ary properties (and, when applicable
+06.01.2010 mkroetzsch: updated autoloading. . 
+06.01.2010 mkroetzsch: implement getDVs() method as in former SMWNAryValue. . 
+06.01.2010 mkroetzsch: typo in variable name. . 
+06.01.2010 mkroetzsch: Added new functions to datavalue API: value classes now can spec
+06.01.2010 catrope: Followup to r60697: add a comment to js2stopgap.js pointing out 
+06.01.2010 reedy: * () ApiLogin::execute() doesn't handle LoginForm :: RESET_PASS.
+06.01.2010 freakolowsky: Fixed variable name typo from r60665.. 
+06.01.2010 freakolowsky: Fixed variable name typo from r60665. (problems while sending fi
+06.01.2010 siebrand: Disable FlickrImport because of conflicting keys. 
+06.01.2010 mkroetzsch: remove code that is specific to old n-aries; update known type i
+06.01.2010 mkroetzsch: include a function from old SMWNAryValue that created queries; n
+06.01.2010 ialex: * () Automatic creation of the user on OpenID login is now optio
+06.01.2010 maxsem: Clean-up for r60598: introduced a global setting for non-existan
+06.01.2010 ashley: SocialProfile: some cleanup to UserProfilePage.php. 
+06.01.2010 nimishg: IE fixes. 
+06.01.2010 maxsem: Fixed insane selectField() usage from r58322. 
+06.01.2010 siebrand: Follow-up to r60721. Broken maintanance/language/rebuildLanguage
+06.01.2010 catrope: Followup to r60271: pass the delimeter to preg_quote() per CR co
+06.01.2010 philip: Add stripForSearch in MWSearch. So we could regularize text befo
+06.01.2010 philip: 1. Add conditions to stripForSearch for LuceneSearch / MWSearch.
+06.01.2010 reedy: Attempt at normalistion of comparison styles - empty string on l
+06.01.2010 philip: Change or to ||.. 
+06.01.2010 btongminh: Fix prev links by either allowing a from= or to= parameter. 
+07.01.2010 reedy: Mass convert NULL -> null. Left strings and comments alone, obvi
+07.01.2010 reedy: Minor followup to r60744, fix for comment 2. 
+07.01.2010 mkroetzsch: data value objects now parse query conditions related to their d
+07.01.2010 raymond: Localisation updates for core and extension messages from transl
+07.01.2010 nikerabbit: Add comment about unused parameters to constructor too + coding 
+07.01.2010 siebrand: Update optionals. 
+07.01.2010 reedy: 'apprfiltercascade - Filter protections based on cascadingness (
+07.01.2010 aaron: Fixed CSS error. 
+07.01.2010 aaron: Fixed undefined var notice (not sure how long this was there). 
+07.01.2010 tomasz: adding missing check in case there are no active notices. 
+07.01.2010 tstarling: Add a Database::getType() function so that we can get rid of $wg
+07.01.2010 tomasz: fix for r60096. simplifying match since preg_match() is cheap to
+07.01.2010 aaron: * Demark pending edits in history (color/msg/margin). * Darkened
+07.01.2010 aaron: Follow up r60759: forgot to commit hook change. 
+07.01.2010 tomasz: Dropping old section as its not used to fix double tab problem f
+07.01.2010 Hi robla!
+07.01.2010 robla: Development branch for  (Image file extension should not be part
+07.01.2010 mah: Refactor LanguageConversion so that title conversion isn't so fl
+07.01.2010 philip: follow-up r60743.. 1. Changed the conditions, not only for Lucen
+07.01.2010 mah: follow-up r60763 and r58275.  Parser tests now pass.. . 
+07.01.2010 philip: follow-up r60742. adapt to the code changes made in r60764.. 
+07.01.2010 mah: follow-up r60763 and r58275.  Parser tests now pass.. . 
+07.01.2010 mah: follow-up r60765. 
+07.01.2010 siebrand: Fix copy/paste and no replace error in r55008. 
+07.01.2010 robla: New functions: getPreferredExtensionForType and getNormalizedExt
+07.01.2010 robla: Abort OldLocalFile::upgradeRow() when archive_name missing. . 
+07.01.2010 robla: Adding new functions in preparation for decoupling page title fr
+07.01.2010 robla: Decouple page titles from MIME type, adding img_file_ext field t
+07.01.2010 robla: SpecialUpload.php warning message for blacklist. . 
+07.01.2010 robla: Warning fix in UploadBase.php. . 
+07.01.2010 robla: removed unused global wgCapitalLinks. . 
+07.01.2010 robla: Comment fix in LocalFile::publish. . 
+07.01.2010 robla: Some extra file deletion debug logging (probably superfluous). T
+07.01.2010 robla: Adding forgotten patch-img_file_ext.sql.  Critical for  fix. . 
+07.01.2010 robla: Adding myself in USERINFO. . 
+07.01.2010 overlordq: Requisite svn:eol-style followup. 
+07.01.2010 mkroetzsch: Remove obsolete SMWValueList class (was part of the old support 
+07.01.2010 robla: Setting eol-style on patch-img_file_ext.sql. . 
+07.01.2010 mkroetzsch: Major rewrite of SQL store: less lines of code, less bugs, more 
+07.01.2010 mkroetzsch: added preliminary labels for using the new datatype for multi-va
+07.01.2010 mah: Make LTR wgLang do the right thing on RTL wgContLang wikis.  See
+07.01.2010 jojo: fix checks for empty sysmsgs. 
+07.01.2010 mkroetzsch: better label for new _LIST property. . 
+07.01.2010 mkroetzsch: minor layout change. . 
+07.01.2010 mkroetzsch: Deprecated special function 'getNumericValue' since it is no lon
+07.01.2010 mkroetzsch: minor fix. . 
+07.01.2010 demon: Fixme on r56220: Fix spelling ellipse -> ellipsis. 
+07.01.2010 demon: Followup r60792, missed a few file version bumps. 
+07.01.2010 demon: Per http://www.mediawiki.org/wiki/Special:Code/MediaWiki/59183#c
+07.01.2010 multichill: 4 more odd CC licenses (3 cc-by-sa-2.1 and cc-sa-1.0). 
+07.01.2010 philip: follow-up r60764. compatible fix.. 
+07.01.2010 philip: Fix the undefined variable and undefined property notices caused
+07.01.2010 ialex: Per Raymond's comment on r60735: capitalise 'Username' and 'Pass
+07.01.2010 tparscal: In r60786 mah added 'specialpageattributes' to the skin, only in
+07.01.2010 pdhanda: Patch provided by Bawolff. Fixes listed in Bug#21963. 
+07.01.2010 ialex: Added major contributors (Sergey Chernyshev and me) to extension
+07.01.2010 raymond: Localisation updates for core and extension messages from transl
+07.01.2010 yaron: Removed 'bolding' wiki-text from 'sf_editdata_formwarning' messa
+07.01.2010 demon: NULL -> null. 
+07.01.2010 yaron: Fixed PHP errors. . 
+07.01.2010 yaron: Fixed 'wrong form' check for forms that only contain multiple-in
+07.01.2010 robla: followup to r60770: getNormalizedExtensionFromName documentation
+08.01.2010 yaron: Added more checking for 'value_labels'. . 
+08.01.2010 ialex: * Added some basic doc for the DoubleRedirectJob class. * Fixed 
+08.01.2010 maxsem: Removed a couple of ancient @bug's. 
+08.01.2010 dale: * fix for  ( in both trunk and js2-work branch ). ** Add 'proxy'
+08.01.2010 catrope: * UsabilityInitiative: Add context.fn.setSelection() implementat
+08.01.2010 tstarling: Reverted r58313, pointless, does not fix the bug.. . 
+08.01.2010 dale: * added language-key to language list in timed text upload. * mi
+08.01.2010 tstarling: For r60757: implement Database::getType() explicitly in each sub
+08.01.2010 aaron: * Fixed review.js to reference new ID names. * Use dimensionsEmp
+08.01.2010 robla: Followup to r60773.  Getting rid of $wgCheckFileExtensions as in
+08.01.2010 robla: followup to r60773.  Renaming $wgCheckTitleFileExtensions to the
+08.01.2010 yaron: CSS fix for 'checkboxes' input for IE. . 
+08.01.2010 aaron: * Removed secondary form. Almost never comes up and makes things
+08.01.2010 demon: $fname -> __METHOD__. 
+08.01.2010 robla: Making the comment describing $wgStrictFileExtensions more accur
+08.01.2010 tparscal: This is being removed since we ended up just using it as a refer
+08.01.2010 tstarling: * Fixed the issue of all date functions throwing E_STRICT on the
+08.01.2010 tstarling: When $wgLocaltimezone is null, make #timel match the behaviour o
+08.01.2010 tstarling: Blacklist PHP 5.3.1 due to __call() regression.. . . 
+08.01.2010 yaron: Switched order of 'if' clauses, to improve handling if there's a
+08.01.2010 mah: Follow up r60798 & r60785. Re-introduce specialpageattributes an
+08.01.2010 freakolowsky: Prevented delete call in replace function if conditions empty. R
+08.01.2010 freakolowsky: Escaped Oracle Text reserved words. 
+08.01.2010 mah: follow up r60763. Recover the -{T| }- rule.  Add the ability to 
+08.01.2010 mah: follow up r60829. Gah — really need to get E_STRICT working in m
+08.01.2010 mah: follow-up 60833. because I'm an idiot.. . 
+08.01.2010 freakolowsky: Never got around to do this :D. 
+08.01.2010 freakolowsky: as usual, svn:eol-style native. 
+08.01.2010 demon: Fix formatting so I can read this thing without going cross-eyed
+08.01.2010 demon: () GoogleMaps tries to add icon to toolbar, without checking if 
+08.01.2010 yaron: New version: 1.8.7. . 
+08.01.2010 demon: () Add a function #mediapages to count pages for multi-page file
