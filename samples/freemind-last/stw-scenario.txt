@@ -1,0 +1,19 @@
+
+21.10.2009 Hi christianfoltin!
+21.10.2009 christianfoltin: * Updated cs translation. Thanks to the author.
+22.10.2009 christianfoltin: Mac os x build changes (two versions).
+22.10.2009 christianfoltin: branches:  1.1.2;file release_notes_0.9.0_RC5.txt was initially 
+22.10.2009 christianfoltin: for sf.net release section
+22.10.2009 christianfoltin: branches:  1.1.2;file release_notes_0.9.0_RC6.txt was initially 
+22.10.2009 christianfoltin: for sf.net release section
+29.10.2009 christianfoltin: * Added waiting cursor to many actions.
+28.11.2009 christianfoltin: * Reverted change for waiting cursor for all actions* Typo
+28.11.2009 christianfoltin: * Version numbering: 0.9.0
+28.11.2009 christianfoltin: * post_macos only on mac
+04.12.2009 christianfoltin: * Updated translation. Thanks to the author.
+05.12.2009 christianfoltin: * Less logging* Better error message on boolean property values.
+09.12.2009 christianfoltin: * Feature: Question before converting maps of older versions.
+10.12.2009 christianfoltin: * Some updated Resource files. Thanks to the authors for the fas
+11.12.2009 christianfoltin: * More updated translations. Thanks to the authors.
+11.12.2009 christianfoltin: * One more translation. Thanks to the author.
+14.12.2009 christianfoltin: * Updated translations. Thanks to the authors.

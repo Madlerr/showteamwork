@@ -1,0 +1,121 @@
+﻿26.08.1998 Hi terry@netscape.com!
+26.08.1998 Hi jwz@mozilla.org!
+27.08.1998 Hi shaver@netscape.com!
+18.10.1998 Hi harrison@netscape.com!
+10.11.1998 Hi andrew@redhat.com!
+01.01.1999 Prehistoryc Bugzilla — No Web Interface
+01.02.1999 Prehistoryc Bugzilla — Perl+TCL/TK
+16.03.1999 Hi braddr@puremagic.com!
+30.04.1999 Hi terry@mozilla.org!
+01.05.1999 Hi bryce-mozilla@nextbus.com!
+29.06.1999 Hi endico@mozilla.org!
+01.11.1999 Hi dmose@mozilla.org!
+21.01.2000 Hi mcafee@netscape.com!
+12.02.2000 Hi seth@cs.brandeis.edu!
+28.03.2000 Hi dkl@redhat.com!
+18.04.2000 Hi donm@bluemartini.com!
+21.04.2000 Hi cyeh@bluemartini.com!
+28.04.2000 Hi tara@tequilarista.org!
+07.06.2000 Hi mbarnson@excitehome.net!
+18.07.2000 Hi dave@intrec.com!
+05.12.2000 Hi gerv@gerv.net!
+07.03.2001 Hi barnboy@trilobyte.net!
+19.03.2001 Hi timeless@mac.com!
+06.04.2001 Hi justdave@syndicomm.com!
+27.04.2001 Bugzilla 2.12 Released!
+24.05.2001 Hi jake@acutex.net!
+18.07.2001 New Project Leader — justdave@syndicomm.com
+11.08.2001 Hi zach@zachlipton.com!
+19.08.2001 Hi myk@mozilla.org!
+29.08.2001 Bugzilla 2.14 Released!
+13.02.2002 Final Countdown to Bugzilla 2.16
+18.10.2001 Website Redesigned…
+23.10.2001 Hi bbaetz@cs.mcgill.ca!
+13.11.2001 Hi matty@chariot.net.au!
+01.01.2002 Bugzilla 2.16 is still in progress
+05.01.2002 Bugzilla 2.14.1 Released!
+22.01.2002 Hi bbaetz@student.usyd.edu.au!
+03.03.2002 New Guides available and another status update
+01.04.2002 Customized InformSystems installed Bugzilla 2.14
+22.04.2002 Hi caillon@returnzero.com!
+10.05.2002 Bugzilla 2.16 Release Candidate 1 is now available
+11.05.2002 Hi preed@sigkill.com!
+08.06.2002 Bugzilla 2.16 Release Candidate 2 and Bugzilla 2.14.2 are now available
+22.06.2002 Hi jouni@heikniemi.net!
+18.07.2002 Hi bugreport@peshkin.net!
+28.07.2002 Bugzilla 2.14.3/2.16 Released
+27.08.2002 Hi jake@bugzilla.org!
+27.10.2002 Hi timeless@mozdev.org!
+04.11.2002 Hi kiko@async.com.br!
+05.11.2002 Hi mbarnson@sisna.com!
+20.11.2002 Hi jeff.hedlund@matrixsi.com!
+25.11.2002 Bugzilla 2.17.1 Developer Snapshot available
+02.11.2003 Bugzilla 2.14.5, 2.16.2, 2.17.3 Released
+16.01.2003 Bugzilla Getting Exposure at LinuxWorld
+23.01.2003 Hi bbaetz@acm.org!
+24.01.2003 Hi burnus@gmx.de!
+24.04.2003 Bugzilla 2.16.3, 2.17.4 Released
+09.05.2003 Hi jkeiser@netscape.com!
+14.09.2003 New Localizations: Belarusian, French 
+01.10.2003 Korean Localization Available 
+07.10.2003 Hi jocuri@softhome.net!
+02.11.2003 Bugzilla 2.16.4, 2.17.5 Released
+09.11.2003 Bugzilla 2.17.6 Released
+03.03.2004 Bugzilla 2.17.7 and 2.16.5 Released
+10.05.2004 Hi justdave@bugzilla.org!
+10.07.2004 Bugzilla 2.16.6 and 2.18rc1 Released
+27.07.2004 Bugzilla 2.18rc2 Released
+25.09.2004 Hi erik@dasbistro.com!
+07.01.2005 Hi travis@sedsystems.ca!
+16.02.2005 Hi mkanat@kerio.com!
+18.02.2005 Hi bugzilla@glob.com.au!
+17.03.2005 Hi lpsolit@gmail.com!
+02.06.2005 Hi mozilla@colinogilvie.co.uk!
+13.10.2004 Brazilian Portuguese localization updated for 2.18rc2
+24.10.2004 Bugzilla 2.16.7, 2.18rc3, and 2.19.1 are available
+06.01.2005 Cross-site scripting vulnerability in 2.16.7 and 2.18rc3
+15.01.2005 Release of 2.18 (also 2.19.2 and 2.16.8)
+14.02.2005 Bugzilla receives award from Game Developer Magazine
+11.05.2005 Release of 2.18.1, 2.19.3, and 2.16.9
+18.05.2005 Release of 2.16.10
+07.07.2005 Release of 2.18.2 and 2.20rc1
+09.07.2005 Release of 2.18.3
+08.08.2005 Release of 2.20rc2
+30.09.2005 Release of 2.20 (also 2.21.1 and 2.18.4)
+28.10.2005 Hi wurblzap@gmail.com!
+04.11.2005 Hi karl@kornel.name!
+20.02.2006 Release of 2.22rc1, 2.20.1, 2.18.5 and 2.16.11
+22.04.2006 Release of 2.22 (also 2.20.2 and 2.23.1)
+23.04.2006 Hi mkanat@bugzilla.org!
+06.06.2006 Hi uid623!
+09.06.2006 Release of 2.23.2
+08.06.2006 Hi vladd@bugzilla.org!
+30.07.2006 Hi karl.kornel@mindspeed.com!
+21.08.2006 Hi olav@bkor.dhs.org!
+21.09.2006 Hi ghendricks@novell.com!
+15.10.2006 Release of 2.18.6, 2.20.3, 2.22.1, and 2.23.319.12.2006 Hi reed@reedloden.com!
+02.02.2007 Release of 2.22.2, 2.20.4, and 2.23.4
+26.02.2007 Hi db48x@yahoo.com! + Bugzilla 3.0rc1
+09.05.2007 Release of 3.0!
+23.08.2007 Release of 3.0.1, 3.1.1, 2.22.3, and 2.20.5
+18.09.2007 Release of 3.0.2 and 3.1.2
+05.12.2007 Hi eseyman@linagora.com!
+08.01.2008 Release of 3.0.3
+01.02.2008 Release of 3.1.3
+01.03.2008 Hi guy.pyrzak@gmail.com!
+04.04.2008 Hi john@johnkeiser.com!
+04.05.2008 Release of 3.0.4, 3.1.4, 2.22.4 and 2.20.6
+15.01.2009 Hi wicked@sci.fi!
+12.08.2008 Release of 3.2rc1, 3.0.5, and 2.22.5
+06.11.2008 Release of 3.2rc2, 3.0.6, 2.22.6, and 2.20.7
+15.11.2008 NASA Uses Bugzilla for Endeavour Shuttle and International Space Station
+29.11.2008 Release of 3.2!
+05.01.2009 Release of 3.3.1
+02.02.2009 3.2.1, 3.0.7, 2.22.7, and 3.3.2, 3.2.2, 3.0.8, and 3.3.3
+30.04.2009 Release of 3.2.3 and 3.3.4
+08.07.2009 Release of 3.4rc1 and 3.2.4
+01.08.2009 EOL For Bugzilla 2.22
+21.08.2009 Customized InformSystems migrate to 3.4.1
+11.09.2009 Release of 3.4.2, 3.2.5, and 3.0.9
+05.11.2009 Release of 3.5.1, 3.4.3, and 3.0.10
+18.11.2009 Release of 3.4.4 and 3.5.2
