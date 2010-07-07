@@ -29,7 +29,7 @@ nodesMultiplier=100.0
 drag=0.05
     """
 
-engine="""
+engine2="""
 # name of the engine class
 name=PhysicsEngineChaotic
 
@@ -47,8 +47,8 @@ ShowEdges=false
     """
 else:
     config+="""
-Width=640
-Height=640
+Width=1280
+Height=720
 Background=0,0,20
     """
 

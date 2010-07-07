@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-svn log --verbose http://svn.apache.org/repos/asf/subversion/trunk/ > svn.log
+svn log --xml  --verbose http://svn.apache.org/repos/asf/subversion/trunk/ > svn-log.xml
 """)
 

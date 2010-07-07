@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-svn log --verbose http://codeswarm.googlecode.com/svn/trunk/ > svn.log
+svn log --xml  --verbose http://codeswarm.googlecode.com/svn/trunk/ > svn-log.xml
 """)
 

@@ -34,7 +34,7 @@ name=PhysicsEngineSimple
 # parameters specific to this engine
 edgeMultiplier=1.0
 speedMultiplier=1.0
-nodesMultiplier=100.0
+nodesMultiplier=10.0
 drag=0.05
     """
 
@@ -48,10 +48,11 @@ ShowEdges=false
     """
 else:
     config+="""
-Width=640
-Height=640
+Width=1280
+Height=720
     """
 
 print config, engine    
     
 
+GOURCE=1

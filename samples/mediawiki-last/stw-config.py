@@ -9,18 +9,16 @@
 config="""
 
 
-ColorAssign1="branches", "/branches.*", 197,31,124, 197,31,124
-ColorAssign2="branches/REL1_14", "/branches/REL1_14.*", 168,130,207, 168,130,207
-ColorAssign3="branches/REL1_15", "/branches/REL1_15.*", 226,247,217, 226,247,217
-ColorAssign4="branches/js2-work", "/branches/js2-work.*", 254,192,73, 254,192,73
-ColorAssign5="branches/new-installer", "/branches/new-installer.*", 16,75,98, 16,75,98
-ColorAssign6="branches/wmf-deployment", "/branches/wmf-deployment.*", 189,108,15, 189,108,15
-ColorAssign7="tags", "/tags.*", 20,3,207, 20,3,207
-ColorAssign8="tags/extensions", "/tags/extensions.*", 123,207,132, 123,207,132
-ColorAssign9="trunk", "/trunk.*", 102,67,209, 102,67,209
-ColorAssign10="trunk/extensions", "/trunk/extensions.*", 34,96,237, 34,96,237
-ColorAssign11="trunk/phase3", "/trunk/phase3.*", 165,109,31, 165,109,31
-ColorAssign12="trunk/tools", "/trunk/tools.*", 248,140,81, 248,140,81
+ColorAssign1="/extensions/FlaggedRevs/language", "/trunk/extensions/FlaggedRevs/language.*", 250,254,187, 250,254,187
+ColorAssign2="/extensions/FlaggedRevs", "/trunk/extensions/FlaggedRevs.*", 133,241,253, 133,241,253
+ColorAssign3="/extensions/Maps", "/trunk/extensions/Maps.*", 204,193,226, 204,193,226
+ColorAssign4="/extensions/Storyboard", "/trunk/extensions/Storyboard.*", 160,181,146, 160,181,146
+ColorAssign5="/extensions/UsabilityInitiative", "/trunk/extensions/UsabilityInitiative.*", 11,231,51, 11,231,51
+ColorAssign6="/phase3/includes", "/trunk/phase3/includes.*", 200,117,52, 200,117,52
+ColorAssign7="/phase3/languages/messages", "/trunk/phase3/languages/messages.*", 232,44,200, 232,44,200
+ColorAssign8="/phase3/languages", "/trunk/phase3/languages.*", 69,76,71, 69,76,71
+ColorAssign9="/WikiWord", "/trunk/WikiWord.*", 6,39,96, 6,39,96
+ColorAssign10="/", "/trunk.*", 1,26,145, 1,26,145
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)
@@ -32,7 +30,7 @@ name=PhysicsEngineSimple
 # parameters specific to this engine
 edgeMultiplier=1.0
 speedMultiplier=1.0
-nodesMultiplier=100.0
+nodesMultiplier=1.0
 drag=0.05
     """
 
@@ -46,8 +44,8 @@ ShowEdges=false
     """
 else:
     config+="""
-Width=640
-Height=640
+Width=1280
+Height=720
     """
 
 GOURCE=1

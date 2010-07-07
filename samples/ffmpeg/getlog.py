@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-svn log --verbose svn://svn.ffmpeg.org/ffmpeg/ > svn.log
+svn log --xml --verbose svn://svn.ffmpeg.org/ffmpeg/ > svn-log.xml
 """)
 

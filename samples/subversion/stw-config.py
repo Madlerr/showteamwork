@@ -46,12 +46,12 @@ ShowEdges=false
     """
 else:
     config+="""
-Width=640
-Height=640
+Width=1280
+Height=720
     """
 
 GOURCE=1
-CODESWARM=1
+CODESWARM=0
 
 print config, engine    
     

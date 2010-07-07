@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-svn log --revision "{2009-09-01}:HEAD" --verbose --username guest http://viewvc.tigris.org/svn/viewvc/ >svn.log
+svn log  --verbose --xml --revision "{2009-09-01}:HEAD" --verbose --username guest http://viewvc.tigris.org/svn/viewvc/ >svn-log.xml
 """)
 

@@ -22,8 +22,8 @@ def guess_inputfile():
            "directory":  "CVS",
         },         
        "SVN": {
-           "logfile":    "svn.log",
-           "logcommand": "svn log -v",
+           "logfile":    "svn-log.xml",
+           "logcommand": "svn log --xml --verbose ",
            "directory":  ".svn",
         },         
        "Bazaar": {

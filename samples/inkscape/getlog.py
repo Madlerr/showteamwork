@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-bzr log -v lp:inkscape > bzr.log
+bzr log -v lp:inkscape -r date:2010-01-01..date:today > bzr.log
 """)
 

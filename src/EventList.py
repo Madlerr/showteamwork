@@ -25,9 +25,11 @@ def textfilter(text):
       Kill emplylines, newlines, convert quotes,
       convert to unicode.
     """
+    text = unicodeanyway(text)
+    if type(text) != type(u""):
+        return u""
     text = re.sub('^\n', '', text)
     text = text.replace("\n", ". ").replace('''"''', """'""")
-    text = unicodeanyway(text)
     return text
 
 class Event:
@@ -118,6 +120,38 @@ class EventList:
                 return line[len(key)+1:].strip()
             return default
 
+        def parse_svn_xml_log(file_handle):
+            """
+              Read messages from ``svnxmlpath``
+            """
+            doc = etree.parse(file_handle)
+            root = doc.getroot() 
+            if root.tag != "log":
+                raise Exception("Root tag of svn-log.xml must be <log>")
+                
+            for logentry in root:
+                paths_ = []
+                for x in logentry:
+                    comment_ = ""
+                    if x.tag == "author":
+                        author_ = x.text        
+                    elif x.tag == "date":
+                        date_ = x.text
+                        if date_.find(".")>0:
+                            date_ = date_.split(".")[0]
+                        date_ = time.strptime(date_, '%Y-%m-%dT%H:%M:%S')
+                        date_ = int(time.mktime(date_))*1000
+                    elif x.tag == "msg":
+                        comment_ = x.text        
+                    elif x.tag == "paths":
+                        paths_ = x
+                        
+                for p in paths_:
+                    path_ = p.text
+                    action_ = p.get("action")
+                    event_list.append(Event(path_, date_, author_, action=action_, comment=comment_))
+
+
         if not os.path.exists(logfilename):
             raise Exception("File <%s> not exists!" % logfilename)
      
@@ -130,74 +164,58 @@ class EventList:
         file_handle = open(logfilename,  'r')
         event_list = []
 
+        if logfile in ["svn-log.xml"]:
+            parse_svn_xml_log(file_handle)
+            
         if logfile in ["git.log", "svn.log"]:
             svn_sep = "-"*72
             # Todo: kill all plain SVG log parsing, keeps only XML log processing.
             # For Git change custom format, so parse it with Bazaar or other VCS logs
 
-#Sample SVG.log
-#------------------------------------------------------------------------
-#r9 | glantau | 2001-07-24 00:58:31 +0400 (Вт, 24 июл 2001) | 2 lines
-#Changed paths:
-#   M /trunk/configure
-#   M /trunk/libav/utils.c
-#   M /trunk/libavcodec/Makefile
-#   M /trunk/libavcodec/ac3dec.c
-#   M /trunk/libavcodec/avcodec.h
-#   M /trunk/libavcodec/utils.c
-#
-#added CONFIG_AC3, CONFIG_MPGLIB, CONFIG_DECODERS and CONFIG_ENCODERS 
-#
-#------------------------------------------------------------------------
-#r1 | (no author) | 2000-12-20 03:02:47 +0300 (Ср, 20 дек 2000) | 1 line
-#Changed paths:
-#   A /trunk
-#
-#New repository initialized by cvs2svn.
-#------------------------------------------------------------------------
-            
             line = file_handle.readline()
             while len(line) > 0:
                 # The svn_sep indicates a new revision history to parse.
                 if line.startswith(svn_sep):
-                    try:
-                        event_list_commit = []
-                        rev_line = file_handle.readline()
-                        if rev_line is '' or len(rev_line) < 2:
-                            break
-                        rev_parts = rev_line.split(' | ')
-                        author = rev_parts[1]
-                        date_parts = rev_parts[2].split(" ")
-                        date = date_parts[0] + " " + date_parts[1]
-                        date = time.strptime(date, '%Y-%m-%d %H:%M:%S')
-                        date = int(time.mktime(date))*1000
-                        
-                        # Skip the 'Changed paths:' line and start reading in the changed filenames.
+                    #try:
+                    event_list_commit = []
+                    rev_line = file_handle.readline()
+                    if rev_line is '' or len(rev_line) < 2:
+                        break
+                    rev_parts = rev_line.split(' | ')
+                    author = rev_parts[1]
+                    date_parts = rev_parts[2].split(" ")
+                    date = date_parts[0] + " " + date_parts[1]
+                    date = time.strptime(date, '%Y-%m-%d %H:%M:%S')
+                    date = int(time.mktime(date))*1000
+                    
+                    # Skip the 'Changed paths:' line and start reading in the changed filenames.
+                    path = file_handle.readline()
+                    path = file_handle.readline()
+                    while len(path) > 1:
+                        ch_path = None
+                        action_ = "A"
+                        if logfile == "svn.log":
+                            action_  = path[:5].strip()
+                            if len(action_.strip()) != 1:
+                                pass
+                            ch_path = path[5:].split(" (from")[0].replace("\n", "")
+                        else:
+                            # git uses quotes if filename contains unprintable characters
+                            action_  = path[:2].strip()
+                            ch_path = path[2:].replace("\n", "").replace("\"", "")
+                        event_list_commit.append(Event(ch_path, date, author, action=action_))
                         path = file_handle.readline()
-                        path = file_handle.readline()
-                        while len(path) > 1:
-                            ch_path = None
-                            action_ = "A"
-                            if logfile == "svn.log":
-                                action_  = path[:5].strip()
-                                ch_path = path[5:].split(" (from")[0].replace("\n", "")
-                            else:
-                                # git uses quotes if filename contains unprintable characters
-                                action_  = path[:2].strip()
-                                ch_path = path[2:].replace("\n", "").replace("\"", "")
-                            event_list_commit.append(Event(ch_path, date, author, action=action_))
-                            path = file_handle.readline()
+                    line = file_handle.readline()
+                    comment = ""
+                    while not line.startswith(svn_sep) and len(line)>0:
+                        comment += line
                         line = file_handle.readline()
-                        comment = ""
-                        while not line.startswith(svn_sep) and len(line)>0:
-                            comment += line
-                            line = file_handle.readline()
-                        for e in event_list_commit:
-                            e.set_comment(comment)
-                        event_list += event_list_commit
-                    except:
-                        line = file_handle.readline()
-                        continue
+                    for e in event_list_commit:
+                        e.set_comment(comment)
+                    event_list += event_list_commit
+                    #except:
+                    #    line = file_handle.readline()
+                    #    continue
                 else:    
                     line = file_handle.readline()
     

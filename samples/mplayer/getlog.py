@@ -4,6 +4,6 @@ import os
 
 os.system(
 """
-svn log --verbose svn://svn.mplayerhq.hu/mplayer/ > svn.log
+svn log --xml   --verbose svn://svn.mplayerhq.hu/mplayer/ > svn-log.xml
 """)
 

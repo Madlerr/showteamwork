@@ -608,14 +608,18 @@ def filter_events(event):
                          activitygourcepath ])
             print s
             os.system(s)
-            #PPM-file is very Huge. We need to compress it to h264-avi, and kill it.
+            #PPM-file is very Huge. We need to compress it to h264-avi, and later kill it.
             s = "".join([self.exedir, r'\ffmpeg',
                          ' -y -b 9000K -f image2pipe -vcodec ppm ',
+                         ' -fpre ', os.path.join(self.toolsdir,'ll.ffpreset'),
                          ' -i ', gourcerawpath, '.ppm',
                          ' -vcodec libx264 ', gourcerawpath ])
             print s
             os.system(s)
-            os.unlink(gourcerawpath + ".ppm")
+            if file_is_ok(gourcerawpath):
+                os.unlink(gourcerawpath + ".ppm")
+            else:
+                raise Exception("Something goes wrong with \n" + s)
             
         srtpath = os.path.join(self.workdir, "".join(["movie-", self.scenariohash, ".srt"]))
         if not file_is_ok(srtpath):

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import re
 import time
 
@@ -12,11 +12,16 @@ def filter_events(event):
        return False # Something wrong — event from future
     
     event.author = event.author.replace('OFFICE\\', '')
+    event.author = event.author.replace('users.sourceforge.net', 'sf.net')
     event.author = event.author.lower().replace('"',"'")
     m = emailre_.search(event.author)
     if m:
         event.author = m.group('email') 
     event.author = event.author.replace('"',"'")
+    event.author = event.author.replace(' dot ',".")
+    event.author = event.author.replace(' at-sign ',"@")
+    event.author = event.author.replace(' (a) ',"@")
+    event.author = event.author.replace(' ~at~ ',"@")
     if event.author in ["(no author)"]:
         event.author = "anonymous"
     

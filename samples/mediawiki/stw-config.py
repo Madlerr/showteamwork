@@ -9,16 +9,15 @@
 config="""
 
 
-ColorAssign1="branches", "/branches.*", 252,243,241, 252,243,241
-ColorAssign2="civicrm", "/civicrm.*", 185,229,195, 185,229,195
-ColorAssign3="civicrm/trunk/sites", "/civicrm/trunk/sites.*", 241,194,129, 241,194,129
-ColorAssign4="civicrm/trunk/sites/all", "/civicrm/trunk/sites/all.*", 84,217,181, 84,217,181
-ColorAssign5="civicrm/trunk/sites/all/modules", "/civicrm/trunk/sites/all/modules.*", 82,214,100, 82,214,100
-ColorAssign6="civicrm/trunk/sites/all/modules/civicrm", "/civicrm/trunk/sites/all/modules/civicrm.*", 227,58,203, 227,58,203
-ColorAssign7="trunk", "/trunk.*", 236,15,89, 236,15,89
-ColorAssign8="trunk/extensions", "/trunk/extensions.*", 18,93,212, 18,93,212
-ColorAssign9="trunk/phase3/languages", "/trunk/phase3/languages.*", 160,1,41, 160,1,41
-ColorAssign10="trunk/phase3/languages/messages", "/trunk/phase3/languages/messages.*", 70,9,132, 70,9,132
+ColorAssign1="/debs", "/trunk/debs.*", 241,238,126, 241,238,126
+ColorAssign2="/extensions/FlaggedRevs", "/trunk/extensions/FlaggedRevs.*", 150,236,108, 150,236,108
+ColorAssign3="/extensions/MetavidWiki", "/trunk/extensions/MetavidWiki.*", 194,223,38, 194,223,38
+ColorAssign4="/extensions/SemanticMediaWiki", "/trunk/extensions/SemanticMediaWiki.*", 86,206,123, 86,206,123
+ColorAssign5="/extensions/UsabilityInitiative", "/trunk/extensions/UsabilityInitiative.*", 162,92,167, 162,92,167
+ColorAssign6="/phase3/includes", "/trunk/phase3/includes.*", 179,15,232, 179,15,232
+ColorAssign7="/phase3/languages/messages", "/trunk/phase3/languages/messages.*", 43,63,19, 43,63,19
+ColorAssign8="/phase3/languages", "/trunk/phase3/languages.*", 134,12,7, 134,12,7
+ColorAssign9="/", "/trunk.*", 31,11,163, 31,11,163
 """
 
 #Below you need to set variables «config» and «engine» (needed for CodeSwarm only)

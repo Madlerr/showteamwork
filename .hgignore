@@ -6,8 +6,9 @@ stw-scenario.txt.template
 ^[^\.]*\.avi
 ^[^\.]*\.src
 ^[^\.]*\.log
+^[^\.]*~~.*
+svn-log.xml
 ^[^\.]*\.pyc
 src/build
 [^\.]*\.orig
 bin
-
