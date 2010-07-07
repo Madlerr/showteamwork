@@ -8,6 +8,7 @@ import os
 import datetime
 import tempfile
 from STWUtils import removedirorfile
+from VCSVisualizer import VCSVisualizer
 
 HOMEDIR = os.getcwd()
 STWDIR = os.path.realpath(os.path.join(os.getcwd(),".."))
@@ -17,6 +18,7 @@ def do():
         print s
         os.system(s)
 
+    version = VCSVisualizer.version__
     dt = datetime.date.today().strftime("%Y-%m-%d")
     tempdir = tempfile.gettempdir()
     distrdir = os.path.join(tempdir, "".join(["stw-distr-",dt]))
@@ -35,10 +37,11 @@ def do():
     removedirorfile("build")
 
     os.chdir(distrdir)
-    run("7z a -r -tzip showteamwork.zip * ")
+    zipname = "".join(["showteamwork-[",version,"].zip"])
+    run("".join(['7z a -r -tzip "', zipname, '" * ']))
     os.chdir(HOMEDIR)
     
-    distr=os.path.join(distrdir,"showteamwork.zip")
+    distr=os.path.join(distrdir,zipname)
     if not os.path.exists(distrdir):
         print "cannot find ", distr
     else:
