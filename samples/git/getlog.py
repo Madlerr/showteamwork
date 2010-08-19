@@ -21,4 +21,5 @@ except:
 
 os.chdir("git")
 
-os.system(r"""git log --name-status --pretty=format:"%n------------------------------------------------------------------------%nr%h | %ae | %ai (%aD) | x lines%nChanged paths:"  > """ + logfile) 
+s="".join(['git log --name-status --format=medium', ' > ', logfile])
+os.system(s) 
