@@ -168,57 +168,41 @@ class EventList:
         if logfile in ["svn-log.xml"]:
             parse_svn_xml_log(file_handle)
             
-        if logfile in ["git.log", "svn.log"]:
-            svn_sep = "-"*72
-            # Todo: kill all plain SVG log parsing, keeps only XML log processing.
-            # For Git change custom format, so parse it with Bazaar or other VCS logs
-
+        if logfile in ["git.log"]:
             line = file_handle.readline()
+            newcommit_re = re.compile("commit [0-9a-f]+$")
+            path_re = re.compile("(?P<action>(M|A|D))\t(?P<path>.+)$")
+            messagemode = False
             while len(line) > 0:
-                # The svn_sep indicates a new revision history to parse.
-                if line.startswith(svn_sep):
-                    #try:
-                    event_list_commit = []
-                    rev_line = file_handle.readline()
-                    if rev_line is '' or len(rev_line) < 2:
-                        break
-                    rev_parts = rev_line.split(' | ')
-                    author = rev_parts[1]
-                    date_parts = rev_parts[2].split(" ")
-                    date = date_parts[0] + " " + date_parts[1]
-                    date = time.strptime(date, '%Y-%m-%d %H:%M:%S')
-                    date = int(time.mktime(date))*1000
-                    
-                    # Skip the 'Changed paths:' line and start reading in the changed filenames.
-                    path = file_handle.readline()
-                    path = file_handle.readline()
-                    while len(path) > 1:
-                        ch_path = None
-                        action_ = "A"
-                        if logfile == "svn.log":
-                            action_  = path[:5].strip()
-                            if len(action_.strip()) != 1:
-                                pass
-                            ch_path = path[5:].split(" (from")[0].replace("\n", "")
-                        else:
-                            # git uses quotes if filename contains unprintable characters
-                            action_  = path[:2].strip()
-                            ch_path = path[2:].replace("\n", "").replace("\"", "")
-                        event_list_commit.append(Event(ch_path, date, author, action=action_))
-                        path = file_handle.readline()
-                    line = file_handle.readline()
-                    comment = ""
-                    while not line.startswith(svn_sep) and len(line)>0:
-                        comment += line
-                        line = file_handle.readline()
-                    for e in event_list_commit:
-                        e.set_comment(comment)
-                    event_list += event_list_commit
-                    #except:
-                    #    line = file_handle.readline()
-                    #    continue
+                if newcommit_re.match(line):
+                    path_    = ""
+                    date_    = ""
+                    author_  = ""
+                    action_  = ""
+                    comment_ = ""
+                    messagemode = False
+                if line.startswith('Author:'):
+                    author_ = get_line_value('Author', author_)
+                elif line.startswith('Date:'):
+                    date_ = get_line_value('Date', date_)
+                    date_ = date_[-26:-6].strip()
+                    date_ = time.strptime(date_, '%b %d %H:%M:%S %Y')
+                    date_ = int(time.mktime(date_))*1000
+                    messagemode = True
                 else:    
-                    line = file_handle.readline()
+                    is_path = path_re.match(line)    
+                    if messagemode:    
+                        if is_path:
+                            messagemode = False
+                        else:    
+                            comment_ += line
+                    if not messagemode and is_path:
+                        action_ = is_path.group("action")
+                        path_   = is_path.group("path")
+                        ev = Event(path_, date_, author_, action=action_)
+                        ev.set_comment(comment_)    
+                        event_list.append(ev)
+                line = file_handle.readline()    
     
         elif logfile in ["cvs.log"]:
             filename = ""
