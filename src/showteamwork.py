@@ -33,7 +33,7 @@ def guess_inputfile():
         },         
        "GIT": {
            "logfile":    "git.log",
-           "logcommand": '''git log --name-status --pretty=format:"%n------------------------------------------------------------------------%nr%h | %ae | %ai (%aD) | x lines%nChanged paths:"''',
+           "logcommand": "git log --name-status --format=medium",
            "directory":  ".git",
         },         
        "Mercurial": {

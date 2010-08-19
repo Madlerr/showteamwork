@@ -20,8 +20,7 @@ except:
 os.chdir("Gource")
 os.system("git pull")
 
-s="".join(['git log --name-status ',
-'--pretty=format:"%n------------------------------------------------------------------------%nr%h | %ae | %ai (%aD) | x lines%nChanged paths:" ',
-' > ', logfile])
+s="".join(['git log --name-status --format=medium', ' > ', logfile])
 
+print s
 os.system(s)
