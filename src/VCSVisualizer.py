@@ -369,7 +369,7 @@ UseOpenGL=false
 
 
         lf = open(self.configobjpath, "w")
-        lf.write(usrcfg.encode("utf-8"))
+        lf.write(unicodeanyway(usrcfg).encode("utf-8"))
         lf.close()
         
         background_re = re.compile(r"(?sm)Background=(?P<R>[\d]+),(?P<G>[\d]+),(?P<B>[\d]+)\s+\n")
@@ -395,7 +395,7 @@ UseOpenGL=false
         subtitles = re.sub(r"(?m)^#[^\n]*\n?", "", subtitles)
         scenario = []
         for line in subtitles.splitlines():
-            if len(line.strip())>1:
+            if len(line.split(" ", 1))>1:
                 datas, text = line.split(" ", 1)
                 vcstime = None
                 datas = datas.replace(u'\ufeff','')
