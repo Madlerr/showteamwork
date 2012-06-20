@@ -52,6 +52,9 @@ def guess_inputfile():
 
     if file_is_ok("activity.xml"):
         return "activity.xml"
+
+    if file_is_ok("mediawiki.xml"):
+        return "mediawiki.xml"
     
     #trying to find input log file
     for vcs in vcss.values():

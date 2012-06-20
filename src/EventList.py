@@ -152,6 +152,40 @@ class EventList:
                     action_ = p.get("action")
                     event_list.append(Event(path_, date_, author_, action=action_, comment=comment_))
 
+        def parse_mediawiki_xml(file_handle):
+            """
+              Read messages from ``mediawiki.xml``
+            """
+            doc = etree.parse(file_handle)
+            root = doc.getroot()
+            ns = "{http://www.mediawiki.org/xml/export-0.4/}"
+            if root.tag != ns + "mediawiki":
+                raise Exception("Root tag of svn-log.xml must be <mediawiki>")
+            for page in root.iter(ns+"page"):
+                for title in page.iter(ns+"title"):
+                    path_ =  unicodeanyway(title.text).encode("trans")
+                    break
+                action_ = 'A'
+                for revision in page.iter(ns+"revision"):
+                    for contributor in revision.iter(ns+"contributor"):
+                        for username in contributor.iter(ns+"username"):
+                            author_ = username.text
+                            break
+                        break
+                    for timestamp in revision.iter(ns+"timestamp"):
+                        date_  =  timestamp.text
+                        date_ = time.strptime(date_, '%Y-%m-%dT%H:%M:%SZ')
+                        date_ = int(time.mktime(date_))*1000
+                        break
+                    comment_ = ""
+                    for comment in revision.iter(ns+"comment"):
+                        comment_ =  unicodeanyway(comment.text).encode("utf8")
+                        if action_ == 'A':
+                            comment_ = unicodeanyway(title.text).encode("utf8")  
+                        break
+                    event_list.append(Event(path_, date_, author_, action = action_, comment=comment_))
+                    action_ = 'M'
+
 
         if not os.path.exists(logfilename):
             raise Exception("File <%s> not exists!" % logfilename)
@@ -167,6 +201,9 @@ class EventList:
 
         if logfile in ["svn-log.xml"]:
             parse_svn_xml_log(file_handle)
+
+        if logfile in ["mediawiki.xml"]:
+            parse_mediawiki_xml(file_handle)
             
         if logfile in ["git.log"]:
             line = file_handle.readline()

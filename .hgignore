@@ -11,4 +11,5 @@ svn-log.xml
 ^[^\.]*\.pyc
 src/build
 [^\.]*\.orig
+e
 bin
