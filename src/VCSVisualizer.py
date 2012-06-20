@@ -31,7 +31,7 @@ class VCSVisualizer:
        Measuring of audiofile «stw-audio.mp3» length and various metrics of input «activity.xml» file.
        Can generate template of script scenario file and template of coloring most used directories.
     """
-    version__ = "1.0RC7"
+    version__ = "1.0RC8"
     
     def __init__(self, inputfile):
         """
